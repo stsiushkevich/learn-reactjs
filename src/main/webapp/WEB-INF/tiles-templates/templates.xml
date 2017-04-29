@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="mainTemplate" template="/WEB-INF/pages/layouts/layout.jsp">
+        <put-attribute name="header" value="" cascade="true" />
+        <put-attribute name="body" value="" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+        <put-attribute name="chooseCommunity" value="" cascade="true" />
+    </definition>
+
+    <definition name="menuTemplate" template="/WEB-INF/pages/layouts/menuLayout.jsp">
+        <put-attribute name="header" value="" cascade="true" />
+        <put-attribute name="menu" value="" cascade="true"  />
+        <put-attribute name="body" value="" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
+</tiles-definitions>
