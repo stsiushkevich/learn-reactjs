@@ -10,8 +10,8 @@ import java.util.Map;
  */
 @Controller
 public class MainController {
-    @GetMapping ("/")
-    public String welcome(Map<String, Object> model) {
-        return "home";
+    @GetMapping ("/home")
+    public String home(Map<String, Object> model) {
+        return "homeView";
     }
 }

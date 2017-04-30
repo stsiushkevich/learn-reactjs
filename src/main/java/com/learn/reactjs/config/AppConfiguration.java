@@ -1,12 +1,12 @@
-package com.learn.reactjs;
+package com.learn.reactjs.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LearnReactjsApplication {
+public class AppConfiguration {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LearnReactjsApplication.class, args);
+		SpringApplication.run(AppConfiguration.class, args);
 	}
 }
