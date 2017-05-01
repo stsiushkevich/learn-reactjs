@@ -3,6 +3,9 @@
 
 <c:url var="logoImgUrl" value="/resources/images/logo.png" />
 
-<div class="logo-section">
-  <img src="${logoImgUrl}"/>
+<div class="blue-line"></div>
+<div class="container">
+    <div class="logo-section">
+        <img src="${logoImgUrl}"/>
+    </div>
 </div>

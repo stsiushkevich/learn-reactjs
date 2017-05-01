@@ -6,12 +6,13 @@
 <c:url var="logoImgUrl" value="/resources/images/logo.png" />
 
 <lt:layout cssClass="menu-sidebar">
+    <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
-        <ul class="menu-sidebar__nav-links">
+        <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
             <li class="menu-sidebar__nav-link">
                 <a href="#">Введение</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link active">
                 <a href="#">Раздел 1</a>
             </li>
             <li class="menu-sidebar__nav-link">

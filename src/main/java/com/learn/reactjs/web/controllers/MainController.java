@@ -10,7 +10,7 @@ import java.util.Map;
  */
 @Controller
 public class MainController {
-    @GetMapping ("/home")
+    @GetMapping ("/")
     public String home(Map<String, Object> model) {
         return "homeView";
     }
