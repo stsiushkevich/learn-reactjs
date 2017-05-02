@@ -13,7 +13,7 @@
     <title>Learn react js</title>
 
     <u:resource type="link" root="/resources/css/plugins" names="bootstrap-theme.min.css, bootstrap.min.css"/>
-    <u:resource type="link" root="/resources/css/app" names="main.css"/>
+    <u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
     <u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js"/>
     <tiles:insertAttribute name="resources"/>
 </head>

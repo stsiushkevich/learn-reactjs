@@ -1,0 +1,24 @@
+.nav>li>a{
+    padding: 5px 10px;
+}
+
+.nav-pills>li>a {
+    border-radius: 0px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+    background-color: #dcdcdc;
+    color: #ca695b;
+}
+
+a:focus,
+a:hover{
+    color: #ca695b;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: #e9e9e9;
+}

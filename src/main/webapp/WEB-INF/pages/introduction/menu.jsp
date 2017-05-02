@@ -3,20 +3,18 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="introduction" value="introduction-topics"/>
-
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
             <li class="menu-sidebar__nav-link">
-                <a href="${introduction}">Введение</a>
+                <a href="#">Введение в React JS</a>
             </li>
             <li class="menu-sidebar__nav-link active">
-                <a href="#">Основы React JS</a>
+                <a href="#">Установка</a>
             </li>
             <li class="menu-sidebar__nav-link">
-                <a href="#">Качество кода</a>
+                <a href="#">Инструменты разработчика</a>
             </li>
         </ul>
     </nav>
