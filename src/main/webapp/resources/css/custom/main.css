@@ -71,15 +71,24 @@ body{
 }
 
 .topic-list__topics{
-    margin-left: 20px;
     list-style: none;
     padding: 0;
 }
 
 .topic-list__topic-nav-link{
     color: #222;
+    position: relative;
+    display: block;
+    padding: 5px 0px;
 }
 
-h1{
-    font-weight: bold;
+.topic-list__topic-nav-link:focus,
+.topic-list__topic-nav-link:hover {
+    background-color: #e9e9e9;
+    text-decoration: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6{
+    margin-left: -2px;
 }

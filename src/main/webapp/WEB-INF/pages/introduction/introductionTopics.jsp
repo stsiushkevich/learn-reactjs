@@ -6,8 +6,8 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-    <wg:head size="1">Введение</wg:head>
-    <ol class="topic-list__topics nav nav-pills nav-stacked">
+    <lt:layout cssClass="h3" style="font-weight: bold">Введение</lt:layout>
+    <ol class="topic-list__topics">
         <li class="topic-list__topic">
             <a href="#" class="topic-list__topic-nav-link">Введение в React JS</a>
         </li>
