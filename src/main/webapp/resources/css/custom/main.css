@@ -79,7 +79,7 @@ body{
     color: #222;
     position: relative;
     display: block;
-    padding: 5px 0px;
+    padding: 5px 10px;
 }
 
 .topic-list__topic-nav-link:focus,
