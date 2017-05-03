@@ -14,9 +14,4 @@ public class MainController {
     public String home(Map<String, Object> model) {
         return "homeView";
     }
-
-    @GetMapping ("/introduction-topics")
-    public String introductionTopics(Map<String, Object> model) {
-        return "introductionTopicsView";
-    }
 }

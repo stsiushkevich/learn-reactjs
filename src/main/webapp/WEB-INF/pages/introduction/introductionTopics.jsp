@@ -4,12 +4,14 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
+
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
     <lt:layout cssClass="h3" style="font-weight: bold">Введение</lt:layout>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
-            <a href="#" class="topic-list__topic-nav-link">Введение в React JS</a>
+            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link">Введение в React JS</a>
         </li>
         <li class="topic-list__topic">
             <a href="#" class="topic-list__topic-nav-link">Установка</a>

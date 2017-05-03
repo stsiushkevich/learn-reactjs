@@ -92,3 +92,14 @@ body{
 h1, h2, h3, h4, h5, h6{
     margin-left: -2px;
 }
+
+code{
+    color: #555;
+    background-color: rgba(0,0,0,0.04);
+    padding: 1px 3px;
+}
+
+.code-block{
+    text-align: center;
+    padding: 20px;
+}
