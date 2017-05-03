@@ -11,7 +11,7 @@
     <wg:head size="3"><strong>Что такое React?</strong></wg:head>
     <wg:p>
         <strong>React</strong> это декларативная, эффективная и гибкая библиотека для построения пользовательских интерфейсов.
-        <strong>React</strong> имеет некоторое колличество компонентов. Рассмотрим класс <strong>React.Component</strong>.
+        <strong>React</strong> имеет несколько различных типов компонентов.  Рассмотрим класс <strong>React.Component</strong>.
     </wg:p>
     <wg:p cssClass="code-block">
         <wg:img src="${example1}"/>
