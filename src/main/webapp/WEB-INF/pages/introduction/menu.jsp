@@ -4,6 +4,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
 <c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
+<c:url var="installationUrl" value="installation"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -13,7 +14,7 @@
                 <a href="${introductionInReactJSUrl}">Введение в React JS</a>
             </li>
             <li class="menu-sidebar__nav-link active">
-                <a href="#">Установка</a>
+                <a href="${installationUrl}">Установка</a>
             </li>
             <li class="menu-sidebar__nav-link">
                 <a href="#">Инструменты разработчика</a>

@@ -21,4 +21,9 @@ public class IntroductionController {
     public String introductionInReactJS(Map<String, Object> model) {
         return "introductionInReactJSView";
     }
+
+    @GetMapping ("/installation")
+    public String introduction(Map<String, Object> model) {
+        return "installationView";
+    }
 }

@@ -1,8 +1,16 @@
 <%@ tag pageEncoding="UTF-8" %>
+<%@ include file="../../../baseAttr.tag" %>
 
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="name" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
-<%@ attribute name="href" required="false" rtexprvalue="true" %>
 
-<a id="${id}" class="ldr-ui-label ${cssClass}" href="${href}"><jsp:doBody/></a>
+<pre class="prettyprint">
+    <code class="language-javascript">
+    npm install -g create-react-app
+    create-react-app my-app
+
+    cd my-app
+    npm start
+    </code>
+</pre>

@@ -3,6 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
+<%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/introduction-in-reactjs" %>
 
 <c:url var="example1" value="/resources/imges/pages/introduction/introduction-in-react/example_1.PNG"/>
 <c:url var="example2" value="/resources/imges/pages/introduction/introduction-in-react/example_2.PNG"/>
@@ -13,9 +14,12 @@
         <strong>React</strong> это декларативная, эффективная и гибкая библиотека для построения пользовательских интерфейсов.
         <strong>React</strong> имеет несколько различных типов компонентов.  Рассмотрим класс <strong>React.Component</strong>.
     </wg:p>
-    <wg:p cssClass="code-block">
-        <wg:img src="${example1}"/>
+
+    <wg:p>
+        <lt:layout cssClass="code-block-header">Код</lt:layout>
+        <code-example:code-example-1/>
     </wg:p>
+
     <wg:p>
         Мы рассмотрим по подробнее забавный XML-подобный синтаксис чуть позже. Созданные нами компоненты описывают, каким образом
         нам необходимо их отрисовать, с помощью метода <code>render()</code>. <strong>React</strong> будет эффективно обновлять наши
@@ -38,7 +42,8 @@
         Этот тег будет преобразован во время сборки в <code>React.createElement('div')</code>. Как видно, это обычный вызов метода
         объекта <strong>React</strong>. А наш предыдущий пример будет эквивалентен:
     </wg:p>
-    <wg:p cssClass="code-block">
-        <wg:img src="${example2}"/>
+    <wg:p>
+        <lt:layout cssClass="code-block-header">Код</lt:layout>
+        <code-example:code-example-2/>
     </wg:p>
 </lt:layout>

@@ -99,7 +99,12 @@ code{
     padding: 1px 3px;
 }
 
-.code-block{
-    text-align: center;
-    padding: 20px;
+.code-block-header{
+    background-color: rgba(0, 167, 197, 0.15);
+    padding: 5px;
+    font-family: Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace;
+}
+
+.after-head-padding{
+    padding-top: 10px;
 }

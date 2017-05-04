@@ -16,6 +16,12 @@
                 <a href="#">Основы React JS</a>
             </li>
             <li class="menu-sidebar__nav-link">
+                <a href="#">Ядро React</a>
+            </li>
+            <li class="menu-sidebar__nav-link">
+                <a href="#">Справочная информация</a>
+            </li>
+            <li class="menu-sidebar__nav-link">
                 <a href="#">Качество кода</a>
             </li>
         </ul>
