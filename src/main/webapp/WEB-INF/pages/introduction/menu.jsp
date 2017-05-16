@@ -5,6 +5,7 @@
 
 <c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
 <c:url var="installationUrl" value="installation"/>
+<c:url var="devToolsUrl" value="devtools"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -17,7 +18,7 @@
                 <a href="${installationUrl}">Установка</a>
             </li>
             <li class="menu-sidebar__nav-link">
-                <a href="#">Инструменты разработчика</a>
+                <a href="${devToolsUrl}">Инструменты разработчика</a>
             </li>
         </ul>
     </nav>
