@@ -1,0 +1,33 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
+<%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
+<%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/installation" %>
+
+<c:url var="devtoolsUrl" value="/resources/imges/pages/introduction/devtools/devtools.png"/>
+<c:url var="reactExtUrl" value="/resources/imges/pages/introduction/devtools/react_ext.PNG"/>
+
+<lt:layout cssClass="page instalation-page">
+    <wg:head size="3"><strong>Инструменты разработчика</strong></wg:head>
+
+
+    <br/>
+    <wg:head size="4"><strong>Отладка в браузере Chrome</strong></wg:head>
+    <wg:p>Для браузеров Chrome и Firefox имеются расширения, которые позволяют следить за деревом React
+        компонентов в меню инструментов разработчика браузера.</wg:p>
+    <wg:p cssClass="text-center"><wg:img src="${devtoolsUrl}"/></wg:p>
+    <wg:p>Это позволяет отслеживать свойства <code>props</code> и состояние <code>state</code> выбранного компонента в дереве.</wg:p>
+    <wg:p>После установки расширения, нужно кликнуть правой кнопкой мыши по какому-либо элементу на странице и
+        нажать «inspect». Откроется меню инструментов разработчика и React табка появится последней справа.</wg:p>
+    <wg:p cssClass="text-center"><wg:img src="${reactExtUrl}"/></wg:p>
+    <wg:p>Обратите внимание на дополнительные шаги для работы с <strong>CodePen</strong>:</wg:p>
+    <wg:p>
+        <ol>
+            <li>Залогиньтесь или зарегистрируйтесь и подтвердите ваш email. (необходимо для предотвращения спама)</li>
+            <li>Кликните кнопку «Fork»</li>
+            <li>Кликните «Change View» и затем выберите «Debug mode»</li>
+            <li>В новой открывшейся табке инструменты разработчика должны иметь табку «React»</li>
+        </ol>
+    </wg:p>
+</lt:layout>

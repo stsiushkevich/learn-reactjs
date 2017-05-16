@@ -37,4 +37,11 @@
         <put-attribute name="body" value="/WEB-INF/pages/introduction/instalation.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
+    <definition name="devtoolsView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
+        <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"  />
+        <put-attribute name="body" value="/WEB-INF/pages/introduction/devtools.jsp" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
 </tiles-definitions>

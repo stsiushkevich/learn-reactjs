@@ -6,6 +6,7 @@
 
 <c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
 <c:url var="installationUrl" value="installation"/>
+<c:url var="devToolsUrl" value="devtools"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -18,7 +19,7 @@
             <a href="${installationUrl}" class="topic-list__topic-nav-link">Установка</a>
         </li>
         <li class="topic-list__topic">
-            <a href="#" class="topic-list__topic-nav-link">Инструменты разработчика</a>
+            <a href="${devToolsUrl}" class="topic-list__topic-nav-link">Инструменты разработчика</a>
         </li>
     </ol>
 </lt:layout>

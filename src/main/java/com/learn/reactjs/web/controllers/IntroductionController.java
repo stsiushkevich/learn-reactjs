@@ -26,4 +26,9 @@ public class IntroductionController {
     public String introduction(Map<String, Object> model) {
         return "installationView";
     }
+
+    @GetMapping ("/devtools")
+    public String devtools(Map<String, Object> model) {
+        return "devtoolsView";
+    }
 }
