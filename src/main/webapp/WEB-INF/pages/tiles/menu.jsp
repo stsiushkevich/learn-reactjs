@@ -3,7 +3,8 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="introductionUrl" value="introduction/introduction-topics"/>
+<c:url var="introductionUrl" value="/introduction/introduction-topics"/>
+<c:url var="basicsUrl" value="/basics/basics-topics"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -13,7 +14,7 @@
                 <a href="${introductionUrl}">Введение</a>
             </li>
             <li class="menu-sidebar__nav-link active">
-                <a href="#">Основы React JS</a>
+                <a href="${basicsUrl}">Основы React JS</a>
             </li>
             <li class="menu-sidebar__nav-link">
                 <a href="#">Ядро React</a>

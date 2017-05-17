@@ -16,6 +16,8 @@
         <put-attribute name="body" value="/WEB-INF/pages/home.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
+
+    <!--introduction-->
     <definition name="introductionTopicsView" extends="mainTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
@@ -42,6 +44,36 @@
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/introduction/devtools.jsp" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
+
+    <!--basics-->
+    <definition name="basicsTopicsView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
+        <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"  />
+        <put-attribute name="body" value="/WEB-INF/pages/basics/basicsTopics.jsp" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
+    <definition name="noteToJavaScriptView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
+        <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"  />
+        <put-attribute name="body" value="/WEB-INF/pages/basics/noteToJavaScript.jsp" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
+    <definition name="helloWorldExampleView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
+        <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"  />
+        <put-attribute name="body" value="/WEB-INF/pages/basics/helloWorldExample.jsp" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
+    <definition name="introductionToJsxView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
+        <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"  />
+        <put-attribute name="body" value="/WEB-INF/pages/basics/introductionToJsx.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
 </tiles-definitions>
