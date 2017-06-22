@@ -42,6 +42,55 @@
     <wg:p></wg:p>
 
     <br/>
-    <wg:head size="4"><strong>Отрисовка элемента в DOM</strong></wg:head>
+    <wg:head size="4"><b>Преобразование функций в классы</b></wg:head>
+
+    <wg:p>Мы можем преобразовать функциональный компонент <code>Timer</code> в класс в пять шагов:</wg:p>
+    <wg:p>
+        <ol>
+            <li>Создать ES6 класс с тем же самым именем, который расширяет <code>React.Component</code>.</li>
+            <li>Добавить в него единственный пустой метод под названием <code>render()</code>.</li>
+            <li>Поместить тело функции в метод <code>render()</code>.</li>
+            <li>Заменить <code>props</code> на <code>this.props</code> в теле метода <code>render()</code>.</li>
+            <li>Удалить оставшееся пустое определение функции</li>
+        </ol>
+    </wg:p>
+
+    <code-example:code-example-4 codePenUrl="https://codepen.io/stzidane/pen/xrxrQP?editors=0010"/>
+
+    <wg:p>Теперь компонент <code>Timer</code> определен как класс, а не функция.</wg:p>
+
+    <wg:p>Это позволяет нам использовать дополнительные возможности, такие как локальное состояние и
+        методы жизненного цикла.</wg:p>
+
+    <br/>
+    <wg:head size="4"><b>Добавление локального состояния в класс</b></wg:head>
+
+    <wg:p>Мы переместим <code>date</code> из <code>props</code> в состояние в три шага.</wg:p>
+
+    <wg:p>1. Заменим <code>this.props.value</code> на <code>this.state.value</code> в <code>render()</code> методе:</wg:p>
+
+    <code-example:code-example-5/>
+
+    <wg:p>2. Добавим конструктор класса, который устанавливает начальное состояние <code>this.state</code>:</wg:p>
+
+    <code-example:code-example-6/>
+
+    <wg:p>Обратите внимание на то, как мы передаем свойства <code>props</code> в базовый конструктор:</wg:p>
+
+    <code-example:code-example-7/>
+
+    <wg:p><b>Компоненты-классы должны всегда вызывать базовый конструктор с</b> <code>props</code>.</wg:p>
+
+    <wg:p>3. Удаляем свойство <code>value</code> из <code>&lt;Timer /&gt;</code> элемента:</wg:p>
+
+    <code-example:code-example-8/>
+
+    <wg:p>Позже мы добавим код таймера обратно в сам компонент.</wg:p>
+
+    <wg:p>Результат будет выглядеть следующим образом:</wg:p>
+
+    <code-example:code-example-9 codePenUrl="https://codepen.io/stzidane/pen/GERvKL?editors=0010"/>
+
+    <wg:p>Далее мы сделаем так, что компонент <code>Timer</code> будет устанавливать таймер и обновлять себя каждую секунду.</wg:p>
 
 </lt:layout>
