@@ -9,10 +9,9 @@
     <code class="language-javascript">
     function Avatar(props) {
       return (
-        &lt;img className="Avatar"
-             src={props.user.avatarUrl}
-             alt={props.user.name}
-        /&gt;
+        <span class="highlighted">&lt;img className="Avatar"</span>
+             <span class="highlighted">src={props.user.avatarUrl}</span>
+             <span class="highlighted">alt={props.user.name}/&gt;</span>
       );
     }
     </code>

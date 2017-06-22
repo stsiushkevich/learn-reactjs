@@ -108,3 +108,7 @@ code{
 .after-head-padding{
     padding-top: 10px;
 }
+
+.highlighted, .hl{
+    background-color: #eaea6d;
+}

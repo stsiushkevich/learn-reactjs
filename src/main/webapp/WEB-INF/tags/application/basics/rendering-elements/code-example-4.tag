@@ -14,10 +14,7 @@
           &lt;h2&gt;It is {new Date().toLocaleTimeString()}.&lt;/h2&gt;
         &lt;/div&gt;
       );
-      ReactDOM.render(
-        element,
-        document.getElementById('root')
-      );
+      <span class="highlighted">ReactDOM.render(element, document.getElementById('root'));</span>
     }
 
     setInterval(tick, 1000);

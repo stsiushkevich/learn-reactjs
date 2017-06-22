@@ -10,7 +10,7 @@
     function Comment(props) {
       return (
         &lt;div className="Comment"&gt;
-          &lt;UserInfo user={props.author} /&gt;
+          <span class="highlighted">&lt;UserInfo user={props.author} /&gt;</span>
           &lt;div className="Comment-text"&gt;
             {props.text}
           &lt;/div&gt;

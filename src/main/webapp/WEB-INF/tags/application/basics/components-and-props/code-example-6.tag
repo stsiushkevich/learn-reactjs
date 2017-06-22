@@ -14,9 +14,9 @@
     function App() {
       return (
         &lt;div&gt;
-          &lt;Welcome name="Sara" /&gt;
-          &lt;Welcome name="Cahal" /&gt;
-          &lt;Welcome name="Edite" /&gt;
+          <span class="highlighted">&lt;Welcome name="Sara" /&gt;</span>
+          <span class="highlighted">&lt;Welcome name="Cahal" /&gt;</span>
+          <span class="highlighted">&lt;Welcome name="Edite" /&gt;</span>
         &lt;/div&gt;
       );
     }

@@ -7,11 +7,11 @@
 
 <pre class="prettyprint">
     <code class="language-javascript">
-    function Welcome(props) {
+    <span class="highlighted">function Welcome(props) {</span>
       return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
     }
 
-    const element = &lt;Welcome name="Sara" /&gt;;
+    <span class="highlighted">const element = &lt;Welcome name="Sara" /&gt;;</span>
     ReactDOM.render(
       element,
       document.getElementById('root')

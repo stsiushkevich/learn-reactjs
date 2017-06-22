@@ -9,12 +9,12 @@
     <code class="language-javascript">
     function UserInfo(props) {
       return (
-        &lt;div className="UserInfo"&gt;
-          &lt;Avatar user={props.user} /&gt;
-          &lt;div className="UserInfo-name"&gt;
-            {props.user.name}
-          &lt;/div&gt;
-        &lt;/div&gt;
+        <span class="highlighted">&lt;div className="UserInfo"&gt;</span>
+          <span class="highlighted">&lt;Avatar user={props.user} /&gt;</span>
+          <span class="highlighted">&lt;div className="UserInfo-name"&gt;</span>
+            <span class="highlighted">{props.user.name}</span>
+          <span class="highlighted">&lt;/div&gt;</span>
+        <span class="highlighted">&lt;/div&gt;</span>
       );
     }
     </code>

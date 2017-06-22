@@ -11,7 +11,7 @@
       return (
         &lt;div className="Comment"&gt;
           &lt;div className="UserInfo"&gt;
-            &lt;Avatar user={props.author} /&gt;
+            <span class="highlighted">&lt;Avatar user={props.author} /&gt;</span>
             &lt;div className="UserInfo-name"&gt;
               {props.author.name}
             &lt;/div&gt;

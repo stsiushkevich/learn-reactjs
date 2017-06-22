@@ -19,6 +19,27 @@
         <code-example:code-example-1/>
     </wg:p>
 
+    <wg:p>В отличие от DOM элементов браузера, элементы React – простые объекты, поэтому они
+        являются очень дешевыми для создания. React DOM заботится об обновлении DOM, чтобы
+        соответствовать элементам React.</wg:p>
+
+    <lt:layout cssClass="alert alert-warning">
+        <strong>Внимание!</strong> Можно спутать элементы с более широкой концепцией «компонентов».
+        Мы познакомимся с компонентами в следующем разделе. Элементы – это то, из чего «сделаны»
+        копмоненты. Поэтому рекомендуется изучить этот раздел прежде чем перепрыгнуть на следующий.
+    </lt:layout>
+
+
+    <br/>
+    <wg:head size="4"><strong>Отрисовка элемента в DOM</strong></wg:head>
+
+    <wg:p>Предположим, у нас есть тэг &lt;div&gt; где-нибудь в нашем HTML файле:</wg:p>
+
+    <wg:p>
+        <lt:layout cssClass="code-block-header">Код</lt:layout>
+        <code-example:code-example-2/>
+    </wg:p>
+
     <wg:p>Он называется корневым <strong>(root) DOM узлом</strong>, потому что всё внутри будет
         управляться с помощью React DOM.</wg:p>
 
@@ -31,7 +52,7 @@
 
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-2/>
+        <code-example:code-example-3/>
     </wg:p>
 
     <wg:p><wg:link href="http://codepen.io/gaearon/pen/rrpgNB?editors=1010">Пример кода в CodePen здесь</wg:link></wg:p>
@@ -52,7 +73,7 @@
 
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-3/>
+        <code-example:code-example-4/>
     </wg:p>
 
     <wg:p><wg:link href="http://codepen.io/gaearon/pen/gwoJZk?editors=0010">Попробовать в CodePen</wg:link></wg:p>
