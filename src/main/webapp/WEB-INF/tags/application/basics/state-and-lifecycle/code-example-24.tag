@@ -10,9 +10,16 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  constructor(props) {
-    <cd:hl>super(props);</cd:hl>
-    this.state = {value: 0};
-  }</code>
+  function Application() {
+    return (
+      &lt;p&gt;
+        &lt;Timer/&gt;
+        &lt;Timer/&gt;
+        &lt;Timer/&gt;
+      &lt;/p&gt;
+    );
+  }
+
+  ReactDOM.render(&lt;Application/&gt;, document.getElementById('root'));</code>
     </pre>
 </cd:code-example>

@@ -11,24 +11,39 @@
     <pre class="prettyprint">
         <code class="language-javascript">
   const INTERVAL = 90;
-  let total = 0;
 
-  function Timer(props) {
-    const value = props.value;
-    return (&lt;div&gt;
+  class Timer extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {value: 0};
+      this.INTERVAL = 90;
+    }
+
+    increment(){
+      <cd:hl>this.setState({value: this.state.value + 1});</cd:hl>
+    }
+
+    componentDidMount() {
+      this.timerID = setInterval(() =&gt; this.increment(), 1000/INTERVAL);
+    }
+
+    componentWillUnmount() {
+      clearInterval(this.timerID);
+    }
+
+    render() {
+      const value = this.state.value
+      return (&lt;div&gt;
         &lt;p&gt;Таймер:&lt;/p&gt;
         &lt;p&gt;
           &lt;span&gt;{`\${Math.round(value/INTERVAL/60/60)}`} : &lt;/span&gt;
           &lt;span&gt;{`\${Math.round(value/INTERVAL/60)}`} : &lt;/span&gt;
           &lt;span&gt;{`\${Math.round(value/INTERVAL)}`} . &lt;/span&gt;
           &lt;span&gt;{`\${value % INTERVAL}`}&lt;/span&gt;
-        &lt;/p&gt;      &lt;/div&gt;);
+        &lt;/p&gt;
+      &lt;/div&gt;);
+    }
   }
-
-  function increment() {
-    total++;
-    ReactDOM.render(<cd:hl>&lt;Timer value={total}/&gt;</cd:hl>, document.getElementById('root'));
-  }
-  setInterval(increment, 1000/INTERVAL);</code>
+  ReactDOM.render(&lt;Timer/&gt;, document.getElementById('root'));</code>
     </pre>
 </cd:code-example>

@@ -10,9 +10,7 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  constructor(props) {
-    <cd:hl>super(props);</cd:hl>
-    this.state = {value: 0};
-  }</code>
+  // Неправильно :(
+  this.setState({temperature: this.state.temperature + this.props.delta});</code>
     </pre>
 </cd:code-example>

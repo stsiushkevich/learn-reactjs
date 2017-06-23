@@ -10,19 +10,18 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  <cd:hl>class Timer extends React.Component {</cd:hl>
-    render() {
-      const value = <cd:hl>this.props.value</cd:hl>
-        return (&lt;div&gt;
-          &lt;p&gt;Таймер:&lt;/p&gt;
-          &lt;p&gt;
-            &lt;span&gt;{`\${Math.round(value/INTERVAL/60/60)}`} : &lt;/span&gt;
-            &lt;span&gt;{`\${Math.round(value/INTERVAL/60)}`} : &lt;/span&gt;
-            &lt;span&gt;{`\${Math.round(value/INTERVAL)}`} . &lt;/span&gt;
-            &lt;span&gt;{`\${value % INTERVAL}`}&lt;/span&gt;
-          &lt;/p&gt;
-        &lt;/div&gt;);
-      }
+  componentDidMount() {
+    fetchPermissions().then(response => {
+      this.setState({
+        <cd:hl>permissions: response.permissions</cd:hl>
+      });
+    });
+
+    fetchUsers().then(response => {
+      this.setState({
+        <cd:hl>users: response.users</cd:hl>
+      });
+    });
   }</code>
     </pre>
 </cd:code-example>
