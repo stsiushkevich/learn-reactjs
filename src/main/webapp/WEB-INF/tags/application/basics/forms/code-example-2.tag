@@ -38,7 +38,7 @@
         &lt;form onSubmit={this.onSubmit}&gt;
           &lt;p&gt;&lt;label&gt; Логин: &lt;input type="text" name="login" <cd:hl>value={this.state.login}</cd:hl>
                            <cd:hl>onChange={this.onLoginChange}</cd:hl>/&gt;&lt;/label&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;label&gt; Пароль: &lt;input type="password" name="password" <cd:hl>value={this.state.password}
+          &lt;p&gt;&lt;label&gt; Пароль: &lt;input type="password" name="password" <cd:hl>value={this.state.password}</cd:hl>
                             <cd:hl>onChange={this.onPasswordChange}</cd:hl>/&gt;&lt;/label&gt;&lt;/p&gt;
           &lt;p&gt;&lt;input type="submit" value="Submit" /&gt;&lt;/p&gt;
         &lt;/form&gt;
