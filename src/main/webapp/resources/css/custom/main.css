@@ -91,6 +91,7 @@ body{
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6{
     margin-left: -2px;
+    color: rgba(0, 158, 184, 1);
 }
 
 code{
@@ -107,4 +108,8 @@ code{
 
 .after-head-padding{
     padding-top: 10px;
+}
+
+.highlighted, .hl{
+    background-color: #eaea6d;
 }
