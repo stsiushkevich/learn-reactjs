@@ -155,4 +155,18 @@
         <put-attribute name="body" value="/WEB-INF/pages/core/jsxInDepth.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="typecheckingWithPropTypesView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="body" value="/WEB-INF/pages/core/typecheckingWithPropTypes.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+    <definition name="refsAndTheDOMView" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="body" value="/WEB-INF/pages/core/refsAndTheDOM.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
 </tiles-definitions>
