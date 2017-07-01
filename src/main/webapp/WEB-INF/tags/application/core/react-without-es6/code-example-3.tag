@@ -10,18 +10,13 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
-
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
-    }
+  class Hello extends React.Component {
+    // ...
   }
 
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  Hello.defaultProps = {
+    name: 'мир'
+  };
+  </code>
   </pre>
 </cd:code-example>

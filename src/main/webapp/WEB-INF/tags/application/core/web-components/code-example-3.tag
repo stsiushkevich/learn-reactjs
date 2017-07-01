@@ -10,18 +10,18 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
+  const proto = Object.create(HTMLElement.prototype, {
+    attachedCallback: {
+      value: function() {
+        const mountPoint = document.createElement('span');
+        this.createShadowRoot().appendChild(mountPoint);
 
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
+        const name = this.getAttribute('name');
+        const url = 'https://www.google.com/search?q=' + encodeURIComponent(name);
+        ReactDOM.render(&lt;a href={url}&gt;{name}&lt;/a&gt;, mountPoint);
+      }
     }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  });
+  document.registerElement('x-search', {prototype: proto});</code>
   </pre>
 </cd:code-example>

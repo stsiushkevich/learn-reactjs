@@ -10,18 +10,21 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
+  class MyCounter extends React.PureComponent {
+    constructor(props) {
+      super(props);
+      this.state = {value: 1};
+    }
 
-  class HelloWorld extends React.Component {
     render() {
       return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
+        &lt;button
+          style={this.props.style}
+          onClick={() =&gt; this.setState(state =&gt; ({value: state.value + 1}))}&gt;
+          Число: {this.state.value}
+        &lt;/button&gt;
       );
     }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  }</code>
   </pre>
 </cd:code-example>

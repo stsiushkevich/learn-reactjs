@@ -10,18 +10,15 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
-
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
-    }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  render() {
+    return (
+      &lt;form onSubmit={this.onSubmit}&gt;
+        &lt;label&gt;Имя пользователя:
+          &lt;input <cd:hl>defaultValue="Вася"</cd:hl>
+            ref={(el) =&gt; this.nameTextField = el} name="name" type="text"/&gt;&lt;/label&gt;
+        &lt;input type="submit" value="Submit" /&gt;
+      &lt;/form&gt;
+    );
+  }</code>
   </pre>
 </cd:code-example>

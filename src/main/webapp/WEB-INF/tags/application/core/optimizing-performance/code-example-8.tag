@@ -10,18 +10,14 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
-
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
-    }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  plugins: [
+    // ...
+    require('rollup-plugin-replace')({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    require('rollup-plugin-commonjs')(),
+    require('rollup-plugin-uglify')(),
+    // ...
+  ]</code>
   </pre>
 </cd:code-example>

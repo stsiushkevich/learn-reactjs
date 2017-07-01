@@ -10,18 +10,21 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
+  let Trigger = createReactClass({
+    getInitialState: function() {
+      return {isOn: false};
+    },
 
-  class HelloWorld extends React.Component {
-    render() {
+    onTrigger: function() {
+      this.setState({isOn: !this.state.isOn});
+    },
+
+    render: function() {
+      // Так как `this.onTrigger` привязан, мы можем использовать его как обработчик события
       return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
+        &lt;button onClick={this.onTrigger}&gt;this.state.isOn ? 'On' : 'Off'&lt;/button&gt;
       );
     }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  });</code>
   </pre>
 </cd:code-example>

@@ -60,18 +60,4 @@
     <code>this.props.name</code>, будет иметь значение, если оно не было указано родительским
     компонентом. Проверка типов <code>propTypes</code> происходит после отработки <code>defaultProps</code>,
     поэтому проверка типов будет также применена и к <code>defaultProps</code>.</wg:p>
-
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
 </lt:layout>

@@ -10,18 +10,10 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
+  # Если вы используете npm
+  npm install --save-dev uglify-js-brunch
 
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
-    }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  # Если вы используете Yarn
+  yarn add --dev uglify-js-brunch</code>
   </pre>
 </cd:code-example>

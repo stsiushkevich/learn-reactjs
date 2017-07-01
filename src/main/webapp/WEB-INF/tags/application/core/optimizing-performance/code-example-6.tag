@@ -10,18 +10,10 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
-
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
-    }
-  }
-
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  browserify ./index.js \
+    -g [ envify --NODE_ENV production ] \
+    -g uglifyify \
+    -p bundle-collapser/plugin \
+    | uglifyjs --compress --mangle > ./bundle.js</code>
   </pre>
 </cd:code-example>

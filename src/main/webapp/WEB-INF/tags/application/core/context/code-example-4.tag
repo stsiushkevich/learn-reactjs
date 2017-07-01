@@ -10,18 +10,13 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import PropTypes from 'prop-types';
+  const PropTypes = require('prop-types');
 
-  class HelloWorld extends React.Component {
-    render() {
-      return (
-        &lt;h1&gt;Привет, {this.props.name}&lt;/h1&gt;
-      );
-    }
-  }
+  const Alert = ({children}, context) =&gt;
+    &lt;div className={`alert alert-\${context.type}`}&gt;
+      {children}
+    &lt;/div&gt;;
 
-  HelloWorld.propTypes = {
-    name: PropTypes.string
-  };</code>
+  Alert.contextTypes = {type: PropTypes.string};</code>
   </pre>
 </cd:code-example>
