@@ -130,23 +130,98 @@
       См. <wg:link href="">React без JSX</wg:link>, чтобы узнать больше.</wg:p>
   </rf:definition>
 
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
+  <rf:definition title="cloneElement()">
+    <ce:code-example-3/>
+
+    <wg:p>Клонировать и вернуть новый элемент React, используя <code>element</code> в качестве
+      отправной точки. Получившийся элемент будет иметь свойства оригинального элемента
+      с новыми свойствами, смержденными неглубоко. Новые потомки заменят существующих потомков.
+      <code>key</code> и <code>ref</code> из исходного элемента будут сохранены.</wg:p>
+
+    <wg:p><code>React.cloneElement()</code> почти эквивалентен:</wg:p>
+
+    <ce:code-example-4/>
+
+    <wg:p>Однако он также сохраняет и ссылки. Это означает, что если вы
+      получите потомка с <code>ref</code> на нем, вы не сможете случайно украсть этот
+      атрибут у своего предка. Вы получите тот же <code>ref</code>, присоединенный
+      к вашему новому элементу.</wg:p>
+
+    <wg:p>Этот API был введен как замена устаревшего <code>React.addons.cloneWithProps()</code>.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="createFactory()">
+    <ce:code-example-5/>
+
+    <wg:p>Возвращает функцию, которая создает элементы React данного типа. Подобно
+      <code>React.createElement()</code>, аргумент типа может быть либо строкой имени
+      тега (например, <code>'div'</code> или <code>'span'</code>), либо типом
+      компонента React (класс или функция).</wg:p>
+
+    <wg:p><code>React.cloneElement()</code> почти эквивалентен:</wg:p>
+
+    <wg:p>Этот помощник считается устаревшим. Вместо него рекомендуется использовать
+      либо JSX, либо <code>React.createElement()</code>.</wg:p>
+
+    <%--todo LINK--%>
+    <wg:p>Как правило, вы не вызываете <code>React.createFactory()</code>, если используете JSX.
+      См. <wg:link href="">React без JSX</wg:link> , чтобы узнать больше.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="isValidElement()">
+  <ce:code-example-6/>
+
+  <wg:p>Проверяет, является ли объект элементом React. Возвращает <code>true</code> или <code>false</code>.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children">
+
+  <wg:p><code>React.Children</code> предоставляет утилиты для работы с непрозрачной
+    структурой данных <code>this.props.children</code>.</wg:p>
+  </rf:definition>
+
+ <rf:definition title="React.Children.map">
+   <ce:code-example-7/>
+
+  <wg:p>Вызывает функцию для каждого дочернего элемента, содержащегося в <code>children</code>,
+    с <code>this</code> установленным в <code>thisArg</code>. Если <code>children</code> представляют собой фрагмент или
+    массив с ключами, он будет пройден. Если <code>children</code> имеет значение <code>null</code> или <code>undefined</code>,
+    возвращается значение <code>null</code> или <code>undefined</code>, а не массив.</wg:p>
+  </rf:definition>
+
+ <rf:definition title="React.Children.forEach">
+   <ce:code-example-8/>
+
+  <wg:p>То же, что и <code>React.Children.map()</code>, но не возвращает массив.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children.count">
+   <ce:code-example-9/>
+
+  <wg:p>Возвращает общее количество компонентов в <code>children</code>,
+    равное количеству раз, которое будет вызван коллбэк, переданный
+    для <code>map</code> или <code>forEach</code>.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children.only">
+   <ce:code-example-10/>
+
+  <wg:p>Возвращает единственного потомка в <code>children</code>. Иначе выбрасывает.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children.toArray">
+   <ce:code-example-11/>
+
+  <wg:p>Возвращает непрозрачную структуру данных <code>children</code> как плоский массив с ключами,
+    назначенными каждому потомку. Это полезно, если вы хотите манипулировать коллекциями
+    потомков в ваших методах отрисовки, особенно если вы хотите изменить порядок или
+    обрезать <code>this.props.children</code>, прежде чем передавать его.</wg:p>
+
+    <app:alert type="warning" title="Внимание!">
+      <code>React.Children.toArray()</code> изменяет ключи, чтобы сохранить семантику вложенных
+      массивов при выравнивании списков потомков. То есть <code>toArray</code> будет являться
+      префиксом каждого ключа в возвращаемом массиве, так что ключ каждого элемента
+      получает пространство имен содержащего его входного массива.
+    </app:alert>
+  </rf:definition>
 </lt:layout>
