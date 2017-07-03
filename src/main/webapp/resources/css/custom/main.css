@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6{
 
 code{
     color: #555;
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(91, 192, 222, 0.19);
     padding: 1px 3px;
 }
 
@@ -111,5 +111,5 @@ code{
 }
 
 .highlighted, .hl{
-    background-color: #eaea6d;
+    background-color: #ececb2;
 }

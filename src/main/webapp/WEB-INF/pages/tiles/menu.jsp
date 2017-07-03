@@ -4,26 +4,24 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
 <c:url var="introductionUrl" value="/introduction/introduction-topics"/>
-<c:url var="basicsUrl" value="/basics/basics-topics"/>
+<c:url var="basicsUrl" value="/basics/topics"/>
+<c:url var="coreUrl" value="/core/topics"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
             <li class="menu-sidebar__nav-link">
-                <a href="${introductionUrl}">Введение</a>
+                <a href="${introductionUrl}">1. Введение</a>
             </li>
             <li class="menu-sidebar__nav-link active">
-                <a href="${basicsUrl}">Основы React JS</a>
+                <a href="${basicsUrl}">2. Основы React JS</a>
             </li>
             <li class="menu-sidebar__nav-link">
-                <a href="#">Ядро React</a>
+                <a href="${coreUrl}">3. Ядро React</a>
             </li>
             <li class="menu-sidebar__nav-link">
-                <a href="#">Справочная информация</a>
-            </li>
-            <li class="menu-sidebar__nav-link">
-                <a href="#">Качество кода</a>
+                <a href="#">4. Справочная информация</a>
             </li>
         </ul>
     </nav>

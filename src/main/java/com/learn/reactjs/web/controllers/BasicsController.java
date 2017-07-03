@@ -13,7 +13,7 @@ import java.util.Map;
 @RequestMapping("/basics")
 public class BasicsController {
 
-    @GetMapping("/basics-topics")
+    @GetMapping("/topics")
     public String basicsTopics(Map<String, Object> model) {
         return "basicsTopicsView";
     }

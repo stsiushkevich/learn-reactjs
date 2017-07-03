@@ -1,0 +1,227 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
+<%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
+<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react" %>
+
+<lt:layout cssClass="page hello-world-example-page">
+  <wg:head size="3"><strong>4.1	React</strong></wg:head>
+
+  <br/>
+  <wg:head size="4"><strong>4.1.1	React Top-Level API</strong></wg:head>
+
+  <wg:p>React - это точка входа в библиотеку React. Если вы загружаете
+    React из тега <code>&lt;script&gt;</code>, эти API верхнего уровня доступны в глобальном
+    объекте React. Если вы используете ES6 с npm, вы можете написать <code>import React from 'react'</code>.
+    Если вы используете ES5 с <b>npm</b>, вы можете написать <code>var React = require('react')</code></wg:p>
+
+  <br/>
+  <wg:head size="4"><strong>4.1.1.1	Обзор</strong></wg:head>
+
+  <br/>
+  <wg:head size="5"><strong>4.1.1.1.1	Компоненты</strong></wg:head>
+
+  <wg:p>React компоненты позволяют разделить UI на самостоятельные, многоразовые
+    фрагменты и работать с каждой частью отдельно. React компоненты могут быть определены
+    с помощью подкласса <code>React.Component</code> или <code>React.PureComponent</code>.</wg:p>
+
+  <wg:p>
+    <ul>
+      <li><code>React.Component</code></li>
+      <li><code>React.PureComponent</code></li>
+    </ul>
+  </wg:p>
+
+  <%--todo LINK--%>
+  <wg:p>Если вы не используете классы ES6, вы можете вместо этого использовать
+    модуль <code>create-react-class</code>. Дополнительную информацию см. в разделе
+    <wg:link href="">Использование React без ES6</wg:link>.</wg:p>
+
+  <br/>
+  <wg:head size="5"><strong>4.1.1.1.2	Создание React элементов</strong></wg:head>
+
+  <wg:p>Рекомендуется использовать JSX для описания того, как должен выглядеть
+    ваш пользовательский интерфейс. Каждый элемент JSX является просто синтаксическим
+    сахаром для вызова <code>React.createElement()</code>. Как правило, вы не будете использовать
+    следующие методы, если используете JSX.</wg:p>
+
+  <wg:p>
+    <ul>
+      <li><code>createElement()</code></li>
+      <li><code>createFactory()</code></li>
+    </ul>
+  </wg:p>
+
+  <%--todo LINK--%>
+  <wg:p>Дополнительную информацию см. в разделе <wg:link href="">React без JSX</wg:link>.</wg:p>
+
+  <br/>
+  <wg:head size="5"><strong>4.1.1.1.3	Преобразование элементов</strong></wg:head>
+
+  <wg:p>React также предоставляет некоторые другие API:</wg:p>
+
+  <wg:p>
+    <ul>
+      <li><code>cloneElement()</code></li>
+      <li><code>isValidElement()</code></li>
+      <li><code>React.Children</code></li>
+    </ul>
+  </wg:p>
+
+  <br/>
+  <wg:head size="4"><strong>4.1.1.2	Справка</strong></wg:head>
+
+  <rf:definition title="React.Component">
+    <wg:p>
+      React.Component является базовым классом для компонентов React, когда они определены
+      с использованием классов ES6.
+    </wg:p>
+
+    <ce:code-example-1/>
+
+    <wg:p>
+      См. справочник <wg:link href="">API React.Component</wg:link> для поиска методов и свойств, связанных
+      с базовым классом <code>React.Component</code>.
+    </wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.PureComponent">
+    <wg:p><code>React.PureComponent</code> такой же, как и <code>React.Component</code>, но реализует
+      <code>shouldComponentUpdate()</code> с поддержкой неглубокого сравнения свойств и состояния.</wg:p>
+
+    <wg:p>Если метод <code>render()</code> компонента React отображает тот же результат с теми же свойствами и
+      состоянием, вы в некоторых случаях можете использовать <code>React.PureComponent</code>
+      для повышения производительности.</wg:p>
+
+    <app:alert type="warning" title="Замечание!">
+      Метод <code>shouldComponentUpdate()</code> компонента <code>React.PureComponent</code> только поверхностно
+      сравнивает объекты. Если они содержат сложные структуры данных, это может
+      привести к ложным отрицаниям для более глубоких сравнений. Расширяйте PureComponent
+      только в том случае, если вы будете иметь простые свойства и состояние, или
+      используйте <code>forceUpdate()</code>, когда вы знаете, что изменились структуры данных. Или
+      рассмотрите возможность использования неизменяемых объектов для быстрого сравнения вложенных данных.
+      <wg:p>
+        Кроме того, метод <code>shouldComponentUpdate()</code> компонента <code>React.PureComponent</code>
+        пропускает обновления свойств для всего поддерева компонента. Убедитесь, что все дочерние
+        компоненты также «чисты».
+      </wg:p>
+    </app:alert>
+  </rf:definition>
+
+  <rf:definition title="createElement()">
+    <ce:code-example-2/>
+
+    <wg:p>Создаёт и возвращает новый элемент React указанного типа. Типизированный
+      аргумент может быть либо строкой имени тега (например, <code>'div'</code> или <code>'span'</code>), либо
+      типом компонента React (класс или функция).</wg:p>
+
+    <wg:p>Удобные оболочки  вокруг <code>React.createElement()</code> для компонентов DOM
+      предоставляются <code>React.DOM</code>. Например, <code>React.DOM.a(...)</code> является удобной
+      оболочкой для <code>React.createElement('a', ...)</code>. Они считаются устаревшими,
+      и мы рекомендуем вам либо использовать JSX, либо
+      использовать <code>React.createElement()</code> напрямую.</wg:p>
+
+    <%--todo LINK--%>
+    <wg:p>Код, написанный с помощью JSX, будет конвертирован в вызовы <code>React.createElement()</code>.
+      Обычно вы не вызываете <code>React.createElement()</code>, если используете JSX.
+      См. <wg:link href="">React без JSX</wg:link>, чтобы узнать больше.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="cloneElement()">
+    <ce:code-example-3/>
+
+    <wg:p>Клонировать и вернуть новый элемент React, используя <code>element</code> в качестве
+      отправной точки. Получившийся элемент будет иметь свойства оригинального элемента
+      с новыми свойствами, смержденными неглубоко. Новые потомки заменят существующих потомков.
+      <code>key</code> и <code>ref</code> из исходного элемента будут сохранены.</wg:p>
+
+    <wg:p><code>React.cloneElement()</code> почти эквивалентен:</wg:p>
+
+    <ce:code-example-4/>
+
+    <wg:p>Однако он также сохраняет и ссылки. Это означает, что если вы
+      получите потомка с <code>ref</code> на нем, вы не сможете случайно украсть этот
+      атрибут у своего предка. Вы получите тот же <code>ref</code>, присоединенный
+      к вашему новому элементу.</wg:p>
+
+    <wg:p>Этот API был введен как замена устаревшего <code>React.addons.cloneWithProps()</code>.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="createFactory()">
+    <ce:code-example-5/>
+
+    <wg:p>Возвращает функцию, которая создает элементы React данного типа. Подобно
+      <code>React.createElement()</code>, аргумент типа может быть либо строкой имени
+      тега (например, <code>'div'</code> или <code>'span'</code>), либо типом
+      компонента React (класс или функция).</wg:p>
+
+    <wg:p><code>React.cloneElement()</code> почти эквивалентен:</wg:p>
+
+    <wg:p>Этот помощник считается устаревшим. Вместо него рекомендуется использовать
+      либо JSX, либо <code>React.createElement()</code>.</wg:p>
+
+    <%--todo LINK--%>
+    <wg:p>Как правило, вы не вызываете <code>React.createFactory()</code>, если используете JSX.
+      См. <wg:link href="">React без JSX</wg:link> , чтобы узнать больше.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="isValidElement()">
+  <ce:code-example-6/>
+
+  <wg:p>Проверяет, является ли объект элементом React. Возвращает <code>true</code> или <code>false</code>.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children">
+
+  <wg:p><code>React.Children</code> предоставляет утилиты для работы с непрозрачной
+    структурой данных <code>this.props.children</code>.</wg:p>
+  </rf:definition>
+
+ <rf:definition title="React.Children.map">
+   <ce:code-example-7/>
+
+  <wg:p>Вызывает функцию для каждого дочернего элемента, содержащегося в <code>children</code>,
+    с <code>this</code> установленным в <code>thisArg</code>. Если <code>children</code> представляют собой фрагмент или
+    массив с ключами, он будет пройден. Если <code>children</code> имеет значение <code>null</code> или <code>undefined</code>,
+    возвращается значение <code>null</code> или <code>undefined</code>, а не массив.</wg:p>
+  </rf:definition>
+
+ <rf:definition title="React.Children.forEach">
+   <ce:code-example-8/>
+
+  <wg:p>То же, что и <code>React.Children.map()</code>, но не возвращает массив.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children.count">
+   <ce:code-example-9/>
+
+  <wg:p>Возвращает общее количество компонентов в <code>children</code>,
+    равное количеству раз, которое будет вызван коллбэк, переданный
+    для <code>map</code> или <code>forEach</code>.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children.only">
+   <ce:code-example-10/>
+
+  <wg:p>Возвращает единственного потомка в <code>children</code>. Иначе выбрасывает.</wg:p>
+  </rf:definition>
+
+  <rf:definition title="React.Children.toArray">
+   <ce:code-example-11/>
+
+  <wg:p>Возвращает непрозрачную структуру данных <code>children</code> как плоский массив с ключами,
+    назначенными каждому потомку. Это полезно, если вы хотите манипулировать коллекциями
+    потомков в ваших методах отрисовки, особенно если вы хотите изменить порядок или
+    обрезать <code>this.props.children</code>, прежде чем передавать его.</wg:p>
+
+    <app:alert type="warning" title="Внимание!">
+      <code>React.Children.toArray()</code> изменяет ключи, чтобы сохранить семантику вложенных
+      массивов при выравнивании списков потомков. То есть <code>toArray</code> будет являться
+      префиксом каждого ключа в возвращаемом массиве, так что ключ каждого элемента
+      получает пространство имен содержащего его входного массива.
+    </app:alert>
+  </rf:definition>
+</lt:layout>

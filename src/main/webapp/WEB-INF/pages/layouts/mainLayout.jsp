@@ -6,16 +6,25 @@
 <!DOCTYPE html>
 <html class="html">
 <head xmlns:tiles="http://tiles.apache.org/tags-tiles">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Изучение React JS">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://learn.react-js.ru">
+	<meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
+	<meta property="og:description" content="Информационный сайт, посвященный изучению React JS">
+	<meta property="fb:app_id" content="623268441017527">
 
-    <title>Learn react js</title>
+	<link rel="shortcut icon" href="<c:url value="/resources/imges/logo.ico"/>">
 
-    <u:resource type="link" root="/resources/css/plugins" names="bootstrap-theme.min.css, bootstrap.min.css, atelier-dune-light.min.css"/>
-    <u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
-    <u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js"/>
-    <tiles:insertAttribute name="resources"/>
+	<title>Изучение React JS</title>
+
+	<u:resource type="link" root="/resources/css/plugins"
+	            names="bootstrap-theme.min.css, bootstrap.min.css, atelier-dune-light.min.css"/>
+	<u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
+	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js"/>
+	<tiles:insertAttribute name="resources"/>
 </head>
 <body>
 <%-- ============================
@@ -23,7 +32,7 @@
 =============================--%>
 
 <header class="header">
-    <tiles:insertAttribute name="header"/>
+	<tiles:insertAttribute name="header"/>
 </header>
 
 <%-- ============================
@@ -31,14 +40,14 @@
 =============================--%>
 
 <div class="container main">
-    <div class="row">
-        <div class="menu col-md-3">
-            <tiles:insertAttribute name="menu"/>
-        </div>
-        <div class="content col-md-9">
-            <tiles:insertAttribute name="body"/>
-        </div>
-    </div>
+	<div class="row">
+		<div class="menu col-md-3">
+			<tiles:insertAttribute name="menu"/>
+		</div>
+		<div class="content col-md-9">
+			<tiles:insertAttribute name="body"/>
+		</div>
+	</div>
 </div>
 
 
@@ -46,7 +55,7 @@
     FOOTER
 =============================--%>
 <footer class="footer">
-    <tiles:insertAttribute name="footer"/>
+	<tiles:insertAttribute name="footer"/>
 </footer>
 </body>
 </html>
