@@ -141,10 +141,4 @@
 
 	<ce:code-example-6/>
 
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
 </lt:layout>
