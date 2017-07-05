@@ -3,9 +3,10 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="introductionUrl" value="/introduction/introduction-topics"/>
+<c:url var="introductionUrl" value="/introduction/topics"/>
 <c:url var="basicsUrl" value="/basics/topics"/>
 <c:url var="coreUrl" value="/core/topics"/>
+<c:url var="referenceUrl" value="/reference/topics"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -21,7 +22,7 @@
                 <a href="${coreUrl}">3. Ядро React</a>
             </li>
             <li class="menu-sidebar__nav-link">
-                <a href="#">4. Справочная информация</a>
+                <a href="${referenceUrl}">4. Справочная информация</a>
             </li>
         </ul>
     </nav>

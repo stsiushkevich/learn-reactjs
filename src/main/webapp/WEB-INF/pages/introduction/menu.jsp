@@ -12,13 +12,13 @@
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
             <li class="menu-sidebar__nav-link">
-                <a href="${introductionInReactJSUrl}">Введение в React JS</a>
+                <a href="${introductionInReactJSUrl}">1.1 Введение в React JS</a>
             </li>
             <li class="menu-sidebar__nav-link active">
-                <a href="${installationUrl}">Установка</a>
+                <a href="${installationUrl}">1.2 Установка</a>
             </li>
             <li class="menu-sidebar__nav-link">
-                <a href="${devToolsUrl}">Инструменты разработчика</a>
+                <a href="${devToolsUrl}">1.3 Инструменты разработчика</a>
             </li>
         </ul>
     </nav>

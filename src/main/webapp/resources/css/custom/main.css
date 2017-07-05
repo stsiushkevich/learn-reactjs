@@ -75,8 +75,12 @@ body{
     padding: 0;
 }
 
+.menu-sidebar__nav-link.active{
+    box-shadow: 3px 2px 7px 2px #808080;
+}
+
 .topic-list__topic-nav-link{
-    color: #222;
+    color: rgba(0, 158, 184, 1);
     position: relative;
     display: block;
     padding: 5px 10px;
