@@ -154,6 +154,22 @@ code{
     margin: 0;
 }
 
+.header-nav__link a.buy-btn{
+    border-radius: 17px;
+    color: #fff;
+    background-color: #00b2d2;
+    border-color: #0090ab;
+    padding: 6px 14px;
+    font-weight: bold;
+    margin-top: 2px;
+    height: 35px;
+}
+
+.header-nav__link a.buy-btn:hover,
+.header-nav__link a.buy-btn:focus{
+    border: 1px solid #0090ab;
+}
+
 .footer-nav{
     padding: 0;
 }
@@ -163,6 +179,15 @@ code{
     border-radius: 0;
     padding: 8px 0;
     height: 40px;
+}
+
+.header-nav__link{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-nav__link:first-child{
+    margin: 0;
 }
 
 .footer-nav__link a{

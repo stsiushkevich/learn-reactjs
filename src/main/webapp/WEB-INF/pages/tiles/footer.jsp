@@ -8,7 +8,6 @@
 	<ul class="footer-nav">
 		<li class="footer-nav__link"><a class="btn">&#9400; 2017 Тюшкевич Сергей</a></li>
 		<li class="footer-nav__link"><a class="btn">Контакты</a></li>
-		<li class="footer-nav__link"><a class="btn">О проекте</a></li>
 		<li class="footer-nav__link"><a class="btn">Соглашение</a></li>
 	</ul>
 </lt:layout>

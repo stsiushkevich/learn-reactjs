@@ -14,6 +14,18 @@
 			<li class="header-nav__link">
 				<a class="btn" href="${mainUrl}">Главная</a>
 			</li>
+			<li class="header-nav__link">
+				<a class="btn" href="${mainUrl}">О проекте</a>
+			</li>
+			<li class="header-nav__link">
+				<a class="btn" href="${mainUrl}">Книги</a>
+			</li>
+			<li class="header-nav__link">
+				<a class="btn" href="${mainUrl}">GitHub</a>
+			</li>
+			<li class="header-nav__link pull-right">
+				<a class="btn buy-btn" href="${mainUrl}">Купить EPUB/PDF</a>
+			</li>
 		</ul>
 	</div>
 </div>
