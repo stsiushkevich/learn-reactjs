@@ -7,27 +7,41 @@ body{
 }
 
 .footer{
-
+    align-items: center;
+    height: 70px;
+    margin-top: 30px;
+    padding: 15px 0 47px;
+    color: #9d9d9d;
+    background: #eaeaea;
+    border-top: 2px solid #d0d0d0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .header{
     background: #222222;
     color: #fafafa;
-    height: 55px;
     box-shadow: 1px 1px 10px #080808;
 }
 
 .header .logo-section{
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 .header .logo-section img{
     height: 35px;
+    margin-top: 2px;
+    margin-bottom: 6px;
 }
 
 .blue-line{
     height: 5px;
     background-color: #00d8ff;
+}
+
+.home-page{
+    background-color: #0ec2e2;
 }
 
 .content{
@@ -98,6 +112,21 @@ h1, h2, h3, h4, h5, h6{
     color: rgba(0, 158, 184, 1);
 }
 
+.home-page .h1,
+.home-page .h2,
+.home-page .h3,
+.home-page .h4,
+.home-page .h5,
+.home-page .h6,
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page h4,
+.home-page h5,
+.home-page h6{
+    color: #fff;
+}
+
 code{
     color: #555;
     background-color: rgba(91, 192, 222, 0.19);
@@ -116,4 +145,85 @@ code{
 
 .highlighted, .hl{
     background-color: #ececb2;
+}
+
+.footer-nav,
+.header-nav{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+}
+
+.footer-nav{
+    padding: 0;
+}
+
+.header-nav__link a{
+    color: #ddd;
+    border-radius: 0;
+    padding: 8px 0;
+    height: 40px;
+}
+
+.footer-nav__link a{
+    color: #979797;
+    border-radius: 0;
+    padding: 8px 0;
+    height: 40px;
+}
+
+.footer-nav__link{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.footer-nav__link:first-child{
+    margin: 0;
+}
+
+.header-nav__link a:hover,
+.header-nav__link a:focus{
+    color: #fff;
+    border-bottom: 3px solid;
+}
+
+.tutorial__section{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.tutorial__section-link{
+    background-color: #7fedff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 30px;
+    border: 7px solid #fff;
+    position: relative;
+}
+
+.tutorial__section-link:hover,
+.tutorial__section-link:focus{
+    background-color: rgb(92, 232, 255);
+    border-color: #f0d04e;
+    box-shadow: 1px 1px 10px 0px #f0d04e;
+}
+
+.tutorial__section-link:active{
+    background-color: #27cdff;
+}
+
+.tutorial__section-label{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #505050;
+    font-weight: bold;
+}
+
+.home-page__text{
+    padding: 0 20px;
+    font-weight: bold;
+    color: #fff;
 }

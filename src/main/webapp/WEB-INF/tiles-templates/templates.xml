@@ -2,44 +2,51 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
         "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-    <definition name="mainTemplate" template="/WEB-INF/pages/layouts/mainLayout.jsp">
+    <definition name="homeTemplate" template="/WEB-INF/pages/layouts/homeLayout.jsp">
         <put-attribute name="header" value="" cascade="true" />
         <put-attribute name="footer" value="" cascade="true" />
         <put-attribute name="menu" value="" cascade="true"  />
         <put-attribute name="body" value="" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="homeView" extends="mainTemplate">
+
+    <definition name="homeView" extends="homeTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
-        <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/home.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
 
+    <definition name="menuTemplate" template="/WEB-INF/pages/layouts/menuLayout.jsp">
+        <put-attribute name="header" value="" cascade="true" />
+        <put-attribute name="footer" value="" cascade="true" />
+        <put-attribute name="menu" value="" cascade="true"  />
+        <put-attribute name="body" value="" cascade="true" />
+        <put-attribute name="resources" value="" cascade="true" />
+    </definition>
     <!--introduction-->
-    <definition name="introductionTopicsView" extends="mainTemplate">
+    <definition name="introductionTopicsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/introduction/introductionTopics.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="introductionInReactJSView" extends="mainTemplate">
+    <definition name="introductionInReactJSView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/introduction/introductionInReactJS.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="installationView" extends="mainTemplate">
+    <definition name="installationView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/introduction/instalation.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="devtoolsView" extends="mainTemplate">
+    <definition name="devtoolsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"  />
@@ -48,91 +55,91 @@
     </definition>
 
     <!--basics-->
-    <definition name="basicsTopicsView" extends="mainTemplate">
+    <definition name="basicsTopicsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/basics/basicsTopics.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="noteToJavaScriptView" extends="mainTemplate">
+    <definition name="noteToJavaScriptView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/basics/noteToJavaScript.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="helloWorldExampleView" extends="mainTemplate">
+    <definition name="helloWorldExampleView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/basics/helloWorldExample.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="introductionToJsxView" extends="mainTemplate">
+    <definition name="introductionToJsxView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/basics/introductionToJsx.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="renderingElementsView" extends="mainTemplate">
+    <definition name="renderingElementsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/renderingElements.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="componentsAndPropsView" extends="mainTemplate">
+    <definition name="componentsAndPropsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/componentsAndProps.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="stateAndLifecycleView" extends="mainTemplate">
+    <definition name="stateAndLifecycleView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/stateAndLifecycle.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="handlingEventsView" extends="mainTemplate">
+    <definition name="handlingEventsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/handlingEvents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="conditionalRenderingView" extends="mainTemplate">
+    <definition name="conditionalRenderingView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/conditionalRendering.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="listsAndKeysView" extends="mainTemplate">
+    <definition name="listsAndKeysView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/listsAndKeys.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="formsView" extends="mainTemplate">
+    <definition name="formsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/forms.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="liftingStateUpView" extends="mainTemplate">
+    <definition name="liftingStateUpView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/basics/liftingStateUp.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="compositionVsInheritanceView" extends="mainTemplate">
+    <definition name="compositionVsInheritanceView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
@@ -141,91 +148,91 @@
     </definition>
 
     <!--core-->
-    <definition name="coreTopicsView" extends="mainTemplate">
+    <definition name="coreTopicsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true" />
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true" />
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"  />
         <put-attribute name="body" value="/WEB-INF/pages/core/coreTopics.jsp" cascade="true" />
         <put-attribute name="resources" value="" cascade="true" />
     </definition>
-    <definition name="jsxInDepthView" extends="mainTemplate">
+    <definition name="jsxInDepthView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/jsxInDepth.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="typecheckingWithPropTypesView" extends="mainTemplate">
+    <definition name="typecheckingWithPropTypesView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/typecheckingWithPropTypes.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="refsAndTheDOMView" extends="mainTemplate">
+    <definition name="refsAndTheDOMView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/refsAndTheDOM.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="uncontrolledComponentsView" extends="mainTemplate">
+    <definition name="uncontrolledComponentsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/uncontrolledComponents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="optimizingPerformanceView" extends="mainTemplate">
+    <definition name="optimizingPerformanceView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/optimizingPerformance.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reactWithoutES6View" extends="mainTemplate">
+    <definition name="reactWithoutES6View" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/reactWithoutES6.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reactWithoutJSXView" extends="mainTemplate">
+    <definition name="reactWithoutJSXView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/reactWithoutJSX.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reconciliationView" extends="mainTemplate">
+    <definition name="reconciliationView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/reconciliation.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="contextView" extends="mainTemplate">
+    <definition name="contextView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/context.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="webComponentsView" extends="mainTemplate">
+    <definition name="webComponentsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/webComponents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="higherOrderComponentsView" extends="mainTemplate">
+    <definition name="higherOrderComponentsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/core/higherOrderComponents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="integratingWithOtherLibrariesView" extends="mainTemplate">
+    <definition name="integratingWithOtherLibrariesView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
@@ -234,63 +241,63 @@
     </definition>
 
     <!--reference-->
-    <definition name="referenceTopicsView" extends="mainTemplate">
+    <definition name="referenceTopicsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/topics.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reactView" extends="mainTemplate">
+    <definition name="reactView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/react.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reactComponentView" extends="mainTemplate">
+    <definition name="reactComponentView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/reactComponent.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reactDomView" extends="mainTemplate">
+    <definition name="reactDomView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/reactDom.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="reactDomServerView" extends="mainTemplate">
+    <definition name="reactDomServerView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/reactDomServer.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="domElementsView" extends="mainTemplate">
+    <definition name="domElementsView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/domElements.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="syntheticEventView" extends="mainTemplate">
+    <definition name="syntheticEventView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/syntheticEvent.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="testUtilitiesView" extends="mainTemplate">
+    <definition name="testUtilitiesView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/reference/testUtils.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
-    <definition name="shallowRendererView" extends="mainTemplate">
+    <definition name="shallowRendererView" extends="menuTemplate">
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
