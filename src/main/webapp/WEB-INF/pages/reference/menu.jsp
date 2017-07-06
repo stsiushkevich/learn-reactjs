@@ -16,28 +16,28 @@
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_REACT' ? 'active' : null}">
                 <a href="${reactUrl}">4.1 React</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_REACT_COMPONENT' ? 'active' : null}">
                 <a href="${reactComponentUrl}">4.2 React.Component</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_REACT_DOM' ? 'active' : null}">
                 <a href=${reactDomUrl}>4.3 ReactDOM</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_REACT_DOM_SERVER' ? 'active' : null}">
                 <a href=${reactDomServerUrl}>4.4 ReactDOMServer</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_DOM_ELEMENTS' ? 'active' : null}">
                 <a href=${domElementsUrl}>4.5 DOM Elements</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_SYNTHETIC_EVENT' ? 'active' : null}">
                 <a href=${syntheticEventUrl}>4.6 SyntheticEvent</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_TEST_UTILITIES' ? 'active' : null}">
                 <a href=${testUtilitiesUrl}>4.7 Тестовые утилиты</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'REFERENCE_SHALLOW_RENDERER' ? 'active' : null}">
                 <a href=${shallowRendererUrl}>4.8 Поверхностная отрисовка</a>
             </li>
         </ul>

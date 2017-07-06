@@ -44,7 +44,7 @@
 		<div class="menu col-md-3">
 			<tiles:insertAttribute name="menu"/>
 		</div>
-		<div class="content col-md-9">
+		<div class="content col-md-8">
 			<tiles:insertAttribute name="body"/>
 		</div>
 	</div>

@@ -12,16 +12,16 @@
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentSection eq 'INTRODUCTION' ? 'active' : null}">
                 <a href="${introductionImgUrl}">1. Введение</a>
             </li>
-            <li class="menu-sidebar__nav-link active">
+            <li class="menu-sidebar__nav-link ${currentSection eq 'BASICS' ? 'active' : null}">
                 <a href="${basicsImgUrl}">2. Основы React JS</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentSection eq 'CORE' ? 'active' : null}">
                 <a href="${coreImgUrl}">3. Ядро React</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentSection eq 'REFERENCE' ? 'active' : null}">
                 <a href="${referenceImgUrl}">4. Справочная информация</a>
             </li>
         </ul>

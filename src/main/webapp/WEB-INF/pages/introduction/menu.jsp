@@ -11,13 +11,13 @@
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_INTRODUCTION_IN_REACT_JS' ? 'active' : null}">
                 <a href="${introductionInReactJSUrl}">1.1 Введение в React JS</a>
             </li>
-            <li class="menu-sidebar__nav-link active">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_INSTALLATION' ? 'active' : null}">
                 <a href="${installationUrl}">1.2 Установка</a>
             </li>
-            <li class="menu-sidebar__nav-link">
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_DEVTOOLS' ? 'active' : null}">
                 <a href="${devToolsUrl}">1.3 Инструменты разработчика</a>
             </li>
         </ul>

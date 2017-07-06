@@ -25,14 +25,10 @@ body{
     box-shadow: 1px 1px 10px #080808;
 }
 
-.header .logo-section{
-    margin-top: 5px;
-}
-
 .header .logo-section img{
     height: 35px;
-    margin-top: 2px;
-    margin-bottom: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .blue-line{
@@ -175,19 +171,14 @@ code{
 }
 
 .header-nav__link a{
-    color: #ddd;
+    color: #eaeaea;
     border-radius: 0;
-    padding: 8px 0;
-    height: 40px;
+    padding: 10px;
+    height: 45px;
 }
 
 .header-nav__link{
     display: inline-block;
-    margin-left: 20px;
-}
-
-.header-nav__link:first-child{
-    margin: 0;
 }
 
 .footer-nav__link a{
@@ -199,16 +190,18 @@ code{
 
 .footer-nav__link{
     display: inline-block;
-    margin-left: 40px;
 }
 
-.footer-nav__link:first-child{
-    margin: 0;
+.header-nav__link.active a{
+    background-color: #404040;
+    border-bottom: 3px solid;
+    color: #fff;
 }
 
 .header-nav__link a:hover,
 .header-nav__link a:focus{
     color: #fff;
+    background-color: #404040;
     border-bottom: 3px solid;
 }
 
