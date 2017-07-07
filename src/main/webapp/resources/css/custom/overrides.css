@@ -19,7 +19,7 @@ a {
 
 a:focus,
 a:hover {
-    color: rgba(0, 158, 184, 1);
+    color: #cc7a6f
 }
 
 .nav > li > a:focus::before,
@@ -39,4 +39,14 @@ a:hover {
 
 h4{
     font-size: 16px;
+}
+
+.footer-nav__link a:hover,
+.footer-nav__link a:focus{
+    color: #cc7a6f;
+}
+
+.footer-nav__link a:active{
+    box-shadow: none;
+    text-decoration: underline;
 }

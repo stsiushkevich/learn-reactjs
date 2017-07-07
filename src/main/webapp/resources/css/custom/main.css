@@ -157,13 +157,20 @@ code{
     border-color: #0090ab;
     padding: 6px 14px;
     font-weight: bold;
-    margin-top: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     height: 35px;
+}
+
+.header-nav__link a.buy-btn:active{
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .header-nav__link a.buy-btn:hover,
 .header-nav__link a.buy-btn:focus{
     border: 1px solid #0090ab;
+    color: #fff;
+    background-color: #00a7c7;
 }
 
 .footer-nav{
@@ -244,4 +251,18 @@ code{
     padding: 0 20px;
     font-weight: bold;
     color: #fff;
+}
+
+.about-project-page{
+    font-size: 15px;
+}
+
+.project-icon{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.menu .section-picture{
+    text-align: center;
+    padding-top: 25px;
 }

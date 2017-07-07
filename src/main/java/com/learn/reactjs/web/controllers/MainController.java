@@ -16,4 +16,10 @@ public class MainController {
         model.put("currentPage", Pages.HOME);
         return "homeView";
     }
+
+    @GetMapping ("/about-project")
+    public String aboutProject(Map<String, Object> model) {
+        model.put("currentPage", Pages.ABOUT_PROJECT);
+        return "aboutProjectView";
+    }
 }
