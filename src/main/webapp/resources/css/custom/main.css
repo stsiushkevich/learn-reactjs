@@ -191,7 +191,7 @@ code{
 .footer-nav__link a{
     color: #979797;
     border-radius: 0;
-    padding: 8px 0;
+    padding: 8px;
     height: 40px;
 }
 

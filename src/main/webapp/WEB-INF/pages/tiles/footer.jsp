@@ -6,7 +6,7 @@
 
 <lt:layout cssClass="container text-center">
 	<ul class="footer-nav">
-		<li class="footer-nav__link"><a class="btn">&#9400; 2017 Тюшкевич Сергей</a></li>
+		<li class="footer-nav__link"><div style="padding: 8px">&#9400; 2017 Тюшкевич Сергей</div></li>
 		<li class="footer-nav__link"><a class="btn">Контакты</a></li>
 		<li class="footer-nav__link"><a class="btn">Соглашение</a></li>
 	</ul>
