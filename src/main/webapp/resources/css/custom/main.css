@@ -257,6 +257,7 @@ code{
     font-size: 15px;
 }
 
+.terms-of-use-icon,
 .project-icon{
     text-align: center;
     padding-top: 20px;
@@ -265,4 +266,43 @@ code{
 .menu .section-picture{
     text-align: center;
     padding-top: 25px;
+}
+
+.terms-of-use-page .footer{
+    position: static;
+}
+
+.terms-of-use-page h2,
+.terms-of-use-page h4{
+    color: #222;
+}
+
+.person-info{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.person-info__full-name{
+    font-size: 18px;
+    color: rgba(0, 158, 184, 1);
+    vertical-align: middle;
+}
+
+.avatar{
+    height: 70px;
+}
+
+.person-info__profession{
+    color: #9a9a9a;
+}
+
+.email{
+
+}
+
+.email__value,
+.email__title{
+    display: inline-block;
+    color: #5f5f5f;
 }
