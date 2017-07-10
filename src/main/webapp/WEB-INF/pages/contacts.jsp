@@ -4,6 +4,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
 <c:url var="avatarImgUrl" value="/resources/imges/pages/contacts/circle.png"/>
+<c:url var="contactsImgUrl" value="/resources/imges/pages/contacts/user.png"/>
 
 <lt:layout>
 	<lt:layout><h2 class="text-center"><b>Контакты</b></h2></lt:layout>
