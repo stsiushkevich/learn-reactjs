@@ -36,4 +36,10 @@ public class MainController {
         model.put("currentPage", Pages.CONTACTS);
         return "contactsView";
     }
+
+    @GetMapping("purchase")
+    public String purchase(Map<String, Object> model) {
+        model.put("currentPage", Pages.PURCHASE);
+        return "purchaseView";
+    }
 }

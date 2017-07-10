@@ -36,6 +36,7 @@ body{
     background-color: #00d8ff;
 }
 
+.purchase-page,
 .home-page{
     background-color: #0ec2e2;
 }
@@ -269,6 +270,7 @@ code{
     padding-top: 25px;
 }
 
+.purchase-page .footer,
 .terms-of-use-page .footer{
     position: static;
 }
@@ -306,4 +308,78 @@ code{
 .email__title{
     display: inline-block;
     color: #5f5f5f;
+}
+
+.course{
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+    padding: 30px;
+    border: 7px solid #fff;
+    position: relative;
+}
+
+.course__sections{
+    padding: 0;
+}
+
+.course__sections-title{
+
+}
+
+.course__section{
+    list-style-type: none;
+    background-color: #ff8787;
+    margin-top: 5px;
+    padding: 5px 10px;
+    position: relative;
+    color: white;
+}
+
+.course__section:after{
+    content: '';
+    position: absolute;
+    right: -35px;
+    bottom: 0px;
+    border: 15px solid transparent;
+    border-left: 20px solid #ff8787;
+}
+
+.course__section:before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 9px;
+    width: 12px;
+    height: 12px;
+    background: #ff8787;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.course_beginner-level{
+    background-color: #9aff79;
+}
+
+.course__title{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.course_beginner-level .course__title{
+    color: #4f8eef;
+}
+
+.course__price{
+    display: inline-block;
+    background: #4f8eef;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.course__price-value{
+
 }

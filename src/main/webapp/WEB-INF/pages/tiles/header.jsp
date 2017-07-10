@@ -4,6 +4,7 @@
 <c:url var="logoImgUrl" value="/resources/imges/logo.png"/>
 <c:url var="mainUrl" value="/home"/>
 <c:url var="aboutProjectUrl" value="/about-project"/>
+<c:url var="purchaseUrl" value="/purchase"/>
 <c:url var="gitHubUrl" value="https://github.com/stsiushkevich/learn-reactjs"/>
 
 <div class="blue-line"></div>
@@ -25,7 +26,7 @@
 		</ul>
 		<ul class="header-nav col-md-2 text-right">
 			<li class="header-nav__link">
-				<a class="btn buy-btn" href="${mainUrl}">Купить EPUB/PDF</a>
+				<a class="btn buy-btn" href="${purchaseUrl}">Купить EPUB/PDF</a>
 			</li>
 		</ul>
 	</div>

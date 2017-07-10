@@ -2,6 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
+<%@taglib prefix="p" tagdir="/WEB-INF/tags/application/purchase" %>
 
 <c:url var="introductionUrl" value="/introduction/topics"/>
 <c:url var="basicsUrl" value="/basics/topics"/>
@@ -13,12 +14,14 @@
 <c:url var="coreImgUrl" value="/resources/imges/pages/home/microchip.png"/>
 <c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
 
-<lt:layout cssClass="container tutorial">
+<lt:layout cssClass="container purchase">
 	<lt:layout><h2 class="text-center"><b>Покупка учебника React JS</b></h2></lt:layout>
 
 	<br/>
-	<lt:layout cssClass="purchase__item">
-		<h4><b>Курс 1</b></h4>
-		<br/>
+	<lt:layout cssClass="row">
+		<lt:layout cssClass="col-md-6 text-right">
+			<p:course cssClass="course_beginner-level" name="Начинающий" price="12$" sections="Введение, Основы, Ядро React JS, Справочное руководство"/>
+		</lt:layout>
 	</lt:layout>
+
 </lt:layout>
