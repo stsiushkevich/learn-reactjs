@@ -314,13 +314,13 @@ code{
     display: inline-block;
     text-align: left;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px 20px 50px;
     border: 7px solid #fff;
     position: relative;
 }
 
 .course__sections{
-    padding: 0;
+    padding: 0 20px;
 }
 
 .course__sections-title{
@@ -336,48 +336,62 @@ code{
     color: white;
 }
 
-.course__section:after{
-    content: '';
+.course__section-after-first-arrow{
     position: absolute;
-    right: -35px;
-    bottom: 0px;
-    border: 15px solid transparent;
-    border-left: 20px solid #ff8787;
+    right: -10px;
+    top: 0px;
+    border: 8px solid transparent;
+    border-left: 5px solid #ff8787;
+    border-top: 14px solid #ff8787;
 }
 
-.course__section:before{
-    content: '';
+.course__section-after-second-arrow{
     position: absolute;
-    left: -20px;
-    top: 9px;
-    width: 12px;
-    height: 12px;
-    background: #ff8787;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
+    right: -10px;
+    bottom: 0px;
+    border: 8px solid transparent;
+    border-bottom: 14px solid #ff8787;
+    border-left: 5px solid #ff8787;
+}
+
+.course__section-before-arrow{
+    position: absolute;
+    left: -25px;
+    bottom: 0px;
+    border: 15px solid transparent;
+    border-right: 10px solid #ff8787;
 }
 
 .course_beginner-level{
-    background-color: #9aff79;
+    background-color: #83e663;
+}
+
+.course__icon{
+    display: inline-block;
 }
 
 .course__title{
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 .course_beginner-level .course__title{
-    color: #4f8eef;
+    color: white;
 }
 
 .course__price{
-    display: inline-block;
     background: #4f8eef;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-bottom-left-radius: 5px;
+    padding: 10px 20px 10px;
     color: white;
     margin-top: 10px;
+    font-size: 16px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .course__price-value{

@@ -20,7 +20,7 @@
 	<br/>
 	<lt:layout cssClass="row">
 		<lt:layout cssClass="col-md-6 text-right">
-			<p:course cssClass="course_beginner-level" name="Начинающий" price="12$" sections="Введение, Основы, Ядро React JS, Справочное руководство"/>
+			<p:course cssClass="course_beginner-level" level="1" name="Начинающий" price="12$" sections="Введение, Основы"/>
 		</lt:layout>
 	</lt:layout>
 
