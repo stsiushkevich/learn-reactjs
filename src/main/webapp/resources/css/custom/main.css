@@ -367,13 +367,13 @@ code{
 }
 
 .course__icon{
-    display: inline-block;
+    text-align: center;
 }
 
 .course__title{
-    display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .course_beginner-level .course__title{
