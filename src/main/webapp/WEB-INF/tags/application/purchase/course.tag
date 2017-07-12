@@ -11,7 +11,7 @@
 
 <c:url var="begginerImgUrl" value="/resources/imges/pages/purchase/boy.png"/>
 <c:url var="specialistImgUrl" value="/resources/imges/pages/purchase/student.png"/>
-<c:url var="professionalImgUrl" value="/resources/imges/pages/purchase/teacher.png"/>
+<c:url var="professionalImgUrl" value="/resources/imges/pages/purchase/man.png"/>
 <c:url var="masterImgUrl" value="/resources/imges/pages/purchase/professor.png"/>
 
 <div class="course ${cssClass}" style="${style}">
@@ -44,8 +44,7 @@
       <li class="course__section">
         <div class="course__section-before-arrow"></div>
         <div>${fn:trim(section)}</div>
-        <div class="course__section-after-first-arrow"></div>
-        <div class="course__section-after-second-arrow"></div>
+        <div class="course__section-after-arrow"></div>
       </li>
     </c:forEach>
   </ul>

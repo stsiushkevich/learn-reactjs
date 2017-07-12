@@ -50,7 +50,8 @@
         <put-attribute name="bodyClass" value="purchase-page" cascade="true" type="string"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/purchase.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/purchase/purchase.jsp" cascade="true"/>
+        <put-attribute name="resources" value="/WEB-INF/pages/purchase/resources.jsp" cascade="true"/>
     </definition>
 
     <definition name="menuTemplate" template="/WEB-INF/pages/templates/mainTemplate.jsp">
