@@ -1,9 +1,19 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background-color: #f1f1f1;
+    margin-bottom: 100px;
 }
 
 .header {
 
+}
+
+.main{
+    height: 100%;
 }
 
 .footer {
@@ -14,8 +24,8 @@ body {
     color: #9d9d9d;
     background: #eaeaea;
     border-top: 2px solid #d0d0d0;
-    position: fixed;
     width: 100%;
+    position: absolute;
     bottom: 0;
 }
 
@@ -270,7 +280,6 @@ code {
     padding-top: 25px;
 }
 
-.purchase-page .footer,
 .terms-of-use-page .footer {
     position: static;
 }
@@ -321,6 +330,7 @@ code {
     padding: 20px 20px 50px;
     border: 7px solid #fff;
     position: relative;
+    box-shadow: 0 0 10px 5px #e3e3e3;
 }
 
 .course__sections {
@@ -411,4 +421,55 @@ code {
 
 .course__price-value {
 
+}
+
+.panel-heading h4 a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.panel-beginner .panel-heading{
+    background-color: #98d184;
+}
+
+.panel-specialist .panel-heading{
+    background-color: #93b6ef;
+}
+
+.panel-professional .panel-heading{
+    background-color: #dfb67a;
+}
+
+.panel-master .panel-heading{
+    background-color: #c19aca;
+}
+
+.levels{
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.levels .panel-body{
+    background-color: #f1f1f1;
+}
+
+.course__choose{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.choose-course-form .btn-success{
+    background-color: #6dc86d;
+    border-color: #59b259;
+}
+
+.choose-course-form .btn-success:hover,
+.choose-course-form .btn-success:focus{
+    background-color: #61b961;
+    border-color: #52a452;
 }

@@ -2,6 +2,7 @@
 <%@ include file="../baseAttr.tag" %>
 
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
+<%@ attribute name="contentCssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="true" rtexprvalue="true" %>
 <%@ attribute name="title" required="true" rtexprvalue="true" %>
 <%@ attribute name="isExpanded" required="false" rtexprvalue="true" type="java.lang.Boolean" %>
@@ -19,7 +20,7 @@
 		</h4>
 	</div>
 	<div id="${id}" class="panel-collapse collapse <c:if test="${isExpanded}">in</c:if>" role="tabpanel" aria-labelledby="heading${id}">
-		<div class="panel-body">
+		<div class="panel-body ${contentCssClass}">
 			<jsp:doBody/>
 		</div>
 	</div>

@@ -13,6 +13,11 @@ import java.util.Map;
 @Controller
 @RequestMapping("/")
 public class MainController {
+    private static final Integer BEGINNER_PRICE = 8;
+    private static final Integer SPECIALIST_PRICE = 10;
+    private static final Integer PROFESSIONAL_PRICE = 10;
+    private static final Integer MASTER_PRICE = 15;
+
     @GetMapping("home")
     public String home(Map<String, Object> model) {
         model.put("currentPage", Pages.HOME);
@@ -40,6 +45,10 @@ public class MainController {
     @GetMapping("purchase")
     public String purchase(Map<String, Object> model) {
         model.put("currentPage", Pages.PURCHASE);
+        model.put("beginnerPrice", BEGINNER_PRICE);
+        model.put("specialistPrice", SPECIALIST_PRICE);
+        model.put("professionalPrice", PROFESSIONAL_PRICE);
+        model.put("masterPrice", MASTER_PRICE);
         return "purchaseView";
     }
 }

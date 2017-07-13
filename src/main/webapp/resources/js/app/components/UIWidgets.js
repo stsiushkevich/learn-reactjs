@@ -120,9 +120,6 @@ var UIWidgets = (function(){
     var Form = UI.Widget({
         extends: Box,
 
-        getWidget: function (wgId) {
-            return this.wgRegister.get(wgId);
-        },
         reset: function () {
             this.dom.reset();
         },

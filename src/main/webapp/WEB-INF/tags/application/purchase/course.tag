@@ -4,7 +4,8 @@
 
 <%@ attribute name="sections" required="false" rtexprvalue="true" %>
 <%@ attribute name="price" required="false" rtexprvalue="true" %>
-<%@ attribute name="name" required="false" rtexprvalue="true" %>
+<%@ attribute name="key" required="false" rtexprvalue="true" %>
+<%@ attribute name="title" required="false" rtexprvalue="true" %>
 <%@ attribute name="level" required="false" rtexprvalue="true" type="java.lang.Integer" %>
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="style" required="false" rtexprvalue="true" %>
@@ -15,38 +16,39 @@
 <c:url var="masterImgUrl" value="/resources/imges/pages/purchase/professor.png"/>
 
 <div class="course ${cssClass}" style="${style}">
-  <div class="course__header">
-    <div class="course__icon">
-      <c:choose>
-        <c:when test="${level eq 1}">
-          <wg:img src="${begginerImgUrl}"/>
-        </c:when>
-        <c:when test="${level eq 2}">
-          <wg:img src="${specialistImgUrl}"/>
-        </c:when>
-        <c:when test="${level eq 3}">
-          <wg:img src="${professionalImgUrl}"/>
-        </c:when>
-        <c:when test="${level eq 4}">
-          <wg:img src="${masterImgUrl}"/>
-        </c:when>
-        <c:otherwise>
-          <c:when test="${level eq 1}">
-            <wg:img src="${begginerImgUrl}"/>
-          </c:when>
-        </c:otherwise>
-      </c:choose>
-    </div>
-    <div class="course__title"><b>${name}</b></div>
-  </div>
-  <ul class="course__sections">
-    <c:forEach items="${fn:split(sections, ',')}" var="section">
-      <li class="course__section">
-        <div class="course__section-before-arrow"></div>
-        <div>${fn:trim(section)}</div>
-        <div class="course__section-after-arrow"></div>
-      </li>
-    </c:forEach>
-  </ul>
-  <div class="course__price">Цена: <span class="course__price-value">${price}</span></div>
+	<input type="radio" class="course__choose" name="course" value="${key}"/>
+	<div class="course__header">
+		<div class="course__icon">
+			<c:choose>
+				<c:when test="${level eq 1}">
+					<wg:img src="${begginerImgUrl}"/>
+				</c:when>
+				<c:when test="${level eq 2}">
+					<wg:img src="${specialistImgUrl}"/>
+				</c:when>
+				<c:when test="${level eq 3}">
+					<wg:img src="${professionalImgUrl}"/>
+				</c:when>
+				<c:when test="${level eq 4}">
+					<wg:img src="${masterImgUrl}"/>
+				</c:when>
+				<c:otherwise>
+					<c:when test="${level eq 1}">
+						<wg:img src="${begginerImgUrl}"/>
+					</c:when>
+				</c:otherwise>
+			</c:choose>
+		</div>
+		<div class="course__title"><b>${title}</b></div>
+	</div>
+	<ul class="course__sections">
+		<c:forEach items="${fn:split(sections, ',')}" var="section">
+			<li class="course__section">
+				<div class="course__section-before-arrow"></div>
+				<div>${fn:trim(section)}</div>
+				<div class="course__section-after-arrow"></div>
+			</li>
+		</c:forEach>
+	</ul>
+	<div class="course__price">Цена: <span class="course__price-value">${price}</span></div>
 </div>

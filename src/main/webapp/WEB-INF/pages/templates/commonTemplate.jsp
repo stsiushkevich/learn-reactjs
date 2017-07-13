@@ -2,25 +2,27 @@
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%@taglib prefix="u" tagdir="/WEB-INF/tags/util" %>
 
-<%-- ============================
-    HEADER
-=============================--%>
+<div class="main">
+	<%-- ============================
+			HEADER
+	=============================--%>
 
-<header class="header <tiles:insertAttribute name="headerClass"/>">
-	<tiles:insertAttribute name="header"/>
-</header>
+	<header class="header <tiles:insertAttribute name="headerClass"/>">
+		<tiles:insertAttribute name="header"/>
+	</header>
 
-<%-- ============================
-    MAIN CONTENT
-=============================--%>
+	<%-- ============================
+			MAIN CONTENT
+	=============================--%>
 
-<div class="content container main <tiles:insertAttribute name="contentClass"/>">
-	<tiles:insertAttribute name="content"/>
+	<div class="content container <tiles:insertAttribute name="contentClass"/>">
+		<tiles:insertAttribute name="content"/>
+	</div>
+
+	<%-- ============================
+			FOOTER
+	=============================--%>
+	<footer class="footer <tiles:insertAttribute name="footerClass"/>">
+		<tiles:insertAttribute name="footer"/>
+	</footer>
 </div>
-
-<%-- ============================
-    FOOTER
-=============================--%>
-<footer class="footer <tiles:insertAttribute name="footerClass"/>">
-	<tiles:insertAttribute name="footer"/>
-</footer>
