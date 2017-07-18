@@ -246,7 +246,7 @@
 
   <wg:p>Для <code>C1</code> и <code>C3</code> <code>shouldComponentUpdate</code>
     вернул <code>true</code>, поэтому React
-    пришлось спуститься к листьям и проверить их. Для <code>C6 <code>shouldComponentUpdate</code>
+    пришлось спуститься к листьям и проверить их. Для <code>C6</code> <code>shouldComponentUpdate</code>
     вернул <code>true</code>, и поскольку отображаемые элементы не были
     эквивалентны, React должен был обновить DOM.</wg:p>
 
@@ -294,7 +294,7 @@
 
   <wg:p>Проблема в том, что <code>PureComponent</code> выполнит простое сравнение старых и
     новых значений <code>this.props.users</code>. Поскольку этот код изменяет массив слов в
-    методе <code>onAddUser компонента <code>UserAdmin</code>, старые и новые значения <code>this.props.users</code>
+    методе <code>onAddUser</code> компонента <code>UserAdmin</code>, старые и новые значения <code>this.props.users</code>
     при сравнении будут одинаковы, даже если фактические пользователи в массиве
     изменились. Массив, а следовательно и ссылка на него остались теми же.
     Таким образом, <code>UserList</code> не будет обновляться, даже если он содержит новых

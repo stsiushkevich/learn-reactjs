@@ -41,10 +41,10 @@
 
 	<ce:code-example-4/>
 
-	<%--todo сделать ссылку на свой сайт--%>
+	<c:url var="syntheticEventUrl" value="/reference/synthetic-event"/>
 	<wg:p>Здесь <code>e</code> – это синтетическое событие. React определет эти синтетические события в
 		соответствии с W3C спецификацией. Поэтому вам нет необходимости волноваться о кроссбраузерной
-		совместимости. Посмотрите справочное руководство <wg:link href="https://facebook.github.io/react/docs/events.html">SyntheticEvent</wg:link> чтобы изучить больше.</wg:p>
+		совместимости. Посмотрите справочное руководство <wg:link href="${syntheticEventUrl}">SyntheticEvent</wg:link> чтобы изучить больше.</wg:p>
 
 	<wg:p>Когда используется React вам как правило нет необходимости вызывать <code>addEventListener</code>, чтобы
 		добавить слушателей в DOM элемент, после того как он был создан. Вместо этого, просто предоставьте слушатель,

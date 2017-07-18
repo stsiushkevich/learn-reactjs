@@ -16,8 +16,8 @@
   &lt;/ul&gt;
 
   &lt;ul&gt;
-    &lt;li&gt; Один &lt;/li&gt;
-    &lt;li&gt; Два &lt;/li&gt;
+    &lt;li&gt;Один&lt;/li&gt;
+    &lt;li&gt;Два&lt;/li&gt;
     &lt;li&gt;Три&lt;/li&gt;
   &lt;/ul&gt;</code>
   </pre>

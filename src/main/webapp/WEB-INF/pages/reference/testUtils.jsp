@@ -62,10 +62,10 @@
 		то, что возвращает его метод отрисовки, не беспокоясь о поведении дочерних компонентов,
 		которые не создаются или не отображаются. Это не требует DOM.</wg:p>
 
-	<%--todo LINK--%>
+	<c:url var="shallowRendererUrl" value="shallow-renderer"/>
 	<app:alert title="Замечание." type="warning">
 		Неглубокая отрисовка перемещена в <code>react-test-renderer/shallow</code>. Подробнее о поверхностной
-		отрисовке читайте <wg:link href="">на странице справки</wg:link> .
+		отрисовке читайте <wg:link href="${shallowRendererUrl}">на странице справки</wg:link> .
 	</app:alert>
 
 	<br/>

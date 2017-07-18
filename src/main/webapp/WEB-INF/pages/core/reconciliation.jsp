@@ -56,9 +56,9 @@
 
   <wg:p>Всякий раз, когда корневые элементы имеют разные типы, React будет
     уничтожать старое дерево и строить новое с нуля. Переходы
-    от <code>&lt;a&lg;</code> к <code>&lt;img&lg;</code>, или от
-    <code>&lt;Article&lg;</code> к <code>&lt;Comment&lg;</code>,
-    или от <code>&lt;Button&lg;</code> к <code>&lt;div&lg;</code> - любой из них
+    от <code>&lt;a&gt;</code> к <code>&lt;img&gt;</code>, или от
+    <code>&lt;Article&gt;</code> к <code>&lt;Comment&gt;</code>,
+    или от <code>&lt;Button&gt;</code> к <code>&lt;div&gt;</code> - любой из них
     приведет к полной перестройке дерева.</wg:p>
 
   <wg:p>При уничтожении дерева старые DOM-узлы удаляются. React вызывает
@@ -94,7 +94,7 @@
   <wg:p>После обработки DOM узла React всё рекурсивно повторяет на дочерних элементах.</wg:p>
 
   <br/>
-  <wg:head size="4"><b>3.8.2.3 Рекурсивный обход дочерних элементов</b></wg:head>
+  <wg:head size="4"><b><a class="anchor" name="recursing-on-children">3.8.2.3 Рекурсивный обход дочерних элементов</a></b></wg:head>
 
   <wg:p>По умолчанию при рекурсивном обходе дочерних DOM узлов React просто выполняет итерацию
     по обоим спискам потомков одновременно и формирует изменение всякий раз, когда обнаружено отличие.</wg:p>

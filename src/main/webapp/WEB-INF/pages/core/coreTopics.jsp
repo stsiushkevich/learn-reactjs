@@ -7,8 +7,8 @@
 <c:url var="reactUrl" value="jsx-in-depth"/>
 <c:url var="reactComponentUrl" value="typechecking-with-prop-types"/>
 <c:url var="reactDomUrl" value="refs-and-the-dom"/>
-<c:url var="reactDomServerUrl" value="uncontrolled-components"/>
-<c:url var="domElementsUrl" value="optimizing-performance"/>
+<c:url var="uncontrolledСomponentsUrl" value="uncontrolled-components"/>
+<c:url var="optimazingPerformanceUrl" value="optimizing-performance"/>
 <c:url var="reactWithoutES6Url" value="react-without-es6"/>
 <c:url var="syntheticEventUrl" value="react-without-jsx"/>
 <c:url var="testUtilitiesUrl" value="reconciliation"/>
@@ -31,10 +31,10 @@
 			<a class="topic-list__topic-nav-link" href=${reactDomUrl}><b>3.3	Ссылки ref и DOM</b></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${reactDomServerUrl}><b>3.4	Неконтролируемые компоненты</b></a>
+			<a class="topic-list__topic-nav-link" href=${uncontrolledСomponentsUrl}><b>3.4	Неконтролируемые компоненты</b></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${domElementsUrl}><b>3.5	Оптимизация производительности</b></a>
+			<a class="topic-list__topic-nav-link" href=${optimazingPerformanceUrl}><b>3.5	Оптимизация производительности</b></a>
 		</li>
 		<li class="topic-list__topic">
 			<a class="topic-list__topic-nav-link" href=${reactWithoutES6Url}><b>3.6	React без ES6</b></a>

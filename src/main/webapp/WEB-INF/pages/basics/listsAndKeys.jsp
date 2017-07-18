@@ -77,10 +77,10 @@
 
 	<ce:code-example-8/>
 
-	<%--todo сделать ссылку на свой сайт--%>
+	<c:url var="reconciliationUrl" value="/core/reconciliation"/>
 	<wg:p>Мы не рекомендуем использовать индексы для ключей, если элементы могут
 		переупорядочиваться, так как это будет медленным. Вы можете
-		прочитать <wg:link href="https://facebook.github.io/react/docs/reconciliation.html#recursing-on-children">более
+		прочитать <wg:link href="${reconciliationUrl}#recursing-on-children">более
 			глубокое объяснение</wg:link> о том, почему ключи необходимы, если вам интересно.</wg:p>
 
 	<br/>

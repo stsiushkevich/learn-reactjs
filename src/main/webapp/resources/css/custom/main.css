@@ -473,3 +473,13 @@ code {
     background-color: #61b961;
     border-color: #52a452;
 }
+
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor{
+    text-decoration: none;
+    color: inherit;
+}

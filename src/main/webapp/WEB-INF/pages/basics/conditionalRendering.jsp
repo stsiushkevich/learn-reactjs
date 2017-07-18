@@ -83,10 +83,10 @@
 
 	<ce:code-example-7/>
 
-	<%--todo прикрепить ссылку на свой сайт--%>
+	<c:url var="componentsAndPropsUrl" value="components-and-props"/>
 	<wg:p>Как и в JavaScript, выбор подходящего стиля, основанного на том, что вы и ваша команда видит
 		наиболее читабельным, остается за вами. Также помните, что как только условия становятся очень
-		сложными, возможно наступило отличное время <wg:link href="https://facebook.github.io/react/docs/components-and-props.html#extracting-components">выделить компонент</wg:link>.</wg:p>
+		сложными, возможно наступило отличное время <wg:link href="${componentsAndPropsUrl}#extracting-components">выделить компонент</wg:link>.</wg:p>
 
 	<br/>
 	<wg:head size="4"><b>2.8.4	Предотвращение отрисовки компонента</b></wg:head>

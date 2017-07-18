@@ -5,11 +5,15 @@
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="name" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
-<%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
+<%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-</code>
+  class Hello extends React.Component {
+    render() {
+      return &lt;h3&gt;Привет, {this.props.name}&lt;/h3&gt;;
+    }
+  }</code>
   </pre>
 </cd:code-example>

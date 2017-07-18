@@ -35,10 +35,10 @@
     </ul>
   </wg:p>
 
-  <%--todo LINK--%>
+  <c:url var="reactWithoutES6Url" value="/core/react-without-es6"/>
   <wg:p>Если вы не используете классы ES6, вы можете вместо этого использовать
     модуль <code>create-react-class</code>. Дополнительную информацию см. в разделе
-    <wg:link href="">Использование React без ES6</wg:link>.</wg:p>
+    <wg:link href="${reactWithoutES6Url}">Использование React без ES6</wg:link>.</wg:p>
 
   <br/>
   <wg:head size="5"><strong>4.1.1.1.2	Создание React элементов</strong></wg:head>
@@ -55,8 +55,8 @@
     </ul>
   </wg:p>
 
-  <%--todo LINK--%>
-  <wg:p>Дополнительную информацию см. в разделе <wg:link href="">React без JSX</wg:link>.</wg:p>
+	<c:url var="reactWithoutJsxUrl" value="/core/react-without-jsx"/>
+  <wg:p>Дополнительную информацию см. в разделе <wg:link href="${reactWithoutJsxUrl}">React без JSX</wg:link>.</wg:p>
 
   <br/>
   <wg:head size="5"><strong>4.1.1.1.3	Преобразование элементов</strong></wg:head>
@@ -124,10 +124,10 @@
       и мы рекомендуем вам либо использовать JSX, либо
       использовать <code>React.createElement()</code> напрямую.</wg:p>
 
-    <%--todo LINK--%>
+	  <c:url var="reactWithoutJsxUrl" value="/core/react-without-jsx"/>
     <wg:p>Код, написанный с помощью JSX, будет конвертирован в вызовы <code>React.createElement()</code>.
       Обычно вы не вызываете <code>React.createElement()</code>, если используете JSX.
-      См. <wg:link href="">React без JSX</wg:link>, чтобы узнать больше.</wg:p>
+      См. <wg:link href="${reactWithoutJsxUrl}">React без JSX</wg:link>, чтобы узнать больше.</wg:p>
   </rf:definition>
 
   <rf:definition title="cloneElement()">
@@ -163,9 +163,9 @@
     <wg:p>Этот помощник считается устаревшим. Вместо него рекомендуется использовать
       либо JSX, либо <code>React.createElement()</code>.</wg:p>
 
-    <%--todo LINK--%>
+	  <c:url var="reactWithoutJsxUrl" value="/core/react-without-jsx"/>
     <wg:p>Как правило, вы не вызываете <code>React.createFactory()</code>, если используете JSX.
-      См. <wg:link href="">React без JSX</wg:link> , чтобы узнать больше.</wg:p>
+      См. <wg:link href="${reactWithoutJsxUrl}">React без JSX</wg:link> , чтобы узнать больше.</wg:p>
   </rf:definition>
 
   <rf:definition title="isValidElement()">

@@ -25,9 +25,9 @@
 
 	<wg:p>
 		<ul>
-			<li>render()</li>
-			<li>unmountComponentAtNode()</li>
-			<li>findDOMNode()</li>
+			<li><code>render()</code></li>
+			<li><code>unmountComponentAtNode()</code></li>
+			<li><code>findDOMNode()</code></li>
 		</ul>
 	</wg:p>
 
@@ -36,7 +36,7 @@
 
 	<wg:p>React поддерживает все популярные браузеры, включая Internet Explorer 9 и выше.</wg:p>
 
-	<app:alert title="Замечание.">
+	<app:alert title="Замечание." type="warning">
 		Не поддерживаются старые браузеры, которые не поддерживают методы ES5, но ваши
 		приложения могут работать в старых браузерах, если на страницу включены полифилы,
 		такие как <b>es5-shim</b> и <b>es5-sham</b>. Вы сами по себе, если решите пойти по этому пути.
@@ -59,7 +59,7 @@
 			после отрисовки или обновления компонента.</wg:p>
 	</rf:definition>
 
-	<app:alert title="Замечание.">
+	<app:alert title="Замечание." type="warning">
 		<wg:p><code>ReactDOM.render()</code> управляет содержимым узла контейнера, который вы
 			передали. Любые существующие элементы DOM внутри заменяются при первом
 			вызове. В последующих вызовах используется эффективный React алгоритм
@@ -97,7 +97,7 @@
 		возвращает значение <code>null</code>.
 	</rf:definition>
 
-	<app:alert title="Замечание.">
+	<app:alert title="Замечание." type="warning">
 		<wg:p><code>findDOMNode</code> - это аварийный люк, используемый для доступа к основному узлу DOM.
 			В большинстве случаев его использование не рекомендуется, поскольку он нарушает
 			абстракцию компонента.</wg:p>

@@ -6,12 +6,12 @@
 <c:url var="reactUrl" value="jsx-in-depth"/>
 <c:url var="reactComponentUrl" value="typechecking-with-prop-types"/>
 <c:url var="reactDomUrl" value="refs-and-the-dom"/>
-<c:url var="reactDomServerUrl" value="uncontrolled-components"/>
-<c:url var="domElementsUrl" value="optimizing-performance"/>
+<c:url var="uncontrolledСomponentsUrl" value="uncontrolled-components"/>
+<c:url var="optimazingPerformanceUrl" value="optimizing-performance"/>
 <c:url var="reactWithoutES6Url" value="react-without-es6"/>
-<c:url var="syntheticEventUrl" value="react-without-jsx"/>
-<c:url var="testUtilitiesUrl" value="reconciliation"/>
-<c:url var="shallowRendererUrl" value="context"/>
+<c:url var="reactWithoutJsxUrl" value="react-without-jsx"/>
+<c:url var="reconciliationUrl" value="reconciliation"/>
+<c:url var="contextUrl" value="context"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
@@ -30,22 +30,22 @@
                 <a href=${reactDomUrl}>3.3 Ссылки ref и DOM</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_UNCONTROLLED_COMPONENTS' ? 'active' : null}">
-                <a href=${reactDomServerUrl}>3.4 Неконтролируемые компоненты</a>
+                <a href=${uncontrolledСomponentsUrl}>3.4 Неконтролируемые компоненты</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_OPTIMIZING_PERFORMANCE' ? 'active' : null}">
-                <a href=${domElementsUrl}>3.5 Оптимизация производительности</a>
+                <a href=${optimazingPerformanceUrl}>3.5 Оптимизация производительности</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_REACT_WITHOUT_ES6' ? 'active' : null}">
                 <a href=${reactWithoutES6Url}>3.6 React без ES6</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_REACT_WITHOUT_JSX' ? 'active' : null}">
-                <a href=${syntheticEventUrl}>3.7 React без JSX</a>
+                <a href=${reactWithoutJsxUrl}>3.7 React без JSX</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_RECONCILIATION' ? 'active' : null}">
-                <a href=${testUtilitiesUrl}>3.8 Согласование</a>
+                <a href=${reconciliationUrl}>3.8 Согласование</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_CONTEXT' ? 'active' : null}">
-                <a href=${shallowRendererUrl}>3.9 Контекст</a>
+                <a href=${contextUrl}>3.9 Контекст</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_WEB_COMPONENTS' ? 'active' : null}">
                 <a href=${webComponentsUrl}>3.10 Веб-компоненты</a>
