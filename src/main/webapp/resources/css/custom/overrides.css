@@ -50,3 +50,7 @@ h4{
     box-shadow: none;
     text-decoration: underline;
 }
+
+.alert-warning{
+    border-color: #b69e6b;
+}
