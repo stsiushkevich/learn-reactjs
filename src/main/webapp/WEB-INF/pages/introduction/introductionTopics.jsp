@@ -13,13 +13,13 @@
     <lt:layout cssClass="h3" style="font-weight: bold">1. Введение</lt:layout>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
-            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link">1.1 Введение в React JS</a>
+            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><b>1.1 Введение в React JS</b></a>
         </li>
         <li class="topic-list__topic">
-            <a href="${installationUrl}" class="topic-list__topic-nav-link">1.2 Установка</a>
+            <a href="${installationUrl}" class="topic-list__topic-nav-link"><b>1.2 Установка</b></a>
         </li>
         <li class="topic-list__topic">
-            <a href="${devToolsUrl}" class="topic-list__topic-nav-link">1.3 Инструменты разработчика</a>
+            <a href="${devToolsUrl}" class="topic-list__topic-nav-link"><b>1.3 Инструменты разработчика</b></a>
         </li>
     </ol>
 </lt:layout>

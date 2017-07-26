@@ -10,7 +10,8 @@
 <%@ attribute name="title" required="false" rtexprvalue="true" %>
 <%@ attribute name="type" required="false" rtexprvalue="true" %>
 
-<lt:layout id="${id}" name="${name}" cssClass="alert alert-${type}">
+<lt:layout id="${id}" name="${name}">
+    <br/>
     <wg:p>
         <wg:p><b>${title}</b></wg:p>
     </wg:p>

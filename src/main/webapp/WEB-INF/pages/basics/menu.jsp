@@ -20,41 +20,41 @@
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
-            <li class="menu-sidebar__nav-link">
-                <a href="${noteToJavaScriptUrl}">Примечание к JavaScript</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_NOTE_TO_JAVA_SCRIPT' ? 'active' : null}">
+                <a href="${noteToJavaScriptUrl}">2.1 Примечание к JavaScript</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href="${helloWorldExampleUrl}">Hello, World!</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_HELLO_WORLD_EXAMPLE' ? 'active' : null}">
+                <a href="${helloWorldExampleUrl}">2.2 Hello, World!</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${introductionToJsxUrl}>Знакомство с JSX</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_INTRODUCTION_TO_JSX' ? 'active' : null}">
+                <a href=${introductionToJsxUrl}>2.3 Знакомство с JSX</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${renderingElementsUrl}>Отрисовка элементов</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_RENDERING_ELEMENTS' ? 'active' : null}">
+                <a href=${renderingElementsUrl}>2.4 Отрисовка элементов</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${componentsAndPropsUrl}>Компоненты и свойства</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_COMPONENTS_AND_PROPS' ? 'active' : null}">
+                <a href=${componentsAndPropsUrl}>2.5 Компоненты и свойства</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${stateAndLifecycleUrl}>Состояние и жизненный цикл</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_STATE_AND_LIFECYCLE' ? 'active' : null}">
+                <a href=${stateAndLifecycleUrl}>2.6 Состояние и жизненный цикл</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${handlingEventsUrl}>Обработка событий</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_HANDLING_EVENTS' ? 'active' : null}">
+                <a href=${handlingEventsUrl}>2.7 Обработка событий</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${conditionalRenderingUrl}>Отрисовка по условию</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_CONDITIONAL_RENDERING' ? 'active' : null}">
+                <a href=${conditionalRenderingUrl}>2.8 Отрисовка по условию</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${listsAndKeysUrl}>Списки и ключи</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_LISTS_AND_KEYS' ? 'active' : null}">
+                <a href=${listsAndKeysUrl}>2.9 Списки и ключи</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${formsUrl}>Формы</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_FORMS' ? 'active' : null}">
+                <a href=${formsUrl}>2.10 Формы</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${liftingStateUpUrl}>Передача состояния компонента вверх по иерархии</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_LIFTING_STATE_UP' ? 'active' : null}">
+                <a href=${liftingStateUpUrl}>2.11 Передача состояния компонента вверх по иерархии</a>
             </li>
-            <li class="menu-sidebar__nav-link">
-                <a href=${compositionVsInheritanceUrl}>Композиция вместо наследования</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_COMPOSITION_VS_INHERITANCE' ? 'active' : null}">
+                <a href=${compositionVsInheritanceUrl}>2.12 Композиция вместо наследования</a>
             </li>
         </ul>
     </nav>

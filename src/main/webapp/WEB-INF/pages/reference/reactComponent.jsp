@@ -26,10 +26,10 @@
 
   <ce:code-example-1/>
 
-  <%--todo LINK--%>
+  <c:url var="reactWithoutES6Url" value="/core/react-without-es6"/>
   <wg:p>Если вы не используете ES6, вместо этого вы можете использовать
     модуль <code>create-react-class</code>. Взгляните на использование
-    <wg:link href="">React без ES6</wg:link>, чтобы узнать больше.</wg:p>
+    <wg:link href="${reactWithoutES6Url}">React без ES6</wg:link>, чтобы узнать больше.</wg:p>
 
   <br/>
   <wg:head size="5"><b>4.2.1.1 Жизненный цикл компонента</b></wg:head>
@@ -144,6 +144,7 @@
       свою работу в <code>componentDidMount()</code> или других методах жизненного цикла.
       Поддержание <code>render()</code> чистым делает компоненты более легкими для анализа. </wg:p>
 
+    <br/>
     <app:alert type="warning" title="Внимание!">
       <code>render()</code> не будет вызываться, если <code>shouldComponentUpdate()</code> возвращает <code>false</code>.
     </app:alert>
@@ -168,11 +169,11 @@
 
     <ce:code-example-4/>
 
-    <%--todo LINK--%>
+    <c:url var="liftingStateUpUrl" value="/basics/lifting-state-up"/>
     <wg:p>Будьте внимательны с этим паттерном, поскольку состояние не будет обновляться
       при обновлении какого-либо свойства. Вместо того, чтобы синхронизировать свойства с
       состоянием, вам лучше
-      <wg:link href="">поднять состояние вверх по иерархии</wg:link></wg:p>.
+      <wg:link href="${liftingStateUpUrl}">поднять состояние вверх по иерархии</wg:link></wg:p>.
 
     <wg:p>Если вы используете «разветвляемые» свойства, используя их для состояния,
       вы можете реализовать <code>componentWillReceiveProps(nextProps)</code>, чтобы сделать
@@ -264,7 +265,7 @@
       обновить состояние в ответ на изменение свойств, используйте вместо
       этого <code>componentWillReceiveProps()</code>.</wg:p>
 
-    <app:alert title="Замечание">
+    <app:alert title="Замечание" type="warning">
       <code>componentWillUpdate()</code> не будет вызываться, если <code>shouldComponentUpdate()</code> возвращает <code>false</code>.
     </app:alert>
   </rf:definition>
@@ -283,7 +284,7 @@
       сетевой запрос может не понадобиться, если свойства не изменились).
     </wg:p>
 
-    <app:alert title="Замечание">
+    <app:alert title="Замечание" type="warning">
       <code>componentDidUpdate()</code> не будет вызываться, если <code>shouldComponentUpdate()</code> возвращает <code>false</code>.
     </app:alert>
 
@@ -406,19 +407,19 @@
       оно останется <code>null</code>:</wg:p>
   </rf:definition>
 
-  <%--todo LINK--%>
+  <c:url var="reactUrl" value="/core/jsx-in-depth"/>
   <rf:definition title="displayName">
     Строка displayName используется для сообщений отладки.
-    JSX автоматически устанавливает это значение; см. <wg:link href="">JSX изнутри</wg:link> .
+    JSX автоматически устанавливает это значение; см. <wg:link href="${reactUrl}">JSX изнутри</wg:link> .
   </rf:definition>
 
   <br/>
   <wg:head size="4"><b>4.2.4 Свойства экземпляра</b></wg:head>
 
-  <%--todo LINK--%>
+  <c:url var="componentsAndPropsUrl" value="/basics/components-and-props"/>
   <rf:definition title="props">
     <wg:p><code>this.props</code> содержит свойства, которые были определены вызывающим компонентом данного компонента.
-      См. «<wg:link href="">Компоненты и свойства</wg:link>» для ознакомления со свойствами.</wg:p>
+      См. «<wg:link href="${componentsAndPropsUrl}">Компоненты и свойства</wg:link>» для ознакомления со свойствами.</wg:p>
 
     <wg:p>В частности, <code>this.props.children</code> - специальное свойство,
       обычно определяемое дочерними тегами в выражении JSX, а не на в самом теге.</wg:p>
@@ -431,8 +432,8 @@
     <wg:p>Если вы не используете что-то в <code>render()</code>, оно не должно находиться в состоянии. Например,
       вы можете поместить идентификаторы таймера непосредственно в экземпляр.</wg:p>
 
-    <%--todo LINK--%>
-    <wg:p>См. «<wg:link href="">Состояние и жизненный цикл</wg:link>» для получения дополнительной информации
+    <c:url var="stateAndLifecycleUrl" value="/basics/state-and-lifecycle"/>
+    <wg:p>См. «<wg:link href="${stateAndLifecycleUrl}">Состояние и жизненный цикл</wg:link>» для получения дополнительной информации
       о состоянии.</wg:p>
 
     <wg:p>Никогда не изменяйте <code>this.state</code> напрямую, так как вызов <code>setState()</code> впоследствии может заменить

@@ -123,9 +123,10 @@
 
 	<ce:code-example-12/>
 
-	<%--todo поставить ссылки на свой сайт--%>
-	<wg:p>Вы можете изучить больше об <wg:link href="https://facebook.github.io/react/docs/conditional-rendering.html">условной отрисовке</wg:link>
-		и <wg:link href="https://facebook.github.io/react/docs/lists-and-keys.html">циклах</wg:link> в соответствующих разделах.</wg:p>
+	<c:url var="conditionalRenderingUrl" value="/basics/conditional-rendering"/>
+	<c:url var="listsAndKeysUrl" value="/basics/lists-and-keys"/>
+	<wg:p>Вы можете изучить больше об <wg:link href="${conditionalRenderingUrl}">условной отрисовке</wg:link>
+		и <wg:link href="${listsAndKeysUrl}">циклах</wg:link> в соответствующих разделах.</wg:p>
 
 	<br/>
 	<wg:head size="5"><b>3.1.2.2 Строковые литералы</b></wg:head>

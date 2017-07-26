@@ -9,8 +9,8 @@
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
-    background-color: #dcdcdc;
-    color: #ca695b;
+    background-color: #222;
+    color: #00D2F5;
 }
 
 a {
@@ -19,7 +19,17 @@ a {
 
 a:focus,
 a:hover {
-    color: #ca695b;
+    color: #cc7a6f
+}
+
+.nav > li > a:focus::before,
+.nav > li > a:hover::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: 9px;
+    border: 6px solid transparent;
+    border-right: 6px solid #222;
 }
 
 .nav > li > a:focus,
@@ -29,4 +39,14 @@ a:hover {
 
 h4{
     font-size: 16px;
+}
+
+.footer-nav__link a:hover,
+.footer-nav__link a:focus{
+    color: #cc7a6f;
+}
+
+.footer-nav__link a:active{
+    box-shadow: none;
+    text-decoration: underline;
 }

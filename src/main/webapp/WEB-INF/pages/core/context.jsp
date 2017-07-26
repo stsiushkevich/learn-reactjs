@@ -64,7 +64,7 @@
     <code>AlertList</code> (поставщик контекста),
     React передает информацию вниз по дереву автоматически, и любой компонент в
     поддереве (в данном случае <code>CancelButton</code>) может получить к нему
-    доступ, указав <code>contextTypes.</wg:p>
+    доступ, указав <code>contextTypes</code>.</wg:p>
 
   <wg:p>Если <code>contextTypes</code> не определен, то context будет пустым объектом.</wg:p>
 
@@ -93,11 +93,11 @@
 
   <wg:p>
     <ul>
-      <li>constructor(props, context)</li>
-      <li>componentWillReceiveProps(nextProps, nextContext)</li>
-      <li>shouldComponentUpdate(nextProps, nextState, nextContext)</li>
-      <li>componentWillUpdate(nextProps, nextState, nextContext)</li>
-      <li>componentDidUpdate(prevProps, prevState, prevContext)</li>
+      <li><code>constructor(props, context)</code></li>
+      <li><code>componentWillReceiveProps(nextProps, nextContext)</code></li>
+      <li><code>shouldComponentUpdate(nextProps, nextState, nextContext)</code></li>
+      <li><code>componentWillUpdate(nextProps, nextState, nextContext)</code></li>
+      <li><code>componentDidUpdate(prevProps, prevState, prevContext)</code></li>
     </ul>
   </wg:p>
 

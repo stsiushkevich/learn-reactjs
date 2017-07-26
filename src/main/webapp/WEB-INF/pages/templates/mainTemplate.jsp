@@ -20,42 +20,21 @@
 
 	<title>Изучение React JS</title>
 
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-8338150978310358",
+			enable_page_level_ads: true
+		});
+	</script>
+
 	<u:resource type="link" root="/resources/css/plugins"
-	            names="bootstrap-theme.min.css, bootstrap.min.css, atelier-dune-light.min.css"/>
+	            names="bootstrap.min.css, atelier-dune-light.min.css"/>
 	<u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
-	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js"/>
+	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
 	<tiles:insertAttribute name="resources"/>
 </head>
-<body>
-<%-- ============================
-    HEADER
-=============================--%>
-
-<header class="header">
-	<tiles:insertAttribute name="header"/>
-</header>
-
-<%-- ============================
-    MAIN CONTENT
-=============================--%>
-
-<div class="container main">
-	<div class="row">
-		<div class="menu col-md-3">
-			<tiles:insertAttribute name="menu"/>
-		</div>
-		<div class="content col-md-9">
-			<tiles:insertAttribute name="body"/>
-		</div>
-	</div>
-</div>
-
-
-<%-- ============================
-    FOOTER
-=============================--%>
-<footer class="footer">
-	<tiles:insertAttribute name="footer"/>
-</footer>
+<body class="<tiles:insertAttribute name='bodyClass'/>">
+<tiles:insertAttribute name="body"/>
 </body>
 </html>

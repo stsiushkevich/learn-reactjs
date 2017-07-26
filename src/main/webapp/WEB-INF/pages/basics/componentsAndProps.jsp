@@ -119,7 +119,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>Извлечение компонентов</strong></wg:head>
+    <wg:head size="4"><b><a name="extracting-components" class="anchor">Извлечение компонентов</a></b></wg:head>
 
     <wg:p>Не бойтесь разделять компоненты на более маленькие компоненты.</wg:p>
 

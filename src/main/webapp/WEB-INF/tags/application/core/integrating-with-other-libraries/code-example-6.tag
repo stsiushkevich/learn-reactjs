@@ -10,6 +10,6 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  <cd:hl>{this.state.isDialogShowed ? &lt;Dialog title="Диалог"&gt;Привет, Мир!&lt;/Dialog&gt; : null}</cd:hl>
+  <cd:hl>{this.state.isDialogShowed ? &lt;Dialog title="Диалог"&gt;Привет, Мир!&lt;/Dialog&gt; : null}</cd:hl></code>
   </pre>
 </cd:code-example>

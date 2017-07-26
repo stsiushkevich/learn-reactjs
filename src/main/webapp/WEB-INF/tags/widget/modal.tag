@@ -6,10 +6,8 @@
 <%@ attribute name="style" required="false" rtexprvalue="true" type="java.lang.String" %>
 <%@ attribute name="isConfirm" required="false" rtexprvalue="true" type="java.lang.Boolean" %>
 
-<div id="${id}" style="${style}" class="modal fade ${cssClass}">
-    <iframe class="ie-fix" src="about:blank"></iframe>
-
-    <div class="modal-dialog">
+<div id="${id}" style="${style}" tabindex="-1" class="modal fade" role="dialog">
+    <div class="modal-dialog ${cssClass}" role="document">
         <div class="modal-content ${isConfirm eq true ? 'confirm-dialog-content' : ''}">
             <jsp:doBody/>
         </div>

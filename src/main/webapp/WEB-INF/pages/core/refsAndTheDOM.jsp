@@ -157,9 +157,9 @@
   <wg:p>Здесь, коллбэк атрибута <code>ref</code> сперва указывается компонентом <code>Grandparent</code>.
     Он передается <code>Parent</code> как обычное свойство с именем <code>textFieldRef</code>, а <code>Parent</code>
     передает его в <code>TextField</code> - тоже как свойство. В итоге, <code>TextField</code> считывает
-    свойство <code>textFieldRef</code> и присваивает переданный коллбэк атрибуту <code>ref</code> тега <input>.
+    свойство <code>textFieldRef</code> и присваивает переданный коллбэк атрибуту <code>ref</code> тега <code>&lt;input&gt;</code>.
     Как результат, поле <code>this.textField</code> в компоненте <code>Grandparent</code> будет установлено в
-    DOM узел соответствующего <input> элемента в <code>TextField</code>.</wg:p>
+    DOM узел соответствующего <code>&lt;input&gt;</code> элемента в <code>TextField</code>.</wg:p>
 
   <wg:p>Учитывая все обстоятельства, мы рекомендуем избегать общедоступности DOM
     узлов насколько это возможно, но иногда это может оказаться полезным аварийным
