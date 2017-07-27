@@ -21,6 +21,14 @@
 
 	<title>Изучение React JS</title>
 
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-8338150978310358",
+			enable_page_level_ads: true
+		});
+	</script>
+
 	<u:resource type="link" root="/resources/css/plugins"
 	            names="bootstrap.min.css, atelier-dune-light.min.css"/>
 	<u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
