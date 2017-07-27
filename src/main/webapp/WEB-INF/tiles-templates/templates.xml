@@ -54,7 +54,8 @@
         <put-attribute name="resources" value="/WEB-INF/pages/purchase/resources.jsp" cascade="true"/>
     </definition>
 
-    <definition name="verificationView" template="/WEB-INF/pages/templates/verificationTemplate.jsp"/>
+    <definition name="yandexVerificationView" template="/WEB-INF/pages/verification/yandexVerificationTemplate.jsp"/>
+    <definition name="googleVerificationView" template="/WEB-INF/pages/verification/googleVerificationTemplate.jsp"/>
 
     <definition name="menuTemplate" template="/WEB-INF/pages/templates/mainTemplate.jsp">
         <put-attribute name="body" value="/WEB-INF/pages/templates/menuTemplate.jsp" cascade="true"/>

@@ -53,7 +53,12 @@ public class MainController {
     }
 
     @GetMapping("yandex_14e7853c65dd22f0.html")
-    public String verification(Map<String, Object> model) {
-        return "verificationView";
+    public String yandexVerification(Map<String, Object> model) {
+        return "yandexVerificationView";
+    }
+
+    @GetMapping("googledd6982cc90861a33.html")
+    public String googleVerification(Map<String, Object> model) {
+        return "googleVerificationView";
     }
 }
