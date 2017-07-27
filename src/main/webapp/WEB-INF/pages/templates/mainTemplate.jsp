@@ -7,6 +7,7 @@
 <html class="html">
 <head xmlns:tiles="http://tiles.apache.org/tags-tiles">
 	<meta charset="UTF-8">
+	<meta name="yandex-verification" content="14e7853c65dd22f0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Изучение React JS">
