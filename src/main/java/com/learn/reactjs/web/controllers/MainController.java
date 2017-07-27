@@ -61,4 +61,9 @@ public class MainController {
     public String googleVerification(Map<String, Object> model) {
         return "googleVerificationView";
     }
+
+    @GetMapping("sitemap.xml")
+    public String sitemap(Map<String, Object> model) {
+        return "sitemapView";
+    }
 }

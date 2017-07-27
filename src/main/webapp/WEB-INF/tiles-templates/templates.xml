@@ -56,6 +56,7 @@
 
     <definition name="yandexVerificationView" template="/WEB-INF/pages/verification/yandexVerificationTemplate.jsp"/>
     <definition name="googleVerificationView" template="/WEB-INF/pages/verification/googleVerificationTemplate.jsp"/>
+    <definition name="sitemapView" template="/resources/sitemap.xml"/>
 
     <definition name="menuTemplate" template="/WEB-INF/pages/templates/mainTemplate.jsp">
         <put-attribute name="body" value="/WEB-INF/pages/templates/menuTemplate.jsp" cascade="true"/>
