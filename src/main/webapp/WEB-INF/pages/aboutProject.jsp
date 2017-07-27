@@ -11,7 +11,7 @@
 	<br/>
 
 	<wg:p cssClass="">
-		<b>learn.react-js.ru</b> был запущен в 2017 году. Он является переводом <wg:link href="https://facebook.github.io/react/">официальной докумментации</wg:link>,
+		<b>www.learn-reactjs.ru</b> был запущен в 2017 году. Он является переводом <wg:link href="https://facebook.github.io/react/">официальной докумментации</wg:link>,
 		поэтому очень похож на неё по структуре материала.
 	</wg:p>
 
