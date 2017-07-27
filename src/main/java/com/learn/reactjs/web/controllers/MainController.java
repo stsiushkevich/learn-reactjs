@@ -51,4 +51,9 @@ public class MainController {
         model.put("masterPrice", MASTER_PRICE);
         return "purchaseView";
     }
+
+    @GetMapping("yandex_14e7853c65dd22f0.html")
+    public String verification(Map<String, Object> model) {
+        return "verificationView";
+    }
 }

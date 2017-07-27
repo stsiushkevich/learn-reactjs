@@ -12,22 +12,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Изучение React JS">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://learn.react-js.ru">
-	<meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
+	<meta property="og:url" content="https://www.learn-reactjs.ru">
+	<meta property="og:image" content="<c:url value="/resources/imges/logo.ico"/>">
 	<meta property="og:description" content="Информационный сайт, посвященный изучению React JS">
 	<meta property="fb:app_id" content="623268441017527">
 
 	<link rel="shortcut icon" href="<c:url value="/resources/imges/logo.ico"/>">
 
 	<title>Изучение React JS</title>
-
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-			google_ad_client: "ca-pub-8338150978310358",
-			enable_page_level_ads: true
-		});
-	</script>
 
 	<u:resource type="link" root="/resources/css/plugins"
 	            names="bootstrap.min.css, atelier-dune-light.min.css"/>
