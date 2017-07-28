@@ -20,7 +20,7 @@
 
     <lt:layout cssClass="tutorial__sections">
         <lt:layout cssClass="row">
-            <lt:layout cssClass="col-md-6 text-right">
+            <lt:layout cssClass="col-xs-6 col-md-6 text-right">
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${introductionUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${introductionImgUrl}"/>
@@ -28,7 +28,7 @@
                     </wg:link>
                 </lt:layout>
             </lt:layout>
-            <lt:layout cssClass="col-md-6 text-left">
+            <lt:layout cssClass="col-xs-6 col-md-6 text-left">
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${basicsUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${basicsImgUrl}"/>
@@ -38,7 +38,7 @@
             </lt:layout>
         </lt:layout>
         <lt:layout cssClass="row">
-            <lt:layout cssClass="col-md-6 text-right">
+            <lt:layout cssClass="col-xs-6 col-md-6 text-right">
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${coreUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${coreImgUrl}"/>
@@ -46,7 +46,7 @@
                     </wg:link>
                 </lt:layout>
             </lt:layout>
-            <lt:layout cssClass="col-md-6 text-left">
+            <lt:layout cssClass="col-xs-6 col-md-6 text-left">
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${referenceUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${referenceImgUrl}"/>

@@ -18,9 +18,8 @@ body {
 
 .footer {
     align-items: center;
-    height: 70px;
     margin-top: 30px;
-    padding: 15px 0 47px;
+    padding: 15px 0 15px;
     color: #9d9d9d;
     background: #eaeaea;
     border-top: 2px solid #d0d0d0;
@@ -156,7 +155,6 @@ code {
 
 .footer-nav,
 .header-nav {
-    display: inline-block;
     list-style-type: none;
     margin: 0;
 }
@@ -206,10 +204,6 @@ code {
     height: 40px;
 }
 
-.footer-nav__link {
-    display: inline-block;
-}
-
 .header-nav__link.active a {
     background-color: #404040;
     border-bottom: 3px solid;
@@ -232,7 +226,6 @@ code {
     background-color: #7fedff;
     border-radius: 10px;
     display: inline-block;
-    padding: 30px;
     border: 7px solid #fff;
     position: relative;
 }
@@ -478,4 +471,38 @@ h5 .anchor,
 h6 .anchor{
     text-decoration: none;
     color: inherit;
+}
+
+@media (min-width: 768px) {
+    .tutorial__section-link{
+        padding: 30px;
+    }
+
+    .footer-nav__link{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px){
+    .tutorial__section-link{
+        padding: 10px 20px 30px;
+        font-size: 13px;
+    }
+
+    .tutorial__section-link img{
+        width: 70px;
+    }
+}
+
+@media (max-width: 992px){
+    body{
+        margin-bottom: 170px;
+    }
+}
+
+
+@media (min-width: 992px){
+    body{
+        margin-bottom: 100px;
+    }
 }
