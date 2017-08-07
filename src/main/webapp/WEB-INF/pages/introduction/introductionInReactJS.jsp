@@ -9,7 +9,7 @@
 <c:url var="example2" value="/resources/imges/pages/introduction/introduction-in-react/example_2.PNG"/>
 
 <lt:layout cssClass="page introduction-in-reactjs-page">
-    <wg:head size="3"><strong>Что такое React?</strong></wg:head>
+    <wg:head size="3"><b>1.1 Что такое React?</b></wg:head>
     <wg:p>
         <strong>React</strong> это декларативная, эффективная и гибкая библиотека для построения пользовательских интерфейсов.
         <strong>React</strong> имеет несколько различных типов компонентов.  Рассмотрим класс <strong>React.Component</strong>.

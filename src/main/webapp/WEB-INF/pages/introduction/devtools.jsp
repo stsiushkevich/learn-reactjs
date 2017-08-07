@@ -9,11 +9,11 @@
 <c:url var="reactExtUrl" value="/resources/imges/pages/introduction/devtools/react_ext.PNG"/>
 
 <lt:layout cssClass="page instalation-page">
-    <wg:head size="3"><strong>Инструменты разработчика</strong></wg:head>
-
+    <wg:head size="3"><b>1.3 Инструменты разработчика</b></wg:head>
 
     <br/>
-    <wg:head size="4"><strong>Отладка в браузере Chrome</strong></wg:head>
+    <wg:head size="4"><b>1.3.1 Отладка в браузере Chrome</b></wg:head>
+
     <wg:p>Для браузеров Chrome и Firefox имеются расширения, которые позволяют следить за деревом React
         компонентов в меню инструментов разработчика браузера.</wg:p>
     <wg:p cssClass="text-center"><wg:img src="${devtoolsUrl}"/></wg:p>

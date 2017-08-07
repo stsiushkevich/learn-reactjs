@@ -6,7 +6,7 @@
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/basics/introduction-to-jsx" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-    <wg:head size="3"><strong>Знакомство с JSX</strong></wg:head>
+    <wg:head size="3"><b>2.3 Знакомство с JSX</b></wg:head>
 
     <wg:p>Рассмотрим следующее объявление:</wg:p>
 
@@ -26,7 +26,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>Встраиваемые выражения в JSX</strong></wg:head>
+    <wg:head size="4"><b>2.3.1 Встраиваемые выражения в JSX</b></wg:head>
 
     <wg:p>Вы можете встроить любое JavaScript выражение в JSX, оборачивая его в фигурные скобки.</wg:p>
 
@@ -44,7 +44,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>JSX сам является выражением</strong></wg:head>
+    <wg:head size="4"><b>2.3.2 JSX сам является выражением</b></wg:head>
 
     <wg:p><strong>После компиляции JSX выражения становятся регулярными JavaScript-объектами.</strong></wg:p>
 
@@ -59,7 +59,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>Указание атрибутов с помощью JSX</strong></wg:head>
+    <wg:head size="4"><b>2.3.3 Указание атрибутов с помощью JSX</b></wg:head>
 
     <wg:p>Мы можем использовать двойные кавычки для указания строковых литералов как атрибутов:</wg:p>
 
@@ -82,7 +82,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>Указание потомков с помощью JSX</strong></wg:head>
+    <wg:head size="4"><b>2.3.4 Указание потомков с помощью JSX</b></wg:head>
 
     <wg:p>Если тэг пустой, можно сразу же закрыть его с помощью <code>/&gt;</code> как в XML:</wg:p>
 
@@ -108,7 +108,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>JSX предотвращает атаки иньекцией</strong></wg:head>
+    <wg:head size="4"><b>2.3.5 JSX предотвращает атаки иньекцией</b></wg:head>
 
     <wg:p>Встраивание пользовательского ввода в JSX является безопасным:</wg:p>
 
@@ -124,7 +124,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>JSX представляет собой JavaScript-объекты</strong></wg:head>
+    <wg:head size="4"><b>2.3.6 JSX представляет собой JavaScript-объекты</b></wg:head>
 
     <wg:p>Babel компилирует JSX в вызовы <code>React.createElement()</code>.</wg:p>
 

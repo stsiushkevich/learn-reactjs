@@ -6,11 +6,10 @@
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/installation" %>
 
 <lt:layout cssClass="page instalation-page">
-    <wg:head size="3"><strong>Установка</strong></wg:head>
-
+    <wg:head size="3"><b>1.2 Установка</b></wg:head>
 
     <br/>
-    <wg:head size="4"><strong>Попробовать React</strong></wg:head>
+    <wg:head size="4"><b>1.2.1 Попробовать React</b></wg:head>
     <wg:p>
         Если вы просто хотите побаловаться с <strong>React</strong>, можно использовать
         <wg:link href="https://jsfiddle.net"><strong>JSFiddle</strong>.</wg:link> Попробуйте начать с традиционного
@@ -24,7 +23,7 @@
 
 
     <br/>
-    <wg:head size="4"><strong>Создание приложения на React</strong></wg:head>
+    <wg:head size="4"><b>1.2.2 Создание приложения на React</b></wg:head>
     <wg:p>
         На гитхабе есть пример создания React приложения. Это лучший путь для начала построения нового
         одностраничного React приложения. Использование этого примера позволит настроить вашу среду разработки,
@@ -57,7 +56,8 @@
 
 
     <br/>
-    <wg:head size="4"><strong>Добавление React в существующее приложение</strong></wg:head>
+    <wg:head size="4"><b>1.2.3 Добавление React в существующее приложение</b></wg:head>
+
     <wg:p>Нет необходимости переписывать существующее приложение, чтобы начать использовать React. Вместо этого можно добавить React в
         маленькую часть существующего приложения, например в какой-нибудь виджет. Таким образом, можно наблюдать за правильностью его работы.</wg:p>
     <wg:p>React рекомендуется использовать вместе с инфраструктурой сборки проекта для повышения продуктивности разработки. Типичная
@@ -89,7 +89,8 @@
 
 
     <br/>
-    <wg:head size="5"><strong>Установка React</strong></wg:head>
+    <wg:head size="5"><b>1.2.3.1 Установка React</b></wg:head>
+
     <lt:layout cssClass="alert alert-danger">
         <strong>Внимание!</strong> Установив React, рекомендуется выставить
         <strong>production</strong> режим построения проекта. Это гарантирует использование
@@ -117,7 +118,8 @@
 
 
     <br/>
-    <wg:head size="5"><strong>Возможность использования ES6 и JSX</strong></wg:head>
+    <wg:head size="5"><b>1.2.3.2 Возможность использования ES6 и JSX</b></wg:head>
+
     <wg:p>Чтобы иметь возможность использовать в JS коде JSX и ES6, рекомендуется использовать
         <strong>Babel</strong>. ES6 содержит в себе множество современных JavaScript возможностей,
         которые упрощают разработку. В свою очередь JSX – это расширение языка JavaScript, которое
@@ -129,7 +131,8 @@
 
 
     <br/>
-    <wg:head size="5"><strong>Hello World с ES6 и JSX</strong></wg:head>
+    <wg:head size="5"><b>1.2.3.3 Hello World с ES6 и JSX</b></wg:head>
+
     <wg:p>Наименьший пример кода на Ract JS выглядит примерно так:</wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
@@ -144,7 +147,8 @@
 
 
     <br/>
-    <wg:head size="5"><strong>Development и Production версии проекта</strong></wg:head>
+    <wg:head size="5"><b>1.2.3.4 Development и Production версии проекта</b></wg:head>
+
     <wg:p>По умолчанию React содержит много полезных предупреждений, которые очень помогают в разработке.</wg:p>
     <wg:p>Тем не менее, они делают <strong>development</strong>-версию React-проекта больше и медленнее.
         Поэтому для развертывания приложения на сервере следует использовать <strong>production</strong>-версию проекта.</wg:p>
@@ -163,7 +167,8 @@
 
 
     <br/>
-    <wg:head size="5"><strong>Использование CDN</strong></wg:head>
+    <wg:head size="5"><b>1.2.3.5 Использование CDN</b></wg:head>
+
     <wg:p>Если вы не хотите использовать npm для управления пакетами клиента, то <code>react</code> и
         <code>react-dom</code> npm пакеты также предоставляют единые файлы-дистрибутивы в
         папках <code>dist</code>, которые размещены на CDN:</wg:p>
