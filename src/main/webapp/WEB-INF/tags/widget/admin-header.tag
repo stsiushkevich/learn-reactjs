@@ -1,4 +1,4 @@
-<%@ tag pageEncoding="UTF-8" %>
+<%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@ include file="../baseAttr.tag" %>
 
 <c:url var="logoImgUrl" value="/resources/images/cloud-logo.png" />

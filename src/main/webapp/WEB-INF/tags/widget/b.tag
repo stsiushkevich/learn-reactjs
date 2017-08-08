@@ -1,4 +1,4 @@
-<%@ tag pageEncoding="UTF-8" %>
+<%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@ include file="../baseAttr.tag" %>
 
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
