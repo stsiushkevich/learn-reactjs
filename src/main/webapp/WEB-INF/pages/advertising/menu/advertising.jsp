@@ -6,7 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/forms" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
-<lt:layout>
+<lt:layout cssClass="menu-advertising">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- advertising_2 -->
     <ins class="adsbygoogle"

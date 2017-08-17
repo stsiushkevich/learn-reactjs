@@ -68,9 +68,9 @@ body {
 }
 
 .menu-sidebar__nav {
-    border-right: 2px solid rgba(213, 210, 208, 0.73);
-    border-left: 2px solid rgba(213, 210, 208, 0.73);
-    border-bottom: 2px solid rgba(213, 210, 208, 0.73);
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .menu-sidebar__nav-links {
@@ -510,13 +510,14 @@ h6 .anchor{
     }
 }
 
-.menu-adverse{
+.menu-advertising{
     margin-top: 5px;
-    padding-top: 10px;
-    border: 2px solid rgba(213, 210, 208, 0.73);
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
-.bottom-content-adverse{
+.bottom-content-advertising{
     text-align: center;
     margin-top: 5px;
     padding-top: 10px;
