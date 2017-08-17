@@ -509,3 +509,16 @@ h6 .anchor{
         margin-bottom: 100px;
     }
 }
+
+.menu-adverse{
+    margin-top: 5px;
+    padding-top: 10px;
+    border: 2px solid rgba(213, 210, 208, 0.73);
+}
+
+.bottom-content-adverse{
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+}

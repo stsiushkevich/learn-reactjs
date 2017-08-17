@@ -6,8 +6,8 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/forms" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
-<lt:layout cssClass="text-center">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<lt:layout cssClass="bottom-content-adverse">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- advertising_1 -->
     <ins class="adsbygoogle"
          style="display:inline-block;width:728px;height:90px"
