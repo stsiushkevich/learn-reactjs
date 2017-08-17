@@ -19,9 +19,12 @@
 		<div class="row">
 			<div class="menu col-md-3 <tiles:insertAttribute name="menuClass"/>">
 				<tiles:insertAttribute name="menu"/>
+				<tiles:insertAttribute name="menuAdvertising"/>
 			</div>
 			<div class="content col-md-8 <tiles:insertAttribute name="contentClass"/>">
+				<tiles:insertAttribute name="topContentAdvertising"/>
 				<tiles:insertAttribute name="content"/>
+				<tiles:insertAttribute name="bottomContentAdvertising"/>
 			</div>
 		</div>
 	</div>
