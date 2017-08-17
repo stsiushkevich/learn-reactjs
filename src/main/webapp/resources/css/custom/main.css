@@ -1,4 +1,4 @@
-html{
+html {
     position: relative;
     min-height: 100%;
 }
@@ -12,7 +12,7 @@ body {
 
 }
 
-.main{
+.main {
     height: 100%;
 }
 
@@ -308,7 +308,7 @@ code {
     color: #5f5f5f;
 }
 
-.purchase-page h2{
+.purchase-page h2 {
     color: white;
 }
 
@@ -352,7 +352,7 @@ code {
     border-right: 10px solid #ff8787;
 }
 
-.course__section-after-arrow{
+.course__section-after-arrow {
     position: absolute;
     right: -26px;
     bottom: 0px;
@@ -412,39 +412,39 @@ code {
 
 }
 
-.panel-heading h4 a{
+.panel-heading h4 a {
     color: white;
     font-size: 18px;
     font-weight: bold;
 }
 
-.panel-beginner .panel-heading{
+.panel-beginner .panel-heading {
     background-color: #98d184;
 }
 
-.panel-specialist .panel-heading{
+.panel-specialist .panel-heading {
     background-color: #93b6ef;
 }
 
-.panel-professional .panel-heading{
+.panel-professional .panel-heading {
     background-color: #dfb67a;
 }
 
-.panel-master .panel-heading{
+.panel-master .panel-heading {
     background-color: #c19aca;
 }
 
-.levels{
+.levels {
     padding: 10px;
     background-color: #f1f1f1;
     border-radius: 10px;
 }
 
-.levels .panel-body{
+.levels .panel-body {
     background-color: #f1f1f1;
 }
 
-.course__choose{
+.course__choose {
     position: absolute;
     right: 10px;
     top: 8px;
@@ -452,13 +452,13 @@ code {
     height: 20px;
 }
 
-.choose-course-form .btn-success{
+.choose-course-form .btn-success {
     background-color: #6dc86d;
     border-color: #59b259;
 }
 
 .choose-course-form .btn-success:hover,
-.choose-course-form .btn-success:focus{
+.choose-course-form .btn-success:focus {
     background-color: #61b961;
     border-color: #52a452;
 }
@@ -468,56 +468,56 @@ h2 .anchor,
 h3 .anchor,
 h4 .anchor,
 h5 .anchor,
-h6 .anchor{
+h6 .anchor {
     text-decoration: none;
     color: inherit;
 }
 
 @media (min-width: 768px) {
-    .tutorial__section-link{
+    .tutorial__section-link {
         padding: 30px;
     }
 
-    .footer-nav__link{
+    .footer-nav__link {
         display: inline-block;
     }
 }
 
-@media (max-width: 768px){
-    .tutorial__section-link{
+@media (max-width: 768px) {
+    .tutorial__section-link {
         padding: 10px 20px 30px;
         font-size: 13px;
     }
 
-    .tutorial__section-link img{
+    .tutorial__section-link img {
         width: 70px;
     }
 }
 
-@media (max-width: 992px){
-    body{
+@media (max-width: 992px) {
+    body {
         margin-bottom: 170px;
     }
-    .logo-section{
+
+    .logo-section {
         text-align: center;
     }
 }
 
-
-@media (min-width: 992px){
-    body{
+@media (min-width: 992px) {
+    body {
         margin-bottom: 100px;
     }
 }
 
-.menu-advertising{
+.menu-advertising {
     margin-top: 5px;
     text-align: center;
     padding: 10px;
     border: 1px solid #ccc;
 }
 
-.bottom-content-advertising{
+.bottom-content-advertising {
     text-align: center;
     margin-top: 5px;
     padding-top: 10px;
