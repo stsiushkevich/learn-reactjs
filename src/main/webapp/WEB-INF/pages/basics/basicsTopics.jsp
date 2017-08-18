@@ -19,43 +19,43 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-    <lt:layout cssClass="h3" style="font-weight: bold">2. Основы React JS</lt:layout>
+    <h1>2. Основы React JS</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
-            <a href="${noteToJavaScriptUrl}" class="topic-list__topic-nav-link"><b>2.1 Примечание к JavaScript</b></a>
+            <a href="${noteToJavaScriptUrl}" class="topic-list__topic-nav-link"><h4>2.1 Примечание к JavaScript</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href="${helloWorldExampleUrl}" class="topic-list__topic-nav-link"><b>2.2 Hello, World!</b></a>
+            <a href="${helloWorldExampleUrl}" class="topic-list__topic-nav-link"><h4>2.2 Hello, World!</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${introductionToJsxUrl} class="topic-list__topic-nav-link"><b>2.3 Знакомство с JSX</b></a>
+            <a href=${introductionToJsxUrl} class="topic-list__topic-nav-link"><h4>2.3 Знакомство с JSX</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${renderingElementsUrl} class="topic-list__topic-nav-link"><b>2.4 Отрисовка элементов</b></a>
+            <a href=${renderingElementsUrl} class="topic-list__topic-nav-link"><h4>2.4 Отрисовка элементов</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${componentsAndPropsUrl} class="topic-list__topic-nav-link"><b>2.5 Компоненты и свойства</b></a>
+            <a href=${componentsAndPropsUrl} class="topic-list__topic-nav-link"><h4>2.5 Компоненты и свойства</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${stateAndLifecycleUrl} class="topic-list__topic-nav-link"><b>2.6 Состояние и жизненный цикл</b></a>
+            <a href=${stateAndLifecycleUrl} class="topic-list__topic-nav-link"><h4>2.6 Состояние и жизненный цикл</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${handlingEventsUrl} class="topic-list__topic-nav-link"><b>2.7 Обработка событий</b></a>
+            <a href=${handlingEventsUrl} class="topic-list__topic-nav-link"><h4>2.7 Обработка событий</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${conditionalRenderingUrl} class="topic-list__topic-nav-link"><b>2.8 Отрисовка по условию</b></a>
+            <a href=${conditionalRenderingUrl} class="topic-list__topic-nav-link"><h4>2.8 Отрисовка по условию</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${listsAndKeysUrl} class="topic-list__topic-nav-link"><b>2.9 Списки и ключи</b></a>
+            <a href=${listsAndKeysUrl} class="topic-list__topic-nav-link"><h4>2.9 Списки и ключи</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${formsUrl} class="topic-list__topic-nav-link"><b>2.10 Формы</b></a>
+            <a href=${formsUrl} class="topic-list__topic-nav-link"><h4>2.10 Формы</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${liftingStateUpUrl} class="topic-list__topic-nav-link"><b>2.11 Передача состояния компонента вверх по иерархии</b></a>
+            <a href=${liftingStateUpUrl} class="topic-list__topic-nav-link"><h4>2.11 Передача состояния компонента вверх по иерархии</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${compositionVsInheritanceUrl} class="topic-list__topic-nav-link"><b>2.12 Композиция вместо наследования</b></a>
+            <a href=${compositionVsInheritanceUrl} class="topic-list__topic-nav-link"><h4>2.12 Композиция вместо наследования</h4></a>
         </li>
     </ol>
 </lt:layout>

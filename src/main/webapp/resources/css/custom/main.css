@@ -100,10 +100,15 @@ body {
 }
 
 .topic-list__topic-nav-link {
+    font-size: 16px;
     color: rgba(0, 158, 184, 1);
     position: relative;
     display: block;
-    padding: 5px 10px;
+    padding: 8px 10px;
+}
+
+.topic-list__topic-nav-link h4{
+    margin: 0;
 }
 
 .topic-list__topic-nav-link:focus,
@@ -522,4 +527,19 @@ h6 .anchor {
     margin-top: 5px;
     padding-top: 10px;
     border: 1px solid #ccc;
+}
+
+.page .h1,
+.page h1,
+.page .h2,
+.page h2,
+.page .h3,
+.page h3,
+.page .h4,
+.page h4,
+.page .h5,
+.page h5,
+.page .h6,
+.page h6{
+    font-weight: bold;
 }

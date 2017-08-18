@@ -25,6 +25,7 @@
 				<tiles:insertAttribute name="topContentAdvertising"/>
 				<tiles:insertAttribute name="content"/>
 				<tiles:insertAttribute name="bottomContentAdvertising"/>
+				<tiles:insertAttribute name="discuss"/>
 			</div>
 		</div>
 	</div>

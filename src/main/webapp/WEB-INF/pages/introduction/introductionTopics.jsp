@@ -10,16 +10,16 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-    <lt:layout cssClass="h3" style="font-weight: bold">1. Введение</lt:layout>
+    <h1>1. Введение</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
-            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><b>1.1 Введение в React JS</b></a>
+            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><h4>1.1 Введение в React JS</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href="${installationUrl}" class="topic-list__topic-nav-link"><b>1.2 Установка</b></a>
+            <a href="${installationUrl}" class="topic-list__topic-nav-link"><h4>1.2 Установка</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href="${devToolsUrl}" class="topic-list__topic-nav-link"><b>1.3 Инструменты разработчика</b></a>
+            <a href="${devToolsUrl}" class="topic-list__topic-nav-link"><h4>1.3 Инструменты разработчика</h4></a>
         </li>
     </ol>
 </lt:layout>
