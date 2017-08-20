@@ -10,16 +10,13 @@
 	<meta name="yandex-verification" content="14e7853c65dd22f0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Изучение React JS">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.learn-reactjs.ru">
 	<meta property="og:image" content="<c:url value="/resources/imges/logo.ico"/>">
-	<meta property="og:description" content="Информационный сайт, посвященный изучению React JS">
 	<meta property="fb:app_id" content="623268441017527">
 
 	<link rel="shortcut icon" href="<c:url value="/resources/imges/logo.ico"/>">
 
-	<title>Изучение React JS</title>
+  <tiles:insertAttribute name="head"/>
 
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
@@ -42,7 +39,7 @@
 
 	<u:resource type="link" root="/resources/css/plugins"
 	            names="bootstrap.min.css, atelier-dune-light.min.css"/>
-	<u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
+	<u:resource type="link" root="/resources/css/custom" names="main.min.css, overrides.min.css"/>
 	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
 	<tiles:insertAttribute name="resources"/>
 </head>
