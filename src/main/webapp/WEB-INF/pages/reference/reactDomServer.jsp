@@ -8,7 +8,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react-dom-server" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-	<wg:head size="3"><b>4.4 ReactDOMServer</b></wg:head>
+	<h1>4.4 ReactDOMServer</h2>
 
 	<wg:p>Если вы загружаете React c помощью тега <code>&lt;script&gt;</code>, эти API верхнего уровня
 		доступны в глобальном <code>ReactDOMServer</code>. Если вы используете ES6 с <b>npm</b>, вы можете
@@ -16,7 +16,7 @@
 		можете написать <code>var ReactDOMServer = require ('react -dom/server')</code>.</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.3.1 Обзор</b></wg:head>
+	<h2>4.3.1 Обзор</h2>
 
 	<wg:p>Класс <code>ReactDOMServer</code> позволяет отрисовывать ваши компоненты на сервере.</wg:p>
 
@@ -28,7 +28,7 @@
 	</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.3.3 Справка</b></wg:head>
+	<h2>4.3.3 Справка</h2>
 
 	<rf:definition title="renderToString()">
 		<ce:code-example-1/>

@@ -8,14 +8,14 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/test-utils" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-	<wg:head size="3"><b>4.7 Тестовые утилиты</b></wg:head>
+	<h1>4.7 Тестовые утилиты</h1>
 
 	<wg:p>Импорт:</wg:p>
 
 	<ce:code-example-1/>
 
 	<br/>
-	<wg:head size="4"><b>4.7.1 Обзор</b></wg:head>
+	<h2>4.7.1 Обзор</h2>
 
 	<wg:p><code>ReactTestUtils</code> упрощает тестирование компонентов React в
 		выбранном вами фрэймворке тестирования. В Facebook используется
@@ -52,10 +52,10 @@
 	</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.7.2 Справка</b></wg:head>
+	<h2>4.7.2 Справка</h2>
 
 	<br/>
-	<wg:head size="5"><b>4.7.2.1 Поверхностная отрисовка</b></wg:head>
+	<h3>4.7.2.1 Поверхностная отрисовка</h3>
 
 	<wg:p>При написании модульных тестов для React может оказаться полезным неглубокая отрисовка.
 		Неглубокая отрисовка позволяет отрисовывать компонент «на один уровень глубины» и утверждать
@@ -69,7 +69,7 @@
 	</app:alert>
 
 	<br/>
-	<wg:head size="5"><b>4.7.2.2 Другие утилиты</b></wg:head>
+	<h3>4.7.2.2 Другие утилиты</h3>
 
 	<rf:definition title="Simulate">
 		<ce:code-example-2/>

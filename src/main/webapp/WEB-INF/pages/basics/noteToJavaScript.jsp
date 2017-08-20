@@ -5,7 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
 <lt:layout cssClass="page note-to-javascript-page">
-    <wg:head size="3"><b>2.1 Примечание к JavaScript</b></wg:head>
+    <h1>2.1 Примечание к JavaScript</h1>
 
     <wg:p>React – это JavaScript библиотека, что предполагает ваши базовые знания языка JavaScript.
         Если ваши знания этого языка недостаточно сильны, рекомендуется освежить их. Это позволит проще

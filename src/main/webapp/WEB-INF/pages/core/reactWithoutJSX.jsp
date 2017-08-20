@@ -9,7 +9,7 @@
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
 <lt:layout cssClass="page hello-world-example-page">
-  <wg:head size="3"><b>3.7 React без JSX</b></wg:head>
+  <h1>3.7 React без JSX</h1>
 
   <wg:p>JSX не является обязательным при использовании React. Использование React без JSX
     особенно удобно, если вы не хотите настраивать компиляцию в своей среде сборки.</wg:p>

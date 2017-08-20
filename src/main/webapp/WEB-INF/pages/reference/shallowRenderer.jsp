@@ -8,14 +8,14 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/shallow-renderer" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-	<wg:head size="3"><b>4.8 Поверхностная отрисовка</b></wg:head>
+	<h1>4.8 Поверхностная отрисовка</h1>
 
 	<wg:p>Импорт:</wg:p>
 
 	<ce:code-example-1/>
 
 	<br/>
-	<wg:head size="4"><b>4.8.1 Обзор</b></wg:head>
+	<h2>4.8.1 Обзор</h2>
 
 	<wg:p>При написании модульных тестов для React может оказаться полезным
 		поверхностная(неглубокая) отрисовка. Неглубокая отрисовка позволяет отрисовать
@@ -41,7 +41,7 @@
 	</app:alert>
 
 	<br/>
-	<wg:head size="4"><b>4.8.2 Справка</b></wg:head>
+	<h2>4.8.2 Справка</h2>
 
 	<rf:definition title="shallowRenderer.render()">
 		<wg:p>Вы можете подумать о <code>shallowRenderer</code> как о «месте» для отрисовки компонента, который вы

@@ -81,6 +81,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
+        <put-attribute name="discuss" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/introduction/introductionTopics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
@@ -113,6 +114,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
+        <put-attribute name="discuss" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/basics/basicsTopics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
@@ -208,6 +210,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
+        <put-attribute name="discuss" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/core/coreTopics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
@@ -303,6 +306,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
+        <put-attribute name="discuss" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/reference/topics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>

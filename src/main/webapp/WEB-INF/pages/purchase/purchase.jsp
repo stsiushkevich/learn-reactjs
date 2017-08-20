@@ -14,8 +14,8 @@
 <c:url var="coreImgUrl" value="/resources/imges/pages/home/microchip.png"/>
 <c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
 
-<lt:layout cssClass="container purchase">
-	<lt:layout><h2 class="text-center"><b>Покупка учебника React JS</b></h2></lt:layout>
+<lt:layout cssClass="page container purchase">
+	<lt:layout><h1 class="text-center">Покупка учебника React JS</h1></lt:layout>
 
 	<br/>
 	<wg:form id="chooseCourseForm" action="pay" method="POST" cssClass="col-md-offset-3 col-md-6 choose-course-form">

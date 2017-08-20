@@ -7,7 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-  <wg:head size="3"><b>3.10	Веб-компоненты</b></wg:head>
+  <h1>3.10	Веб-компоненты</h1>
 
   <wg:p>React и <wg:link href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</wg:link>
     созданы для решения разных проблем. Веб-компоненты
@@ -22,7 +22,7 @@
     написаны с использованием веб-компонентов.</wg:p>
 
   <br/>
-  <wg:head size="3"><b>3.10.1	Использование веб-компонентов в React</b></wg:head>
+  <h2>3.10.1	Использование веб-компонентов в React</h2>
 
   <ce:code-example-1/>
 
@@ -42,7 +42,7 @@
   <ce:code-example-2/>
 
   <br/>
-  <wg:head size="3"><b>3.10.2	Использование React в веб-компонентах</b></wg:head>
+  <h2>3.10.2	Использование React в веб-компонентах</h2>
 
   <wg:p>Пример из официальной документации:</wg:p>
 

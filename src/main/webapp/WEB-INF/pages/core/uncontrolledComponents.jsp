@@ -7,7 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-  <wg:head size="3"><b>3.4 Неконтролируемые компоненты</b></wg:head>
+  <h1>3.4 Неконтролируемые компоненты</h1>
 
   <wg:p>В большинстве случаев мы рекомендуем использовать контролируемые компоненты
     при реализации форм. В контролируемом компоненте данные формы обрабатываются компонентом React.
@@ -32,7 +32,7 @@
     <wg:link href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/">эту статью</wg:link>.</wg:p>
 
   <br/>
-  <wg:head size="3"><b>3.4.1 Значения по умолчанию</b></wg:head>
+  <h2>3.4.1 Значения по умолчанию</h2>
 
   <wg:p>В жизненном цикле отрисовки React атрибут <code>value</code> на элементах формы
     будет переопределять значение в DOM. Используя неконтролируемые компоненты,

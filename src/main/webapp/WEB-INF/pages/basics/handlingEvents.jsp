@@ -9,7 +9,7 @@
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
 <lt:layout cssClass="page hello-world-example-page">
-	<wg:head size="3"><b>2.7 Обработка событий</b></wg:head>
+	<h1>2.7 Обработка событий</h1>
 
 	<wg:p>Обработка событий в React элементах очень похожа на обработку событий в DOM элементах.
 		Но есть несколько синтаксических отличий:</wg:p>

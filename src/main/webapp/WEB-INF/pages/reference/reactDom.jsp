@@ -8,7 +8,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react-dom" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-	<wg:head size="3"><b>4.3 ReactDOM</b></wg:head>
+	<h1>4.3 ReactDOM</h1>
 
 	<wg:p>Если вы загружаете React c помощью тега <code>&lt;script&gt;</code>, эти API верхнего уровня
 		доступны в глобальном <code>ReactDOM</code>. Если вы используете ES6 с <b>npm</b>, вы можете
@@ -16,7 +16,7 @@
 		можете написать <code>var ReactDOM = require ('react -dom')</code>.</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.3.1 Обзор</b></wg:head>
+	<h2>4.3.1 Обзор</h2>
 
 	<wg:p>Пакет react-dom предоставляет методы, специфичные для DOM,
 		которые можно использовать на верхнем уровне вашего приложения и в качестве
@@ -32,7 +32,7 @@
 	</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.3.2 Поддержка браузерами</b></wg:head>
+	<h2>4.3.2 Поддержка браузерами</h2>
 
 	<wg:p>React поддерживает все популярные браузеры, включая Internet Explorer 9 и выше.</wg:p>
 
@@ -43,7 +43,7 @@
 	</app:alert>
 
 	<br/>
-	<wg:head size="4"><b>4.3.3 Справка</b></wg:head>
+	<h2>4.3.3 Справка</h2>
 
 	<rf:definition title="render()">
 		<ce:code-example-1/>

@@ -9,7 +9,7 @@
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
 <lt:layout cssClass="page hello-world-example-page">
-  <wg:head size="3"><b>3.6	React без ES6</b></wg:head>
+  <h1>3.6	React без ES6</h1>
 
   <wg:p>Обычно мы определяем компонент React как класс JavaScript:</wg:p>
 
@@ -23,7 +23,7 @@
   <wg:p>API классов ES6 аналогичен <code>createReactClass()</code> за несколькими исключениями.</wg:p>
 
   <br/>
-  <wg:head size="3"><b>3.6.1 Объявление свойств по умолчанию</b></wg:head>
+  <h2>3.6.1 Объявление свойств по умолчанию</h2>
 
   <wg:p>С функциями и классами ES6 <code>defaultProps</code> определяется
     как свойство самого компонента:</wg:p>
@@ -36,7 +36,7 @@
   <ce:code-example-4/>
 
   <br/>
-  <wg:head size="3"><b>3.6.2 Установка начального состояния</b></wg:head>
+  <h2>3.6.2 Установка начального состояния</h2>
 
   <wg:p>В классах ES6 вы можете определить начальное состояние,
     назначив <code>this.state</code> в конструкторе:</wg:p>
@@ -49,7 +49,7 @@
   <ce:code-example-6/>
 
   <br/>
-  <wg:head size="3"><b>3.6.3 Автопривязка</b></wg:head>
+  <h2>3.6.3 Автопривязка</h2>
 
   <wg:p>В компонентах React, объявленных как классы ES6, методы следуют
     той же семантике, что и обычные классы ES6. Это означает, что они
@@ -86,7 +86,7 @@
   </wg:p>
 
   <br/>
-  <wg:head size="3"><b>3.6.4 Миксины</b></wg:head>
+  <h2>3.6.4 Миксины</h2>
 
   <lt:layout cssClass="alert alert-warning">
     <b>Внимание</b>: ES6 запущен без какой-либо поддержки миксинов. Поэтому при использовании React с

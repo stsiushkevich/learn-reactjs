@@ -8,7 +8,7 @@
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
 <lt:layout cssClass="page hello-world-example-page">
-    <wg:head size="3"><b>2.4 JSX Отрисовка Элементов</b></wg:head>
+    <h1>2.4 JSX Отрисовка Элементов</h1>
 
     <wg:p><strong>Элементы – это самые маленькие строительные блоки приложения React.</strong></wg:p>
 
@@ -31,7 +31,7 @@
 
 
     <br/>
-    <wg:head size="4"><b>2.4.1 Отрисовка элемента в DOM</b></wg:head>
+    <h2><b>2.4.1 Отрисовка элемента в DOM</b></h2>
 
     <wg:p>Предположим, у нас есть тэг &lt;div&gt; где-нибудь в нашем HTML файле:</wg:p>
 
@@ -60,7 +60,7 @@
     <wg:p>Он отображает "Hello World" на странице.</wg:p>
 
     <br/>
-    <wg:head size="4"><b>2.4.2 Обновление отрисованного элемента</b></wg:head>
+    <h2><b>2.4.2 Обновление отрисованного элемента</b></h2>
 
     <wg:p>React элементы являются неизменемыми. Как только элемент был создат,
         нельзя изменить его атрибуты или потомков. Элемент похож на одиночный
@@ -89,7 +89,7 @@
     </lt:layout>
 
     <br/>
-    <wg:head size="4"><b>2.4.3 React обновляет только то, что необходимо</b></wg:head>
+    <h2><b>2.4.3 React обновляет только то, что необходимо</b></h2>
 
     <wg:p>React DOM сравнивает элемент и его потомки из последнего вызова <code>render()</code> с
         элементом из предыдущего вызова <code>render()</code>, и применяет обновление DOM только

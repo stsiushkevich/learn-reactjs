@@ -8,7 +8,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/dom-elements" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-	<wg:head size="3"><b>4.5 DOM Elements</b></wg:head>
+	<h1>4.5 DOM Elements</h1>
 
 	<wg:p>React реализует независимую от браузера DOM-систему для повышения
 		производительности и кросс-браузерной совместимости. Разработчики воспользовались
@@ -20,12 +20,12 @@
 		должны быть в нижнем регистре. Например, вы можете оставить <code>aria-label</code> как <code>aria-label</code>.</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.5.1 Отличия в атрибутах</b></wg:head>
+	<h2>4.5.1 Отличия в атрибутах</h2>
 
 	<wg:p>Существует ряд атрибутов, которые работают по-разному в React и HTML:</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.1 checked</b></wg:head>
+	<h3>4.5.1.1 checked</h3>
 
 	<wg:p>Aтрибут <code>checked</code> поддерживается <code>&lt;input&gt;</code> компонентами типа
 		<code>checkbox</code> или <code>radio</code>. Вы можете использовать его, чтобы
@@ -34,7 +34,7 @@
 		выбран ли компонент, когда он впервые монтирован.</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.2 className</b></wg:head>
+	<h3>4.5.1.2 className</h3>
 
 	<wg:p>Чтобы указать класс CSS, используйте атрибут <code>className</code>. Это относится ко
 		всем обычным элементам DOM и SVG, таким как <code>&lt;div&gt;</code>, <code>&lt;a&gt;</code> и другие.</wg:p>
@@ -43,7 +43,7 @@
 		используйте вместо этого атрибут <code>class</code>.</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.3 dangerouslySetInnerHTML</b></wg:head>
+	<h3>4.5.1.3 dangerouslySetInnerHTML</h3>
 
 	<wg:p><code>dangerouslySetInnerHTML</code> - это React аналог использования <code>innerHTML</code> в DOM браузера.
 		Как правило, установка HTML из кода является рискованным, так как можно легко непреднамеренно
@@ -55,13 +55,13 @@
 	<ce:code-example-1/>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.4 htmlFor</b></wg:head>
+	<h3>4.5.1.4 htmlFor</h3>
 
 	<wg:p>Поскольку <code>for</code> является зарезервированным словом в JavaScript, вместо него элементы
 		React используют <code>htmlFor</code>.</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.5 onChange</b></wg:head>
+	<h2 size="5"><b>4.5.1.5 onChange</h2>
 
 	<wg:p>Событие <code>onChange</code> ведет себя так, как вы ожидаете: всякий раз, когда изменяется
 		поле формы, это событие срабатывает. Типовое поведение браузера не используется намерено,
@@ -69,13 +69,13 @@
 		полагается на это событие, чтобы обрабатывать ввод пользователя в реальном времени.</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.6 selected</b></wg:head>
+	<h3>4.5.1.6 selected</h3>
 
 	<wg:p>Атрибут selected поддерживается компонентами <code>&lt;option&gt;</code>. Вы можете использовать его,
 		чтобы установить, выбран ли компонент. Это полезно для создания контролируемых компонентов.</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.7 style</b></wg:head>
+	<h3>4.5.1.7 style</h3>
 
 	<wg:p>Атрибут <code>style</code> принимает объект JavaScript с свойствами в «верблюжбей нотации», а
 		строкой CSS. Это соответствует DOM JavaScript свойству <code>style</code>, является более
@@ -94,7 +94,7 @@
 		<code>WebkitTransition</code> имеет заглавную букву «W».</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.8 suppressContentEditableWarning</b></wg:head>
+	<h3>4.5.1.8 suppressContentEditableWarning</h3>
 
 	<wg:p>Обычно, когда элемент с потомками помечен как <code>contentEditable</code>, появляется
 		предупреждение, так как он не будет работать. Данный атрибут подавляет это
@@ -102,7 +102,7 @@
 		<code>Draft.js</code>, которая управляет <code>contentEditable</code> вручную.</wg:p>
 
 	<br/>
-	<wg:head size="5"><b>4.5.1.9 value</b></wg:head>
+	<h3>4.5.1.9 value</h3>
 
 	<wg:p>Атрибут <code>value</code> поддерживается компонентами <code>&lt;input&gt;</code> и <code>&lt;textarea&gt;</code>. Вы можете
 		использовать его для установки значения компонента. Это полезно для создания
@@ -110,7 +110,7 @@
 		который устанавливает значение компонента, когда он монтируется первый раз.</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.5.2 Все поддерживаемые HTML атрибуты</b></wg:head>
+	<h2>4.5.2 Все поддерживаемые HTML атрибуты</h2>
 
 	<wg:p>React поддерживает все атрибуты <code>data-*</code> и <code>aria-*</code>, а также эти атрибуты:</wg:p>
 
@@ -135,7 +135,7 @@
 	</wg:p>
 
 	<br/>
-	<wg:head size="4"><b>4.5.3 Все поддерживаемые SVG атрибуты</b></wg:head>
+	<h2>4.5.3 Все поддерживаемые SVG атрибуты</h2>
 
 	<wg:p>React поддерживает следующие атрибуты SVG:</wg:p>
 

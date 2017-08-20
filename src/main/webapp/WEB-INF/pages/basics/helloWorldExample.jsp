@@ -8,7 +8,7 @@
 <c:url var="installationUrl" value="/introduction/installation"/>
 
 <lt:layout cssClass="page hello-world-example-page">
-    <wg:head size="3"><b>2.2 Hello, World!</b></wg:head>
+    <h1>2.2 Hello, World!</h1>
 
     <wg:p>Самый простой путь начать использовать React – это использовать <wg:link href="https://jsfiddle.net/u9a1ug3e/6/">даный пример «Hello, World!»</wg:link>.
         В этом случае нет необходимости что-либо устанавливать. Можно просто открыть этот пример в новой

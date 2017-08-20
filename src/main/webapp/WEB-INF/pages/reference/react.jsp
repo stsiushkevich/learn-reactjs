@@ -8,10 +8,10 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react" %>
 
 <lt:layout cssClass="page hello-world-example-page">
-  <wg:head size="3"><strong>4.1	React</strong></wg:head>
+  <h1>4.1	React</h1>
 
   <br/>
-  <wg:head size="4"><strong>4.1.1	React Top-Level API</strong></wg:head>
+  <h2><strong>4.1.1	React Top-Level API</strong></h2>
 
   <wg:p>React - это точка входа в библиотеку React. Если вы загружаете
     React из тега <code>&lt;script&gt;</code>, эти API верхнего уровня доступны в глобальном
@@ -19,10 +19,10 @@
     Если вы используете ES5 с <b>npm</b>, вы можете написать <code>var React = require('react')</code></wg:p>
 
   <br/>
-  <wg:head size="4"><strong>4.1.1.1	Обзор</strong></wg:head>
+  <h3>4.1.1.1	Обзор</h3>
 
   <br/>
-  <wg:head size="5"><strong>4.1.1.1.1	Компоненты</strong></wg:head>
+  <h4>4.1.1.1.1	Компоненты</h4>
 
   <wg:p>React компоненты позволяют разделить UI на самостоятельные, многоразовые
     фрагменты и работать с каждой частью отдельно. React компоненты могут быть определены
@@ -41,7 +41,7 @@
     <wg:link href="${reactWithoutES6Url}">Использование React без ES6</wg:link>.</wg:p>
 
   <br/>
-  <wg:head size="5"><strong>4.1.1.1.2	Создание React элементов</strong></wg:head>
+  <h4>4.1.1.1.2	Создание React элементов</h4>
 
   <wg:p>Рекомендуется использовать JSX для описания того, как должен выглядеть
     ваш пользовательский интерфейс. Каждый элемент JSX является просто синтаксическим
@@ -59,7 +59,7 @@
   <wg:p>Дополнительную информацию см. в разделе <wg:link href="${reactWithoutJsxUrl}">React без JSX</wg:link>.</wg:p>
 
   <br/>
-  <wg:head size="5"><strong>4.1.1.1.3	Преобразование элементов</strong></wg:head>
+  <h4>4.1.1.1.3	Преобразование элементов</h4>
 
   <wg:p>React также предоставляет некоторые другие API:</wg:p>
 
@@ -72,7 +72,7 @@
   </wg:p>
 
   <br/>
-  <wg:head size="4"><strong>4.1.1.2	Справка</strong></wg:head>
+  <h3>4.1.1.2	Справка</h3>
 
   <rf:definition title="React.Component">
     <wg:p>
