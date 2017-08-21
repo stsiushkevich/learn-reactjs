@@ -4,7 +4,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="reactUrl" value="react"/>
+<c:url var="reactUrl" value="../react"/>
 <c:url var="reactComponentUrl" value="react-component"/>
 <c:url var="reactDomUrl" value="react-dom"/>
 <c:url var="uncontrolledСomponentsUrl" value="react-dom-server"/>
