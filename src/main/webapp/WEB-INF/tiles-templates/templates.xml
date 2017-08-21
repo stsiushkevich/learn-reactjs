@@ -61,6 +61,7 @@
     <definition name="sitemapView" template="/resources/sitemap.xml"/>
 
     <definition name="menuTemplate" template="/WEB-INF/pages/templates/mainTemplate.jsp">
+        <put-attribute name="head" value="" cascade="true"/>
         <put-attribute name="body" value="/WEB-INF/pages/templates/menuTemplate.jsp" cascade="true"/>
         <put-attribute name="bodyClass" value="" cascade="true" type="string"/>
         <put-attribute name="header" value="" cascade="true"/>

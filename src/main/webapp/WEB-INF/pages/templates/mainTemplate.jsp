@@ -45,5 +45,6 @@
 </head>
 <body class="<tiles:insertAttribute name='bodyClass'/>">
 <tiles:insertAttribute name="body"/>
+<script id="dsq-count-scr" src="//learn-reactjs-ru.disqus.com/count.js" async></script>
 </body>
 </html>
