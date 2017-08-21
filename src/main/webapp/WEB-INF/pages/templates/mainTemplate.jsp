@@ -14,28 +14,12 @@
 	<meta property="og:image" content="<c:url value="/resources/imges/logo.ico"/>">
 	<meta property="fb:app_id" content="623268441017527">
 
+	<tiles:insertAttribute name="head"/>
+
 	<link rel="shortcut icon" href="<c:url value="/resources/imges/logo.ico"/>">
 
-  <tiles:insertAttribute name="head"/>
-
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-			google_ad_client: "ca-pub-8338150978310358",
-			enable_page_level_ads: true
-		});
-	</script>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-							(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-104763004-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
+	<jsp:include page="../google/adsense.jsp"/>
+	<jsp:include page="../google/analytic.jsp"/>
 
 	<u:resource type="link" root="/resources/css/plugins"
 	            names="bootstrap.min.css, atelier-dune-light.min.css"/>
@@ -45,6 +29,7 @@
 </head>
 <body class="<tiles:insertAttribute name='bodyClass'/>">
 <tiles:insertAttribute name="body"/>
-<script id="dsq-count-scr" src="//learn-reactjs-ru.disqus.com/count.js" async></script>
+
+<jsp:include page="../discuss/count.jsp"/>
 </body>
 </html>
