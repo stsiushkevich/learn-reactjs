@@ -7,5 +7,5 @@
 <meta name="description" content="Отладка в браузере Chrome. Для браузеров Chrome и Firefox
 имеются расширения, которые позволяют следить за деревом React компонентов в меню
 инструментов разработчика браузера.">
-<meta property="og:url" content="https://www.learn-reactjs.ru/introduction/devtools">
+<meta property="og:url" content="https://learn-reactjs.ru/introduction/devtools">
 <meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Инструменты разработчика">

@@ -7,5 +7,5 @@
 <meta name="description" content="React имеет несколько встроенных возможностей по проверке
 типов. Чтобы запустить проверку типов для свойств компонента, вы можете назначить специальное
 свойство propTypes">
-<meta property="og:url" content="https://www.learn-reactjs.ru/core/typechecking-with-prop-types">
+<meta property="og:url" content="https://learn-reactjs.ru/core/typechecking-with-prop-types">
 <meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Проверка типов с PropTypes">

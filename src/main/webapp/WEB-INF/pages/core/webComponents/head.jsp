@@ -9,5 +9,5 @@
 Веб-компоненты обеспечивают надежную инкапсуляцию для повторно используемых компонентов, в
 то время как React предоставляет декларативную библиотеку, которая поддерживает DOM в
 синхронизации с вашими данными.">
-<meta property="og:url" content="https://www.learn-reactjs.ru/core/web-components">
+<meta property="og:url" content="https://learn-reactjs.ru/core/web-components">
 <meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, ">
