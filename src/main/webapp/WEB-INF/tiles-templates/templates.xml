@@ -118,97 +118,110 @@
 
     <!--basics-->
     <definition name="basicsTopicsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/basicsTopics/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
         <put-attribute name="discuss" value="" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/basicsTopics.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/basicsTopics/basicsTopics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="noteToJavaScriptView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/noteToJavaScript/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/noteToJavaScript.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/noteToJavaScript/noteToJavaScript.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="helloWorldExampleView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/helloWorldExample/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/helloWorldExample.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/helloWorldExample/helloWorldExample.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="introductionToJsxView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/introductionToJsx/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/introductionToJsx.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/introductionToJsx/introductionToJsx.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="renderingElementsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/renderingElements/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/renderingElements.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/renderingElements/renderingElements.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="componentsAndPropsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/componentsAndProps/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/componentsAndProps.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/componentsAndProps/componentsAndProps.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="stateAndLifecycleView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/stateAndLifecycle/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/stateAndLifecycle.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/stateAndLifecycle/stateAndLifecycle.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="handlingEventsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/handlingEvents/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/handlingEvents.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/handlingEvents/handlingEvents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="conditionalRenderingView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/conditionalRendering/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/conditionalRendering.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/conditionalRendering/conditionalRendering.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="listsAndKeysView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/listsAndKeys/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/listsAndKeys.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/listsAndKeys/listsAndKeys.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="formsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/forms/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/forms.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/forms/forms.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="liftingStateUpView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/liftingStateUp/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/liftingStateUp.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/liftingStateUp/liftingStateUp.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
     <definition name="compositionVsInheritanceView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/basics/compositionVsInheritance/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/compositionVsInheritance.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/compositionVsInheritance/compositionVsInheritance.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
 
