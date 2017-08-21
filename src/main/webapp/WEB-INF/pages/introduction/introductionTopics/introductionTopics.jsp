@@ -5,8 +5,8 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
 <c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
-<c:url var="installationUrl" value="installation"/>
-<c:url var="devToolsUrl" value="devtools"/>
+<c:url var="installationUrl" value="../installation"/>
+<c:url var="devToolsUrl" value="../devtools"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
