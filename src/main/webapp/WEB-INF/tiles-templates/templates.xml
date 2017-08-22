@@ -81,12 +81,12 @@
 
     <!--introduction-->
     <definition name="introductionTopicsView" extends="menuTemplate">
-        <put-attribute name="head" value="/WEB-INF/pages/introduction/introductionTopics/head.jsp" cascade="true"/>
+        <put-attribute name="head" value="/WEB-INF/pages/introduction/topics/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
         <put-attribute name="discuss" value="" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/introduction/introductionTopics/introductionTopics.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/introduction/topics/topics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
@@ -118,12 +118,12 @@
 
     <!--basics-->
     <definition name="basicsTopicsView" extends="menuTemplate">
-        <put-attribute name="head" value="/WEB-INF/pages/basics/basicsTopics/head.jsp" cascade="true"/>
+        <put-attribute name="head" value="/WEB-INF/pages/basics/topics/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
         <put-attribute name="discuss" value="" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/basics/basicsTopics/basicsTopics.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/basics/topics/topics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
@@ -227,12 +227,12 @@
 
     <!--core-->
     <definition name="coreTopicsView" extends="menuTemplate">
-        <put-attribute name="head" value="/WEB-INF/pages/core/coreTopics/head.jsp" cascade="true"/>
+        <put-attribute name="head" value="/WEB-INF/pages/core/topics/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
         <put-attribute name="discuss" value="" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/core/coreTopics/coreTopics.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/topics/topics.jsp" cascade="true"/>
         <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
