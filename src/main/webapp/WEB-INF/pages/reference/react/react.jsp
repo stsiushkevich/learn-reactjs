@@ -11,7 +11,7 @@
   <h1>4.1	React</h1>
 
   <br/>
-  <h2><strong>4.1.1	React Top-Level API</strong></h2>
+  <h2>4.1.1	React Top-Level API</h2>
 
   <wg:p>React - это точка входа в библиотеку React. Если вы загружаете
     React из тега <code>&lt;script&gt;</code>, эти API верхнего уровня доступны в глобальном
