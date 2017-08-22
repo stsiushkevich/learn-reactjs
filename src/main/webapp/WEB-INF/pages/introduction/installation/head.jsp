@@ -8,4 +8,4 @@
 то переходите к изучению следующих разделов «Создание приложения на React» и «Добавление
 React в существующее приложение».">
 <meta property="og:url" content="https://learn-reactjs.ru/introduction/installation">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Установка">
+<meta name="keywords" CONTENT="Введение в ReactJS, Установка ReactJS">

@@ -13,7 +13,7 @@
     <h1>1. Введение</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
-            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><h4>1.1 Введение в React JS</h4></a>
+            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><h4>1.1 Введение в ReactJS</h4></a>
         </li>
         <li class="topic-list__topic">
             <a href="${installationUrl}" class="topic-list__topic-nav-link"><h4>1.2 Установка</h4></a>

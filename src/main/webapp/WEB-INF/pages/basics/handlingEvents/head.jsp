@@ -6,4 +6,4 @@
 <meta name="description" content="Обработка событий в React элементах очень похожа на
 обработку событий в DOM элементах. Но есть несколько синтаксических отличий.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/handling-events">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Обработка событий">
+<meta name="keywords" CONTENT="Основы ReactJS, Обработка событий, Обработка событий в ReactJS">

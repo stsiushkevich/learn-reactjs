@@ -10,4 +10,4 @@
  выйти за пределы модели React, если это необходимо. Большинству ваших компонентов не нужно
  использовать этот модуль.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/react-dom">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, ReactDOM">
+<meta name="keywords" CONTENT="Справочное руководство, ReactDOM">

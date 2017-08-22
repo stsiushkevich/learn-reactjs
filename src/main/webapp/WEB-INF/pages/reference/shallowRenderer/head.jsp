@@ -8,4 +8,4 @@
 «на один уровень глубины» и утверждать то, что возвращает его метод отрисовки, не беспокоясь
 о поведении дочерних компонентов, которые не создаются или не отображаются. Это не требует DOM.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/shallow-renderer">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Поверхностная отрисовка">
+<meta name="keywords" CONTENT="Справочное руководство, Поверхностная отрисовка">

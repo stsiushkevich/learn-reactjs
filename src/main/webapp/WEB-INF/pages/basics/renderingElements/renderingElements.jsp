@@ -8,7 +8,7 @@
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
 <lt:layout cssClass="page hello-world-example-page">
-    <h1>2.4 JSX Отрисовка Элементов</h1>
+    <h1>2.4 Отрисовка Элементов</h1>
 
     <wg:p><strong>Элементы – это самые маленькие строительные блоки приложения React.</strong></wg:p>
 

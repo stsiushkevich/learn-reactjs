@@ -4,4 +4,4 @@
 <meta property="og:description" content="Ядро React. Основные темы">
 <meta name="description" content="Ядро React. Основные темы">
 <meta property="og:url" content="https://learn-reactjs.ru/core/topics">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Ядро React">
+<meta name="keywords" CONTENT="Изучение ReactJS, Ядро React, Ядро библиотеки React">

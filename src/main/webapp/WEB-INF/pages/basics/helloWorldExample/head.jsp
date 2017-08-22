@@ -6,4 +6,4 @@
 <meta name="description" content="Самый простой путь начать использовать React – это использовать даный пример
 «Hello, World!» . В этом случае нет необходимости что-либо устанавливать.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/hello-world-example">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Hello, World!">
+<meta name="keywords" CONTENT="Основы ReactJS, Пример Hello World! на ReactJS">

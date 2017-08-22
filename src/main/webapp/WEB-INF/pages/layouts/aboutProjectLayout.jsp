@@ -9,16 +9,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Изучение React JS">
+	<meta property="og:title" content="Изучение ReactJS">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://learn.react-js.ru">
 	<meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
-	<meta property="og:description" content="Информационный сайт, посвященный изучению React JS">
+	<meta property="og:description" content="Информационный сайт, посвященный изучению ReactJS">
 	<meta property="fb:app_id" content="623268441017527">
 
 	<link rel="shortcut icon" href="<c:url value="/resources/imges/logo.ico"/>">
 
-	<title>Изучение React JS</title>
+	<title>Изучение ReactJS</title>
 
 	<u:resource type="link" root="/resources/css/plugins"
 	            names="bootstrap-theme.min.css, bootstrap.min.css, atelier-dune-light.min.css"/>

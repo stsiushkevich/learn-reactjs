@@ -6,4 +6,4 @@
 <meta name="description" content="Этот симпатичный синтаксис в виде тегов не является ни строкой,
 ни HTML. Он носит название JSX и является синтаксическим расширением JavaScript.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/introduction-to-jsx">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Знакомство с JSX">
+<meta name="keywords" CONTENT="Основы ReactJS, Знакомство с JSX, Введение в JSX">

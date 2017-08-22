@@ -15,7 +15,7 @@
 <c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
 
 <lt:layout cssClass="page container purchase">
-	<lt:layout><h1 class="text-center">Покупка учебника React JS</h1></lt:layout>
+	<lt:layout><h1 class="text-center">Покупка учебника ReactJS</h1></lt:layout>
 
 	<br/>
 	<wg:form id="chooseCourseForm" action="pay" method="POST" cssClass="col-md-offset-3 col-md-6 choose-course-form">
@@ -30,11 +30,11 @@
 			<wg:bootstrap-accordion-item id="professional" title="Профессионал" parentId="levels"
 			                             cssClass="panel-professional" contentCssClass="text-center">
 				<p:course cssClass="course_professional-level" level="3" title="Профессионал" key="professional" price="${professionalPrice}$"
-				          sections="Ядро React JS, Справочное руководство"/>
+				          sections="Ядро ReactJS, Справочное руководство"/>
 			</wg:bootstrap-accordion-item>
 			<wg:bootstrap-accordion-item id="master" title="Мастер" parentId="levels" cssClass="panel-master" contentCssClass="text-center">
 				<p:course cssClass="course_master-level" level="4" title="Мастер" key="master" price="${masterPrice}$"
-				          sections="Введение, Основы, Ядро React JS, Справочное руководство"/>
+				          sections="Введение, Основы, Ядро ReactJS, Справочное руководство"/>
 			</wg:bootstrap-accordion-item>
 		</wg:bootstrap-accordion>
 		<div class="text-center">

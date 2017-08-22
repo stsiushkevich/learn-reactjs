@@ -10,4 +10,4 @@
 то время как React предоставляет декларативную библиотеку, которая поддерживает DOM в
 синхронизации с вашими данными.">
 <meta property="og:url" content="https://learn-reactjs.ru/core/web-components">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, ">
+<meta name="keywords" CONTENT="Ядро React, Веб-компоненты, Веб-компоненты в ReactJS">

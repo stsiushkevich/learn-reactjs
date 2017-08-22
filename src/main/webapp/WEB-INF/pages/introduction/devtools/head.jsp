@@ -8,4 +8,4 @@
 имеются расширения, которые позволяют следить за деревом React компонентов в меню
 инструментов разработчика браузера.">
 <meta property="og:url" content="https://learn-reactjs.ru/introduction/devtools">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Инструменты разработчика">
+<meta name="keywords" CONTENT="Введение в ReactJS, Инструменты разработчика ReactJS">

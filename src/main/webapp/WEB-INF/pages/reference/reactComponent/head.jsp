@@ -8,4 +8,4 @@ React.Component предоставляется React-ом.">
 интерфейс на самостоятельные, многоразовые фрагменты и работать с каждой частью независимо.
 React.Component предоставляется React-ом.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/react-component">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, React.Component">
+<meta name="keywords" CONTENT="Справочное руководство, React.Component">

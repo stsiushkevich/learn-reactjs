@@ -8,4 +8,4 @@
  отличается от работы других DOM элементов, потому что элементы форм по своей
  природе обладают некоторым внутренним состоянием.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/forms">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Формы">
+<meta name="keywords" CONTENT="Основы ReactJS, Формы, Формы в ReactJS">

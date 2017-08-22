@@ -11,7 +11,7 @@
     <pre class="prettyprint">
         <code class="language-javascript">
   &lt;textarea&gt;
-    Дорогие посетители сайта! Желаем вам приятного изучения React JS.
+    Дорогие посетители сайта! Желаем вам приятного изучения ReactJS.
   &lt;/textarea&gt;</code>
     </pre>
 </cd:code-example>

@@ -8,4 +8,4 @@
 разработчики в алгоритме React, чтобы обновления компонентов были предсказуемыми, будучи
 достаточно быстрыми для высокопроизводительных приложений.">
 <meta property="og:url" content="https://learn-reactjs.ru/core/reconciliation">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Согласование">
+<meta name="keywords" CONTENT="Ядро React, Согласование, Процедура согласования элементов в ReactJS">

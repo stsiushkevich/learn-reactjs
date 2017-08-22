@@ -15,7 +15,7 @@
 
 <lt:layout cssClass="container tutorial">
     <lt:layout><h2 class="text-center"><b>Полное руководство по ReactJS</b></h2></lt:layout>
-    <lt:layout cssClass="text-center home-page__text">Здесь вы сможете получить самую полную информацию по самой популярной технологии React JS</lt:layout>
+    <lt:layout cssClass="text-center home-page__text">Здесь вы сможете получить самую полную информацию по самой популярной технологии ReactJS</lt:layout>
     <lt:layout cssClass="text-center home-page__text">Приступайте к изучению прямо сейчас и станьте настоящим профессионалом!</lt:layout>
 
     <lt:layout cssClass="tutorial__sections">
@@ -42,7 +42,7 @@
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${coreUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${coreImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Ядро React JS</lt:layout>
+                        <lt:layout cssClass="tutorial__section-label">Ядро ReactJS</lt:layout>
                     </wg:link>
                 </lt:layout>
             </lt:layout>

@@ -26,7 +26,7 @@
 				<a href="${introductionUrl}">1. Введение</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isBasicsSection ? 'active' : null}">
-				<a href="${basicsUrl}">2. Основы React JS</a>
+				<a href="${basicsUrl}">2. Основы ReactJS</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isCoreSection ? 'active' : null}">
 				<a href="${coreUrl}">3. Ядро React</a>

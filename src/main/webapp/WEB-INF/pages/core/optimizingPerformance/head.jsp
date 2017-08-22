@@ -8,4 +8,4 @@
 минимизировать количество дорогостоящих операций DOM, необходимых для обновления
 пользовательского интерфейса.">
 <meta property="og:url" content="https://learn-reactjs.ru/core/optimizing-performance">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Оптимизация производительности">
+<meta name="keywords" CONTENT="Ядро React, Оптимизация производительности, Оптимизация производительности в ReactJS">

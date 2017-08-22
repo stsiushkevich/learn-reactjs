@@ -8,4 +8,4 @@
 с элементом из предыдущего вызова render(), и применяет обновление DOM только если это необходимо,
 чтобы привести DOM в желаемое состояние.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/rendering-elements">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, JSX Отрисовка Элементов">
+<meta name="keywords" CONTENT="Основы ReactJS, Отрисовка Элементов, Отрисовка Элементов в ReactJS">

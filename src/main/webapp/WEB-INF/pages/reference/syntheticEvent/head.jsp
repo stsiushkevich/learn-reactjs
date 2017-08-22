@@ -6,4 +6,4 @@ SyntheticEvent, который является кросс-браузерной 
 <meta name="description" content="Вашим обработчикам событий будут переданы экземпляры
 SyntheticEvent, который является кросс-браузерной оболочкой вокруг нативного события браузера.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/synthetic-event">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, SyntheticEvent">
+<meta name="keywords" CONTENT="Справочное руководство, SyntheticEvent">

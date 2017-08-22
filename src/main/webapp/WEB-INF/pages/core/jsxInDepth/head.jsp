@@ -6,4 +6,4 @@
 <meta name="description" content="По существу, JSX просто предоставляет синтаксический сахар
 для функции React.createElement(component, props, ...children).">
 <meta property="og:url" content="https://learn-reactjs.ru/core/jsx-in-depth">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, JSX изнутри">
+<meta name="keywords" CONTENT="Ядро React, JSX изнутри, JSX под капотом, JSX в деталях">

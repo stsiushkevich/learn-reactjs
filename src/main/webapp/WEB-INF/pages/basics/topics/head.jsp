@@ -4,4 +4,4 @@
 <meta property="og:description" content="Основы ReactJS. Основные темы">
 <meta name="description" content="Основы ReactJS. Основные темы">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/topics">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Основы ReactJS">
+<meta name="keywords" CONTENT="Изучение ReactJS, Основы ReactJS">

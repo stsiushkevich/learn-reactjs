@@ -8,4 +8,4 @@
 типов. Чтобы запустить проверку типов для свойств компонента, вы можете назначить специальное
 свойство propTypes">
 <meta property="og:url" content="https://learn-reactjs.ru/core/typechecking-with-prop-types">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Проверка типов с PropTypes">
+<meta name="keywords" CONTENT="Ядро React, Проверка типов с PropTypes">

@@ -8,4 +8,4 @@
 инкапсулируют то поведение, которое вам необходимо. Затем вы можете отрисовывать только
 некоторые из них, в зависимости от состояния вашего приложения.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/conditional-rendering">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Отрисовка по условию">
+<meta name="keywords" CONTENT="Основы ReactJS, Отрисовка по условию, Отрисовка компонентов по условию в ReactJS">

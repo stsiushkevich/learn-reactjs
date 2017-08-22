@@ -4,4 +4,4 @@
 <meta property="og:description" content="React - это точка входа в библиотеку React.">
 <meta name="description" content="React - это точка входа в библиотеку React.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/react">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, React">
+<meta name="keywords" CONTENT="Справочное руководство, React">

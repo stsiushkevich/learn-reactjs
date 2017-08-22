@@ -8,4 +8,4 @@
 повышения производительности и кросс-браузерной совместимости. Разработчики воспользовались
 возможностью избавиться от нескольких «шераховатостей» в браузерных реализациях DOM.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/dom-elements">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, DOM Elements">
+<meta name="keywords" CONTENT="Справочное руководство, DOM Elements">

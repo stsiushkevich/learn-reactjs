@@ -6,4 +6,4 @@
 <meta name="description" content="Компоненты позволяют вам разделить UI на
 независимые, переиспользуемые части и работать с каждой из них отдельно.">
 <meta property="og:url" content="https://learn-reactjs.ru/basics/components-and-props">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Компоненты и свойства">
+<meta name="keywords" CONTENT="Основы ReactJS, Компоненты и свойства, Компоненты и свойства в ReactJS">

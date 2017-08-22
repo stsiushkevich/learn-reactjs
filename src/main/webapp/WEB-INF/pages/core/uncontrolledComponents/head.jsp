@@ -8,4 +8,4 @@
 компонентом React. Альтернативу представляют неконтролируемые компоненты, где данные формы
 обрабатываются самим DOM.">
 <meta property="og:url" content="https://learn-reactjs.ru/core/uncontrolled-components">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Неконтролируемые компоненты">
+<meta name="keywords" CONTENT="Ядро React, Неконтролируемые компоненты, Неконтролируемые компоненты в ReactJS">

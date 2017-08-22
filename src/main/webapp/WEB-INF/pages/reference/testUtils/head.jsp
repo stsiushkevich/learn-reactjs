@@ -8,4 +8,4 @@
 выбранном вами фрэймворке тестирования. В Facebook используется Jest для безболезненного
 тестирования JavaScript.">
 <meta property="og:url" content="https://learn-reactjs.ru/reference/test-utilities">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Тестовые утилиты">
+<meta name="keywords" CONTENT="Справочное руководство, Тестовые утилиты">

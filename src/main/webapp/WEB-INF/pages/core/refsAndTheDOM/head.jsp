@@ -10,4 +10,4 @@ React компонента или являться DOM элементом. Дл�
 React компонента или являться DOM элементом. Для обоих этих случаев, React предоставляет
 «запасной выход».">
 <meta property="og:url" content="https://learn-reactjs.ru/core/refs-and-the-dom">
-<meta name="keywords" CONTENT="Изучение React JS, Полное руководство по ReactJS, Ссылки ref и DOM">
+<meta name="keywords" CONTENT="Ядро React, Ссылки ref и DOM, Ссылки ref и DOM в ReactJS">

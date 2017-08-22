@@ -19,7 +19,7 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-    <h1>2. Основы React JS</h1>
+    <h1>2. Основы ReactJS</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
             <a href="${noteToJavaScriptUrl}" class="topic-list__topic-nav-link"><h4>2.1 Примечание к JavaScript</h4></a>
