@@ -12,7 +12,7 @@
 <c:url var="reactWithoutES6Url" value="react-without-es6"/>
 <c:url var="syntheticEventUrl" value="react-without-jsx"/>
 <c:url var="testUtilitiesUrl" value="reconciliation"/>
-<c:url var="shallowRendererUrl" value="../context"/>
+<c:url var="shallowRendererUrl" value="context"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
