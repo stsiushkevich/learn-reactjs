@@ -15,7 +15,7 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-  <h1 style="font-weight: bold">4. Справочное руководство ReactJS</h1>
+  <h1 style="font-weight: bold">4. Справочное руководство</h1>
   <ol class="topic-list__topics">
     <li class="topic-list__topic">
       <a class="topic-list__topic-nav-link" href="${reactUrl}"><h4>4.1 React</h4></a>
