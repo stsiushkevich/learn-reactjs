@@ -14,9 +14,9 @@
 <c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
 
 <lt:layout cssClass="container tutorial">
-    <lt:layout><h2 class="text-center"><b>Полное руководство по ReactJS</b></h2></lt:layout>
-    <lt:layout cssClass="text-center home-page__text">Здесь вы сможете получить самую полную информацию по самой популярной технологии ReactJS</lt:layout>
-    <lt:layout cssClass="text-center home-page__text">Приступайте к изучению прямо сейчас и станьте настоящим профессионалом!</lt:layout>
+    <h1>Полное руководство по ReactJS</h1>
+    <h5>Перед вами учебник по ReactJS, в котором тщательно собрана самая полная и достоверная<br/> информация по этой очень популярной и эффективной технологии</h5>
+    <h5>Начните изучение ReactJS прямо сейчас и станьте настоящим профессионалом!</h5>
 
     <lt:layout cssClass="tutorial__sections">
         <lt:layout cssClass="row">

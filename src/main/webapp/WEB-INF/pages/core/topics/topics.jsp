@@ -19,7 +19,7 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-	<h1 style="font-weight: bold">3. Ядро React</h1>
+	<h1 style="font-weight: bold">3. Ядро ReactJS</h1>
 	<ol class="topic-list__topics">
 		<li class="topic-list__topic">
 			<a class="topic-list__topic-nav-link" href="${reactUrl}"><h4>3.1 JSX изнутри</h4></a>

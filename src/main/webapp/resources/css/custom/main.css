@@ -1,102 +1,90 @@
 html {
     position: relative;
-    min-height: 100%;
+    min-height: 100%
 }
 
 body {
     background-color: #f1f1f1;
-    margin-bottom: 100px;
-}
-
-.header {
-
+    margin-bottom: 100px
 }
 
 .main {
-    height: 100%;
+    height: 100%
 }
 
 .footer {
     align-items: center;
     margin-top: 30px;
-    padding: 15px 0 15px;
+    padding: 15px 0;
     color: #9d9d9d;
     background: #eaeaea;
     border-top: 2px solid #d0d0d0;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 0
 }
 
 .header {
-    background: #222222;
+    background: #222;
     color: #fafafa;
-    box-shadow: 1px 1px 10px #080808;
+    box-shadow: 1px 1px 10px #080808
 }
 
 .header .logo-section img {
     height: 35px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .blue-line {
     height: 5px;
-    background-color: #00d8ff;
+    background-color: #00d8ff
 }
 
-.purchase-page,
-.home-page {
-    background-color: #0ec2e2;
+.purchase-page, .home-page {
+    background-color: #0ec2e2
 }
 
 .content {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .black-line {
     height: 5px;
-    background-color: #222222;
+    background-color: #222
 }
 
 .menu {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .menu .menu-sidebar {
-    background: rgb(241, 241, 241);
+    background: #f1f1f1
 }
 
 .menu-sidebar__nav {
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
-
-.menu-sidebar__nav-links {
-
+    border-bottom: 1px solid #ccc
 }
 
 .menu-sidebar__nav-link a {
     color: #696664;
-}
-
-.menu-sidebar__nav-link a {
-    color: #222;
+    color: #222
 }
 
 .page {
     border: 1px solid #ccc;
-    padding: 0 20px 20px;
+    padding: 0 20px 20px
 }
 
 .topic-list__topics {
     list-style: none;
-    padding: 0;
+    padding: 0
 }
 
 .menu-sidebar__nav-link.active {
-    box-shadow: 3px 2px 7px 2px #808080;
+    box-shadow: 3px 2px 7px 2px gray
 }
 
 .topic-list__topic-nav-link {
@@ -104,64 +92,52 @@ body {
     color: rgba(0, 158, 184, 1);
     position: relative;
     display: block;
-    padding: 8px 10px;
+    padding: 8px 10px
 }
 
-.topic-list__topic-nav-link h4{
-    margin: 0;
+.topic-list__topic-nav-link h4 {
+    margin: 0
 }
 
-.topic-list__topic-nav-link:focus,
-.topic-list__topic-nav-link:hover {
+.topic-list__topic-nav-link:focus, .topic-list__topic-nav-link:hover {
     background-color: #e9e9e9;
-    text-decoration: none;
+    text-decoration: none
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6 {
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-left: -2px;
-    color: rgba(0, 158, 184, 1);
+    color: rgba(0, 158, 184, 1)
 }
 
-.home-page .h1,
-.home-page .h2,
-.home-page .h3,
-.home-page .h4,
-.home-page .h5,
-.home-page .h6,
-.home-page h1,
-.home-page h2,
-.home-page h3,
-.home-page h4,
-.home-page h5,
-.home-page h6 {
+.home-page .h1, .home-page .h2, .home-page .h3, .home-page .h4, .home-page .h5, .home-page .h6, .home-page h1, .home-page h2, .home-page h3, .home-page h4, .home-page h5, .home-page h6 {
     color: #fff;
+    font-weight: bold;
+    text-align: center;
 }
 
 code {
     color: #555;
     background-color: rgba(91, 192, 222, 0.19);
-    padding: 1px 3px;
+    padding: 1px 3px
 }
 
 .code-block-header {
     background-color: rgba(0, 167, 197, 0.15);
     padding: 5px;
-    font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
+    font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace
 }
 
 .after-head-padding {
-    padding-top: 10px;
+    padding-top: 10px
 }
 
 .highlighted, .hl {
-    background-color: #ececb2;
+    background-color: #ececb2
 }
 
-.footer-nav,
-.header-nav {
+.footer-nav, .header-nav {
     list-style-type: none;
-    margin: 0;
+    margin: 0
 }
 
 .header-nav__link a.buy-btn {
@@ -170,61 +146,59 @@ code {
     background-color: #00b2d2;
     border-color: #0090ab;
     padding: 6px 14px;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: 35px;
+    height: 35px
 }
 
 .header-nav__link a.buy-btn:active {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25)
 }
 
-.header-nav__link a.buy-btn:hover,
-.header-nav__link a.buy-btn:focus {
+.header-nav__link a.buy-btn:hover, .header-nav__link a.buy-btn:focus {
     border: 1px solid #0090ab;
     color: #fff;
-    background-color: #00a7c7;
+    background-color: #00a7c7
 }
 
 .footer-nav {
-    padding: 0;
+    padding: 0
 }
 
 .header-nav__link a {
     color: #eaeaea;
     border-radius: 0;
     padding: 10px;
-    height: 45px;
+    height: 45px
 }
 
 .header-nav__link {
-    display: inline-block;
+    display: inline-block
 }
 
 .footer-nav__link a {
     color: #979797;
     border-radius: 0;
     padding: 8px;
-    height: 40px;
+    height: 40px
 }
 
 .header-nav__link.active a {
     background-color: #404040;
     border-bottom: 3px solid;
-    color: #fff;
+    color: #fff
 }
 
-.header-nav__link a:hover,
-.header-nav__link a:focus {
+.header-nav__link a:hover, .header-nav__link a:focus {
     color: #fff;
     background-color: #404040;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid
 }
 
 .tutorial__section {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 25px
 }
 
 .tutorial__section-link {
@@ -232,18 +206,17 @@ code {
     border-radius: 10px;
     display: inline-block;
     border: 7px solid #fff;
-    position: relative;
+    position: relative
 }
 
-.tutorial__section-link:hover,
-.tutorial__section-link:focus {
-    background-color: rgb(92, 232, 255);
+.tutorial__section-link:hover, .tutorial__section-link:focus {
+    background-color: #5ce8ff;
     border-color: #f0d04e;
-    box-shadow: 1px 1px 10px 0px #f0d04e;
+    box-shadow: 1px 1px 10px 0 #f0d04e
 }
 
 .tutorial__section-link:active {
-    background-color: #27cdff;
+    background-color: #27cdff
 }
 
 .tutorial__section-label {
@@ -253,68 +226,54 @@ code {
     width: 100%;
     text-align: center;
     color: #505050;
-    font-weight: bold;
-}
-
-.home-page__text {
-    padding: 0 20px;
-    font-weight: bold;
-    color: #fff;
+    font-weight: 700
 }
 
 .about-project-page {
-    font-size: 15px;
+    font-size: 15px
 }
 
-.contacts-icon,
-.terms-of-use-icon,
-.project-icon {
+.contacts-icon, .terms-of-use-icon, .project-icon {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 20px
 }
 
 .menu .section-picture {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 25px
 }
 
-.terms-of-use-page h2,
-.terms-of-use-page h4 {
-    color: #222;
+.terms-of-use-page h2, .terms-of-use-page h4 {
+    color: #222
 }
 
 .person-info {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .person-info__full-name {
     font-size: 18px;
     color: rgba(0, 158, 184, 1);
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .avatar {
-    height: 70px;
+    height: 70px
 }
 
 .person-info__profession {
-    color: #9a9a9a;
+    color: #9a9a9a
 }
 
-.email {
-
-}
-
-.email__value,
-.email__title {
+.email__value, .email__title {
     display: inline-block;
-    color: #5f5f5f;
+    color: #5f5f5f
 }
 
 .purchase-page h2 {
-    color: white;
+    color: #fff
 }
 
 .course {
@@ -324,15 +283,11 @@ code {
     padding: 20px 20px 50px;
     border: 7px solid #fff;
     position: relative;
-    box-shadow: 0 0 10px 5px #e3e3e3;
+    box-shadow: 0 0 10px 5px #e3e3e3
 }
 
 .course__sections {
-    padding: 0px 5px;
-}
-
-.course__sections-title {
-
+    padding: 0 5px
 }
 
 .course__section {
@@ -341,48 +296,47 @@ code {
     margin-top: 5px;
     padding: 5px 10px;
     position: relative;
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
     font-family: Century Gothic;
     min-width: 230px;
-    text-align: center;
-
+    text-align: center
 }
 
 .course__section-before-arrow {
     position: absolute;
     left: -26px;
-    bottom: 0px;
+    bottom: 0;
     border: 16px solid transparent;
-    border-right: 10px solid #ff8787;
+    border-right: 10px solid #ff8787
 }
 
 .course__section-after-arrow {
     position: absolute;
     right: -26px;
-    bottom: 0px;
+    bottom: 0;
     border: 16px solid transparent;
-    border-left: 10px solid #ff8787;
+    border-left: 10px solid #ff8787
 }
 
 .course_beginner-level {
-    background-color: #9ce184;
+    background-color: #9ce184
 }
 
 .course_specialist-level {
-    background-color: #a5c5fb;
+    background-color: #a5c5fb
 }
 
 .course_professional-level {
-    background-color: #efcc97;
+    background-color: #efcc97
 }
 
 .course_master-level {
-    background-color: #d8b3e3;
+    background-color: #d8b3e3
 }
 
 .course__icon {
-    text-align: center;
+    text-align: center
 }
 
 .course__title {
@@ -390,18 +344,18 @@ code {
     margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: #fff
 }
 
 .course_beginner-level .course__title {
-    color: white;
+    color: #fff
 }
 
 .course__price {
     background: #4f8eef;
     border-bottom-left-radius: 5px;
-    padding: 10px 20px 10px;
-    color: white;
+    padding: 10px 20px;
+    color: #fff;
     margin-top: 10px;
     font-size: 16px;
     border-bottom-right-radius: 5px;
@@ -409,44 +363,40 @@ code {
     bottom: 0;
     left: 0;
     width: 100%;
-    font-weight: bold;
-    text-align: center;
-}
-
-.course__price-value {
-
+    font-weight: 700;
+    text-align: center
 }
 
 .panel-heading h4 a {
-    color: white;
+    color: #fff;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .panel-beginner .panel-heading {
-    background-color: #98d184;
+    background-color: #98d184
 }
 
 .panel-specialist .panel-heading {
-    background-color: #93b6ef;
+    background-color: #93b6ef
 }
 
 .panel-professional .panel-heading {
-    background-color: #dfb67a;
+    background-color: #dfb67a
 }
 
 .panel-master .panel-heading {
-    background-color: #c19aca;
+    background-color: #c19aca
 }
 
 .levels {
     padding: 10px;
     background-color: #f1f1f1;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .levels .panel-body {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1
 }
 
 .course__choose {
@@ -454,64 +404,58 @@ code {
     right: 10px;
     top: 8px;
     width: 20px;
-    height: 20px;
+    height: 20px
 }
 
 .choose-course-form .btn-success {
     background-color: #6dc86d;
-    border-color: #59b259;
+    border-color: #59b259
 }
 
-.choose-course-form .btn-success:hover,
-.choose-course-form .btn-success:focus {
+.choose-course-form .btn-success:hover, .choose-course-form .btn-success:focus {
     background-color: #61b961;
-    border-color: #52a452;
+    border-color: #52a452
 }
 
-h1 .anchor,
-h2 .anchor,
-h3 .anchor,
-h4 .anchor,
-h5 .anchor,
-h6 .anchor {
+h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
     text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 @media (min-width: 768px) {
     .tutorial__section-link {
-        padding: 30px;
+        padding: 30px
     }
 
     .footer-nav__link {
-        display: inline-block;
+        display: inline-block
     }
 }
 
 @media (max-width: 768px) {
     .tutorial__section-link {
         padding: 10px 20px 30px;
-        font-size: 13px;
+        font-size: 13px
     }
 
     .tutorial__section-link img {
-        width: 70px;
+        width: 70px
     }
 }
 
 @media (max-width: 992px) {
     body {
-        margin-bottom: 170px;
+        margin-bottom: 170px
     }
 
     .logo-section {
-        text-align: center;
+        text-align: center
     }
 }
 
 @media (min-width: 992px) {
     body {
-        margin-bottom: 100px;
+        margin-bottom: 100px
     }
 }
 
@@ -519,27 +463,16 @@ h6 .anchor {
     margin-top: 5px;
     text-align: center;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc
 }
 
 .bottom-content-advertising {
     text-align: center;
     margin-top: 5px;
     padding-top: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc
 }
 
-.page .h1,
-.page h1,
-.page .h2,
-.page h2,
-.page .h3,
-.page h3,
-.page .h4,
-.page h4,
-.page .h5,
-.page h5,
-.page .h6,
-.page h6{
-    font-weight: bold;
+.page .h1, .page h1, .page .h2, .page h2, .page .h3, .page h3, .page .h4, .page h4, .page .h5, .page h5, .page .h6, .page h6 {
+    font-weight: 700
 }

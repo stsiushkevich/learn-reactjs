@@ -9,7 +9,7 @@
 <c:url var="example2" value="/resources/imges/pages/introduction/introduction-in-react/example_2.PNG"/>
 
 <lt:layout cssClass="page introduction-in-reactjs-page">
-    <h1>1.1 Что такое React?</h1>
+    <h1>1.1 Введение в ReactJS</h1>
     <wg:p>
         <b>React</b> это декларативная, эффективная и гибкая библиотека для построения пользовательских интерфейсов.
         <b>React</b> имеет несколько различных типов компонентов.  Рассмотрим класс <b>React.Component</b>.

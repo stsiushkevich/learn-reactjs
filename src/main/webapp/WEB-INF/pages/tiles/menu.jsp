@@ -26,13 +26,13 @@
 				<a href="${introductionUrl}">1. Введение</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isBasicsSection ? 'active' : null}">
-				<a href="${basicsUrl}">2. Основы ReactJS</a>
+				<a href="${basicsUrl}">2. Основы</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isCoreSection ? 'active' : null}">
-				<a href="${coreUrl}">3. Ядро React</a>
+				<a href="${coreUrl}">3. Ядро ReactJS</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isReferenceSection ? 'active' : null}">
-				<a href="${referenceUrl}">4. Справочная информация</a>
+				<a href="${referenceUrl}">4. Справочное руководство</a>
 			</li>
 		</ul>
 	</nav>
