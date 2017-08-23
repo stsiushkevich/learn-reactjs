@@ -7,12 +7,14 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/synthetic-event" %>
 
+<c:url var="handlingEventsUrl" value="/basics/handling-events"/>
+
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.6 SyntheticEvent</h1>
 
 	<wg:p>Данное справочное руководство описывает оболочку <code>SyntheticEvent</code>, которая является
 		частью системы событий React. Дополнительную информацию см. в руководстве
-		«<wg:link href="">обработка событий</wg:link>».</wg:p>
+		«<wg:link href="${handlingEventsUrl}">обработка событий</wg:link>».</wg:p>
 
 	<br/>
 	<h2>4.6.1 Обзор</h2>
@@ -65,20 +67,20 @@
 
 	<wg:p>
 		<ul>
-			<li>Clipboard Events</li>
-			<li>Composition Events</li>
-			<li>Keyboard Events</li>
-			<li>Focus Events</li>
-			<li>Form Events</li>
-			<li>Mouse Events</li>
-			<li>Selection Events</li>
-			<li>Touch Events</li>
-			<li>UI Events</li>
-			<li>Wheel Events</li>
-			<li>Media Events</li>
-			<li>Image Events</li>
-			<li>Animation Events</li>
-			<li>Transition Events</li>
+			<li>События буфера обмена</li>
+			<li>События композиции</li>
+			<li>События клавиатуры</li>
+			<li>События фокуса</li>
+			<li>События формы</li>
+			<li>События мыши</li>
+			<li>События выбора</li>
+			<li>События касания</li>
+			<li>События UI</li>
+			<li>События колеса прокрутки</li>
+			<li>События медиа</li>
+			<li>События изображения</li>
+			<li>События анимации</li>
+			<li>События перехода</li>
 		</ul>
 	</wg:p>
 
