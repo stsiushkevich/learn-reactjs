@@ -96,6 +96,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/introduction/introductionInReactJS/introductionInReactJS.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -112,6 +113,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/introduction/devtools/devtools.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -133,6 +135,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/basics/noteToJavaScript/noteToJavaScript.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -141,6 +144,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/basics/helloWorldExample/helloWorldExample.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -157,6 +161,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/basics/renderingElements/renderingElements.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -181,6 +186,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/basics/handlingEvents/handlingEvents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -221,6 +227,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/basics/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/basics/compositionVsInheritance/compositionVsInheritance.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -250,6 +257,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/core/typecheckingWithPropTypes/typecheckingWithPropTypes.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -266,6 +274,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/core/uncontrolledComponents/uncontrolledComponents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -290,6 +299,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/core/reactWithoutJSX/reactWithoutJSX.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -298,6 +308,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/core/reconciliation/reconciliation.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -314,6 +325,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/core/webComponents/webComponents.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -367,6 +379,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/reference/reactDom/reactDom.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -375,6 +388,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/reference/reactDomServer/reactDomServer.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
@@ -407,6 +421,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/reference/shallowRenderer/shallowRenderer.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
