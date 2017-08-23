@@ -476,3 +476,7 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
 .page .h1, .page h1, .page .h2, .page h2, .page .h3, .page h3, .page .h4, .page h4, .page .h5, .page h5, .page .h6, .page h6 {
     font-weight: 700
 }
+
+.disqus-thread{
+    margin-top: 20px;
+}

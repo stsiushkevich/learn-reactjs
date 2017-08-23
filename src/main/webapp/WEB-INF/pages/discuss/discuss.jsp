@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<div id="disqus_thread"></div>
+<div id="disqus_thread" class="disqus-thread"></div>
 <script>
 
 	/**
