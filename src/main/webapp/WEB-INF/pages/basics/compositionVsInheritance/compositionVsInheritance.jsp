@@ -32,7 +32,7 @@
 	<ce:code-example-2 codePenUrl="https://codepen.io/stzidane/pen/mwpyWr?editors=0110"/>
 
 	<wg:p>Все, что находится внутри JSX тега <code>&lt;SuccessMessage&gt;</code>, передается в компонент
-		<code>Message</code> как свойство <code>children</code>. Поскольку Message отрисовывает
+		<code>MessageContent</code> как свойство <code>children</code>. Поскольку MessageContent отрисовывает
 		<code>{props.children}</code> внутри <code>&lt;p&gt;</code>, в результирующем выводе отображаются
 		все переданные элементы.</wg:p>
 
