@@ -67,7 +67,7 @@
         <put-attribute name="header" value="" cascade="true"/>
         <put-attribute name="footer" value="" cascade="true"/>
         <put-attribute name="menu" value="" cascade="true"/>
-        <put-attribute name="menuAdvertising" value="/WEB-INF/pages/advertising/menu/advertising.jsp" cascade="true"/>
+        <put-attribute name="menuAdvertising" value="" cascade="true"/>
         <put-attribute name="topContentAdvertising" value="" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="discuss" value="/WEB-INF/pages/discuss/discuss.jsp" cascade="true"/>
