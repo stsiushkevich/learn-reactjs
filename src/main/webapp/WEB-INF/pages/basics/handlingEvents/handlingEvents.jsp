@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>2.7 Обработка событий</h1>
 
@@ -83,3 +84,9 @@
 		случаев, мы рекомендуем делать привязку в конструкторе или использовать синтаксис инициализатора свойств,
 		чтобы избежать этого вида проблемы производительности.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="state-and-lifecycle"/>
+<c:url var="nextPageUrl" value="conditional-rendering"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+									 pageStartAncor="pageStart"
+									 nextPageUrl="${nextPageUrl}"/>

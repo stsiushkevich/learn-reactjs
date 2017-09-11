@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/lists-and-keys" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>2.9	Списки и ключи</h1>
 
@@ -137,3 +138,9 @@
 		точки зрения читабельности. Имейте ввиду, что если тело <code>map()</code> имеет слишком много вложений,
 		возможно, наступило отличное время выделить компонент.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="conditional-rendering"/>
+<c:url var="nextPageUrl" value="forms"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+									 pageStartAncor="pageStart"
+									 nextPageUrl="${nextPageUrl}"/>

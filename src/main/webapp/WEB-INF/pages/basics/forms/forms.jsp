@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/forms" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.10 Формы</h1>
 
@@ -125,3 +126,9 @@
         возможно, стоит рассмотреть <wg:link href="${uncontrolledComponentsUrl}">неконтролируемые компоненты</wg:link>,
         альтернативный метод реализации форм ввода.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="lists-and-keys"/>
+<c:url var="nextPageUrl" value="lifting-state-up"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

@@ -4,7 +4,9 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/basics/components-and-props" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.5 Компоненты и свойства</h1>
 
@@ -222,3 +224,9 @@
         изменять их вывод со временем в ответ на действия пользователя, ответы сети или что-либо
         другое, не нарушая данное правило.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="rendering-elements"/>
+<c:url var="nextPageUrl" value="state-and-lifecycle"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

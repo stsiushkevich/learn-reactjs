@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/composition-vs-inheritance" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>2.12	Композиция вместо наследования</h1>
 
@@ -72,3 +73,9 @@
 		предлагается извлечь её в отдельный модуль JavaScript. Компоненты могут импортировать его и
 		использовать эту функциональность (а также объект или класс), не расширяя её.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="lifting-state-up"/>
+<c:url var="nextPageUrl" value="/core/topics"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+									 pageStartAncor="pageStart"
+									 nextPageUrl="${nextPageUrl}"/>

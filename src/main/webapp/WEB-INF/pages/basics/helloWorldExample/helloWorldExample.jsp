@@ -4,9 +4,11 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/basics/hello-world-example" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="installationUrl" value="/introduction/installation"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.2 Hello, World!</h1>
 
@@ -25,3 +27,9 @@
         строительные блоки приложения React: элементы и компоненты. Однажды овладев ими, вы сможете
         создавать сложные приложения из маленьких переиспользуемых частей.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="note-to-javascript"/>
+<c:url var="nextPageUrl" value="introduction-to-jsx"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

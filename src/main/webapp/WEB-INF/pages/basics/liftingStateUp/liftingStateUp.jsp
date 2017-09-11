@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/lifting-state-up" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>2.11 Передача состояния вверх по иерархии</h1>
 
@@ -188,3 +189,9 @@
 		проинспектировать свойства и подняться по дереву вверх до тех пор, пока не найдете компонент,
 		ответственный за обновление состояния. Это позволит вам отследить баги вплоть до их источника.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="forms"/>
+<c:url var="nextPageUrl" value="composition-vs-inheritance"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+									 pageStartAncor="pageStart"
+									 nextPageUrl="${nextPageUrl}"/>

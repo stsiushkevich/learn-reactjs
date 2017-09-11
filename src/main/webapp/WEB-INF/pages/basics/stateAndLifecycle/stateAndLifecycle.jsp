@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.6 Состояние и жизненный цикл</h1>
 
@@ -271,3 +272,9 @@
         этого компонента, который может изменяться со временем. Вы можете использовать компоненты без
         состояния внутри компонентов, имеющих состояние и наоборот.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="components-and-props"/>
+<c:url var="nextPageUrl" value="handling-events"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

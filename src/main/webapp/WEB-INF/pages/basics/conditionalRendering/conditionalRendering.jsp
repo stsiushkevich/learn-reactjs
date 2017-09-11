@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>2.8	Отрисовка по условию</h1>
 
@@ -104,3 +105,9 @@
 		методов жизненного цикла компонента. К примеру, <code>componentWillUpdate</code>
 		и <code>componentDidUpdate</code> по прежнему будут вызываться.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="handling-events"/>
+<c:url var="nextPageUrl" value="lists-and-keys"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+									 pageStartAncor="pageStart"
+									 nextPageUrl="${nextPageUrl}"/>
