@@ -4,7 +4,9 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/installation" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page instalation-page">
     <h1>1.2 Установка</h1>
 
@@ -186,3 +188,9 @@
         нужно поменять <code>15</code> на номер необходимой версии. Если вы хотите исопльзовать
         Bower, то React доступен через пакет <code>react</code>.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="introduction-in-reactjs"/>
+<c:url var="nextPageUrl" value="devtools"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

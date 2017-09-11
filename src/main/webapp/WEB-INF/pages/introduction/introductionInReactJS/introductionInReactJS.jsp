@@ -4,10 +4,12 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/introduction-in-reactjs" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="example1" value="/resources/imges/pages/introduction/introduction-in-react/example_1.PNG"/>
 <c:url var="example2" value="/resources/imges/pages/introduction/introduction-in-react/example_2.PNG"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page introduction-in-reactjs-page">
     <h1>1.1 Введение в ReactJS</h1>
     <wg:p>
@@ -47,3 +49,7 @@
         <code-example:code-example-2/>
     </wg:p>
 </lt:layout>
+
+<c:url var="nextPageUrl" value="installation"/>
+<app:page-navigate pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

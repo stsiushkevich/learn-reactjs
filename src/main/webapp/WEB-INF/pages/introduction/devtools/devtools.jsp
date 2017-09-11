@@ -4,10 +4,12 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/installation" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="devtoolsUrl" value="/resources/imges/pages/introduction/devtools/devtools.png"/>
 <c:url var="reactExtUrl" value="/resources/imges/pages/introduction/devtools/react_ext.PNG"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page instalation-page">
     <h1>1.3 Инструменты разработчика</h1>
 
@@ -31,3 +33,9 @@
         </ol>
     </wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="installation"/>
+<c:url var="nextPageUrl" value="/basics/topics"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>
