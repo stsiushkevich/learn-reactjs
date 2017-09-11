@@ -4,9 +4,11 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/basics/rendering-elements" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.4 Отрисовка Элементов</h1>
 
@@ -109,3 +111,9 @@
     <wg:p><b>По опыту создателей React, размышление о том, как должен выглядеть UI в конкретный
         момент времени вместо того, как изменить его со временем устранит целый класс багов.</b></wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="introduction-to-jsx"/>
+<c:url var="nextPageUrl" value="components-and-props"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>
