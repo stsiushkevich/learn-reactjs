@@ -4,7 +4,9 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/basics/introduction-to-jsx" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.3 Знакомство с JSX</h1>
 
@@ -167,3 +169,9 @@
         чтобы и ES6 и JSX подсвечивались корректно.
     </lt:layout>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="hello-world-example"/>
+<c:url var="nextPageUrl" value="rendering-elements"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

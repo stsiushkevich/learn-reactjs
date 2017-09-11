@@ -480,3 +480,22 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
 .disqus-thread{
     margin-top: 5px;
 }
+
+.page-navigate{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-navigate__link{
+    text-decoration: none;
+}
+
+.page-navigate__link:hover,
+.page-navigate__link:focus,
+.page-navigate__link:active{
+    text-decoration: none;
+}
+
+.page-navigate__link-icon{
+    height: 45px;
+}

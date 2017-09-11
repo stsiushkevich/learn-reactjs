@@ -16,30 +16,6 @@
     }
 </style>
 
-<<<<<<< HEAD:scansol-app/scansol-restful-api/src/main/webapp/WEB-INF/tags/widget/error-dialog.tag
-<div class="modal fade ${cssClass}" id="${id}"  style="z-index: 10000;">
-    <div class="modal-dialog">
-        <div class="modal-content confirm-dialog-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span style="color: white;" aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">
-                    Error
-                </h4>
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer">
-                <div class="modalBtns btn-lt confirm-dialog-footer">
-                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#${id}">
-                        Ok
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-=======
 <wg:modal id="${id}" cssClass="${cssClass}" style="${style}" isConfirm="true">
     <wg:modal-header>
         <wg:button domType="button" cssClass="close" dataDismiss="modal" ariaLabel="Close">
@@ -61,4 +37,3 @@
         </lt:layout>
     </wg:modal-footer>
 </wg:modal>
->>>>>>> origin/sync_refactor:scansol-app/scansol-restful-api/src/main/webapp/WEB-INF/tags/widget/error-overflow.tag
