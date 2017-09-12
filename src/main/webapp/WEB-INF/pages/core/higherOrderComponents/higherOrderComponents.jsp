@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.11	Компоненты более высокого порядка (старшие компоненты)</h1>
 
@@ -294,3 +295,9 @@
     обрабатывали. На данный момент ведется исследование путей решения этой проблемы,
     так что использование старших компонентов под наблюдением не находится.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="web-components"/>
+<c:url var="nextPageUrl" value="integrating-with-other-libraries"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

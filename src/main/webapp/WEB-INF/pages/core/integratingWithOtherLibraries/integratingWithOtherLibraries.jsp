@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.12	Интеграция со сторонними библиотеками</h1>
 
@@ -174,3 +175,9 @@
     React вы сможете объединить их в более крупные компоненты и переместить
     некоторые из <code>ReactDOM.render()</code> вызовов выше по иерархии.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="higher-order-components"/>
+<c:url var="nextPageUrl" value="/reference/topics"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

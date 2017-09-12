@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.8 Согласование</h1>
 
@@ -171,3 +172,9 @@
     </ul>
   </wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react-without-jsx"/>
+<c:url var="nextPageUrl" value="context"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

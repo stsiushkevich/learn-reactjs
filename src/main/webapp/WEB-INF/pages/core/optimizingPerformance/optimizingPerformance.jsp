@@ -11,6 +11,7 @@
 <c:url var="profilingUrl" value="/resources/imges/pages/core/optimizing-performance/profiling.png"/>
 <c:url var="treeUrl" value="/resources/imges/pages/core/optimizing-performance/tree.png"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.5 Оптимизация производительности</h1>
 
@@ -381,3 +382,9 @@
     что вам нужно для реализации <code>shouldComponentUpdate</code>. Это может дать вам
     хороший прирост производительности.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="uncontrolled-components"/>
+<c:url var="nextPageUrl" value="react-without-es6"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>
