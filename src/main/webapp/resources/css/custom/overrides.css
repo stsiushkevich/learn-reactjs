@@ -78,3 +78,8 @@ h4{
 .h6, h6{
     font-size: 12px;
 }
+
+pre code{
+    white-space: pre;
+    overflow-x: auto;
+}
