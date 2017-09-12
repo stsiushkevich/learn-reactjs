@@ -7,6 +7,7 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/dom-elements" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.5 DOM Elements</h1>
 
@@ -142,3 +143,9 @@
 	<ce:code-example-6/>
 
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react-dom-server"/>
+<c:url var="nextPageUrl" value="synthetic-event"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

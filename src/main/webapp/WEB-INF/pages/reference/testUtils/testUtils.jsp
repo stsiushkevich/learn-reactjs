@@ -7,6 +7,7 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/test-utils" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.7 Тестовые утилиты</h1>
 
@@ -196,3 +197,9 @@
 			и вернет его или выдаст исключение, если количество совпадений больше одного.</wg:p>
 	</rf:definition>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="synthetic-event"/>
+<c:url var="nextPageUrl" value="shallow-renderer"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

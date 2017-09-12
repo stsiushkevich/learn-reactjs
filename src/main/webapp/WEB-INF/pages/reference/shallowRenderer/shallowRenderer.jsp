@@ -7,6 +7,7 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/shallow-renderer" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.8 Поверхностная отрисовка</h1>
 
@@ -59,3 +60,7 @@
 		<wg:p>Затем вы можете начать утверждать факты о выводе.</wg:p>
 	</rf:definition>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="test-utilities"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"/>

@@ -9,6 +9,7 @@
 
 <c:url var="handlingEventsUrl" value="/basics/handling-events"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.6 SyntheticEvent</h1>
 
@@ -233,3 +234,9 @@
 
 	<ce:code-example-27/>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="dom-elements"/>
+<c:url var="nextPageUrl" value="test-utilities"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>
