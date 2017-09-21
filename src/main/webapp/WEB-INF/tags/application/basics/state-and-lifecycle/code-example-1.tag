@@ -19,10 +19,10 @@
     &lt;div&gt;
       &lt;p&gt;Таймер:&lt;/p&gt;
       &lt;p&gt;
-      &lt;span&gt;{`&#36;{Math.round(total/INTERVAL/60/60)}`} : &lt;/span&gt;
-      &lt;span&gt;{`&#36;{Math.round(total/INTERVAL/60)}`} : &lt;/span&gt;
-      &lt;span&gt;{`&#36;{Math.round(total/INTERVAL)}`} . &lt;/span&gt;
-      &lt;span&gt;{`&#36;{total % INTERVAL}`}&lt;/span&gt;
+      &lt;span&gt;{Math.round(total/INTERVAL/60/60)} : &lt;/span&gt;
+      &lt;span&gt;{Math.round(total/INTERVAL/60)} : &lt;/span&gt;
+      &lt;span&gt;{Math.round(total/INTERVAL)} . &lt;/span&gt;
+      &lt;span&gt;{total % INTERVAL}&lt;/span&gt;
       &lt;/p&gt;
     &lt;/div&gt;
     );
