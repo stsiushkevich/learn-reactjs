@@ -16,7 +16,6 @@
     constructor(props) {
       super(props);
       this.state = {value: 0};
-      this.INTERVAL = 90;
     }
 
     increment(){
