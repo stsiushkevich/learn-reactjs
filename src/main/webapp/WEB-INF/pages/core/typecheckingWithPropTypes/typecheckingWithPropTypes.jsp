@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/typechecking-with-prop-types" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.2 Проверка типов с PropTypes</h1>
 
@@ -61,3 +62,9 @@
     компонентом. Проверка типов <code>propTypes</code> происходит после отработки <code>defaultProps</code>,
     поэтому проверка типов будет также применена и к <code>defaultProps</code>.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="jsx-in-depth"/>
+<c:url var="nextPageUrl" value="refs-and-the-dom"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

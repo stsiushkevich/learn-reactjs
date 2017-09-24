@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/web-components" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.10	Веб-компоненты</h1>
 
@@ -48,3 +49,9 @@
 
   <ce:code-example-3/>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="context"/>
+<c:url var="nextPageUrl" value="higher-order-components"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

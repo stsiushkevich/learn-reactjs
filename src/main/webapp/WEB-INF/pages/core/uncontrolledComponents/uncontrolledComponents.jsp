@@ -6,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/uncontrolled-components" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.4 Неконтролируемые компоненты</h1>
 
@@ -45,3 +46,9 @@
   <wg:p>Аналогично, <code>&lt;input type="checkbox"&gt;</code> и <code>&lt;input type="radio"&gt;</code> поддерживают
     <code>defaultChecked</code>, а <code>&lt;select&gt;</code> и <code>&lt;textarea&gt;</code> поддерживают <code>defaultValue</code>.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="refs-and-the-dom"/>
+<c:url var="nextPageUrl" value="optimizing-performance"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

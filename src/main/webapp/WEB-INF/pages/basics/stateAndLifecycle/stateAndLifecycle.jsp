@@ -225,7 +225,7 @@
 
     <ce:code-example-20/>
 
-    <wg:p>Мерджинг неглубокий, поэтому <code>this.setState({users})</code> оставляет <code>this.state.posts</code>
+    <wg:p>Мерджинг неглубокий, поэтому <code>this.setState({users})</code> оставляет <code>this.state.permissions</code>
         нетронутым, но окончательно заменяет <code>this.state.users</code>.</wg:p>
 
     <br/>

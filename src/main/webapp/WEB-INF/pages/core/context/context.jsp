@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.9 Контекст</h1>
 
@@ -135,3 +136,9 @@
     контекст. В <wg:link href="https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076">этой статье</wg:link>
     в блоге есть хорошее объяснение, почему это является проблемой и как вы можете её обойти.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="reconciliation"/>
+<c:url var="nextPageUrl" value="web-components"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

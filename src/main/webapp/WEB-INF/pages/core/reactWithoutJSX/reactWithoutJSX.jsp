@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.7 React без JSX</h1>
 
@@ -47,3 +48,9 @@
     <wg:link href="https://github.com/ohanhi/hyperscript-helpers">hyperscript-helpers</wg:link>,
     которые предлагают краткий синтаксис.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react-without-es6"/>
+<c:url var="nextPageUrl" value="reconciliation"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

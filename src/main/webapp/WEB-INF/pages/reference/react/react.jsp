@@ -7,6 +7,7 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>4.1	React</h1>
 
@@ -225,3 +226,9 @@
     </app:alert>
   </rf:definition>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="/core/topics"/>
+<c:url var="nextPageUrl" value="react-component"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

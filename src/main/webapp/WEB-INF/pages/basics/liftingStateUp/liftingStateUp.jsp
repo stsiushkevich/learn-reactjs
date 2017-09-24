@@ -87,7 +87,7 @@
 	<wg:p>Перед погружением в анализ изменений в компоненте <code>SpeedRadar</code>, давайте прорезюмируем наши изменения в
 		компоненте <code>SpeedSetter</code>. Мы удалили из него локальное состояние, и вместо чтения значения <code>this.state.speed</code>,
 		сейчас мы читаем значение <code>this.props.speed</code>. Вместо вызова <code>this.setState()</code>, когда мы хотим сделать
-		изменение скорости, мы сейчас вызываем <code>this.props.onTemperatureChange()</code>, который будет
+		изменение скорости, мы сейчас вызываем <code>this.props.onSpeedChange()</code>, который будет
 		предоставляться компонентом <code>SpeedRadar</code>:</wg:p>
 
 	<ce:code-example-6/>

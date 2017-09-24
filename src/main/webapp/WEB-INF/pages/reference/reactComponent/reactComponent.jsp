@@ -7,6 +7,7 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react-component" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>4.2	React.Component</h1>
 
@@ -440,3 +441,9 @@
       ваше изменение. Обращайтесь с <code>this.state</code>, как если бы оно было неизменяемым.</wg:p>
   </rf:definition>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react"/>
+<c:url var="nextPageUrl" value="react-dom"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

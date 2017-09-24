@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>3.1 JSX изнутри</h1>
 
@@ -281,3 +282,9 @@
 	<ce:code-example-30/>
 
 </lt:layout>
+
+<c:url var="prevPageUrl" value="/basics/topics"/>
+<c:url var="nextPageUrl" value="typechecking-with-prop-types"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

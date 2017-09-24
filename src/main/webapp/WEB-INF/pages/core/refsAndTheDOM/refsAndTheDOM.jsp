@@ -1,19 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Юлия
-  Date: 01.07.2017
-  Time: 9:06
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-  <title>Title</title>
-</head>
-<body>
-
-</body>
-</html><%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
@@ -21,6 +6,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/refs-and-the-dom" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.3 Ссылки ref и DOM</h1>
 
@@ -190,3 +176,9 @@
     эгого избежать, определяя коллбэк как связанный метод в классе, но
     обратите внимание, что в большинстве случаев это не имеет большого значения.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="typechecking-with-prop-types"/>
+<c:url var="nextPageUrl" value="uncontrolled-components"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

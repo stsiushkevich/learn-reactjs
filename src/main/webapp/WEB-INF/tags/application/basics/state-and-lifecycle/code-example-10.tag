@@ -10,12 +10,13 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
+  const INTERVAL = 90;
+
   class Timer extends React.Component {
-    <cd:hl>constructor(props) {</cd:hl>
-      <cd:hl>super(props);</cd:hl>
-      <cd:hl>this.state = {value: 0};</cd:hl>
-      <cd:hl>this.INTERVAL = 90;</cd:hl>
-    <cd:hl>}</cd:hl>
+    constructor(props) {
+      super(props);
+      this.state = {value: 0};
+    }
 
     <cd:hl>componentDidMount() {</cd:hl>
     <cd:hl>}</cd:hl>

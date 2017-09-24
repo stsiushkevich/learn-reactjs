@@ -7,6 +7,7 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react-dom" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.3 ReactDOM</h1>
 
@@ -111,3 +112,9 @@
 	</app:alert>
 
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react-component"/>
+<c:url var="nextPageUrl" value="react-dom-server"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

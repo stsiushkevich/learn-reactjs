@@ -8,6 +8,7 @@
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.6	React без ES6</h1>
 
@@ -114,3 +115,9 @@
 
   <ce:code-example-10/>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="optimizing-performance"/>
+<c:url var="nextPageUrl" value="react-without-jsx"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>

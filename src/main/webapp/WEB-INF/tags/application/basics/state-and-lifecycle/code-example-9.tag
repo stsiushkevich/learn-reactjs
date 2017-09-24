@@ -10,11 +10,12 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
+  <cd:hl>const INTERVAL = 90;</cd:hl>
+
   class Timer extends React.Component {
     <cd:hl>constructor(props) {</cd:hl>
       <cd:hl>super(props);</cd:hl>
       <cd:hl>this.state = {value: 0};</cd:hl>
-      <cd:hl>this.INTERVAL = 90;</cd:hl>
     <cd:hl>}</cd:hl>
 
     render() {
@@ -22,10 +23,10 @@
       return (&lt;div&gt;
         &lt;p&gt;Таймер:&lt;/p&gt;
         &lt;p&gt;
-          &lt;span&gt;{`\${Math.round(value/INTERVAL/60/60)}`} : &lt;/span&gt;
-          &lt;span&gt;{`\${Math.round(value/INTERVAL/60)}`} : &lt;/span&gt;
-          &lt;span&gt;{`\${Math.round(value/INTERVAL)}`} . &lt;/span&gt;
-          &lt;span&gt;{`\${value % INTERVAL}`}&lt;/span&gt;
+          &lt;span&gt;{Math.round(value/INTERVAL/60/60)} : &lt;/span&gt;
+          &lt;span&gt;{Math.round(value/INTERVAL/60)} : &lt;/span&gt;
+          &lt;span&gt;{Math.round(value/INTERVAL)} . &lt;/span&gt;
+          &lt;span&gt;{value % INTERVAL}&lt;/span&gt;
         &lt;/p&gt;
       &lt;/div&gt;);
     }

@@ -7,8 +7,9 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react-dom-server" %>
 
+<a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
-	<h1>4.4 ReactDOMServer</h2>
+	<h1>4.4 ReactDOMServer</h1>
 
 	<wg:p>Если вы загружаете React c помощью тега <code>&lt;script&gt;</code>, эти API верхнего уровня
 		доступны в глобальном <code>ReactDOMServer</code>. Если вы используете ES6 с <b>npm</b>, вы можете
@@ -53,3 +54,9 @@
 			как удаление лишних атрибутов может сэкономить множество байт.</wg:p>
 	</rf:definition>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react-dom"/>
+<c:url var="nextPageUrl" value="dom-elements"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}"
+                   pageStartAncor="pageStart"
+                   nextPageUrl="${nextPageUrl}"/>
