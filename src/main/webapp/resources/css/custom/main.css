@@ -198,12 +198,13 @@ code {
 
 .tutorial__section {
     display: inline-block;
-    margin-top: 25px
+    margin-top: 20px;
+    margin-right: 20px
 }
 
 .tutorial__section-link {
     background-color: #7fedff;
-    border-radius: 10px;
+    border-radius: 25px;
     display: inline-block;
     border: 7px solid #fff;
     position: relative
