@@ -7,7 +7,7 @@
 
 <pre class="prettyprint">
     <code class="language-javascript">
-    &lt;script src="https://unpkg.com/react@15/dist/react.js"&gt;&lt;/script&gt;
-    &lt;script src="https://unpkg.com/react-dom@15/dist/react-dom.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/react@16/dist/react.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/react-dom@16/dist/react-dom.js"&gt;&lt;/script&gt;
     </code>
 </pre>

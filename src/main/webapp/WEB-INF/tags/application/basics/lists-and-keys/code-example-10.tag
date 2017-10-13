@@ -25,7 +25,7 @@
     const users = props.users;
     const items = users.map((user) =&gt; {
       //Правильно! Здесь должен быть указан ключ:
-      return &lt;UserItem <cd:hl>key={`\${user.id}`}</cd:hl> user={user}/&gt;;
+      return &lt;UserItem <cd:hl>key={user.id}</cd:hl> user={user}/&gt;;
     });
     return (&lt;ul&gt;{items}&lt;/ul&gt;);
   }

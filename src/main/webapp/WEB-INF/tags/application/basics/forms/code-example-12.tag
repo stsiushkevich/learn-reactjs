@@ -10,6 +10,10 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  &lt;select multiple={true} value={['B', 'C']}&gt;</code>
+  ReactDOM.render(&lt;input value="hi" /&gt;, mountNode);
+
+  setTimeout(function() {
+    ReactDOM.render(&lt;input value={null} /&gt;, mountNode);
+  }, 1000);</code>
     </pre>
 </cd:code-example>

@@ -3,7 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
-<%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/introduction/installation" %>
+<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/introduction/installation" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <a name="pageStart"></a>
@@ -34,7 +34,7 @@
     </wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-1/>
+        <ce:code-example-1/>
     </wg:p>
     <wg:p>
         Данный пример не работает с бэк-энд логикой или базой данных. Он просто создает начальный фронт-энд каркасс. Так что мы можем
@@ -108,12 +108,12 @@
     <wg:p>Для того, чтобы установить React с помощью Yarn, необходимо выполнить следующие команды в командной строке:</wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-2/>
+        <ce:code-example-2/>
     </wg:p>
     <wg:p>Для того, чтобы установить React с помощью npm, необходимо выполнить:</wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-3/>
+        <ce:code-example-3/>
     </wg:p>
     <wg:p>Данные менеджеры скачивают необходимые пакеты с <wg:link
             href="http://npmjs.com/">реестра npm</wg:link>.</wg:p>
@@ -138,7 +138,7 @@
     <wg:p>Наименьший пример кода на Ract JS выглядит примерно так:</wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-4/>
+        <ce:code-example-4/>
     </wg:p>
     <wg:p>Данный код отрисовывается в DOM-элемент с атрибутом <code>id="root"</code>. Поэтому все, что необходимо
         сделать - это разместить <code>&lt;div id="root"&gt;&lt;/div&gt;</code> где-нибудь в HTML файле.</wg:p>
@@ -173,20 +173,37 @@
 
     <wg:p>Если вы не хотите использовать npm для управления пакетами клиента, то <code>react</code> и
         <code>react-dom</code> npm пакеты также предоставляют единые файлы-дистрибутивы в
-        папках <code>dist</code>, которые размещены на CDN:</wg:p>
+        папках <code>umd</code>, которые размещены на CDN:</wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-5/>
+        <ce:code-example-5/>
     </wg:p>
     <wg:p>Версии выше подходят только для разработки, но не для production-версии проекта.
         Минифицированные и оптимизированные production-версии React находятся здесь:</wg:p>
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-6/>
+        <ce:code-example-6/>
     </wg:p>
     <wg:p>Чтобы загрузить специфические версии <code>react</code> и <code>react-dom</code>,
-        нужно поменять <code>15</code> на номер необходимой версии. Если вы хотите исопльзовать
+        нужно поменять <code>16</code> на номер необходимой версии. Если вы хотите исопльзовать
         Bower, то React доступен через пакет <code>react</code>.</wg:p>
+
+    <br/>
+    <h4>1.2.3.5.1 Что такое crossorigin атрибут?</h4>
+
+    <wg:p>Если вы подключаете React из CDN, разработчики рекоммендуют установить значение
+    атрибута <code>crossorigin</code>:</wg:p>
+
+    <ce:code-example-7/>
+
+    <wg:p>Также рекомендовано проверить, что используемый вами CDN устанавливает HTTP
+    заголовок <code>Access-Control-Allow-Origin: *</code>:</wg:p>
+
+    <c:url var="httpHeaderUrl" value="/resources/imges/pages/introduction/installation/http_header.png"/>
+    <wg:p cssClass="text-center"><wg:img src="${httpHeaderUrl}"/></wg:p>
+
+    <wg:p>Это обеспечивает улучшенную <wg:link href="https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">обработку ошибок в React</wg:link>,
+        начиная с 16 версии.</wg:p>
 </lt:layout>
 
 <c:url var="prevPageUrl" value="introduction-in-reactjs"/>

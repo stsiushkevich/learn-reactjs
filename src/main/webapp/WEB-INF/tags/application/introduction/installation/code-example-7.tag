@@ -5,11 +5,11 @@
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="name" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
-<%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example>
     <pre class="prettyprint">
         <code class="language-javascript">
-  &lt;select multiple={true} value={['B', 'C']}&gt;</code>
-    </pre>
+    &lt;script <cd:hl>crossorigin</cd:hl> src="..."&gt;&lt;/script&gt;
+        </code>
+</pre>
 </cd:code-example>

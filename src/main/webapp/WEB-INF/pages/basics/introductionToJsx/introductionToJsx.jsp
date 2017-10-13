@@ -42,7 +42,9 @@
 
     <wg:p>Можно поэкспериментировать с ними <wg:link href="http://codepen.io/gaearon/pen/PGEjdG?editors=0010">здесь</wg:link>.</wg:p>
 
-    <wg:p>Здесь мы разделили JSX на несколько частей для читабельности.</wg:p>
+    <wg:p>Здесь мы поделили JSX на несколько линий для читабельности. Хоть это и не является обязательным,
+     рекоммендуется также оборачивать его в круглые скобки <code>()</code> для избежания подводных камней
+     <wg:link href="https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi">автоматической вставки точки с запятой</wg:link></wg:p>
 
 
     <br/>
@@ -82,6 +84,14 @@
         В противном случае JSX будет воспринимать  значение атрибута как строковый литерал, а не как
         выражение. В одном атрибуте можно использовать либо двойные кавычки, либо фигурные скобки, но не всё вместе.</wg:p>
 
+    <lt:layout cssClass="alert alert-danger">
+        <b>Предостережение!</b> Так как JSX ближе к JavaScript чем к HTML,
+        React DOM использует соглашение об именовании свойств в <i>верблюжьейНотации</i>, вместо имен HTML атрибутов.
+    </lt:layout>
+
+    <wg:p>Например <code>class</code> становится <code>className</code> в JSX,
+        а <code>tabindex</code> становится <code>tabIndex</code>.</wg:p>
+
 
     <br/>
     <h2>2.3.4 Указание потомков с помощью JSX</h2>
@@ -99,15 +109,6 @@
         <lt:layout cssClass="code-block-header">Код</lt:layout>
         <code-example:code-example-7/>
     </wg:p>
-
-    <lt:layout cssClass="alert alert-danger">
-        <b>Предостережение!</b> Так как JSX ближе к JavaScript чем к HTML,
-        React DOM использует соглашение об именовании свойств в <i>верблюжьейНотации</i>, вместо имен HTML атрибутов.
-    </lt:layout>
-
-    <wg:p>Например <code>class</code> становится <code>className</code> в JSX,
-        а <code>tabindex</code> становится <code>tabIndex</code>.</wg:p>
-
 
     <br/>
     <h2>2.3.5 JSX предотвращает атаки иньекцией</h2>

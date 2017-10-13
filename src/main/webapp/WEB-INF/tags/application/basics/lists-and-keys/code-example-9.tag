@@ -18,7 +18,7 @@
   function UserItem(props){
     const user = props.user
     //Неправильно! Здесь не нужно указывать ключ:
-    return (&lt;li <cd:hl>key={`\${user.id}`}</cd:hl>&gt;{user.name}&lt;/li&gt;)
+    return (&lt;li <cd:hl>key={user.id}</cd:hl>&gt;{user.name}&lt;/li&gt;)
   }
 
   function UserList(props){

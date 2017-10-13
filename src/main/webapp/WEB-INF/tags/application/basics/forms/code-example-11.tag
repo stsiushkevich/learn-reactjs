@@ -10,6 +10,8 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  &lt;select multiple={true} value={['B', 'C']}&gt;</code>
+  var partialState = {};
+  <cd:hl>partialState[name] = value;</cd:hl>
+  this.setState(partialState);</code>
     </pre>
 </cd:code-example>

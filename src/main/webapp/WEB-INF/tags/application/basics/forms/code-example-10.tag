@@ -10,8 +10,8 @@
 <cd:code-example codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  var partialState = {};
-  <cd:hl>partialState[name] = value;</cd:hl>
-  this.setState(partialState);</code>
+  this.setState({
+    <cd:hl>[name]: value</cd:hl>
+  });</code>
     </pre>
 </cd:code-example>
