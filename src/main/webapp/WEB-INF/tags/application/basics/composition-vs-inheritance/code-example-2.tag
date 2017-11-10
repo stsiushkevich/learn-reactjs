@@ -30,7 +30,7 @@
   function App(){
     return (
       &lt;p&gt;
-        <cd:hl>&lt;SuccessMessage title="Успех"&gt;Операция завершена успешено!&lt;/SuccessMessage&gt;</cd:hl>
+        <cd:hl>&lt;SuccessMessage title="Успех"&gt;Операция завершена успешно!&lt;/SuccessMessage&gt;</cd:hl>
       &lt;/p&gt;
     );
   }</code>
