@@ -22,9 +22,9 @@
 	<jsp:include page="../google/analytic.jsp"/>
 
 	<u:resource type="link" root="/resources/css/plugins"
-	            names="bootstrap.min.css, atelier-dune-light.min.css"/>
+	            names="bootstrap.min.css, mdb.min.css, atelier-dune-light.min.css"/>
 	<u:resource type="link" root="/resources/css/custom" names="main.min.css, overrides.min.css"/>
-	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
+	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery-3.2.1.min.js, bootstrap.min.js, mdb.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
 	<tiles:insertAttribute name="resources"/>
 </head>
 <body class="<tiles:insertAttribute name='bodyClass'/>">
