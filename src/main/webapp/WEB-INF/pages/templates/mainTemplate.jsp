@@ -7,7 +7,7 @@
 <html class="html">
 <head xmlns:tiles="http://tiles.apache.org/tags-tiles">
 	<meta charset="UTF-8">
-	<meta name="yandex-verification" content="14e7853c65dd22f0" />
+	<meta name="yandex-verification" content="14e7853c65dd22f0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:type" content="website">
@@ -23,13 +23,16 @@
 
 	<u:resource type="link" root="/resources/css/plugins"
 	            names="bootstrap.min.css, mdb.min.css, atelier-dune-light.min.css"/>
-	<u:resource type="link" root="/resources/css/custom" names="main.min.css, overrides.min.css"/>
-	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery-3.2.1.min.js, bootstrap.min.js, mdb.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
+	<u:resource type="link" root="/resources/css/custom" names="main.css, overrides.min.css"/>
 	<tiles:insertAttribute name="resources"/>
 </head>
 <body class="<tiles:insertAttribute name='bodyClass'/>">
 <tiles:insertAttribute name="body"/>
 
 <jsp:include page="../discuss/count.jsp"/>
+
+<%-- SCRIPTS --%>
+<u:resource type="script" root="/resources/js/plugins"
+            names="html5.js, jquery-3.2.1.min.js, popper.min.js, bootstrap.min.js, mdb.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
 </body>
 </html>
