@@ -10,6 +10,6 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  onChange onInput onSubmit</code>
+  onChange onInput onSubmit onInvalid(>= v16)</code>
   </pre>
 </cd:code-example>

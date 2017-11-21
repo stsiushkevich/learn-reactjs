@@ -10,6 +10,12 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentWillReceiveProps(nextProps)</code>
+  render() {
+    return [
+      &lt;li key="A"&gt;First item&lt;/li&gt;,
+      &lt;li key="B"&gt;Second item&lt;/li&gt;,
+      &lt;li key="C"&gt;Third item&lt;/li&gt;,
+    ];
+  }</code>
   </pre>
 </cd:code-example>

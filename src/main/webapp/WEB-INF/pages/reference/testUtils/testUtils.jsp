@@ -96,11 +96,11 @@
 	<rf:definition title="renderIntoDocument()">
 		<ce:code-example-5/>
 
-		<wg:p>Вывести элемент React в отдельный узел DOM в документе. <b>Для этой функции требуется DOM.</b></wg:p>
+		<wg:p>Отрисовывает элемент React в отдельный узел DOM в документе. <b>Для этой функции требуется DOM.</b></wg:p>
 
 		<app:alert type="warning" title="Замечание.">
 			Вам нужно будет иметь window, <code>window.document</code> и <code>window.document.createElement</code>
-			доступными глобально, перед импортом <code>React</code>. В противном случае React будет думать,
+			доступными глобально перед импортом <code>React</code>. В противном случае React будет думать,
 			что он не может получить доступ к DOM, и методы, подобные <code>setState</code>, не будут работать.
 		</app:alert>
 	</rf:definition>
@@ -112,7 +112,12 @@
 			полезных методов, которые позволяют использовать его в качестве фиктивного
 			компонента React. Вместо отрисовки, как обычно, компонент станет простым
 			<code>&lt;div&gt;</code> (или другим тегом, если предоставляется <code>mockTagName</code>), содержащим
-			все предоставленные потоки.</wg:p>
+			все предоставленные потомки.</wg:p>
+
+		<app:alert type="warning" title="Замечание.">
+			<code>mockComponent()</code> - устаревший API. Вместо этого рекомендуем использовать
+			<d>поверхностную отрисовку</d> или <code>jest.mock()</code>.
+		</app:alert>
 	</rf:definition>
 
 	<rf:definition title="isElement()">

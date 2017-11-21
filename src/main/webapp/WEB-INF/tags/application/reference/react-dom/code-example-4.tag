@@ -10,6 +10,6 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  ReactDOM.findDOMNode(component)</code>
+  ReactDOM.createPortal(child, container)</code>
   </pre>
 </cd:code-example>

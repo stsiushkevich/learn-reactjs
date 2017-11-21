@@ -10,6 +10,8 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentWillReceiveProps(nextProps)</code>
+  &lt;div tabIndex="-1" /&gt;      // Как node.tabIndex DOM API
+  &lt;div className="Button" /&gt; // Как node.className DOM API
+  &lt;input readOnly={true} /&gt;  // Как node.readOnly DOM API</code>
   </pre>
 </cd:code-example>

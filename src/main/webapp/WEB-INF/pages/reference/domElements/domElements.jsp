@@ -7,6 +7,8 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/dom-elements" %>
 
+<c:url var="cssPropsUrl" value="https://github.com/facebook/react/blob/4131af3e4bf52f3a003537ec95a1655147c81270/src/renderers/dom/shared/CSSProperty.js#L15-L59"/>
+
 <a name="pageStart"></a>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.5 DOM Elements</h1>
@@ -94,6 +96,15 @@
 		Префиксы поставщиков, отличные от <code>ms</code>, начинаются с заглавной буквы. Вот почему
 		<code>WebkitTransition</code> имеет заглавную букву «W».</wg:p>
 
+	<wg:p>Начиная с React 16 автоматически к определенным встроенным свойствам стиля
+		добавится суффикс <code>px</code>. Например:</wg:p>
+
+	<wg:p>Однако не все свойства стиля преобразуются в пиксельные строки. Некоторые из них
+		остаются безразмерными (например, <code>zoom</code>, <code>order</code>, <code>flex</code>).
+		<wg:link href="${cssPropsUrl}">Здесь</wg:link> можно увидеть полный список безразмерных свойств.</wg:p>
+
+	<ce:code-example-3.5/>
+
 	<br/>
 	<h3>4.5.1.8 suppressContentEditableWarning</h3>
 
@@ -113,16 +124,28 @@
 	<br/>
 	<h2>4.5.2 Все поддерживаемые HTML атрибуты</h2>
 
-	<wg:p>React поддерживает все атрибуты <code>data-*</code> и <code>aria-*</code>, а также эти атрибуты:</wg:p>
+	<wg:p>Начиная с версии React 16, полностью поддерживаются все стандартные и пользовательские
+		атрибуты DOM.</wg:p>
+
+	<wg:p>React всегда предоставлял JavaScript-ориентированный API для DOM.
+		Поскольку компоненты React часто принимают как пользовательские, так и связанные
+		с DOM свойства, React использует верблюжью нотацию так же, как DOM API:</wg:p>
+
+	<ce:code-example-3.6/>
+
+	<wg:p>Эти свойства работают аналогично соответствующим HTML-атрибутам,
+		за исключением особых случаев, описанных выше.</wg:p>
+
+	<wg:p>Атрибуты DOM, поддерживаемые React:</wg:p>
 
 	<ce:code-example-4/>
 
-	<wg:p>Эти RDFa атрибуты также поддерживаются (несколько атрибутов
+	<wg:p>В версиях меньше 16, поддерживаются следующие RDFa атрибуты (несколько атрибутов
 		RDFa перекрываются со стандартными атрибутами HTML и поэтому исключены из этого списка):</wg:p>
 
 	<ce:code-example-5/>
 
-	<wg:p>Кроме того, поддерживаются следующие нестандартные атрибуты:</wg:p>
+	<wg:p>В версиях меньше 16, поддерживаются следующие нестандартные атрибуты:</wg:p>
 
 	<wg:p>
 		<ul>

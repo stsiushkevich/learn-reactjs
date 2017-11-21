@@ -10,6 +10,6 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentWillReceiveProps(nextProps)</code>
+  ReactDOMServer.renderToStaticNodeStream(element)</code>
   </pre>
 </cd:code-example>

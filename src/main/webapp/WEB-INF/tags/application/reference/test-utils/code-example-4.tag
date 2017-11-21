@@ -10,8 +10,8 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-   // &lt;input ref="input" /&gt;
-  const node = this.refs.input;
+   // &lt;input ref={(node) => this.textInput = node} /&gt;
+  const node = this.textInput;
   node.value = 'giraffe';
   ReactTestUtils.Simulate.change(node);
   ReactTestUtils.Simulate.keyDown(node, {key: "Enter", keyCode: 13, which: 13});</code>

@@ -10,6 +10,9 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentWillReceiveProps(nextProps)</code>
+  // ES модули
+  import ReactDOMServer from 'react-dom/server';
+  // CommonJS
+  var ReactDOMServer = require('react-dom/server');</code>
   </pre>
 </cd:code-example>

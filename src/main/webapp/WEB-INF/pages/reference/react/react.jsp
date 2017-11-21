@@ -207,7 +207,14 @@
   <rf:definition title="React.Children.only">
    <ce:code-example-10/>
 
-  <wg:p>Возвращает единственного потомка в <code>children</code>. Иначе выбрасывает.</wg:p>
+    <wg:p>Проверяет, что <code>children</code> имеет только одного потомка
+    (React элемент) и возвращает его. Иначе выбрасывает исключение.</wg:p>
+
+    <br/>
+    <app:alert type="warning" title="Замечание!">
+      <code>React.Children.only()</code> не принимает значение, возвращаемое
+      <code>React.Children.map()</code>, потому что оно является массивом, а не элементом React.
+    </app:alert>
   </rf:definition>
 
   <rf:definition title="React.Children.toArray">

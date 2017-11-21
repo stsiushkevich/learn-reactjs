@@ -10,6 +10,14 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentWillReceiveProps(nextProps)</code>
+  // This:
+  &lt;div style={{ height: 10 }}&gt;
+    Hello World!
+  &lt;/div&gt;;
+
+  // Becomes:
+  &lt;div style="height: 10px;"&gt;
+    Hello World!
+  &lt;/div&gt;</code>
   </pre>
 </cd:code-example>
