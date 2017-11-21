@@ -7,6 +7,7 @@
 <c:url var="basicsUrl" value="/basics/topics"/>
 <c:url var="coreUrl" value="/core/topics"/>
 <c:url var="referenceUrl" value="/reference/topics"/>
+<c:url var="updatesUrl" value="/updates/topics"/>
 
 <c:url var="introductionImgUrl" value="/resources/imges/pages/home/compass.png"/>
 <c:url var="basicsImgUrl" value="/resources/imges/pages/home/science.png"/>
@@ -51,7 +52,7 @@
                     </wg:link>
                 </lt:layout>
                 <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${coreUrl}" cssClass="tutorial__section-link">
+                    <wg:link href="${updatesUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${updateImgUrl}"/>
                         <lt:layout cssClass="tutorial__section-label">Обновления</lt:layout>
                     </wg:link>

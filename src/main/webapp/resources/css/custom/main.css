@@ -500,3 +500,7 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
 .page-navigate__link-icon{
     height: 45px;
 }
+
+.date{
+    color: #a5a5a5
+}
