@@ -198,7 +198,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="react_v16_0"/>
-<c:url var="nextPageUrl" value="error-handling-in-react16"/>
+<c:url var="nextPageUrl" value="error-handling-in-react-16"/>
 <app:page-navigate pageStartAncor="pageStart"
                    prevPageUrl="${prevPageUrl}"
                    nextPageUrl="${nextPageUrl}"/>

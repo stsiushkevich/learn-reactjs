@@ -5,6 +5,7 @@
 
 <c:url var="react_v16_0Url" value="react_v16_0"/>
 <c:url var="domAttributesInReact16Url" value="dom-attributes-in-react-16"/>
+<c:url var="errorHandlingInReact16Url" value="error-handling-in-react-16"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -15,6 +16,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_DOM_ATTRIBUTES_IN_REACT_16' ? 'active' : null}">
                 <a href="${domAttributesInReact16Url}">DOM Атрибуты в React 16</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_ERROR_HANDLING_IN_REACT_16' ? 'active' : null}">
+                <a href="${errorHandlingInReact16Url}">Обработка ошибок в React 16</a>
             </li>
         </ul>
     </nav>

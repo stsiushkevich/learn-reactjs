@@ -33,4 +33,10 @@ public class UpdatesController {
         return "domAttributesInReact16View";
     }
 
+    @GetMapping("/error-handling-in-react-16")
+    public String errorHandlingInReact16View(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_ERROR_HANDLING_IN_REACT_16);
+        return "errorHandlingInReact16View";
+    }
+
 }

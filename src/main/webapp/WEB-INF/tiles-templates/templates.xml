@@ -458,4 +458,14 @@
         <put-attribute name="content" value="/WEB-INF/pages/updates/domAttributesInReact16/domAttributesInReact16.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+
+    <definition name="errorHandlingInReact16View" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/updates/errorHandlingInReact16/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/updates/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/updates/errorHandlingInReact16/errorHandlingInReact16.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
 </tiles-definitions>
