@@ -30,6 +30,15 @@ body {
     box-shadow: 1px 1px 10px #080808
 }
 
+.logo{
+    height: 40px;
+    margin-right: 5px;
+}
+
+.navbar-dark .navbar-brand{
+    color: #49c8ef;
+}
+
 .header .logo-section img {
     height: 35px;
     margin-top: 5px;
@@ -38,7 +47,7 @@ body {
 
 .blue-line {
     height: 5px;
-    background-color: #00d8ff
+    background-color: #29b6f6
 }
 
 .purchase-page, .home-page {
