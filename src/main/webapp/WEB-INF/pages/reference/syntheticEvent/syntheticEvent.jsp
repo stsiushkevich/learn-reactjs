@@ -8,8 +8,10 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/synthetic-event" %>
 
 <c:url var="handlingEventsUrl" value="/basics/handling-events"/>
+<c:url var="docUrl" value="https://www.w3.org/TR/uievents-key/#named-key-attribute-values"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.6 SyntheticEvent</h1>
 
@@ -82,6 +84,7 @@
 			<li>События изображения</li>
 			<li>События анимации</li>
 			<li>События перехода</li>
+			<li>Другие события</li>
 		</ul>
 	</wg:p>
 
@@ -120,6 +123,9 @@
 	<wg:p>Свойства:</wg:p>
 
 	<ce:code-example-8/>
+
+	<wg:p>Свойство <code>key</code> может принимать любые значения, задокументированные
+		в спецификации <wg:link href="${docUrl}">DOM Level 3 Events</wg:link>.</wg:p>
 
 	<br/>
 	<h3>4.6.3.4	События фокуса</h3>
@@ -184,7 +190,7 @@
 	<ce:code-example-18/>
 
 	<br/>
-	<h3>4.6.3.10	События колеса прокрутки</h3>
+	<h3>4.6.3.10 События колеса прокрутки</h3>
 
 	<wg:p>Имена событий:</wg:p>
 
@@ -195,7 +201,7 @@
 	<ce:code-example-20/>
 
 	<br/>
-	<h3>4.6.3.11	События медиа</h3>
+	<h3>4.6.3.11 События медиа</h3>
 
 	<wg:p>Имена событий:</wg:p>
 
@@ -206,14 +212,14 @@
 	<ce:code-example-22/>
 
 	<br/>
-	<h3>4.6.3.12	События изображения</h3>
+	<h3>4.6.3.12 События изображения</h3>
 
 	<wg:p>Имена событий:</wg:p>
 
 	<ce:code-example-23/>
 
 	<br/>
-	<h3>4.6.3.13	События анимации</h3>
+	<h3>4.6.3.13 События анимации</h3>
 
 	<wg:p>Имена событий:</wg:p>
 
@@ -224,7 +230,7 @@
 	<ce:code-example-25/>
 
 	<br/>
-	<h3>4.6.3.14	События перехода</h3>
+	<h3>4.6.3.14 События перехода</h3>
 
 	<wg:p>Имена событий:</wg:p>
 
@@ -233,6 +239,13 @@
 	<wg:p>Свойства:</wg:p>
 
 	<ce:code-example-27/>
+
+	<br/>
+	<h3>4.6.3.15 Другие события</h3>
+
+	<wg:p>Имена событий:</wg:p>
+
+	<ce:code-example-28/>
 </lt:layout>
 
 <c:url var="prevPageUrl" value="dom-elements"/>

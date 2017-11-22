@@ -7,16 +7,19 @@
 <c:url var="basicsUrl" value="/basics/topics"/>
 <c:url var="coreUrl" value="/core/topics"/>
 <c:url var="referenceUrl" value="/reference/topics"/>
+<c:url var="updatesUrl" value="/updates/topics"/>
 
 <c:url var="introductionImgUrl" value="/resources/imges/pages/home/compass.png"/>
 <c:url var="basicsImgUrl" value="/resources/imges/pages/home/science.png"/>
 <c:url var="coreImgUrl" value="/resources/imges/pages/home/microchip.png"/>
 <c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
+<c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
 
 <c:set var="isIntroductionSection" value="${currentSection eq 'INTRODUCTION'}"/>
 <c:set var="isBasicsSection" value="${currentSection eq 'BASICS'}"/>
 <c:set var="isCoreSection" value="${currentSection eq 'CORE'}"/>
 <c:set var="isReferenceSection" value="${currentSection eq 'REFERENCE'}"/>
+<c:set var="isUpdatesSection" value="${currentSection eq 'UPDATES'}"/>
 
 <lt:layout cssClass="menu-sidebar">
 	<div class="black-line"></div>
@@ -34,6 +37,9 @@
 			<li class="menu-sidebar__nav-link ${isReferenceSection ? 'active' : null}">
 				<a href="${referenceUrl}">4. Справочное руководство</a>
 			</li>
+			<li class="menu-sidebar__nav-link ${isUpdatesSection ? 'active' : null}">
+				<a href="${updatesUrl}">5. Обновления</a>
+			</li>
 		</ul>
 	</nav>
 	<wg:p cssClass="section-picture">
@@ -42,6 +48,7 @@
 			<c:when test="${isBasicsSection}"><wg:img src="${basicsImgUrl}"/></c:when>
 			<c:when test="${isCoreSection}"><wg:img src="${coreImgUrl}"/></c:when>
 			<c:when test="${isReferenceSection}"><wg:img src="${referenceImgUrl}"/></c:when>
+			<c:when test="${isUpdatesSection}"><wg:img src="${updateImgUrl}"/></c:when>
 		</c:choose>
 	</wg:p>
 </lt:layout>

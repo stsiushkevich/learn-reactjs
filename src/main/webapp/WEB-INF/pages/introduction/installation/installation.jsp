@@ -7,6 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page instalation-page">
     <h1>1.2 Установка</h1>
 

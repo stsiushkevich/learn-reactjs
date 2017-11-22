@@ -10,6 +10,7 @@
 <c:url var="example2" value="/resources/imges/pages/introduction/introduction-in-react/example_2.PNG"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page introduction-in-reactjs-page">
     <h1>1.1 Введение в ReactJS</h1>
     <wg:p>

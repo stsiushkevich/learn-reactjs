@@ -6,6 +6,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page note-to-javascript-page">
     <h1>2.1 Примечание к JavaScript</h1>
 

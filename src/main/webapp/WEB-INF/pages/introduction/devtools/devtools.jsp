@@ -10,6 +10,7 @@
 <c:url var="reactExtUrl" value="/resources/imges/pages/introduction/devtools/react_ext.PNG"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page instalation-page">
     <h1>1.3 Инструменты разработчика</h1>
 

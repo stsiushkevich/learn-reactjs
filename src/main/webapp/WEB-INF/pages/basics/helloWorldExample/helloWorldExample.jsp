@@ -9,6 +9,7 @@
 <c:url var="installationUrl" value="/introduction/installation"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.2 Hello, World!</h1>
 
