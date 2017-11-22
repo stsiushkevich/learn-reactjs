@@ -14,7 +14,7 @@
   <cd:hl>import Message from './Message';</cd:hl>
 
   function Warning(props) {
-    <cd:hl>// return React.createElement(Message, {type: Message.DANGER, text: props.text}, null);</cd:hl>
+    <cd:hl>// возвращает React.createElement(Message, {type: Message.DANGER, text: props.text}, null);</cd:hl>
     return &lt;Message type={Message.DANGER} text={props.text}/&gt;;
   }</code>
   </pre>

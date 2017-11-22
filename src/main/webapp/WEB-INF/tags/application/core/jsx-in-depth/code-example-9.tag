@@ -19,7 +19,7 @@
   };
 
   function Media(props) {
-    <cd:hl>// Неправильно! JSX тип не может являться выражением</cd:hl>
+    <cd:hl>// Неправильно! JSX-тип не может являться выражением</cd:hl>
     <cd:hl>return &lt;components[props.mediaType] url={props.url} /&gt;;</cd:hl>
   }</code>
   </pre>

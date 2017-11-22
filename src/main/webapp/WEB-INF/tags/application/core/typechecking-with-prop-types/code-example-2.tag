@@ -29,7 +29,7 @@
     // (или фрагмент), содержащий эти типы
     myOptionalNode: PropTypes.node,
 
-    // React элемент.
+    // React-элемент.
     myOptionalElement: PropTypes.element,
 
     // Вы также можете обьявить, что свойство является экземпляром класса.

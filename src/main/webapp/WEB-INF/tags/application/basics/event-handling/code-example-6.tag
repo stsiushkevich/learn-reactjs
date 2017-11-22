@@ -12,7 +12,7 @@
         <code class="language-javascript">
   class Logger extends React.Component {
     //Такой синтаксис гарантирует, что "this" привязан к onLog
-    //Внимание! это эксперименталиный синтаксис!
+    //Внимание! это экспериментальный синтаксис!
     <cd:hl>onLog = () =&gt; {</cd:hl>
       <cd:hl>console.log('объект:', this);</cd:hl>
     <cd:hl>}</cd:hl>
