@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #fff;
     margin-bottom: 100px
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-    background: #222;
+    background: #2E2E2E;
     color: #fafafa;
     box-shadow: 1px 1px 10px #080808
 }
@@ -51,7 +51,7 @@ body {
 
 .black-line {
     height: 5px;
-    background-color: #222
+    background-color: #2e2e2e
 }
 
 .menu {
@@ -59,23 +59,20 @@ body {
 }
 
 .menu .menu-sidebar {
-    background: #f1f1f1
+    padding-bottom: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 .menu-sidebar__nav {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc
 }
 
 .menu-sidebar__nav-link a {
-    color: #696664;
-    color: #222
+    color: #222;
 }
 
 .page {
-    border: 1px solid #ccc;
-    padding: 0 20px 20px
+    padding: 5px 20px 20px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 .topic-list__topics {
@@ -84,7 +81,7 @@ body {
 }
 
 .menu-sidebar__nav-link.active {
-    box-shadow: 3px 2px 7px 2px gray
+    box-shadow: 0px 1px 7px 2px #b5b5b5
 }
 
 .topic-list__topic-nav-link {
@@ -106,7 +103,7 @@ body {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-left: -2px;
-    color: rgba(0, 158, 184, 1)
+    color: #424242
 }
 
 .home-page .h1, .home-page .h2, .home-page .h3, .home-page .h4, .home-page .h5, .home-page .h6, .home-page h1, .home-page h2, .home-page h3, .home-page h4, .home-page h5, .home-page h6 {
@@ -117,13 +114,16 @@ body {
 
 code {
     color: #555;
-    background-color: rgba(91, 192, 222, 0.19);
+    background-color: #e0e0e0;
     padding: 1px 3px
 }
 
 .code-block-header {
-    background-color: rgba(0, 167, 197, 0.15);
-    padding: 5px;
+    background-color: #616161;
+    color: #fff;
+    padding: 7px 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace
 }
 
@@ -132,7 +132,7 @@ code {
 }
 
 .highlighted, .hl {
-    background-color: #ececb2
+    background-color: #555
 }
 
 .footer-nav, .header-nav {
@@ -198,12 +198,13 @@ code {
 
 .tutorial__section {
     display: inline-block;
-    margin-top: 25px
+    margin-top: 20px;
+    margin-right: 20px
 }
 
 .tutorial__section-link {
     background-color: #7fedff;
-    border-radius: 10px;
+    border-radius: 25px;
     display: inline-block;
     border: 7px solid #fff;
     position: relative
@@ -498,4 +499,8 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
 
 .page-navigate__link-icon{
     height: 45px;
+}
+
+.date{
+    color: #a5a5a5
 }

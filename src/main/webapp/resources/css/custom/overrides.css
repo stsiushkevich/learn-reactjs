@@ -9,8 +9,8 @@
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
-    background-color: #222;
-    color: #00D2F5;
+    background-color: #2E2E2E;
+    color: #fff;
 }
 
 a {
@@ -26,10 +26,11 @@ a:hover {
 .nav > li > a:hover::before {
     content: '';
     position: absolute;
-    left: -15px;
-    bottom: 9px;
-    border: 6px solid transparent;
-    border-right: 6px solid #222;
+    left: -8px;
+    top: 0px;
+    width: 5px;
+    height: 100%;
+    background-color: #2e2e2e;
 }
 
 .nav > li > a:focus,
@@ -52,7 +53,14 @@ h4{
 }
 
 .alert-warning{
-    border-color: #cfb683;
+    border-color: #fbc02d !important;
+    background-color: #fff9c4;
+}
+
+.alert{
+    border: 0;
+    border-left: 5px solid;
+    border-radius: 0;
 }
 
 .h1, h1{
@@ -82,4 +90,9 @@ h4{
 pre code{
     white-space: pre;
     overflow-x: auto;
+}
+
+.prettyprint{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }

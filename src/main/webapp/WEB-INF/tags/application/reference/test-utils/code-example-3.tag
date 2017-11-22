@@ -10,8 +10,8 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  // &lt;button ref="button"&gt;...&lt;/button&gt;
-  const node = this.refs.button;
+  // &lt;button ref={(node) => this.button = node}&gt;...&lt;/button&gt;
+  const node = this.button;
   ReactTestUtils.Simulate.click(node);</code>
   </pre>
 </cd:code-example>

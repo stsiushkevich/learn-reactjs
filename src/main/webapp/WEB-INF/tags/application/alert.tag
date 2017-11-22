@@ -11,5 +11,6 @@
 <%@ attribute name="type" required="false" rtexprvalue="true" %>
 
 <lt:layout cssClass="alert alert-${type}">
-    <b>${title}</b> <jsp:doBody/>
+    <p><b>${title}</b></p>
+    <jsp:doBody/>
 </lt:layout>

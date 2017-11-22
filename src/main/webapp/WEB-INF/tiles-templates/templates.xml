@@ -320,6 +320,22 @@
         <put-attribute name="content" value="/WEB-INF/pages/core/context/context.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="portalsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/portals/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/portals/portals.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+    <definition name="errorBoundariesView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/errorBoundaries/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/errorBoundaries/errorBoundaries.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
     <definition name="webComponentsView" extends="menuTemplate">
         <put-attribute name="head" value="/WEB-INF/pages/core/webComponents/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
@@ -423,6 +439,49 @@
         <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
         <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/reference/shallowRenderer/shallowRenderer.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <!--updates-->
+    <definition name="updatesTopicsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/updates/topics/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" cascade="true"/>
+        <put-attribute name="discuss" value="" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/updates/topics/topics.jsp" cascade="true"/>
+        <put-attribute name="menuAdvertising" value="" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <definition name="react_v16_0View" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/updates/react-v16.0/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/updates/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/updates/react-v16.0/react-v16.0.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <definition name="domAttributesInReact16View" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/updates/domAttributesInReact16/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/updates/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/updates/domAttributesInReact16/domAttributesInReact16.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <definition name="errorHandlingInReact16View" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/updates/errorHandlingInReact16/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/updates/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/updates/errorHandlingInReact16/errorHandlingInReact16.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
 </tiles-definitions>

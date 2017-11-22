@@ -8,6 +8,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/shallow-renderer" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.8 Поверхностная отрисовка</h1>
 
