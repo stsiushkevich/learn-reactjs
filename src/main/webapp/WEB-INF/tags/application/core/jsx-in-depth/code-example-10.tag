@@ -19,7 +19,7 @@
   };
 
   function Media(props) {
-    <cd:hl>// Правильно! JSX тип может являться переменной, названной с большой буквы</cd:hl>
+    <cd:hl>// Правильно! JSX-тип может являться переменной, названной с большой буквы</cd:hl>
     <cd:hl>const MediaObject = components[props.storyType];</cd:hl>
     <cd:hl>return &lt;MediaObject url={props.url} /&gt;;</cd:hl>
   }</code>

@@ -13,7 +13,7 @@ class FruitList extends React.Component {
 }
 
     // Пример использования: <FruitList name="Петя" />
-    // - по синтаксису в точности как обычный тэг:)!
+    // - по синтаксису в точности как обычный тег:)!
 
 FruitList.render();
 
