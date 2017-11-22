@@ -10,7 +10,7 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-    <h1>1. Введение</h1>
+    <h1 style="color: #00acc1">1. Введение</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
             <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><h4>1.1 Введение в ReactJS</h4></a>

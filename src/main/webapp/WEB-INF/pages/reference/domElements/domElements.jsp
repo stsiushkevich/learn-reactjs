@@ -10,6 +10,7 @@
 <c:url var="cssPropsUrl" value="https://github.com/facebook/react/blob/4131af3e4bf52f3a003537ec95a1655147c81270/src/renderers/dom/shared/CSSProperty.js#L15-L59"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.5 DOM Elements</h1>
 

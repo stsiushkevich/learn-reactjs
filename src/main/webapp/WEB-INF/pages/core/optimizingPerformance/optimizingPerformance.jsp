@@ -12,6 +12,7 @@
 <c:url var="treeUrl" value="/resources/imges/pages/core/optimizing-performance/tree.png"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.5 Оптимизация производительности</h1>
 

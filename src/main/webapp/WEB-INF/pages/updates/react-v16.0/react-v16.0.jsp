@@ -7,6 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page react-v16.0-page">
     <h1>React v16.0</h1>
 

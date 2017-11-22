@@ -7,6 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>2.11 Передача состояния вверх по иерархии</h1>
 

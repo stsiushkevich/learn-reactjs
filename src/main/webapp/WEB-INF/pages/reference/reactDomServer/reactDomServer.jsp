@@ -10,6 +10,7 @@
 <c:url var="iconvLiteUrl" value="https://www.npmjs.com/package/iconv-lite"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.4 ReactDOMServer</h1>
 
@@ -25,8 +26,8 @@
 
 	<wg:p>
 		<ul>
-			<li>renderToString()</li>
-			<li>renderToStaticMarkup()</li>
+			<li><code>renderToString()</code></li>
+			<li><code>renderToStaticMarkup()</code></li>
 		</ul>
 	</wg:p>
 
@@ -35,8 +36,8 @@
 
 	<wg:p>
 		<ul>
-			<li>renderToNodeStream()</li>
-			<li>renderToStaticNodeStream()</li>
+			<li><code>renderToNodeStream()</code></li>
+			<li><code>renderToStaticNodeStream()</code></li>
 		</ul>
 	</wg:p>
 

@@ -8,6 +8,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react-component" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>4.2	React.Component</h1>
 
@@ -330,7 +331,7 @@
       обновить состояние в ответ на изменение свойств, используйте вместо
       этого <code>componentWillReceiveProps()</code>.</wg:p>
 
-    <app:alert title="Замечание" type="warning">
+    <app:alert title="Замечание." type="warning">
       <code>componentWillUpdate()</code> не будет вызываться, если <code>shouldComponentUpdate()</code> возвращает <code>false</code>.
     </app:alert>
   </rf:definition>
@@ -349,7 +350,7 @@
       сетевой запрос может не понадобиться, если свойства не изменились).
     </wg:p>
 
-    <app:alert title="Замечание" type="warning">
+    <app:alert title="Замечание." type="warning">
       <code>componentDidUpdate()</code> не будет вызываться, если <code>shouldComponentUpdate()</code> возвращает <code>false</code>.
     </app:alert>
 
@@ -384,7 +385,7 @@
     //todo назначить урл
     <wg:p>Для получения дополнительной информации см. <wg:link href="">Обработка ошибок в React 16</wg:link>.</wg:p>
 
-    <app:alert title="Замечание" type="warning">
+    <app:alert title="Замечание." type="warning">
       Границы ошибок отлавливают ошибки только в компонентах своего поддерева. Граница ошибки не может поймать ошибку внутри себя.
     </app:alert>
   </rf:definition>

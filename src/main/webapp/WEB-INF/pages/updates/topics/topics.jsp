@@ -10,7 +10,7 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-    <h1>Обновления</h1>
+    <h1 style="color: #00acc1">Обновления</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
             <a href="${react_v16_0Url}" class="topic-list__topic-nav-link">

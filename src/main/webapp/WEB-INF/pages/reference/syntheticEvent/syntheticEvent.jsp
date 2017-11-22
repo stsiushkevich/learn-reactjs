@@ -11,6 +11,7 @@
 <c:url var="docUrl" value="https://www.w3.org/TR/uievents-key/#named-key-attribute-values"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
 	<h1>4.6 SyntheticEvent</h1>
 

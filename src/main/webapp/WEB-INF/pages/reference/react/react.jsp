@@ -8,6 +8,7 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react" %>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>4.1	React</h1>
 
@@ -97,7 +98,7 @@
       состоянием, вы в некоторых случаях можете использовать <code>React.PureComponent</code>
       для повышения производительности.</wg:p>
 
-    <app:alert type="warning" title="Замечание!">
+    <app:alert type="warning" title="Замечание.">
       Метод <code>shouldComponentUpdate()</code> компонента <code>React.PureComponent</code> только поверхностно
       сравнивает объекты. Если они содержат сложные структуры данных, это может
       привести к ложным отрицаниям для более глубоких сравнений. Расширяйте PureComponent
@@ -211,7 +212,7 @@
     (React элемент) и возвращает его. Иначе выбрасывает исключение.</wg:p>
 
     <br/>
-    <app:alert type="warning" title="Замечание!">
+    <app:alert type="warning" title="Замечание.">
       <code>React.Children.only()</code> не принимает значение, возвращаемое
       <code>React.Children.map()</code>, потому что оно является массивом, а не элементом React.
     </app:alert>

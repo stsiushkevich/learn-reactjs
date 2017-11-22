@@ -7,7 +7,8 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <a name="pageStart"></a>
-<lt:layout cssClass="page hello-world-example-page">
+<lt:layout cssClass="black-line"/>
+<lt:layout cssClass="page components-and-props-page">
     <h1>2.5 Компоненты и свойства</h1>
 
     <wg:p>Компоненты позволяют вам разделить UI на независимые, переиспользуемые части и

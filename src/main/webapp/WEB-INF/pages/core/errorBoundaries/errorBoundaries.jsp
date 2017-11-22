@@ -16,6 +16,7 @@
 <c:url var="codeModeUrl" value="https://github.com/reactjs/react-codemod#error-boundaries"/>
 
 <a name="pageStart"></a>
+<lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page error-boundaries-page">
   <h1>3.11 Границы ошибок</h1>
 
@@ -40,7 +41,7 @@
     перехватывают ошибки во время отрисовки, в методах жизненного цикла и в
     конструкторах всего дерева под ними.</wg:p>
 
-  <app:alert type="warning" title="Замечание!">
+  <app:alert type="warning" title="Замечание.">
     Границы ошибок <b>не</b> перехватывают ошибки для:
     <ul>
       <li>Обработчиков событий (<wg:link href="#error-handlers">узнать больше</wg:link>)</li>
@@ -138,7 +139,7 @@
     свою конфигурацию Babel. Обратите внимание, что он предназначен только для development версии
     приложения и должен быть отключен в production версии.</wg:p>
 
-  <app:alert type="warning" title="Замечание!">
+  <app:alert type="warning" title="Замечание.">
     Имена компонентов, отображаемые в трассировке стека, зависят от свойства
     <code>Function.name</code>. Если вы поддерживаете старые браузеры и устройства, которые
     могут не реализовывать это нативно (например, IE 11), подумайте о включении
