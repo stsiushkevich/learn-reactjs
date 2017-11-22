@@ -10,7 +10,7 @@
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
     background-color: #2E2E2E;
-    color: #00D2F5;
+    color: #fff;
 }
 
 a {
@@ -26,10 +26,11 @@ a:hover {
 .nav > li > a:hover::before {
     content: '';
     position: absolute;
-    left: -15px;
-    bottom: 9px;
-    border: 6px solid transparent;
-    border-right: 6px solid #222;
+    left: -8px;
+    top: 0px;
+    width: 5px;
+    height: 100%;
+    background-color: #2e2e2e;
 }
 
 .nav > li > a:focus,
@@ -91,7 +92,7 @@ pre code{
     overflow-x: auto;
 }
 
-.pre.prettyprint{
+.prettyprint{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }

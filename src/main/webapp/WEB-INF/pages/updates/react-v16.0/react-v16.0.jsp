@@ -32,8 +32,7 @@
 
     <ce:code-example-2/>
 
-    <%--TODO to assign the link--%>
-    <wg:p><wg:link href="#">См. Полный список поддерживаемых типов возвращаемых данных.</wg:link></wg:p>
+    <wg:p><wg:link href="/reference/react-component#render">См. Полный список поддерживаемых типов возвращаемых данных.</wg:link></wg:p>
 
     <h2>Улучшенная обработка ошибок</h2>
 
@@ -52,7 +51,7 @@
         но для компонентов React.</wg:p>
 
     <wg:p>Для получения дополнительной информации ознакомьтесь с нашим предыдущим постом об
-        обработке ошибок в React 16.</wg:p>
+        <wg:link href="/updates/error-handling-in-react-16">обработке ошибок в React 16</wg:link>.</wg:p>
 
     <h2>Порталы</h2>
 
@@ -61,8 +60,7 @@
 
     <ce:code-example-3/>
 
-    <!--TODO to assign the link-->
-    <wg:p><wg:link href="#">См. Полный пример в документации для порталов.</wg:link></wg:p>
+    <wg:p><wg:link href="/core/portals">См. Полный пример в документации для порталов.</wg:link></wg:p>
 
     <h2>Улучшенная отрисовка на стороне сервера</h2>
 
@@ -89,13 +87,12 @@
         Однако опасно иметь недостоющие узлы в серверном рендеринге, поскольку они могут быть пересозданы
         с неправильными атрибутами.</wg:p>
 
-    <!--TODO to assign the link-->
-    <wg:p><wg:link>Подробнее см. Документацию для ReactDOMServer.</wg:link></wg:p>
+    <wg:p><wg:link href="/reference/react-dom-server">Подробнее см. Документацию для ReactDOMServer.</wg:link></wg:p>
 
     <h2>Поддержка пользовательских атрибутов DOM</h2>
 
     <wg:p>Вместо того, чтобы игнорировать нераспознанные HTML и SVG атрибуты, React теперь
-        передаст их в DOM. Это дает дополнительное преимущество, позволяя нам избавиться от
+        <wg:link href="/updates/dom-attributes-in-react-16">передаст их в DOM</wg:link>. Это дает дополнительное преимущество, позволяя нам избавиться от
         большей части белого списка атрибутов React, что приводит к уменьшению размеров файлов.</wg:p>
 
     <h2>Уменьшенный размер файла</h2>
@@ -126,10 +123,9 @@
 
     <h2>Новая архитектура ядра</h2>
 
-    <!--TODO to assign the link-->
     <wg:p>React 16 - первая версия React, построенная построенная на новой архитектуре ядра под кодовым
         названием «<b>Fiber</b>». Вы можете прочитать все об этом проекте в блоге технической поддержки
-        Facebook. (Спойлер: <wg:link>мы переписали React!</wg:link>)</wg:p>
+        Facebook. (Спойлер: мы переписали React!)</wg:p>
 
     <wg:p><b>Fiber</b> отвечает за большинство новых функций в React 16, таких как границы ошибок и фрагменты.
         В течение следующих нескольких релизов вы можете ожидать больше новых возможностей, так
@@ -140,7 +136,8 @@
         Результатом является то, что при асинхронной отрисовке приложения более отзывчивы, так как
         React избегает блокировки основного потока.</wg:p>
 
-    <wg:p>Эта демонстрация дает общее представление о типах проблем, которые может решить асинхронный рендеринг:</wg:p>
+    <wg:p><wg:link href="https://twitter.com/acdlite/status/909926793536094209">Эта демонстрация</wg:link> дает общее представление о
+        типах проблем, которые может решить асинхронный рендеринг.</wg:p>
 
     <wg:p>Мы считаем, что асинхронный рендеринг - это важная задача и представляет будущее React.
         Чтобы сделать миграцию на v16.0 максимально гладкой, мы пока не можем позволить использовать
@@ -162,8 +159,7 @@
 
     <ce:code-example-6/>
 
-    <!--TODO to assign the link-->
-    <wg:p>Подробные инструкции по установке <wg:link>см. В документации.</wg:link></wg:p>
+    <wg:p>Подробные инструкции по установке <wg:link href="/introduction/installation">см. В документации.</wg:link></wg:p>
 
     <h2>Апгрэйд</h2>
 
@@ -199,7 +195,7 @@
 
     <wg:p>
         <ul>
-            <li>Реакт 15 имел ограниченную недокументированную поддержку границ ошибок,
+            <li>React 15 имел ограниченную недокументированную поддержку границ ошибок,
                 используя <code>unstable_handleError</code>. Этот метод был переименован в <code>componentDidCatch</code>.
                 Вы можете использовать модификацию кода для автоматической миграции на новый API.</li>
             <li><code>ReactDOM.render</code> и <code>ReactDOM.unstable_renderSubtreeIntoContainer</code>
@@ -218,21 +214,22 @@
                         как все компоненты были отрисованы.</li>
                 </ul>
             </li>
-            <li>При замене &lt;A/&gt; на &lt;B/&gt;, <code>B.componentWillMount</code> теперь всегда вызывается
+            <li>При замене <code>&lt;A/&gt;</code> на <code>&lt;B/&gt;</code>, <code>B.componentWillMount</code> теперь всегда вызывается
                 до <code>A.componentWillUnmount</code>. Раньше <code>A.componentWillUnmount</code> мог
                 сработать первым  в некоторых случаях.</li>
             <li>Раньше изменение ссылки на компонент всегда уничтожало ссылку до
                 вызова метода отрисовки компонента. Теперь мы изменяем ссылку <code>ref</code>
                 позже, когда применяются изменения к DOM.</li>
-            <!--TODO to assign the link-->
             <li>Небезопасно повторно переротисовывать в контейнер, который был изменен чем-то
                 иным, чем React. Ранее в некоторых случаях это работало, но никогда не
                 поддерживалось. Сейчас в такой ситуации мы выдаем предупреждение. Чтобы
                 этого избежать вы должны очистить деревья компонентов,
-                используя <code>ReactDOM.unmountComponentAtNode</code>. <wg:link>См. этот пример</wg:link>.</li>
+                используя <code>ReactDOM.unmountComponentAtNode</code>.
+                <wg:link href="https://github.com/facebook/react/issues/10294#issuecomment-318820987">См. этот пример</wg:link>.</li>
             <!--TODO to assign the link-->
             <li>Метод жизненного цикла <code>componentDidUpdate</code> больше не получает
-                параметр <code>prevContext</code>. (См. <wg:link>#8631</wg:link>)</li>
+                параметр <code>prevContext</code>.
+                (См. <wg:link href="https://github.com/facebook/react/pull/8631">#8631</wg:link>)</li>
             <li>Поверхностная отрисовка больше не вызывает <code>componentDidUpdate</code>, потому
                 что ссылки DOM недоступны. Это делает её совместимой с <code>componentDidMount</code>
                 (который не вызывается в предыдущих версиях).</li>
@@ -261,10 +258,10 @@
             <li>Имена и пути к однофайловым браузерным сборкам изменились, чтобы подчеркнуть
                 разницу между сборками <code>development</code>  и <code>production</code>. Например:
                 <ul>
-                    <li>react/dist/react.js => react/umd/react.development.js</li>
-                    <li>react/dist/react.min.js => react/umd/react.production.min.js</li>
-                    <li>react-dom/dist/react-dom.js => react-dom/umd/react-dom.development.js</li>
-                    <li>react-dom/dist/react-dom.min.js => react-dom/umd/react-dom.production.min.js</li>
+                    <li><code>react/dist/react.js</code> => <code>react/umd/react.development.js</code></li>
+                    <li><code>react/dist/react.min.js</code> => <code>react/umd/react.production.min.js</code></li>
+                    <li><code>react-dom/dist/react-dom.js</code> => <code>react-dom/umd/react-dom.development.js</code></li>
+                    <li><code>react-dom/dist/react-dom.min.js</code> => <code>react-dom/umd/react-dom.production.min.js</code></li>
                 </ul>
             </li>
         </ul>

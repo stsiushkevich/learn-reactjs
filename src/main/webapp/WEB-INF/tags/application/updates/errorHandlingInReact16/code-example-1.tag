@@ -19,7 +19,7 @@
     componentDidCatch(error, info) {
       // Отображение резервного UI
       this.setState({ hasError: true });
-      // Вы можете прологировать ошибку с помощью сервися отчета об ошибках
+      // Вы можете прологировать ошибку с помощью сервиса отчета об ошибках
       logErrorToMyService(error, info);
     }
 

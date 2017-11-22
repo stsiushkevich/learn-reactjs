@@ -81,7 +81,7 @@ body {
 }
 
 .menu-sidebar__nav-link.active {
-    box-shadow: 3px 2px 7px 2px gray
+    box-shadow: 0px 1px 7px 2px #b5b5b5
 }
 
 .topic-list__topic-nav-link {

@@ -130,6 +130,7 @@
   <br/>
   <h2>4.2.2 Справка</h2>
 
+  <a name="render"></a>
   <rf:definition title="render()">
     <ce:code-example-2/>
 
