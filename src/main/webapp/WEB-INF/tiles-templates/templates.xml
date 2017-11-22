@@ -320,6 +320,22 @@
         <put-attribute name="content" value="/WEB-INF/pages/core/context/context.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="portalsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/portals/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/portals/portals.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+    <definition name="errorBoundariesView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/errorBoundaries/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/errorBoundaries/errorBoundaries.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
     <definition name="webComponentsView" extends="menuTemplate">
         <put-attribute name="head" value="/WEB-INF/pages/core/webComponents/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>

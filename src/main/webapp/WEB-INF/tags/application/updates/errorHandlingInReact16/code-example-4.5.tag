@@ -10,25 +10,25 @@
 <cd:code-example codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  class ErrorBoundary extends React.Component {
+  class ErrorCapturer extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { hasError: false };
+      this.state = { error: null };
     }
-
-    componentDidCatch(error, info) {
-      // Отображение резервного UI
-      this.setState({ hasError: true });
-      // Вы можете прологировать ошибку с помощью сервися отчета об ошибках
-      logErrorToMyService(error, info);
-    }
-
-    render() {
-      if (this.state.hasError) {
-        // Вы можете отрисовать любой резервный UI
-        return &lt;h1&gt;Возникли ошибки.&lt;/h1&gt;;
+    
+    onClick = () => {
+      try {
+        // Выполните что-то, что выбросит ошибку
+      } catch (error) {
+        this.setState({ error });
       }
-      return this.props.children;
+    }
+  
+    render() {
+      if (this.state.error) {
+        return &lt;h1&gt;Ошибка перехвачена!.&lt;/h1&gt;
+      }
+      return &lt;div onClick={this.onClick}&gt;Нажать&lt;/div&gt;
     }
   }</code>
   </pre>

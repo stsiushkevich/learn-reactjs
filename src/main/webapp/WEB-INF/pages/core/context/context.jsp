@@ -138,7 +138,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="reconciliation"/>
-<c:url var="nextPageUrl" value="web-components"/>
+<c:url var="nextPageUrl" value="portals"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

@@ -75,6 +75,18 @@ public class CoreController {
         return "contextView";
     }
 
+    @GetMapping("/portals")
+    public String portals(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_PORTALS);
+        return "portalsView";
+    }
+
+    @GetMapping("/error-boundaries")
+    public String errorBoundaries(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_ERROR_BOUNDARIES);
+        return "errorBoundariesView";
+    }
+
     @GetMapping("/web-components")
     public String webComponents(Map<String, Object> model) {
         model.put("currentPage", Pages.CORE_WEB_COMPONENTS);
