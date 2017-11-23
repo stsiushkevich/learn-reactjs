@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
    // &lt;input ref={(node) => this.textInput = node} /&gt;
@@ -16,4 +16,4 @@
   ReactTestUtils.Simulate.change(node);
   ReactTestUtils.Simulate.keyDown(node, {key: "Enter", keyCode: 13, which: 13});</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

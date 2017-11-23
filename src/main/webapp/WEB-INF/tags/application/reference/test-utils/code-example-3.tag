@@ -7,11 +7,11 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   // &lt;button ref={(node) => this.button = node}&gt;...&lt;/button&gt;
   const node = this.button;
   ReactTestUtils.Simulate.click(node);</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

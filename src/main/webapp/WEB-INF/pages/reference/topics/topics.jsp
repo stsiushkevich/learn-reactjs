@@ -12,6 +12,8 @@
 <c:url var="syntheticEventUrl" value="synthetic-event"/>
 <c:url var="testUtilitiesUrl" value="test-utilities"/>
 <c:url var="shallowRendererUrl" value="shallow-renderer"/>
+<c:url var="testRendererUrl" value="test-renderer"/>
+<c:url var="jsEnvRequirementsUrl" value="js-env-requirements"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -39,7 +41,13 @@
       <a class="topic-list__topic-nav-link" href=${testUtilitiesUrl}><h4>4.7 Тестовые утилиты</h4></a>
     </li>
     <li class="topic-list__topic">
-      <a class="topic-list__topic-nav-link" href=${shallowRendererUrl}><h4>4.8 Поверхностная отрисовка</h4></a>
+      <a class="topic-list__topic-nav-link" href=${shallowRendererUrl}><h4>4.8 Поверхностный отрисовщик</h4></a>
+    </li>
+    <li class="topic-list__topic">
+      <a class="topic-list__topic-nav-link" href=${testRendererUrl}><h4>4.9 Тестовый отрисовщик</h4></a>
+    </li>
+    <li class="topic-list__topic">
+      <a class="topic-list__topic-nav-link" href=${jsEnvRequirementsUrl}><h4>4.10 Требования к JavaScript среде</h4></a>
     </li>
   </ol>
 </lt:layout>

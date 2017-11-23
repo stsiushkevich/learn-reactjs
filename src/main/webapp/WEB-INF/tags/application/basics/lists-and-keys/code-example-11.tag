@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
   function Chat(props) {
@@ -48,4 +48,4 @@
 
   ReactDOM.render(&lt;Chat users={users} messages={messages}/&gt;, document.getElementById('root'));</code>
     </pre>
-</cd:code-example>
+</cd:code-example-decorator>

@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   onAbort onCanPlay onCanPlayThrough onDurationChange onEmptied onEncrypted
@@ -15,4 +15,4 @@
   onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend
   onTimeUpdate onVolumeChange onWaiting</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>
