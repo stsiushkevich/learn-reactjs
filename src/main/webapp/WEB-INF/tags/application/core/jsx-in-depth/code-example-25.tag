@@ -14,7 +14,7 @@
   function UserList(props) {
     let users = [];
     <cd:hl>for (let i = 0; i &lt; props.users.length; i++) {</cd:hl>
-      items.push(props.children(i));
+      users.push(props.children(i));
     }
     return &lt;ul&gt;{users}&lt;/ul&gt;;
   }
