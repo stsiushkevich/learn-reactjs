@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
   function Response(props) {
@@ -22,4 +22,4 @@
   // Можете поменять на isSuccess={false}:
   ReactDOM.render(<cd:hl>&lt;Response isSuccess={true} /&gt;</cd:hl>,  document.getElementById('root'));</code>
     </pre>
-</cd:code-example>
+</cd:code-example-decorator>

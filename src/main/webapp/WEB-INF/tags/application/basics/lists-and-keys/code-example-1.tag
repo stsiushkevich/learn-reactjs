@@ -7,11 +7,11 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const result = numbers.map((num) => num * 10);
   console.log(result);</code>
     </pre>
-</cd:code-example>
+</cd:code-example-decorator>

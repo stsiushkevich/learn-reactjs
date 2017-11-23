@@ -441,6 +441,23 @@
         <put-attribute name="content" value="/WEB-INF/pages/reference/shallowRenderer/shallowRenderer.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="testRendererView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/reference/testRenderer/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/reference/testRenderer/testRenderer.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+    <definition name="jsEnvRequirementsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/reference/jsEnvRequirements/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/reference/menu.jsp" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/reference/jsEnvRequirements/jsEnvRequirements.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
 
     <!--updates-->
     <definition name="updatesTopicsView" extends="menuTemplate">
@@ -460,7 +477,6 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/updates/menu.jsp" cascade="true"/>
-        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
         <put-attribute name="content" value="/WEB-INF/pages/updates/react-v16.0/react-v16.0.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>

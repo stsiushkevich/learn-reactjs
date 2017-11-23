@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   accentHeight accumulate additive alignmentBaseline allowReorder alphabetic
@@ -45,4 +45,4 @@
   xlinkHref xlinkRole xlinkShow xlinkTitle xlinkType xmlns xmlnsXlink xmlBase
   xmlLang xmlSpace y y1 y2 yChannelSelector z zoomAndPan</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

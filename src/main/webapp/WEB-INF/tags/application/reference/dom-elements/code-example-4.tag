@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   accept acceptCharset accessKey action allowFullScreen allowTransparency alt
@@ -24,4 +24,4 @@
   selected shape size sizes span spellCheck src srcDoc srcLang srcSet start step
   style summary tabIndex target title type useMap value width wmode wrap</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

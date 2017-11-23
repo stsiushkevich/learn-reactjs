@@ -68,4 +68,16 @@ public class ReferenceController {
         model.put("currentPage", Pages.REFERENCE_SHALLOW_RENDERER);
         return "shallowRendererView";
     }
+
+    @GetMapping("/test-renderer")
+    public String testRenderer(Map<String, Object> model) {
+        model.put("currentPage", Pages.REFERENCE_TEST_RENDERER);
+        return "testRendererView";
+    }
+
+    @GetMapping("/js-env-requirements")
+    public String jsEnvRequirements(Map<String, Object> model) {
+        model.put("currentPage", Pages.REFERENCE_JS_ENV_REQUIREMENTS);
+        return "jsEnvRequirementsView";
+    }
 }

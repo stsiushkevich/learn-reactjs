@@ -7,9 +7,9 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   React.Children.map(children, function[(thisArg)])</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

@@ -7,11 +7,11 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   &lt;MyComponent&gt;Привет!&lt;/MyComponent&gt;
 
   &lt;MyComponent&gt;{'Привет!'}&lt;/MyComponent&gt;</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

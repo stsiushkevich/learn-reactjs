@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   // connect это функция, которая возвращает другую функцию
@@ -16,4 +16,4 @@
   // который является подключаемым к хранилищу данных Redux
   const ConnectedToReduxStoreNotificationList = hoc(NotificationList);</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

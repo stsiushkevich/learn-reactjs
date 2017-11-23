@@ -8,7 +8,6 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 
 <%@ attribute name="title" required="false" rtexprvalue="true" %>
-<%@ attribute name="type" required="false" rtexprvalue="true" %>
 
 <lt:layout id="${id}" name="${name}">
     <br/>
