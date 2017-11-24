@@ -19,7 +19,7 @@
 		</a>
 	</c:if>
 	<c:if test="${pageStartAncor != null}">
-		<a class="page-navigate__link" href="#${pageStartAncor}">
+		<a style="margin: 0 20px" class="page-navigate__link" href="#${pageStartAncor}">
 			<img class="page-navigate__link-icon" src="<c:url value="/resources/imges/top-arrow.png"/>"/>
 		</a>
 	</c:if>
