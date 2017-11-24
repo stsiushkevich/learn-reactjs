@@ -10,7 +10,7 @@
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
-	<h1>4.8 Поверхностная отрисовка</h1>
+	<h1>4.8 Поверхностный отрисовщик</h1>
 
 	<wg:p>Импорт:</wg:p>
 
@@ -63,5 +63,6 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="test-utilities"/>
-<app:page-navigate prevPageUrl="${prevPageUrl}"
+<c:url var="nextPageUrl" value="test-renderer"/>
+<app:page-navigate prevPageUrl="${prevPageUrl}" nextPageUrl="${nextPageUrl}"
                    pageStartAncor="pageStart"/>

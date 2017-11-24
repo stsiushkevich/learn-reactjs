@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
   &lt;select&gt;
@@ -18,4 +18,4 @@
     &lt;option value="Scala"&gt;Scala&lt;/option&gt;
   &lt;/select&gt;</code>
     </pre>
-</cd:code-example>
+</cd:code-example-decorator>

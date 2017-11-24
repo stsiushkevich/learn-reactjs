@@ -7,7 +7,7 @@
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
-<cd:code-example codePenUrl="${codePenUrl}">
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
   &lt;div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable"&gt;
@@ -20,4 +20,4 @@
      &lt;/div&gt;
   &lt;/div&gt;</code>
   </pre>
-</cd:code-example>
+</cd:code-example-decorator>

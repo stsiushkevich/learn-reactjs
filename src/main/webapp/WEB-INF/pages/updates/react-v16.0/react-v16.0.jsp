@@ -280,7 +280,8 @@
     <ce:code-example-7/>
 
     <wg:p>React также зависит от <code>requestAnimationFrame</code> (даже в тестовых средах).
-        Простое решение для тестовых сред будет иметь вид:</wg:p>
+        Вы можете использовать пакет <wg:link href="https://www.npmjs.com/package/raf">raf</wg:link>
+        для подключения <code>requestAnimationFrame</code>:</wg:p>
 
     <ce:code-example-8/>
 
