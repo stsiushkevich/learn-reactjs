@@ -479,7 +479,7 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
     padding-top: 10px;
     border: 1px solid #ccc;
     overflow-y: auto;
-    height: 100px;
+    height: 120px;
     width: 100%;
 }
 
