@@ -8,11 +8,12 @@
 
 <lt:layout cssClass="bottom-content-advertising">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- advertising_1 -->
+    <!-- mottom_content_advertising -->
     <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
+         style="display:block"
          data-ad-client="ca-pub-8338150978310358"
-         data-ad-slot="9197724366"></ins>
+         data-ad-slot="4092985073"
+         data-ad-format="auto"></ins>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>

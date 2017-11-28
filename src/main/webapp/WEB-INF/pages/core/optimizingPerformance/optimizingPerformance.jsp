@@ -36,13 +36,13 @@
     установив React Developer Tools для Chrome. Если вы заходите на сайт с React в режиме <b>production</b>,
     значок будет иметь темный фон:</wg:p>
 
-  <wg:p>
+  <wg:p cssClass="text-center" style="overflow-x: auto">
     <wg:img src="${prodModeUrl}"/>
   </wg:p>
 
   <wg:p>Если вы заходите на сайт с React в <b>режиме разработки</b>, значок будет иметь красный фон:</wg:p>
 
-  <wg:p>
+  <wg:p cssClass="text-center" style="overflow-x: auto">
     <wg:img src="${devModeUrl}"/>
   </wg:p>
 
@@ -181,7 +181,10 @@
   <wg:p>В режиме <b>development</b> вы можете визуализировать, как компоненты монтируются,
     обновляются и демонтируются, используя инструменты производительности в поддерживаемых браузерах. Например:</wg:p>
 
-  <wg:img src="${profilingUrl}"/>
+  <wg:p style="overflow-x: auto">
+    <wg:img src="${profilingUrl}"/>
+  </wg:p>
+
 
   <wg:p>Чтобы сделать это в Chrome:</wg:p>
 
@@ -239,7 +242,9 @@
     ли отображаемые элементы React. Наконец, цвет круга указывает, должен ли компонент
     быть согласован или нет.</wg:p>
 
-  <wg:img src="${treeUrl}"/>
+  <wg:p style="overflow-x: auto">
+    <wg:img src="${treeUrl}"/>
+  </wg:p>
 
   <wg:p>Так как <code>shouldComponentUpdate</code> возвратил <code>false</code> для
     поддерева с корнем <code>C2</code>, React не попытался отрисовать <code>C2</code>, и,
