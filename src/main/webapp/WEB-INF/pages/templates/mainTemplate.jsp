@@ -22,7 +22,7 @@
 	<jsp:include page="../google/analytic.jsp"/>
 
 	<u:resource type="link" root="/resources/css/plugins" names="bootstrap.min.css"/>
-	<u:resource type="link" root="/resources/css/custom" names="main.min.24.11.17.css, overrides.min.23.11.17.css"/>
+	<u:resource type="link" root="/resources/css/custom" names="main.min.28.11.17.css, overrides.min.23.11.17.css"/>
 	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
 	<u:resource type="link" root="/resources/css/plugins" names="tomorrow-night-eighties.min.css"/>
 	<tiles:insertAttribute name="resources"/>
