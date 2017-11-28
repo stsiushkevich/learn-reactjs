@@ -11,7 +11,7 @@
 	<br/>
 
 	<wg:p>
-		<b>learn-reactjs.ru</b> был запущен в 2017 году. Он является переводом <wg:link href="https://facebook.github.io/react/">официальной докумментации</wg:link>,
+		<b>learn-reactjs.ru</b> был запущен в 2017 году. Он является переводом <wg:link href="https://facebook.github.io/react/">официальной документации</wg:link>,
 		поэтому очень похож на неё по структуре материала.
 	</wg:p>
 
@@ -41,7 +41,7 @@
 		купив электронные версии учебника, нажав на кнопку "<b>Купить EPAB/PDF</b>" в правом углу сайта.
 	</wg:p>--%>
 
-	<wg:p><b>Распологайтесь поудобнее и приступайте к изучению мира ReactJS прямо сейчас!</b></wg:p>
+	<wg:p><b>Располагайтесь поудобнее и приступайте к изучению мира ReactJS прямо сейчас!</b></wg:p>
 
 	<wg:p cssClass="project-icon">
 		<wg:img cssClass="project-icon__img" src="${aboutProjectImgUrl}"/>
