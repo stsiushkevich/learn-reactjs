@@ -12,7 +12,7 @@
 <c:url var="introductionImgUrl" value="/resources/imges/pages/home/compass.png"/>
 <c:url var="basicsImgUrl" value="/resources/imges/pages/home/rocket.png"/>
 <c:url var="coreImgUrl" value="/resources/imges/pages/home/atom.png"/>
-<c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
+<c:url var="referenceImgUrl" value="/resources/imges/pages/home/reference.png"/>
 <c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
 
 <lt:layout cssClass="container tutorial">

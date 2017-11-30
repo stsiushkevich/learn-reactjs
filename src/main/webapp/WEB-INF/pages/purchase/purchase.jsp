@@ -12,7 +12,7 @@
 <c:url var="introductionImgUrl" value="/resources/imges/pages/home/compass.png"/>
 <c:url var="basicsImgUrl" value="/resources/imges/pages/home/rocket.png"/>
 <c:url var="coreImgUrl" value="/resources/imges/pages/home/atom.png"/>
-<c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
+<c:url var="referenceImgUrl" value="/resources/imges/pages/home/reference.png"/>
 
 <lt:layout cssClass="page container purchase">
 	<lt:layout><h1 class="text-center">Покупка учебника ReactJS</h1></lt:layout>
