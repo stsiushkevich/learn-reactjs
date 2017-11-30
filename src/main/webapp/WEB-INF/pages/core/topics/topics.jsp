@@ -21,7 +21,7 @@
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
-	<h1 style="color: #00acc1">3. Ядро ReactJS</h1>
+	<h1 style="color: #00acc1">3. Руководство для продвинутых</h1>
 	<ol class="topic-list__topics">
 		<li class="topic-list__topic">
 			<a class="topic-list__topic-nav-link" href="${jsxInDepthUrl}"><h4>3.1 JSX изнутри</h4></a>
