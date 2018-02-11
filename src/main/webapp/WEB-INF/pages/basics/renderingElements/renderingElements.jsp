@@ -102,7 +102,7 @@
         <wg:link href="http://codepen.io/gaearon/pen/gwoJZk?editors=0010">этот пример</wg:link>, используя
         инструменты разработчика в браузере:</wg:p>
 
-    <wg:p cssClass="text-center">
+    <wg:p cssClass="text-center" style="overflow-x: auto">
         <wg:img src="${granularDomUpdatesUrl}"/>
     </wg:p>
 

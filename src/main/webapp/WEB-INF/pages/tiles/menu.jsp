@@ -9,10 +9,10 @@
 <c:url var="referenceUrl" value="/reference/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 
-<c:url var="introductionImgUrl" value="/resources/imges/pages/home/compass.png"/>
-<c:url var="basicsImgUrl" value="/resources/imges/pages/home/science.png"/>
-<c:url var="coreImgUrl" value="/resources/imges/pages/home/microchip.png"/>
-<c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
+<c:url var="introductionImgUrl" value="/resources/imges/pages/home/introduction.png"/>
+<c:url var="basicsImgUrl" value="/resources/imges/pages/home/rocket.png"/>
+<c:url var="coreImgUrl" value="/resources/imges/pages/home/atom.png"/>
+<c:url var="referenceImgUrl" value="/resources/imges/pages/home/reference.png"/>
 <c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
 
 <c:set var="isIntroductionSection" value="${currentSection eq 'INTRODUCTION'}"/>
@@ -29,10 +29,10 @@
 				<a href="${introductionUrl}">1. Введение</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isBasicsSection ? 'active' : null}">
-				<a href="${basicsUrl}">2. Основы</a>
+				<a href="${basicsUrl}">2. Быстрый старт</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isCoreSection ? 'active' : null}">
-				<a href="${coreUrl}">3. Ядро ReactJS</a>
+				<a href="${coreUrl}">3. Продвинутое руководство</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${isReferenceSection ? 'active' : null}">
 				<a href="${referenceUrl}">4. Справочное руководство</a>

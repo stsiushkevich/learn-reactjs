@@ -9,10 +9,10 @@
 <c:url var="referenceUrl" value="/reference/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 
-<c:url var="introductionImgUrl" value="/resources/imges/pages/home/compass.png"/>
-<c:url var="basicsImgUrl" value="/resources/imges/pages/home/science.png"/>
-<c:url var="coreImgUrl" value="/resources/imges/pages/home/microchip.png"/>
-<c:url var="referenceImgUrl" value="/resources/imges/pages/home/science-book.png"/>
+<c:url var="introductionImgUrl" value="/resources/imges/pages/home/introduction.png"/>
+<c:url var="basicsImgUrl" value="/resources/imges/pages/home/rocket.png"/>
+<c:url var="coreImgUrl" value="/resources/imges/pages/home/atom.png"/>
+<c:url var="referenceImgUrl" value="/resources/imges/pages/home/reference.png"/>
 <c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
 
 <lt:layout cssClass="container tutorial">
@@ -32,13 +32,13 @@
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${basicsUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${basicsImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Основы</lt:layout>
+                        <lt:layout cssClass="tutorial__section-label">Быстрый старт</lt:layout>
                     </wg:link>
                 </lt:layout>
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${coreUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${coreImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Ядро React</lt:layout>
+                        <lt:layout cssClass="tutorial__section-label">Для продвинутых</lt:layout>
                     </wg:link>
                 </lt:layout>
             </lt:layout>
