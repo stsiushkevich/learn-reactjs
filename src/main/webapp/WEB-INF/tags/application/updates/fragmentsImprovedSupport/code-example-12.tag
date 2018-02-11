@@ -10,14 +10,9 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  render() {
-    return (
-      &lt;&gt;
-        &lt;ChildA /&gt;
-        &lt;ChildB /&gt;
-        &lt;ChildC /&gt;
-      &lt;/&gt;
-    );
-  }</code>
+  # для пользователей yarn
+  yarn upgrade flow-bin
+  # для пользователей npm
+  npm update flow-bin</code>
   </pre>
 </cd:code-example-decorator>

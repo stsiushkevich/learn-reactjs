@@ -39,4 +39,10 @@ public class UpdatesController {
         return "errorHandlingInReact16View";
     }
 
+    @GetMapping("/react-v16.2.0-fragments-improved-support")
+    public String fragmentsImprovedSupport(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_REACT_16_2_0_FRAGMENTS_IMPROVED_SUPPORT);
+        return "fragmentsImprovedSupportView";
+    }
+
 }

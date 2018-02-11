@@ -10,14 +10,9 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  render() {
-    return (
-      &lt;&gt;
-        &lt;ChildA /&gt;
-        &lt;ChildB /&gt;
-        &lt;ChildC /&gt;
-      &lt;/&gt;
-    );
-  }</code>
+  # для пользователей yarn
+  yarn add eslint@3.x babel-eslint@7
+  # для пользователей npm
+  npm install eslint@3.x babel-eslint@7</code>
   </pre>
 </cd:code-example-decorator>

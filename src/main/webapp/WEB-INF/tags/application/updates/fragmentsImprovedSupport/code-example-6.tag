@@ -10,14 +10,19 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  render() {
-    return (
-      &lt;&gt;
-        &lt;ChildA /&gt;
-        &lt;ChildB /&gt;
-        &lt;ChildC /&gt;
-      &lt;/&gt;
-    );
-  }</code>
+  const Fragment = React.Fragment;
+  
+  &lt;Fragment&gt;
+    &lt;ChildA /&gt;
+    &lt;ChildB /&gt;
+    &lt;ChildC /&gt;
+  &lt;/Fragment&gt;
+  
+  // Так тоже работает
+  &lt;React.Fragment&gt;
+    &lt;ChildA /&gt;
+    &lt;ChildB /&gt;
+    &lt;ChildC /&gt;
+  &lt;/React.Fragment&gt;</code>
   </pre>
 </cd:code-example-decorator>

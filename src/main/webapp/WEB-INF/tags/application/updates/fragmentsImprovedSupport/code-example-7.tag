@@ -13,9 +13,11 @@
   render() {
     return (
       &lt;&gt;
-        &lt;ChildA /&gt;
-        &lt;ChildB /&gt;
-        &lt;ChildC /&gt;
+        Какой-то текст.
+        &lt;h2&gt;Первый заголовок&lt;/h2&gt;
+        Еще текст.
+        &lt;h2&gt;Второй заголовок&lt;/h2&gt;
+        Еще больше текста.
       &lt;/&gt;
     );
   }</code>

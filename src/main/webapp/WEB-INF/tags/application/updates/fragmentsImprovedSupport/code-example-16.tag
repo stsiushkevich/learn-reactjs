@@ -10,14 +10,9 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  render() {
-    return (
-      &lt;&gt;
-        &lt;ChildA /&gt;
-        &lt;ChildB /&gt;
-        &lt;ChildC /&gt;
-      &lt;/&gt;
-    );
-  }</code>
+  # для пользователей yarn
+  yarn add react@^16.2.0 react-dom@^16.2.0
+  # для пользователей npm
+  npm install --save react@^16.2.0 react-dom@^16.2.0</code>
   </pre>
 </cd:code-example-decorator>

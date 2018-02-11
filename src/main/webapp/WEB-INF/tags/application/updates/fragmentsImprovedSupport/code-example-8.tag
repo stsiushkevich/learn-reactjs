@@ -10,13 +10,17 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  render() {
+  function Glossary(props) {
     return (
-      &lt;&gt;
-        &lt;ChildA /&gt;
-        &lt;ChildB /&gt;
-        &lt;ChildC /&gt;
-      &lt;/&gt;
+      &lt;dl&gt;
+        {props.items.map(item => (
+          // Без ключа `key`, React выдаст предупреждение в консоль
+          &lt;Fragment key={item.id}&gt;
+            &lt;dt&gt;{item.term}&lt;/dt&gt;
+            &lt;dd&gt;{item.description}&lt;/dd&gt;
+          &lt;/Fragment&gt;
+        ))}
+      &lt;/dl&gt;
     );
   }</code>
   </pre>
