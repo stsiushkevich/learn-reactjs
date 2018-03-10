@@ -13,7 +13,7 @@
   function TextField(props) {
     return (
       &lt;div&gt;
-        <cd:hl>&lt;input type="text" ref={props.textFieldRef /&gt;</cd:hl>
+        <cd:hl>&lt;input type="text" ref={props.textFieldRef} /&gt;</cd:hl>
       &lt;/div&gt;
     );
   }
@@ -21,7 +21,7 @@
   function Parent(props) {
     return (
       &lt;div&gt;
-        Текстовое поле: <cd:hl>&lt;TextField textFieldRef={props.textFieldRef /&gt;</cd:hl>
+        Текстовое поле: <cd:hl>&lt;TextField textFieldRef={props.textFieldRef} /&gt;</cd:hl>
       &lt;/div&gt;
     );
   }
