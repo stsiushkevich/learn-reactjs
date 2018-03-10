@@ -6,6 +6,8 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/typechecking-with-prop-types" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<c:url var="classFieldsProposalUrl" value="https://github.com/tc39/proposal-class-fields"/>
+
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
@@ -51,14 +53,21 @@
   <ce:code-example-3/>
 
   <br/>
-  <h2>3.2.2 Необходимость единственного потомка</h2>
+  <h2>3.3 Значения свойств по умолчанию</h2>
 
   <wg:p>Вы можете определять значения по умолчанию для ваших свойств,
     используя специальное свойство <code>defaultProps</code>:</wg:p>
 
   <ce:code-example-4/>
 
-  <wg:p>Свойство <code>defaultProps</code> будет использовано, чтобы гарантировать, что
+  <wg:p>Если вы используете преобразование <b>Babel</b>, такое как <code>transform-class-properties</code>, вы также можете
+    объявлять <code>defaultProps</code> как статическое свойство в классе React компонента. Этот синтаксис еще не
+    окончателен, и для его работы в браузере потребуется выполнить этап компиляции. Для получения
+    дополнительной информации см. <wg:link href="${classFieldsProposalUrl}">предложение для полей классов</wg:link>.</wg:p>
+
+  <ce:code-example-5/>
+
+  <wg:p>Свойство <code>defaultProps</code> будет использовано, чтобы гарантировать, что свойство
     <code>this.props.name</code>, будет иметь значение, если оно не было указано родительским
     компонентом. Проверка типов <code>propTypes</code> происходит после отработки <code>defaultProps</code>,
     поэтому проверка типов будет также применена и к <code>defaultProps</code>.</wg:p>
