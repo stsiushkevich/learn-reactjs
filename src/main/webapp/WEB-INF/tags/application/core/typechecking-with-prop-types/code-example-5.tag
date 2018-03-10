@@ -13,7 +13,7 @@
   class HelloWorld extends React.Component {
     static defaultProps = {
       name: 'Вася'
-    };
+    }
 
     render() {
       return (&lt;p&gt;Привет, {this.props.name}!&lt;/p&gt;);
