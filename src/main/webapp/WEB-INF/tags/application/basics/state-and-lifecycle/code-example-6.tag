@@ -18,7 +18,7 @@
 
     render() {
       const value = <cd:hl>this.state.value</cd:hl>
-        return (&lt;div&gt;
+      return (&lt;div&gt;
           &lt;p&gt;Таймер:&lt;/p&gt;
           &lt;p&gt;
             &lt;span&gt;{Math.round(value/INTERVAL/60/60)} : &lt;/span&gt;
