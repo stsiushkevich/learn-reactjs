@@ -9,8 +9,7 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-    npm install -g create-react-app
-    create-react-app my-app
+    npx create-react-app my-app
 
     cd my-app
     npm start
