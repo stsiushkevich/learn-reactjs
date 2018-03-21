@@ -16,6 +16,7 @@
 <c:url var="formsUrl" value="forms"/>
 <c:url var="liftingStateUpUrl" value="lifting-state-up"/>
 <c:url var="compositionVsInheritanceUrl" value="composition-vs-inheritance"/>
+<c:url var="thinkingInReactUrl" value="thinking-in-react"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -56,6 +57,9 @@
         </li>
         <li class="topic-list__topic">
             <a href=${compositionVsInheritanceUrl} class="topic-list__topic-nav-link"><h4>2.12 Композиция вместо наследования</h4></a>
+        </li>
+        <li class="topic-list__topic">
+            <a href=${thinkingInReactUrl} class="topic-list__topic-nav-link"><h4>2.13 Мышление в React</h4></a>
         </li>
     </ol>
 </lt:layout>
