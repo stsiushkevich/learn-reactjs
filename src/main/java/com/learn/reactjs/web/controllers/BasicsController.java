@@ -92,4 +92,10 @@ public class BasicsController {
         model.put("currentPage", Pages.BASICS_COMPOSITION_VS_INHERITANCE);
         return "compositionVsInheritanceView";
     }
+
+    @GetMapping("/thinking-in-react")
+    public String thinkingInReact(Map<String, Object> model) {
+        model.put("currentPage", Pages.BASICS_THINKING_IN_REACT);
+        return "thinkingInReactView";
+    }
 }
