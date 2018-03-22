@@ -7,6 +7,8 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="classFieldsProposalUrl" value="https://github.com/tc39/proposal-class-fields"/>
+<c:url var="propTypesUrl" value="https://www.npmjs.com/package/prop-types"/>
+<c:url var="codeModeUrl" value="https://reactjs.org/blog/2017/04/07/react-v15.5.0.html#migrating-from-reactproptypes"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -15,8 +17,10 @@
 
   <lt:layout cssClass="alert alert-warning">
     <b>Внимание! React.PropTypes</b> является устаревшим начиная с <b>React v15.5.</b>
-    Пожалуйста,  вместо этого используйте
-    <wg:link href="https://www.npmjs.com/package/prop-types">prop-types</wg:link> библиотеку
+    Пожалуйста,  вместо этого используйте <wg:link href="${propTypesUrl}">prop-types</wg:link> библиотеку.
+    <br/>
+    <br/>
+    Разработчики предоставляют скрипт <wg:link href="${codeModeUrl}">codemode</wg:link> для автоматизации преобразования.
   </lt:layout>
 
   <wg:p>С ростом вашего приложения, вы можете получить много багов с проверками типов.
