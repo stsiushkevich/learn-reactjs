@@ -46,6 +46,29 @@
 
   <wg:p>Аналогично, <code>&lt;input type="checkbox"&gt;</code> и <code>&lt;input type="radio"&gt;</code> поддерживают
     <code>defaultChecked</code>, а <code>&lt;select&gt;</code> и <code>&lt;textarea&gt;</code> поддерживают <code>defaultValue</code>.</wg:p>
+
+  <br/>
+  <h2>3.4.2 Тэг input типа file</h2>
+
+  <wg:p>В HTML тэг <code>&lt;input type="file"/&gt;</code> позволяет пользователю выбирать один
+    или несколько файлов из хранилища своего устройства для загрузки на
+    сервер или манипулировать собой с помощью JavaScript через File API.</wg:p>
+
+  <ce:code-example-3/>
+
+  <wg:p>
+    Это неконтролируемый компонент в React, так как его значение может
+    быть установлено только пользователем, но не программно.
+  </wg:p>
+
+  <wg:p>
+    Вы должны использовать File API для взаимодействия с файлами. В
+    следующем примере показано, как создать ссылку на узел DOM для
+    доступа к файлу(ам) в submit-обработчике:
+  </wg:p>
+
+  <ce:code-example-4 codePenUrl="https://reactjs.org/redirect-to-codepen/uncontrolled-components/input-type-file"/>
+
 </lt:layout>
 
 <c:url var="prevPageUrl" value="refs-and-the-dom"/>

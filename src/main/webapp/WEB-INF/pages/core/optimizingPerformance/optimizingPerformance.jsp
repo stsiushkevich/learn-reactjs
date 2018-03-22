@@ -10,6 +10,7 @@
 <c:url var="devModeUrl" value="/resources/imges/pages/core/optimizing-performance/development-mode.png"/>
 <c:url var="profilingUrl" value="/resources/imges/pages/core/optimizing-performance/profiling.png"/>
 <c:url var="treeUrl" value="/resources/imges/pages/core/optimizing-performance/tree.png"/>
+<c:url var="reactVirtualizedUrl" value="https://bvaughn.github.io/react-virtualized/#/components/List"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -107,7 +108,6 @@
         Сделайте его глобальным (<code>-g</code>).</li>
       <li>Преобразование <b>uglifyify</b> устраняет импорты, добавленные на стадии разработки.
         Сделайте его глобальным (<code>-g</code>).</li>
-      <li>Плагин <b>bundle-collapser</b> заменяет длинные идентификаторы модулей номерами.</li>
       <li>Наконец, результирующая связка передается по каналу в <b>uglify-js</b> для минификации.</li>
     </ul>
   </wg:p>
@@ -190,6 +190,11 @@
 
   <wg:p>
     <ul>
+      <li>
+        Временно отключите все расширения Chrome, особенно React DevTools. Они могут
+        значительно исказить результаты!
+      </li>
+      <li>Убедитесь, что вы запускаете приложение в режиме разработки.</li>
       <li>Загрузите ваше приложение с помощью <code>?react_perf</code> в строке запроса
         (например, <code>http://localhost:3000/?react_perf</code>).</li>
       <li>Откройте вкладку «<b>Performance</b>» в Chrome DevTools и нажмите «<b>Record</b>».</li>
@@ -209,7 +214,24 @@
     <wg:link href="https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API">User Timing API</wg:link>.</wg:p>
 
   <br/>
-  <h2>3.5.9 Избежание согласования</h2>
+  <h2>3.5.9 Виртуализация длинных списков</h2>
+
+  <wg:p>
+    Если ваше приложение отображает длинные списки данных (сотни или тысячи строк), мы рекомендуем
+    использовать метод, известный как «экранирование». Этот метод отрисовывает только небольшое
+    подмножество ваших строк в данный момент времени и может значительно сократить время, необходимое
+    для повторной переотрисовки компонентов, а также количество создаваемых узлов DOM.
+  </wg:p>
+
+  <wg:p>
+    <wg:link href="${reactVirtualizedUrl}">React Virtualized</wg:link> - популярная библиотека для экранирования. Она предоставляет несколько
+    повторно используемых компонентов для отображения списков, гридов и табличных данных. Вы
+    также можете создать свой собственный экранирующий компонент, как это сделано в Twitter,
+    если желаете что-то более специфическое для вашего конкретного случая.
+  </wg:p>
+
+  <br/>
+  <h2>3.5.10 Избежание согласования</h2>
 
   <wg:p>React строит и поддерживает внутреннее представление отображаемого
     пользовательского интерфейса. Оно включает элементы React, которые вы
@@ -235,7 +257,7 @@
     компонента и ниже по иерархии.</wg:p>
 
   <br/>
-  <h2>3.5.10	shouldComponentUpdate в действии</h2>
+  <h2>3.5.10 shouldComponentUpdate в действии</h2>
 
   <wg:p>Вот поддерево компонентов. Для каждого из них <code>SCU</code> указывает, что
     возвратил <code>shouldComponentUpdate</code>, а <code>vDOMEq</code> указывает, эквивалентны
@@ -267,7 +289,7 @@
     так как нас выручил <code>shouldComponentUpdate</code> и отрисовка не вызвалась.</wg:p>
 
   <br/>
-  <h2>3.5.11	Примеры</h2>
+  <h2>3.5.11 Примеры</h2>
 
   <wg:p>Если единственный способ изменения вашего компонента – когда переменная <code>props.style</code>
     или <code>state.value</code> изменяется, вы могли бы выполнить проверку

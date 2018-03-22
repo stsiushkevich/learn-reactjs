@@ -10,9 +10,6 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': JSON.stringify('production')
-  }),
-  new webpack.optimize.UglifyJsPlugin()</code>
+  &lt;input type="file" /&gt;</code>
   </pre>
 </cd:code-example-decorator>

@@ -14,8 +14,7 @@
 
   class CustomComponent extends React.Component {
     render() {
-      // Это должен быть в точности один элемент,
-    //иначе будет предупреждение
+      // Это должен быть в точности один элемент, иначе будет предупреждение
       const children = this.props.children;
       return (&lt;div&gt;{children}&lt;/div&gt;);
     }

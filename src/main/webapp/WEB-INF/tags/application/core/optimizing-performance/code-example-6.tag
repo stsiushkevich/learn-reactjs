@@ -13,7 +13,6 @@
   browserify ./index.js \
     -g [ envify --NODE_ENV production ] \
     -g uglifyify \
-    -p bundle-collapser/plugin \
     | uglifyjs --compress --mangle > ./bundle.js</code>
   </pre>
 </cd:code-example-decorator>
