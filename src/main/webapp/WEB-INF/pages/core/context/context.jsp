@@ -7,6 +7,8 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
+<c:url var="codemodeUrl" value="https://reactjs.org/blog/2017/04/07/react-v15.5.0.html#migrating-from-react.proptypes"/>
+<c:url var="newReleaseUrl" value="https://github.com/reactjs/rfcs/blob/master/text/0002-new-version-of-context.md"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -18,6 +20,12 @@
     и мы рекомендуем использовать библиотеку
     <wg:link href="https://www.npmjs.com/package/prop-types">prop-types</wg:link>
     для определения <code>contextTypes</code>.
+
+    <br/>
+    <br/>
+
+    Разработчики предоставляют <wg:link href="${codemodeUrl}">codemode</wg:link>,
+    чтобы автоматизировать преобразование.
   </lt:layout>
 
   <wg:p>С помощью React легко отслеживать поток данных через компоненты React.
@@ -27,6 +35,11 @@
   <wg:p>В некоторых случаях вы хотите передавать данные через дерево компонентов без
     необходимости передавать свойства вручную на каждом уровне. Вы можете делать это
     напрямую в React с помощью мощного «контекстного» API.</wg:p>
+
+  <app:alert type="warning">
+    <wg:link href="${newReleaseUrl}">Новая безопасная версия контекста</wg:link> находится в
+    стадии разработки и выйдет в релизе <b>16.3</b>
+  </app:alert>
 
   <br/>
   <h2>3.9.1 Почему не стоит использовать контекст</h2>
@@ -102,6 +115,11 @@
       <li><code>componentDidUpdate(prevProps, prevState, prevContext)</code></li>
     </ul>
   </wg:p>
+
+  <app:alert type="warning">
+    <b>Начиная с React 16</b>, метод <code>componentDidUpdate</code> больше не
+    получает <code>prevContext</code>.
+  </app:alert>
 
   <br/>
   <h2>3.9.5 Ссылка на контекст в функциональных
