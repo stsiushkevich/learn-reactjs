@@ -269,7 +269,7 @@
     на вкладке «<code>React</code>»:
   </wg:p>
 
-  <wg:p cssClass="text-center">
+  <wg:p cssClass="text-center" style="overflow-x: auto">
     <wg:img src="${devConsolenUrl}"/>
   </wg:p>
 
@@ -283,7 +283,7 @@
 
   <wg:p>Рассмотрим этот пример:</wg:p>
 
-  <wg:p>
+  <wg:p cssClass="text-center" style="overflow-x: auto">
     <wg:img src="${highlightUpdatesUrl}"/>
   </wg:p>
 
@@ -293,10 +293,6 @@
     вместе с элементом input. Это иногда называют «напрасной/бесполезной» отрисовкой. То есть
     мы знаем, что повторная отрисовка необязательна, так как контент первого todo не изменился.
     Но React об этом не знает, из-за чего и возникает такой эффект.
-  </wg:p>
-
-  <wg:p>
-    Несмотря на то, что React обновляет только измененные узлы DOM, перотрисовка все же занимает некоторое время.
   </wg:p>
 
   <wg:p>
