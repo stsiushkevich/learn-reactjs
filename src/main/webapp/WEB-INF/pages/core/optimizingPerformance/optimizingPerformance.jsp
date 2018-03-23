@@ -11,6 +11,14 @@
 <c:url var="profilingUrl" value="/resources/imges/pages/core/optimizing-performance/profiling.png"/>
 <c:url var="treeUrl" value="/resources/imges/pages/core/optimizing-performance/tree.png"/>
 <c:url var="reactVirtualizedUrl" value="https://bvaughn.github.io/react-virtualized/#/components/List"/>
+<c:url var="chromeExtentionUrl" value="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"/>
+<c:url var="chromeExtentionUrl" value="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"/>
+<c:url var="firefoxExtentionUrl" value="https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/"/>
+<c:url var="standalodeExtentionUrl" value="https://www.npmjs.com/package/react-devtools"/>
+<c:url var="devConsolenUrl" value="https://reactjs.org/static/devtools-highlight-updates-97eda4825de476af4515435a0c36ca78-acf85.png"/>
+<c:url var="blogPostUrl" value="https://blog.logrocket.com/make-react-fast-again-part-3-highlighting-component-updates-6119e45e6833"/>
+<c:url var="edelsteinUrl" value="https://blog.logrocket.com/@edelstein"/>
+<c:url var="highlightUpdatesUrl" value="https://reactjs.org/highlight-updates-example-7a42123e91b1b460b1a65605d6ff0d2b.gif"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -244,10 +252,57 @@
     ли фактическое обновление DOM, сравнивая вновь возвращенный элемент с ранее отображаемым.
     Когда они не равны, React обновит DOM.</wg:p>
 
-  <wg:p>В некоторых случаях ваш компонент может все это ускорить, переопределив метод
-    жизненного цикла <code>shouldComponentUpdate</code>, который запускается до начала процесса повторной
+  <wg:p>
+    Вы можете визуализировать эти перерисовки виртуального DOM с помощью React DevTools:
+  </wg:p>
+
+  <wg:p>
+    <ul>
+      <li><wg:link href="${chromeExtentionUrl}">Chrome Browser Extension</wg:link></li>
+      <li><wg:link href="${firefoxExtentionUrl}">Firefox Browser Extension</wg:link></li>
+      <li><wg:link href="${standalodeExtentionUrl}">Standalone Node Package</wg:link></li>
+    </ul>
+  </wg:p>
+
+  <wg:p>
+    В консоли разработчика выберите параметр «<code>Highlight Updates</code>»
+    на вкладке «<code>React</code>»:
+  </wg:p>
+
+  <wg:p cssClass="text-center" style="overflow-x: auto">
+    <wg:img src="${devConsolenUrl}"/>
+  </wg:p>
+
+  <wg:p>
+    Взаимодействуя со своей страницей, вы должны увидеть, что вокруг любых
+    компонентов, которые были переотрисованы, мгновенно появляются цветные границы.
+    Это позволяет вам выявлять повторные отрисовки, которые не были необходимыми. Вы
+    можете узнать больше о функции <b>React DevTools</b> из
+    <wg:link href="${blogPostUrl}">этого поста</wg:link> в блоге от <wg:link href="${edelsteinUrl}">Ben Edelstein</wg:link>.
+  </wg:p>
+
+  <wg:p>Рассмотрим этот пример:</wg:p>
+
+  <wg:p cssClass="text-center" style="overflow-x: auto">
+    <wg:img src="${highlightUpdatesUrl}"/>
+  </wg:p>
+
+  <wg:p>
+    Обратите внимание, что когда мы вводим второе todo, первое todo также мигает
+    на экране при каждом нажатии клавиши. Это означает, что он повторно отрисовывается React-ом
+    вместе с элементом input. Это иногда называют «напрасной/бесполезной» отрисовкой. То есть
+    мы знаем, что повторная отрисовка необязательна, так как контент первого todo не изменился.
+    Но React об этом не знает, из-за чего и возникает такой эффект.
+  </wg:p>
+
+  <wg:p>
+    Несмотря на то, что React обновляет только измененные узлы DOM, переотрисовка все же
+    занимает некоторое время. Во многих случаях это не вызывает проблем, но если замедление заметно,
+    вы можете все это ускорить, переопределив метод жизненного цикла <code>shouldComponentUpdate()</code>,
+    который запускается до начала процесса повторной
     отрисовки. Реализация этой функции по умолчанию возвращает <code>true</code>, указывая
-    React выполнить обновление:</wg:p>
+    React выполнить обновление:
+  </wg:p>
 
   <ce:code-example-10/>
 
@@ -255,6 +310,12 @@
     обновлении, вы можете вместо этого вернуть <code>false</code> из <code>shouldComponentUpdate</code>,
     чтобы пропустить весь процесс отрисовки, включая вызов <code>render()</code> для этого
     компонента и ниже по иерархии.</wg:p>
+
+  <wg:p>
+    В большинстве случаев вместо записи <code>shouldComponentUpdate()</code> вручную вы
+    можете наследоваться от <code>React.PureComponent</code>. Это эквивалентно реализации <code>shouldComponentUpdate()</code>
+    с неглубоким сравнением текущих и предыдущих <code>props</code> и <code>state</code>.
+  </wg:p>
 
   <br/>
   <h2>3.5.10 shouldComponentUpdate в действии</h2>
