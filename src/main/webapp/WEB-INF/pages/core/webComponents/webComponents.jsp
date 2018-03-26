@@ -9,7 +9,7 @@
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
-  <h1>3.12	Веб-компоненты</h1>
+  <h1>3.13	Веб-компоненты</h1>
 
   <wg:p>React и <wg:link href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</wg:link>
     созданы для решения разных проблем. Веб-компоненты
@@ -24,7 +24,7 @@
     написаны с использованием веб-компонентов.</wg:p>
 
   <br/>
-  <h2>3.12.1	Использование веб-компонентов в React</h2>
+  <h2>3.13.1	Использование веб-компонентов в React</h2>
 
   <ce:code-example-1/>
 
@@ -44,7 +44,7 @@
   <ce:code-example-2/>
 
   <br/>
-  <h2>3.12.2	Использование React в веб-компонентах</h2>
+  <h2>3.13.2	Использование React в веб-компонентах</h2>
 
   <wg:p>Пример из официальной документации:</wg:p>
 
