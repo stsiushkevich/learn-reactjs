@@ -11,7 +11,7 @@
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page portals-page">
-  <h1>3.10	Порталы</h1>
+  <h1>3.11	Порталы</h1>
 
   <wg:p><b>Доступны с 16 версии.</b></wg:p>
 
@@ -25,7 +25,7 @@
     является элементом DOM.</wg:p>
 
   <br/>
-  <h2>3.10.1	Использование</h2>
+  <h2>3.11.1	Использование</h2>
 
   <wg:p>Как правило, когда вы возвращаете элемент из метода отрисовки компонента,
     он монтируется в DOM как дочерний элемент ближайшего родительского узла:</wg:p>
@@ -48,7 +48,7 @@
   <wg:p><wg:link href="https://codepen.io/gaearon/pen/yzMaBd">Попробовать в CodePen</wg:link></wg:p>
 
   <br/>
-  <h2>3.10.2	Всплытие событий через порталы</h2>
+  <h2>3.11.2	Всплытие событий через порталы</h2>
 
   <wg:p>Несмотря на то, что портал может быть где угодно в дереве DOM, он ведет
     себя как обычный дочерний элемент React во всех отношениях. Такие функции,
@@ -75,7 +75,7 @@
     захватывать свои события независимо от того, реализован ли он с помощью порталов.</wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="context"/>
+<c:url var="prevPageUrl" value="fragments"/>
 <c:url var="nextPageUrl" value="error-boundaries"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"

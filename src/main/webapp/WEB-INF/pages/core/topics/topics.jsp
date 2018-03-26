@@ -13,6 +13,7 @@
 <c:url var="reactWithoutJsxUrl" value="react-without-jsx"/>
 <c:url var="reconciliationUrl" value="reconciliation"/>
 <c:url var="contextUrl" value="context"/>
+<c:url var="fragmentsUrl" value="fragments"/>
 <c:url var="portalsUrl" value="portals"/>
 <c:url var="errorBoundariesUrl" value="error-boundaries"/>
 <c:url var="webComponentsUrl" value="web-components"/>
@@ -51,19 +52,22 @@
 			<a class="topic-list__topic-nav-link" href=${contextUrl}><h4>3.9	Контекст</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${portalsUrl}><h4>3.10	Порталы</h4></a>
+			<a class="topic-list__topic-nav-link" href=${fragmentsUrl}><h4>3.10	Фрагменты</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${errorBoundariesUrl}><h4>3.11	Границы ошибок</h4></a>
+			<a class="topic-list__topic-nav-link" href=${portalsUrl}><h4>3.11	Порталы</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${webComponentsUrl}><h4>3.12 Веб-компоненты</h4></a>
+			<a class="topic-list__topic-nav-link" href=${errorBoundariesUrl}><h4>3.12	Границы ошибок</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${higherOrderComponentsUrl}><h4>3.13 Старшие компоненты</h4></a>
+			<a class="topic-list__topic-nav-link" href=${webComponentsUrl}><h4>3.13 Веб-компоненты</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${integratingWithOtherLibrariesUrl}><h4>3.14 Интеграция со сторонними библиотеками</h4></a>
+			<a class="topic-list__topic-nav-link" href=${higherOrderComponentsUrl}><h4>3.14 Старшие компоненты</h4></a>
+		</li>
+		<li class="topic-list__topic">
+			<a class="topic-list__topic-nav-link" href=${integratingWithOtherLibrariesUrl}><h4>3.15 Интеграция со сторонними библиотеками</h4></a>
 		</li>
 	</ol>
 </lt:layout>

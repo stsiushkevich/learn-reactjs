@@ -75,6 +75,12 @@ public class CoreController {
         return "contextView";
     }
 
+    @GetMapping("/fragments")
+    public String fragments(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_FRAGMENTS);
+        return "fragmentsView";
+    }
+
     @GetMapping("/portals")
     public String portals(Map<String, Object> model) {
         model.put("currentPage", Pages.CORE_PORTALS);
