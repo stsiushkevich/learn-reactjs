@@ -6,6 +6,8 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/web-components" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
+<c:url var="issue587Url" value="https://github.com/w3c/webcomponents/issues/587"/>
+
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
@@ -46,9 +48,13 @@
   <br/>
   <h2>3.13.2	Использование React в веб-компонентах</h2>
 
-  <wg:p>Пример из официальной документации:</wg:p>
-
   <ce:code-example-3/>
+
+  <app:alert title="Внимание!" type="warning">
+    Этот код не будет работать, если вы трансформируете классы с помощью Babel.
+    См. <wg:link href="${issue587Url}">данную проблему</wg:link>. Включите <code>custom-elements-es5-adapter</code>, прежде
+    чем загружать веб-компоненты, чтобы исправить эту проблему.
+  </app:alert>
 </lt:layout>
 
 <c:url var="prevPageUrl" value="error-boundaries"/>
