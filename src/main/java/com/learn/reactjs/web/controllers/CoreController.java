@@ -87,6 +87,12 @@ public class CoreController {
         return "portalsView";
     }
 
+    @GetMapping("/render-prop")
+    public String renderProp(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_RENDER_PROP);
+        return "renderPropView";
+    }
+
     @GetMapping("/error-boundaries")
     public String errorBoundaries(Map<String, Object> model) {
         model.put("currentPage", Pages.CORE_ERROR_BOUNDARIES);
