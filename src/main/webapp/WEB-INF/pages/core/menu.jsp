@@ -14,6 +14,7 @@
 <c:url var="contextUrl" value="context"/>
 <c:url var="fragmentsUrl" value="fragments"/>
 <c:url var="portalsUrl" value="portals"/>
+<c:url var="renderPropUrl" value="render-prop"/>
 <c:url var="errorBoundariesUrl" value="error-boundaries"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
@@ -56,17 +57,20 @@
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_PORTALS' ? 'active' : null}">
                 <a href=${portalsUrl}>3.11 Порталы</a>
             </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_RENDER_PROP' ? 'active' : null}">
+                <a href=${renderPropUrl}>3.12 Паттерн: свойство render</a>
+            </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_ERROR_BOUNDARIES' ? 'active' : null}">
-                <a href=${errorBoundariesUrl}>3.12 Границы ошибок</a>
+                <a href=${errorBoundariesUrl}>3.13 Границы ошибок</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_WEB_COMPONENTS' ? 'active' : null}">
-                <a href=${webComponentsUrl}>3.13 Веб-компоненты</a>
+                <a href=${webComponentsUrl}>3.14 Веб-компоненты</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HIGHER_ORDER_COMPONENTS' ? 'active' : null}">
-                <a href=${higherOrderComponentsUrl}>3.14 Старшие компоненты</a>
+                <a href=${higherOrderComponentsUrl}>3.15 Старшие компоненты</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_INTEGRATING_WITH_OTHER_LIBRARIES' ? 'active' : null}">
-                <a href=${integratingWithOtherLibrariesUrl}>3.15 Интеграция со сторонними библиотеками</a>
+                <a href=${integratingWithOtherLibrariesUrl}>3.16 Интеграция со сторонними библиотеками</a>
             </li>
         </ul>
     </nav>

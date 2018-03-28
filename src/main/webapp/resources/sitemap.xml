@@ -199,6 +199,14 @@
     </url>
     <url>
         <loc>
+            https://learn-reactjs.ru/core/render-prop
+        </loc>
+        <lastmod>2018-03-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>
             https://learn-reactjs.ru/core/error-boundaries
         </loc>
         <lastmod>2017-11-23</lastmod>

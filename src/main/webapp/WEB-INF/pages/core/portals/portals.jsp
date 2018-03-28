@@ -76,7 +76,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="fragments"/>
-<c:url var="nextPageUrl" value="error-boundaries"/>
+<c:url var="nextPageUrl" value="render-prop"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>
