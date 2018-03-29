@@ -8,12 +8,14 @@
 <c:url var="coreUrl" value="/core/topics"/>
 <c:url var="referenceUrl" value="/reference/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
+<c:url var="faqUrl" value="/faq/topics"/>
 
 <c:url var="introductionImgUrl" value="/resources/imges/pages/home/introduction.png"/>
 <c:url var="basicsImgUrl" value="/resources/imges/pages/home/rocket.png"/>
 <c:url var="coreImgUrl" value="/resources/imges/pages/home/atom.png"/>
 <c:url var="referenceImgUrl" value="/resources/imges/pages/home/reference.png"/>
 <c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
+<c:url var="faqImgUrl" value="/resources/imges/pages/home/faq.png"/>
 
 <lt:layout cssClass="container tutorial">
     <h1>Полное руководство по ReactJS</h1>
@@ -55,6 +57,12 @@
                     <wg:link href="${updatesUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${updateImgUrl}"/>
                         <lt:layout cssClass="tutorial__section-label">Обновления</lt:layout>
+                    </wg:link>
+                </lt:layout>
+                <lt:layout cssClass="tutorial__section">
+                    <wg:link href="${faqUrl}" cssClass="tutorial__section-link">
+                        <wg:img src="${faqImgUrl}"/>
+                        <lt:layout cssClass="tutorial__section-label">FAQ</lt:layout>
                     </wg:link>
                 </lt:layout>
             </lt:layout>
