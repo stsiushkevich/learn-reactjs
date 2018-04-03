@@ -8,5 +8,6 @@ public enum Sections {
     BASICS,
     CORE,
     REFERENCE,
-    UPDATES
+    UPDATES,
+    FAQ
 }

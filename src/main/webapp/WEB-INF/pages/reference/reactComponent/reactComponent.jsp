@@ -391,6 +391,7 @@
     </app:alert>
   </rf:definition>
 
+  <a name="setState"></a>
   <rf:definition title="setState()">
     <ce:code-example-13/>
 
