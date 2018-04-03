@@ -6,6 +6,7 @@
 
 <c:url var="introductionInReactJSUrl" value="ajax-and-apis"/>
 <c:url var="babelAndJsxUrl" value="babel-and-jsx"/>
+<c:url var="componentStateUrl" value="component-state"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -19,6 +20,11 @@
         <li class="topic-list__topic">
             <a href="${babelAndJsxUrl}" class="topic-list__topic-nav-link">
                 <h4>Babel и JSX</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${componentStateUrl}" class="topic-list__topic-nav-link">
+                <h4>Состояние компонента</h4>
             </a>
         </li>
     </ol>

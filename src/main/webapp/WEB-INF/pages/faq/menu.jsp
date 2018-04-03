@@ -5,6 +5,7 @@
 
 <c:url var="ajaxAndApisUrl" value="ajax-and-apis"/>
 <c:url var="babelAndJsxUrl" value="babel-and-jsx"/>
+<c:url var="componentStateUrl" value="component-state"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -15,6 +16,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_AJAX_AND_APIS' ? 'active' : null}">
                 <a href="${babelAndJsxUrl}">Babel и JSX</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_COMPONENT_STATE' ? 'active' : null}">
+                <a href="${componentStateUrl}">Состояние компонента</a>
             </li>
         </ul>
     </nav>

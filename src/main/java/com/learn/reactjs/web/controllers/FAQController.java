@@ -32,4 +32,10 @@ public class FAQController {
         model.put("currentPage", Pages.FAQ_BABEL_AND_JSX);
         return "babelAndJsxView";
     }
+
+    @GetMapping("/component-state")
+    public String componentState(Map<String, Object> model) {
+        model.put("currentPage", Pages.FAQ_COMPONENT_STATE);
+        return "componentStateView";
+    }
 }
