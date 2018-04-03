@@ -13,7 +13,8 @@
   <cd:hl>class Timer extends React.Component {</cd:hl>
     render() {
       const value = <cd:hl>this.props.value</cd:hl>
-      return (&lt;div&gt;
+      return (
+        &lt;div&gt;
           &lt;p&gt;Таймер:&lt;/p&gt;
           &lt;p&gt;
             &lt;span&gt;{Math.round(value/INTERVAL/60/60)} : &lt;/span&gt;
@@ -21,8 +22,9 @@
             &lt;span&gt;{Math.round(value/INTERVAL)} . &lt;/span&gt;
             &lt;span&gt;{value % INTERVAL}&lt;/span&gt;
           &lt;/p&gt;
-        &lt;/div&gt;);
-      }
+        &lt;/div&gt;
+      );
+    }
   }</code>
     </pre>
 </cd:code-example-decorator>
