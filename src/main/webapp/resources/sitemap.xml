@@ -379,4 +379,10 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://learn-reactjs.ru/faq/virtual-dom-and-internals</loc>
+        <lastmod>2018-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
