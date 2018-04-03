@@ -40,11 +40,11 @@
 			<li class="menu-sidebar__nav-link ${isReferenceSection ? 'active' : null}">
 				<a href="${referenceUrl}">4. Справочное руководство</a>
 			</li>
-			<li class="menu-sidebar__nav-link ${isUpdatesSection ? 'active' : null}">
-				<a href="${updatesUrl}">5. Обновления</a>
-			</li>
 			<li class="menu-sidebar__nav-link ${isFAQSection ? 'active' : null}">
-				<a href="${faqUrl}">6. FAQ</a>
+				<a href="${faqUrl}">5. FAQ</a>
+			</li>
+			<li class="menu-sidebar__nav-link ${isUpdatesSection ? 'active' : null}">
+				<a href="${updatesUrl}">6. Обновления</a>
 			</li>
 		</ul>
 	</nav>
