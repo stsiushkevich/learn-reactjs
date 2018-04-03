@@ -10,19 +10,22 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  const INTERVAL = 90;
+  const INTERVAL = 100;
   let total = 0;
 
   function Timer(props) {
     const value = props.value;
-    return (&lt;div&gt;
+    return (
+      &lt;div&gt;
         &lt;p&gt;Таймер:&lt;/p&gt;
         &lt;p&gt;
           &lt;span&gt;{Math.round(value/INTERVAL/60/60)} : &lt;/span&gt;
           &lt;span&gt;{Math.round(value/INTERVAL/60)} : &lt;/span&gt;
           &lt;span&gt;{Math.round(value/INTERVAL)} . &lt;/span&gt;
           &lt;span&gt;{value % INTERVAL}&lt;/span&gt;
-        &lt;/p&gt;      &lt;/div&gt;);
+        &lt;/p&gt;
+      &lt;/div&gt;
+    );
   }
 
   function increment() {
