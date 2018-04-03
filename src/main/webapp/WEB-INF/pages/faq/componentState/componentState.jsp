@@ -147,8 +147,8 @@
   </wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="reconciliation"/>
-<c:url var="nextPageUrl" value="portals"/>
+<c:url var="prevPageUrl" value="babel-and-jsx"/>
+<c:url var="nextPageUrl" value="styling-and-css"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

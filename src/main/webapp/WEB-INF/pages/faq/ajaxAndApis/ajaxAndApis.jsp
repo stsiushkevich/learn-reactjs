@@ -55,8 +55,6 @@
   </wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="reconciliation"/>
-<c:url var="nextPageUrl" value="portals"/>
-<app:page-navigate prevPageUrl="${prevPageUrl}"
-                   pageStartAncor="pageStart"
+<c:url var="nextPageUrl" value="babel-and-jsx"/>
+<app:page-navigate pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

@@ -7,6 +7,9 @@
 <c:url var="introductionInReactJSUrl" value="ajax-and-apis"/>
 <c:url var="babelAndJsxUrl" value="babel-and-jsx"/>
 <c:url var="componentStateUrl" value="component-state"/>
+<c:url var="stylingAndCssUrl" value="styling-and-css"/>
+<c:url var="fileStructureUrl" value="file-structure"/>
+<c:url var="virtualDOMAndInternalsUrl" value="virtual-dom-and-internals"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -25,6 +28,21 @@
         <li class="topic-list__topic">
             <a href="${componentStateUrl}" class="topic-list__topic-nav-link">
                 <h4>Состояние компонента</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${stylingAndCssUrl}" class="topic-list__topic-nav-link">
+                <h4>Стили и CSS</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${fileStructureUrl}" class="topic-list__topic-nav-link">
+                <h4>Структура файлов</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${virtualDOMAndInternalsUrl}" class="topic-list__topic-nav-link">
+                <h4>Виртуальный DOM и внутренние механизмы</h4>
             </a>
         </li>
     </ol>

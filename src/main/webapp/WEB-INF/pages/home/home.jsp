@@ -54,15 +54,15 @@
                     </wg:link>
                 </lt:layout>
                 <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${updatesUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${updateImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Обновления</lt:layout>
-                    </wg:link>
-                </lt:layout>
-                <lt:layout cssClass="tutorial__section">
                     <wg:link href="${faqUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${faqImgUrl}"/>
                         <lt:layout cssClass="tutorial__section-label">FAQ</lt:layout>
+                    </wg:link>
+                </lt:layout>
+                <lt:layout cssClass="tutorial__section">
+                    <wg:link href="${updatesUrl}" cssClass="tutorial__section-link">
+                        <wg:img src="${updateImgUrl}"/>
+                        <lt:layout cssClass="tutorial__section-label">Обновления</lt:layout>
                     </wg:link>
                 </lt:layout>
             </lt:layout>

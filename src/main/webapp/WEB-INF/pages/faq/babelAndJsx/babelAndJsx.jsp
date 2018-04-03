@@ -35,8 +35,8 @@
   <ce:code-example-2/>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="reconciliation"/>
-<c:url var="nextPageUrl" value="portals"/>
+<c:url var="prevPageUrl" value="ajax-and-apis"/>
+<c:url var="nextPageUrl" value="component-state"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

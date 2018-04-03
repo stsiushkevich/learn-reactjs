@@ -38,4 +38,22 @@ public class FAQController {
         model.put("currentPage", Pages.FAQ_COMPONENT_STATE);
         return "componentStateView";
     }
+
+    @GetMapping("/styling-and-css")
+    public String stylingAndCss(Map<String, Object> model) {
+        model.put("currentPage", Pages.FAQ_STYLING_AND_CSS);
+        return "stylingAndCssView";
+    }
+
+    @GetMapping("/file-structure")
+    public String fileStructure(Map<String, Object> model) {
+        model.put("currentPage", Pages.FAQ_FILE_STRUCTURE);
+        return "fileStructureView";
+    }
+
+    @GetMapping("/virtual-dom-and-internals")
+    public String virtualDOMAndInternals(Map<String, Object> model) {
+        model.put("currentPage", Pages.FAQ_VIRTUAL_DOM_AND_INTERNALS);
+        return "virtualDOMAndInternalsView";
+    }
 }
