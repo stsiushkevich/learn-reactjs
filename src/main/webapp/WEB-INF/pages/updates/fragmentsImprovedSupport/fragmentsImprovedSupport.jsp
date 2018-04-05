@@ -322,3 +322,9 @@
     <wg:p>Благодарим <b>Gajus Kuizinas</b> и других участников, которые прототипировали
         компонент <code>Fragment</code> в open source.</wg:p>
 </lt:layout>
+
+<c:url var="prevPageUrl" value="react_v16_0"/>
+<c:url var="nextPageUrl" value="react-v16.3.0"/>
+<app:page-navigate pageStartAncor="pageStart"
+                   prevPageUrl="${prevPageUrl}"
+                   nextPageUrl="${nextPageUrl}"/>

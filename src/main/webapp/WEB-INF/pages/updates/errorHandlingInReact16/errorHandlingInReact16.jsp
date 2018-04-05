@@ -145,5 +145,5 @@
 		для автоматической миграции.</wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="dom-attributes-in-react-16"/>
-<app:page-navigate pageStartAncor="pageStart" prevPageUrl="${prevPageUrl}"/>
+<c:url var="nextPageUrl" value="dom-attributes-in-react-16"/>
+<app:page-navigate pageStartAncor="pageStart" nextPageUrl="${nextPageUrl}"/>
