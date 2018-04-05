@@ -10,28 +10,28 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-	const ThemeContext = React.createContext('light');
-	
-	class ThemeProvider extends React.Component {
-	  state = {theme: 'light'};
-	
-	  render() {
-	    return (
-	      &lt;ThemeContext.Provider value={this.state.theme}&gt;
-	        {this.props.children}
-	      &lt;/ThemeContext.Provider&gt;
-	    );
-	  }
-	}
-	
-	class ThemedButton extends React.Component {
-	  render() {
-	    return (
-	      &lt;ThemeContext.Consumer&gt;
-	        {theme =&gt; &lt;Button theme={theme} /&gt;}
-	      &lt;/ThemeContext.Consumer&gt;
-	    );
-	  }
-	}</code>
+  const ThemeContext = React.createContext('light');
+
+  class ThemeProvider extends React.Component {
+   state = {theme: 'light'};
+
+   render() {
+     return (
+       &lt;ThemeContext.Provider value={this.state.theme}&gt;
+         {this.props.children}
+       &lt;/ThemeContext.Provider&gt;
+     );
+   }
+  }
+
+  class ThemedButton extends React.Component {
+   render() {
+     return (
+       &lt;ThemeContext.Consumer&gt;
+         {theme =&gt; &lt;Button theme={theme} /&gt;}
+       &lt;/ThemeContext.Consumer&gt;
+     );
+   }
+  }</code>
   </pre>
 </cd:code-example-decorator>

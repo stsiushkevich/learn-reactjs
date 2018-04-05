@@ -295,6 +295,8 @@
         Натану Хунзакеру и Саше Айкину.</wg:p>
 </lt:layout>
 
-<c:url var="nextPageUrl" value="dom-attributes-in-react-16"/>
+<c:url var="prevPageUrl" value="dom-attributes-in-react-16"/>
+<c:url var="nextPageUrl" value="react-v16.2.0-fragments-improved-support"/>
 <app:page-navigate pageStartAncor="pageStart"
-                   nextPageUrl="${nextPageUrl}"/>
+                   nextPageUrl="${nextPageUrl}"
+                   prevPageUrl="${prevPageUrl}"/>

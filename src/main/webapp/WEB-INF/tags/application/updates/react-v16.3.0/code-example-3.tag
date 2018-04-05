@@ -10,14 +10,14 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-	function withTheme(Component) {
-	  return function ThemedComponent(props) {
-	    return (
-	      &lt;ThemeContext.Consumer&gt;
-	        {theme =&gt; &lt;Component {...props} theme={theme} /&gt;}
-	      &lt;/ThemeContext.Consumer&gt;
-	    );
-	  };
-	}</code>
+  function withTheme(Component) {
+    return function ThemedComponent(props) {
+      return (
+        &lt;ThemeContext.Consumer&gt;
+          {theme =&gt; &lt;Component {...props} theme={theme} /&gt;}
+        &lt;/ThemeContext.Consumer&gt;
+      );
+    };
+  }</code>
   </pre>
 </cd:code-example-decorator>

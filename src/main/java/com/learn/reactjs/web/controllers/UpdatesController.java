@@ -45,4 +45,10 @@ public class UpdatesController {
         return "fragmentsImprovedSupportView";
     }
 
+    @GetMapping("/react-v16.3.0")
+    public String react_v16_3_0(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_REACT_16_3_0);
+        return "react_v16_3_0View";
+    }
+
 }

@@ -10,20 +10,20 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-	class MyComponent extends React.Component {
-	  constructor(props) {
-	    super(props);
-	
-	    this.inputRef = React.createRef();
-	  }
-	
-	  render() {
-	    return &lt;input type="text" ref={this.inputRef} /&gt;;
-	  }
-	
-	  componentDidMount() {
-	    this.inputRef.current.focus();
-	  }
-	}</code>
+  class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+  
+      this.inputRef = React.createRef();
+    }
+  
+    render() {
+      return &lt;input type="text" ref={this.inputRef} /&gt;;
+    }
+  
+    componentDidMount() {
+      this.inputRef.current.focus();
+    }
+  }</code>
   </pre>
 </cd:code-example-decorator>

@@ -385,4 +385,10 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://learn-reactjs.ru/updates/react-v16.3.0</loc>
+        <lastmod>2018-04-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
