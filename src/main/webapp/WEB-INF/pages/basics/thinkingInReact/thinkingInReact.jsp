@@ -281,7 +281,7 @@
                 должен отображать текст поиска и состояние чекбокса.
             </li>
             <li>
-                Общим компонентом-владелецем является <code>FilterableProductTable</code>.
+                Общим компонентом-владельцем является <code>FilterableProductTable</code>.
             </li>
             <li>
                 Концептуально тексту фильтра и значению чекбокса имеет смысл находиться в <code>FilterableProductTable</code>
