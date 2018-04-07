@@ -10,8 +10,21 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;Consumer&gt;
-    {value =&gt; /* отрисовывает что-то, что основано на значении контекста */}
-  &lt;/Consumer&gt;</code>
+  import {ThemeContext} from './theme-context';
+  
+  function ThemedButton(props) {
+    return (
+      &lt;ThemeContext.Consumer&gt;
+        {theme =&gt; (
+          &lt;button
+                  {...props}
+                  style={{backgroundColor: theme.background}}
+          /&gt;
+        )}
+      &lt;/ThemeContext.Consumer&gt;
+    );
+  }
+  
+  export default ThemedButton;</code>
   </pre>
 </cd:code-example-decorator>

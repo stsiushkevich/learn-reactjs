@@ -29,7 +29,7 @@
   }
 
   // Промежуточному компоненту необязательно
-  // передавать тему кому-либо далее явно.
+  // явно передавать тему кому-либо далее.
   function Toolbar(props) {
     return (
       &lt;div&gt;
@@ -40,8 +40,8 @@
 
   function ThemedButton(props) {
     // Используйте Consumer, чтобы считать текущий контекст темы.
-    // React will find the closest theme Provider above and use its value.
-    // In this example, the current theme is "dark".
+    // React будет искать выше ближайший поставщик (Provider) темы и использует его значение.
+    // В данном примере текущая тема имеет значение "dark".
     return (
       &lt;ThemeContext.Consumer&gt;
         {theme =&gt; &lt;Button {...props} theme={theme} /&gt;}

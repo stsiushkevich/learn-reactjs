@@ -10,13 +10,6 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  const PropTypes = require('prop-types');
-
-  const Alert = ({children}, context) =&gt;
-    &lt;div className={`alert alert-\${context.type}`}&gt;
-      {children}
-    &lt;/div&gt;;
-
-  Alert.contextTypes = {type: PropTypes.string};</code>
+  &lt;Provider value={/* some value */}&gt;</code>
   </pre>
 </cd:code-example-decorator>
