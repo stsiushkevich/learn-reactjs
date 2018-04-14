@@ -10,21 +10,21 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import {ThemeContext} from './theme-context';
+  class App extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        <cd:hl>value: {something: 'что-нибудь'}</cd:hl>
+      };
+    }
   
-  function ThemedButton(props) {
-    return (
-      &lt;ThemeContext.Consumer&gt;
-        {theme =&gt; (
-          &lt;button
-            {...props}
-            style={{backgroundColor: theme.background}}
-          /&gt;
-        )}
-      &lt;/ThemeContext.Consumer&gt;
-    );
-  }
-  
-  export default ThemedButton;</code>
+    render() {
+      return (
+       <cd:hl>&lt;Provider value={this.state.value}&gt;</cd:hl>
+          &lt;Toolbar /&gt;
+        &lt;/Provider&gt;
+      );
+    }
+  }</code>
   </pre>
 </cd:code-example-decorator>

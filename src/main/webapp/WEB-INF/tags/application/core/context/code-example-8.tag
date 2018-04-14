@@ -31,10 +31,8 @@
   
       this.toggleTheme = () =&gt; {
         this.setState(state =&gt; ({
-          theme:
-            state.theme === themes.dark
-              ? themes.light
-              : themes.dark,
+          const { light, dark } = themes
+          theme: state.theme === dark ? light : dark
         }));
       };
     }
