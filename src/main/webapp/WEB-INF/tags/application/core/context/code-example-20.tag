@@ -10,8 +10,21 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;Consumer&gt;
-    {value =&gt; /* отрисовывает что-то, что основано на значении контекста */}
-  &lt;/Consumer&gt;</code>
+  class App extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        <cd:hl>value: {something: 'что-нибудь'}</cd:hl>
+      };
+    }
+  
+    render() {
+      return (
+       <cd:hl>&lt;Provider value={this.state.value}&gt;</cd:hl>
+          &lt;Toolbar /&gt;
+        &lt;/Provider&gt;
+      );
+    }
+  }</code>
   </pre>
 </cd:code-example-decorator>

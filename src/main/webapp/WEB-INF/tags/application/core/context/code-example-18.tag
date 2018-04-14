@@ -10,8 +10,15 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;Consumer&gt;
-    {value =&gt; /* отрисовывает что-то, что основано на значении контекста */}
-  &lt;/Consumer&gt;</code>
+  import FancyButton from './fancy-button';
+  
+  const ref = React.createRef();
+  
+  // Наша ссылка ref будет указывать на компонент FancyButton,
+  // а не на ThemeContext.Consumer, который его оборачивает.
+  // Это означает, что мы можем вызывать FancyButton методы как ref.current.focus()
+  &lt;FancyButton ref={ref} onClick={handleClick}&gt;
+    Click me!
+  &lt;/FancyButton&gt;;</code>
   </pre>
 </cd:code-example-decorator>

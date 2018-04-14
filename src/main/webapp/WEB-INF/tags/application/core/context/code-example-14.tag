@@ -10,8 +10,14 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;Consumer&gt;
-    {value =&gt; /* отрисовывает что-то, что основано на значении контекста */}
-  &lt;/Consumer&gt;</code>
+  const ThemeContext = React.createContext('light');
+  
+  function ThemedButton(props) {
+    return (
+      <cd:hl>&lt;ThemeContext.Consumer&gt;</cd:hl>
+            <cd:hl>{theme =&gt; &lt;button className={theme} {...props} /&gt;}</cd:hl>
+      <cd:hl>&lt;/ThemeContext.Consumer&gt;</cd:hl>
+    );
+  }</code>
   </pre>
 </cd:code-example-decorator>

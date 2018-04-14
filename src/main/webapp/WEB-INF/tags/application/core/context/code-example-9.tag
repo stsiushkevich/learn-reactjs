@@ -10,8 +10,11 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;Consumer&gt;
-    {value =&gt; /* отрисовывает что-то, что основано на значении контекста */}
-  &lt;/Consumer&gt;</code>
+  // Убедитесь, что форма значения по умолчанию, переданная в
+  // createContext соответствует форме, которую ожидают потребители!
+  export const ThemeContext = React.createContext({
+    theme: themes.dark,
+    toggleTheme: () => {},
+  });</code>
   </pre>
 </cd:code-example-decorator>

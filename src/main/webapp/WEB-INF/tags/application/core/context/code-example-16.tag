@@ -10,8 +10,10 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;Consumer&gt;
-    {value =&gt; /* отрисовывает что-то, что основано на значении контекста */}
-  &lt;/Consumer&gt;</code>
+  function Button({theme, ...rest}) {
+    return &lt;button className={theme} {...rest} /&gt;;
+  }
+  
+  const ThemedButton = withTheme(Button);</code>
   </pre>
 </cd:code-example-decorator>

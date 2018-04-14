@@ -10,36 +10,26 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  class CancelButton extends React.Component {
+  class App extends React.Component {
     render() {
-      style = {background: this.props.color};
-      return (
-        &lt;button style={style}&gt;{this.props.children}&lt;/button&gt;
-      );
+      return &lt;Toolbar theme="dark" /&gt;;
     }
   }
 
-  class Alert extends React.Component {
-    render() {
-      return (
-        &lt;div&gt;
-          &lt;p&gt;{this.props.text}&lt;/p&gt;
-    &lt;div&gt;
-            &lt;CancelButton color={this.props.color}&gt;Cancel&lt;/CancelButton&gt;
-    &lt;/div&gt;
-        &lt;/div&gt;
-      );
-    }
+  function Toolbar(props) {
+    // Компонент Toolbar должен принимать дополнитеольное свойство "theme"
+    // и передавать его в компонент ThemedButton. Это может стать настоящей головной болью
+    // если каждая отдельная кнопка в приложении нуждается в значении свойства theme,
+    // потому что оно должно быть передано через все компоненты.
+    return (
+      &lt;div&gt;
+        &lt;ThemedButton theme={props.theme} /&gt;
+      &lt;/div&gt;
+    );
   }
 
-  class AlertList extends React.Component {
-    render() {
-      const color = "gray";
-      const items = this.props.alerts.map((alert) =&gt;
-        &lt;Alert text={alert.text} color={color} /&gt;
-      );
-      return &lt;p&gt;{items}&lt;/p&gt;;
-    }
+  function ThemedButton(props) {
+    return &lt;Button theme={props.theme} /&gt;;
   }</code>
   </pre>
 </cd:code-example-decorator>
