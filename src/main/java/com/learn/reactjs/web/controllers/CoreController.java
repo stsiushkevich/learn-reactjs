@@ -111,6 +111,12 @@ public class CoreController {
         return "higherOrderComponentsView";
     }
 
+    @GetMapping("/forwarding-refs")
+    public String forwardingRefs(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_FORWARDING_REFS);
+        return "forwardingRefsView";
+    }
+
     @GetMapping("/integrating-with-other-libraries")
     public String integratingWithOtherLibraries(Map<String, Object> model) {
         model.put("currentPage", Pages.CORE_INTEGRATING_WITH_OTHER_LIBRARIES);
