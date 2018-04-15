@@ -10,14 +10,19 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  <cd:hl>const FancyButton = React.forwardRef((props, ref) =&gt; (</cd:hl>
-    <cd:hl>&lt;button ref={ref} className="FancyButton"&gt;</cd:hl>
-      {props.children}
-    &lt;/button&gt;
-  ));
-
-  // Теперь вы можете получить ссылку ref напрямую и передать ее DOM кнопке button:
-  const myRef = React.createRef();
-  &lt;FancyButton ref={myRef}&gt;Click me!&lt;/FancyButton&gt;;</code>
+  <cd:hl>function logProps(WrappedComponent) {</cd:hl>
+    class LogProps extends React.Component {
+      componentDidUpdate(prevProps) {
+        console.log('old props:', prevProps);
+        console.log('new props:', this.props);
+      }
+  
+      render() {
+        <cd:hl>return &lt;WrappedComponent {...this.props} /&gt;;</cd:hl>
+      }
+    }
+  
+    return LogProps;
+  }</code>
   </pre>
 </cd:code-example-decorator>
