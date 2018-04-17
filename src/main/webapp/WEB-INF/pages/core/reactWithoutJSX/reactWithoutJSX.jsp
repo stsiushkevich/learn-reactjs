@@ -43,7 +43,7 @@
   <wg:p>Если вы используете такую сокращенную форму для <code>React.createElement</code>, то
     использование React может оказаться почти таким же удобным и без JSX.</wg:p>
 
-  <wg:p>Как альтернатива, вы можете ссылаться на комьюнити проекты, такие
+  <wg:p>Как альтернатива, вы можете ссылаться на комьюнити-проекты, такие
     как
     <wg:link href="https://github.com/mlmorg/react-hyperscript">react-hyperscript</wg:link>  и
     <wg:link href="https://github.com/ohanhi/hyperscript-helpers">hyperscript-helpers</wg:link>,
