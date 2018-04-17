@@ -122,4 +122,10 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_INTEGRATING_WITH_OTHER_LIBRARIES);
         return "integratingWithOtherLibrariesView";
     }
+
+    @GetMapping("/strict-mode")
+    public String strictMode(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_STRICT_MODE);
+        return "strictModeView";
+    }
 }

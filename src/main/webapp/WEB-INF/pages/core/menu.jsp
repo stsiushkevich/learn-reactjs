@@ -20,6 +20,7 @@
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
 <c:url var="forwardingRefsUrl" value="forwarding-refs"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
+<c:url var="strictModeUrl" value="strict-mode"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -75,6 +76,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_INTEGRATING_WITH_OTHER_LIBRARIES' ? 'active' : null}">
                 <a href=${integratingWithOtherLibrariesUrl}>3.17 Интеграция со сторонними библиотеками</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
+                <a href=${strictModeUrl}>3.18 Строгий режим</a>
             </li>
         </ul>
     </nav>
