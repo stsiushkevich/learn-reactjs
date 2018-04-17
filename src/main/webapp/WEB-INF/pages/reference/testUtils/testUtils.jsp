@@ -20,7 +20,7 @@
 	<h2>4.7.1 Обзор</h2>
 
 	<wg:p><code>ReactTestUtils</code> упрощает тестирование компонентов React в
-		выбранном вами фрэймворке тестирования. В Facebook используется
+		выбранном вами фреймворке тестирования. В Facebook используется
 		<code>Jest</code> для безболезненного тестирования JavaScript. Узнайте, как
 		начать работу с <code>Jest</code> на сайте
 		<wg:link href="http://facebook.github.io/jest/docs/tutorial-react.html#content">Jest React Tutorial</wg:link>.</wg:p>

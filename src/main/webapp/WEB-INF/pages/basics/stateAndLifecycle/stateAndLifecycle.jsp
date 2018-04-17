@@ -17,7 +17,7 @@
 
     <wg:p>До сих пор мы изучили только один способ обновления UI.</wg:p>
 
-    <wg:p>Мы вызываем <code>ReactDOM.render()</code>, чтобы изменить отрисовывамый вывод:</wg:p>
+    <wg:p>Мы вызываем <code>ReactDOM.render()</code>, чтобы изменить отрисовываемый вывод:</wg:p>
 
     <ce:code-example-1 codePenUrl="https://codepen.io/stzidane/pen/QgWgNP?editors=0010"/>
 
