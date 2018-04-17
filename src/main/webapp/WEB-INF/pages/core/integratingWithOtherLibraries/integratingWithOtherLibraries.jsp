@@ -178,7 +178,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="forwarding-refs"/>
-<c:url var="nextPageUrl" value="/reference/topics"/>
+<c:url var="nextPageUrl" value="strict-mode"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>
