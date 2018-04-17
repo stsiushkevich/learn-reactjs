@@ -102,43 +102,63 @@
   <ce:code-example-3/>
 
   <wg:p>
-    Старший компонент <code>logProps</code> передает все свойства <code>props</code> через компонент, который он оборачивает,
+    Старший компонент <code>LogProps</code> передает все свойства <code>props</code> компоненту, который он оборачивает,
     поэтому отображаемый результат не изменится. Например, мы можем использовать этот HOC для
     логирования всех свойств, которые передаются нашему компоненту <code>«fancy button»</code>:
   </wg:p>
 
   <ce:code-example-4/>
 
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
-  <wg:p></wg:p>
+  <wg:p>
+    В приведенном выше примере есть один подводный камень: ссылки <code>ref</code> передаваться не будут.
+    Это происходит потому, что <code>ref</code> не является свойством. Подобно ключу <code>key</code>, ссылка <code>ref</code> обрабатывается React-ом по-другому.
+    Если вы добавите ссылку <code>ref</code> в HOC, она будет ссылаться на самый внешний компонент-контейнер, а не на обернуный компонент.
+  </wg:p>
 
+  <wg:p>
+    Это означает, что ссылки, предназначенные для нашего компонента <code>FancyButton</code>,
+    будут на самом деле привязаны к компоненту <code>LogProps</code>:
+  </wg:p>
 
+  <ce:code-example-5/>
+
+  <wg:p>
+    К счастью, мы можем явно передать ссылки на внутренний компонент <code>FancyButton</code>,
+    используя API <code>React.forwardRef</code>. <code>React.forwardRef</code> принимает render-функцию (функцию отрисовки),
+    которая получает параметры <code>props</code> и <code>ref</code>, и возвращает узел React. Например:
+  </wg:p>
+
+  <ce:code-example-6/>
+
+  <br/>
+  <h2>3.16.3 Отображение пользовательского имени в DevTools</h2>
+
+  <wg:p>
+    <code>React.forwardRef</code> принимает функцию отрисовки (рендеринга). React DevTools использует эту
+    функцию, чтобы определить, что отображать для компонента, передающего ссылку.
+  </wg:p>
+
+  <wg:p>Например, следующий компонент появится как «ForwardRef» в DevTools:</wg:p>
+
+  <ce:code-example-7/>
+
+  <wg:p>
+    Если вы как-либо назовете функцию отрисовки, DevTools также
+    добавит её имя (например, «ForwardRef(myFunction)»):
+  </wg:p>
+
+  <ce:code-example-8/>
+
+  <wg:p>
+    Вы даже можете указать свойство <code>displayName</code> для функции,
+    чтобы добавить компонент, который вы оборачиваете:
+  </wg:p>
+
+  <ce:code-example-9/>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="reconciliation"/>
-<c:url var="nextPageUrl" value="portals"/>
+<c:url var="prevPageUrl" value="higher-order-components"/>
+<c:url var="nextPageUrl" value="integrating-with-other-libraries"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

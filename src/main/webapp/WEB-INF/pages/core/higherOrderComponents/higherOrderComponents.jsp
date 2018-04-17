@@ -299,7 +299,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="web-components"/>
-<c:url var="nextPageUrl" value="integrating-with-other-libraries"/>
+<c:url var="nextPageUrl" value="forwarding-refs"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

@@ -10,16 +10,8 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  class FancyButton extends React.Component {
-    focus() {
-      // ...
-    }
-
-    // ...
-  }
-
-  // Вместо экспортирования FancyButton, мы экспортируем LogProps.
-  // Он по-прежнему будет отрисовывать FancyButton.
-  <cd:hl>export default logProps(FancyButton);</code></cd:hl>
+  const WrappedComponent = React.forwardRef((props, ref) =&gt; {
+    return &lt;LogProps {...props} forwardedRef={ref} /&gt;;
+  });</code>
   </pre>
 </cd:code-example-decorator>

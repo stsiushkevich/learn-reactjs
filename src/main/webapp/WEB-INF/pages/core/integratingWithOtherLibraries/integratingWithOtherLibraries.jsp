@@ -177,7 +177,7 @@
     некоторые из <code>ReactDOM.render()</code> вызовов выше по иерархии.</wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="higher-order-components"/>
+<c:url var="prevPageUrl" value="forwarding-refs"/>
 <c:url var="nextPageUrl" value="/reference/topics"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"

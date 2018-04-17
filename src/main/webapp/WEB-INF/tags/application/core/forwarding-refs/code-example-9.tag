@@ -10,16 +10,21 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  class FancyButton extends React.Component {
-    focus() {
+  function logProps(Component) {
+    class LogProps extends React.Component {
       // ...
     }
+  
+    function forwardRef(props, ref) {
+      return &lt;LogProps {...props} forwardedRef={ref} /&gt;;
+    }
 
-    // ...
-  }
-
-  // Вместо экспортирования FancyButton, мы экспортируем LogProps.
-  // Он по-прежнему будет отрисовывать FancyButton.
-  <cd:hl>export default logProps(FancyButton);</code></cd:hl>
+    // Дайте этому компоненту полезное отображаемое имя name в DevTools.
+    // например "ForwardRef(logProps(MyComponent))"
+    <cd:hl>const name = Component.displayName || Component.name;</cd:hl>
+    <cd:hl>forwardRef.displayName = `logProps(\${name})`;</cd:hl>
+  
+    return React.forwardRef(forwardRef);
+  }</code>
   </pre>
 </cd:code-example-decorator>
