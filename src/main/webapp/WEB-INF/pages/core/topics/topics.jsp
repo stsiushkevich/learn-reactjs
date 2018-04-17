@@ -19,6 +19,7 @@
 <c:url var="errorBoundariesUrl" value="error-boundaries"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
+<c:url var="forwardingRefsUrl" value="forwarding-refs"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
 
 <lt:layout cssClass="black-line"/>
@@ -71,7 +72,10 @@
 			<a class="topic-list__topic-nav-link" href=${higherOrderComponentsUrl}><h4>3.15 Старшие компоненты</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${integratingWithOtherLibrariesUrl}><h4>3.16 Интеграция со сторонними библиотеками</h4></a>
+			<a class="topic-list__topic-nav-link" href=${forwardingRefsUrl}><h4>3.16 Передача ссылок</h4></a>
+		</li>
+		<li class="topic-list__topic">
+			<a class="topic-list__topic-nav-link" href=${integratingWithOtherLibrariesUrl}><h4>3.17 Интеграция со сторонними библиотеками</h4></a>
 		</li>
 	</ol>
 </lt:layout>

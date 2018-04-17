@@ -18,6 +18,7 @@
 <c:url var="errorBoundariesUrl" value="error-boundaries"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
+<c:url var="forwardingRefsUrl" value="forwarding-refs"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
 
 <lt:layout cssClass="menu-sidebar">
@@ -69,8 +70,11 @@
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HIGHER_ORDER_COMPONENTS' ? 'active' : null}">
                 <a href=${higherOrderComponentsUrl}>3.15 Старшие компоненты</a>
             </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_FORWARDING_REFS' ? 'active' : null}">
+                <a href=${forwardingRefsUrl}>3.16 Передача ссылок</a>
+            </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_INTEGRATING_WITH_OTHER_LIBRARIES' ? 'active' : null}">
-                <a href=${integratingWithOtherLibrariesUrl}>3.16 Интеграция со сторонними библиотеками</a>
+                <a href=${integratingWithOtherLibrariesUrl}>3.17 Интеграция со сторонними библиотеками</a>
             </li>
         </ul>
     </nav>
