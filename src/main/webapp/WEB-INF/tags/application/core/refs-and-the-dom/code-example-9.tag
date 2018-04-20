@@ -10,6 +10,22 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  const node = this.myRef.current;</code>
+  function CustomTextInput(props) {
+    return (
+      &lt;div&gt;
+        <cd:hl>&lt;input ref={props.inputRef} /&gt;</cd:hl>
+      &lt;/div&gt;
+    );
+  }
+  
+  class Parent extends React.Component {
+    render() {
+      return (
+        &lt;CustomTextInput
+            <cd:hl>inputRef={el =&gt; this.inputElement = el}</cd:hl>
+        /&gt;
+      );
+    }
+  }</code>
   </pre>
 </cd:code-example-decorator>

@@ -10,21 +10,21 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  function ChildComponent(props) {
-    return (
-      &lt;p&gt;
-        <cd:hl>&lt;input ref={props.inputRef} /&gt;</cd:hl>
-      &lt;/p&gt;
-    );
+  <cd:hl>function MyFunctionalComponent() {</cd:hl>
+    return &lt;input /&gt;;
   }
-
-  class ParentComponent extends React.Component {
+  
+  class Parent extends React.Component {
+    constructor(props) {
+      super(props);
+      <cd:hl>this.textInput = React.createRef();</cd:hl>
+    }
     render() {
+      // This will *not* work!
       return (
-        &lt;ChildComponent <cd:hl>inputRef={el =&gt; this.inputElem = el}</cd:hl> /&gt;
+        <cd:hl>&lt;MyFunctionalComponent ref={this.textInput} /&gt;</cd:hl>
       );
     }
-  }
-  </code>
+  }</code>
   </pre>
 </cd:code-example-decorator>
