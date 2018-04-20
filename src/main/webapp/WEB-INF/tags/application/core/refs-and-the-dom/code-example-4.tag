@@ -10,15 +10,19 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  <cd:hl>function MessageBox(props) {</cd:hl>
-    return &lt;p&gt;{props.message}&lt;/p&gt;;
-  }
-
-  class UserPage extends React.Component {
+  class AutoFocusTextInput extends React.Component {
+    constructor(props) {
+      super(props);
+      <cd:hl>this.textInput = React.createRef();</cd:hl>
+    }
+  
+    componentDidMount() {
+      <cd:hl>this.textInput.current.focusTextInput();</cd:hl>
+    }
+  
     render() {
-      <cd:hl>// Это не работает!</cd:hl>
       return (
-        &lt;MessageBox message={'Важное сообщение!'} ref={(box) =&gt; { this.messageBox = box; }} /&gt;
+        <cd:hl>&lt;CustomTextInput ref={this.textInput} /&gt;</cd:hl>
       );
     }
   }</code>

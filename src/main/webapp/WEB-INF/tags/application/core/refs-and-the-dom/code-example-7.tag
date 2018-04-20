@@ -10,29 +10,27 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  function TextField(props) {
-    return (
-      &lt;div&gt;
-        <cd:hl>&lt;input type="text" ref={props.textFieldRef} /&gt;</cd:hl>
-      &lt;/div&gt;
-    );
-  }
-
-  function Parent(props) {
-    return (
-      &lt;div&gt;
-        Текстовое поле: <cd:hl>&lt;TextField textFieldRef={props.textFieldRef} /&gt;</cd:hl>
-      &lt;/div&gt;
-    );
-  }
-
-
-  class Grandparent extends React.Component {
-    render() {
-      return (
-        &lt;Parent <cd:hl>textFieldRef={elem =&gt; this.textField = elem}</cd:hl>/&gt;
-      );
+  function CustomTextInput(props) {
+    // textInput должен быть объявлен здесь, чтобы ref мог ссылаться на него
+    <cd:hl>let textInput = React.createRef();</cd:hl>
+  
+    function handleClick() {
+      <cd:hl>textInput.current.focus();</cd:hl>
     }
+  
+    return (
+      &lt;div&gt;
+        &lt;input
+            type="text"
+            <cd:hl>ref={textInput} /&gt;</cd:hl>
+  
+        &lt;input
+            type="button"
+            value="Focus the text input"
+            onClick={handleClick}
+        /&gt;
+      &lt;/div&gt;
+    );
   }</code>
   </pre>
 </cd:code-example-decorator>
