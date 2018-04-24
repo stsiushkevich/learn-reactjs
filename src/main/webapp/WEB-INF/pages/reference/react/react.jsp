@@ -7,6 +7,11 @@
 <%@taglib prefix="rf" tagdir="/WEB-INF/tags/application/reference" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/reference/react" %>
 
+<c:url var="updatesReact16_2_0Url" value="/updates/react-v16.2.0-fragments-improved-support"/>
+<c:url var="forwardingRefsToDOMComponentsUrl" value="/core/forwarding-refs#forwardingRefsToDOMComponents"/>
+<c:url var="forwardingRefsInHOCUrl" value="/core/forwarding-refs#forwardingRefsInHOC"/>
+<c:url var="forwardingRefsUrl" value="/core/forwarding-refs"/>
+
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
@@ -70,6 +75,27 @@
       <li><code>cloneElement()</code></li>
       <li><code>isValidElement()</code></li>
       <li><code>React.Children</code></li>
+    </ul>
+  </wg:p>
+  
+  <br/>
+  <h4>4.1.1.1.4	Фрагменты</h4>
+  
+  <wg:p>React также предоставляет компонент для отрисовки множества элементов без обёртки:</wg:p>
+  
+  <wg:p>
+    <ul>
+      <li><code>React.Fragment</code></li>
+    </ul>
+  </wg:p>
+  
+  <br/>
+  <h4>4.1.1.1.5	Ссылки</h4>
+  
+  <wg:p>
+    <ul>
+      <li><code>React.createRef</code></li>
+      <li><code>React.forwardRef</code></li>
     </ul>
   </wg:p>
 
@@ -232,6 +258,64 @@
       префиксом каждого ключа в возвращаемом массиве, так что ключ каждого элемента
       получает пространство имен содержащего его входного массива.
     </app:alert>
+  </rf:definition>
+  
+  <rf:definition title="React.Fragment">
+    <wg:p>Компонент <code>React.Fragment</code> позволяет возвращать множество элементов
+      из метода <code>render()</code> без создания дополнительного элемента DOM:</wg:p>
+  
+    <ce:code-example-12/>
+    
+    <wg:p>
+      Вы также можете использовать сокращенный синтаксис <code>&lt;&gt;&lt;/&gt;</code>. Для получения
+      дополнительной информации см. <wg:link href="${updatesReact16_2_0Url}">React v16.2.0: Улучшенная поддержка фрагментов.</wg:link>
+    </wg:p>
+  </rf:definition>
+  
+  <rf:definition title="React.createRef">
+    <wg:p><code>React.createRef</code> создает ссылку, которая может быть
+      присоединена к элементу React с помощью атрибута <code>ref</code>:</wg:p>
+    
+    <ce:code-example-13/>
+  </rf:definition>
+  
+  <rf:definition title="React.forwardRef">
+    <wg:p><code>React.forwardRef</code> создает компонент React, передающий атрибут <code>ref</code>,
+      который он сам же получает, другому компоненту, расположенному ниже в дереве.
+      Несмотря на то, что этот подход не очень распространен, он особенно полезен в
+      двух сценариях:</wg:p>
+    
+    <wg:p>
+      <ul>
+        <li><wg:link href="${forwardingRefsToDOMComponentsUrl}">Передача ссылок в компоненты DOM</wg:link></li>
+        <li><wg:link href="${forwardingRefsInHOCUrl}">Передача ссылок в старшие компоненты</wg:link></li>
+      </ul>
+    </wg:p>
+        
+    <wg:p>
+      <code>React.forwardRef</code> принимает функцию отрисовки в качестве аргумента.
+      React вызовет эту функцию с двумя аргументами <code>props</code> и <code>ref</code>. Эта функция
+      должна возвращать узел React.
+    </wg:p>
+  
+    <ce:code-example-14/>
+    
+    <wg:p>
+      В приведенном выше примере React передает ссылку <code>ref</code>, переданную
+      элементу <code>&lt;FancyButton ref = {ref}&gt;</code>, функции отрисовки внутри вызова
+      <code>React.forwardRef</code> в качестве второго аргумента. Затем эта функция
+      передает <code>ref</code> в элемент <code>&lt;button ref = {ref}&gt;</code>.
+    </wg:p>
+    
+    <wg:p>
+      В результате после того, как React присоединит <code>ref</code>, <code>ref.current</code>
+      будет указывать непосредственно на элемент <code>&lt;button&gt;</code> DOM.
+    </wg:p>
+    
+    <wg:p>
+      Для получения дополнительной информации см. раздел
+      <wg:link href="${forwardingRefsUrl}">Передача ссылок.</wg:link>
+    </wg:p>
   </rf:definition>
 </lt:layout>
 
