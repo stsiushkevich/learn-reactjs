@@ -10,7 +10,7 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  // connect это функция, которая возвращает другую функцию
+  // connect - это функция, которая возвращает другую функцию
   const hoc = connect(notificationListSelector, notificationListActions);
   // Возвращаемая функция - старший компонент, который возвращает компонент,
   // который является подключаемым к хранилищу данных Redux

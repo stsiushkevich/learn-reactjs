@@ -10,7 +10,8 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  const users = props.users;
+  function UserList(props){
+    const users = props.users;
     return (
       &lt;ul&gt;
         <cd:hl>{users.map((user) =&gt; &lt;UserItem user={user}/&gt;;)}</cd:hl>

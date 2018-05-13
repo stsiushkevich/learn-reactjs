@@ -48,9 +48,9 @@
     <code>defaultChecked</code>, а <code>&lt;select&gt;</code> и <code>&lt;textarea&gt;</code> поддерживают <code>defaultValue</code>.</wg:p>
 
   <br/>
-  <h2>3.4.2 Тэг input типа file</h2>
+  <h2>3.4.2 Тег input типа file</h2>
 
-  <wg:p>В HTML тэг <code>&lt;input type="file"/&gt;</code> позволяет пользователю выбирать один
+  <wg:p>В HTML тег <code>&lt;input type="file"/&gt;</code> позволяет пользователю выбирать один
     или несколько файлов из хранилища своего устройства для загрузки на
     сервер или манипулировать собой с помощью JavaScript через File API.</wg:p>
 

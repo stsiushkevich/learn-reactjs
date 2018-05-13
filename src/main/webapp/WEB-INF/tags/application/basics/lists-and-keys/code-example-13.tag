@@ -13,7 +13,7 @@
   function UserList(props){
     const users = props.users;
     const <cd:hl>items</cd:hl> = users.map((user) =&gt; {
-      return &lt;UserItem user={user}/&gt;;
+      &lt;UserItem user={user}/&gt;;
     });
     return (&lt;ul&gt;{items}&lt;/ul&gt;);
   }</code>

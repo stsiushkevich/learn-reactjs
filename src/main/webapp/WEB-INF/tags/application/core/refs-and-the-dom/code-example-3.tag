@@ -13,7 +13,7 @@
   class CustomTextInput extends React.Component {
     constructor(props) {
       super(props);
-      // создание ссылки для хранения DOM элемента textInput
+      // создание ссылки для хранения DOM-элемента textInput
       <cd:hl>this.textInput = React.createRef();</cd:hl>
       this.focusTextInput = this.focusTextInput.bind(this);
     }
@@ -21,7 +21,7 @@
     focusTextInput() {
       // Явная фокусировка на текстовом поле, используя нативный DOM API
       // Обратите внимание: мы осуществляем доступ к
-      // свойству current, чтобы получить DOM узел
+      // свойству current, чтобы получить DOM-узел
       <cd:hl>this.textInput.current.focus();</cd:hl>
     }
   

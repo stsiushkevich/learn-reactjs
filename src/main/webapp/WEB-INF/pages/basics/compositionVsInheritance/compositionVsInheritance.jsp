@@ -76,7 +76,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="lifting-state-up"/>
-<c:url var="nextPageUrl" value="/core/topics"/>
+<c:url var="nextPageUrl" value="thinking-in-react"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
 									 pageStartAncor="pageStart"
 									 nextPageUrl="${nextPageUrl}"/>
