@@ -357,8 +357,8 @@
     </wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="components-and-props"/>
-<c:url var="nextPageUrl" value="handling-events"/>
+<c:url var="prevPageUrl" value="composition-vs-inheritance"/>
+<c:url var="nextPageUrl" value="/core/topics"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>
