@@ -11,7 +11,7 @@
   <pre class="prettyprint">
     <code class="language-javascript">
   const MyRecord = Immutable.Record({ myProp: null });
-  const a = new SomeRecord({ myProp: 'value1' });
+  const a = new MyRecord({ myProp: 'value1' });
   const b = a.set('myProp', 'value2');
   a === b; // false</code>
   </pre>
