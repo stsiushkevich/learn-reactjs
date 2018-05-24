@@ -12,7 +12,7 @@
     <code class="language-javascript">
   render() {
     return (
-      // Дополнительный div элемент :(
+      // Дополнительный элемент div :(
       &lt;div&gt;
         Какой-то текст.
         &lt;h2&gt;Первый заголовок &lt;/h2&gt;

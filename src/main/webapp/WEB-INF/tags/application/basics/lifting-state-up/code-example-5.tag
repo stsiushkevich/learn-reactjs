@@ -11,9 +11,10 @@
     <pre class="prettyprint">
         <code class="language-javascript">
   render() {
-      onChange(e) {
-    // Ранее: this.setState({speed: e.target.value});
-    this.props.onSpeedChange(e.target.value)
+    onChange(e) {
+      // Ранее: this.setState({speed: e.target.value});
+      this.props.onSpeedChange(e.target.value)
+    }
   }</code>
     </pre>
 </cd:code-example-decorator>

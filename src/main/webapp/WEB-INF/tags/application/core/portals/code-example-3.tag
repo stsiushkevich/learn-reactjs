@@ -12,7 +12,7 @@
     <code class="language-javascript">
   render() {
     // React не создаёт новый div. Он отрисовывает потомок в `domNode`.
-    // `domNode` - это всегда валидный DOM узел, независимо от его места в DOM.
+    // `domNode` - это всегда валидный DOM-узел, независимо от его места в DOM.
     return ReactDOM.createPortal(
       this.props.children,
       domNode,

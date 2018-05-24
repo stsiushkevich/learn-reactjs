@@ -10,7 +10,7 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  <cd:hl>const INTERVAL = 90;</cd:hl>
+  <cd:hl>const INTERVAL = 100;</cd:hl>
 
   class Timer extends React.Component {
     <cd:hl>constructor(props) {</cd:hl>
