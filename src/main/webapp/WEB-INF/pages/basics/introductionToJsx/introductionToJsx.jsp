@@ -6,11 +6,11 @@
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/introduction-to-jsx" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
-<c:url var="socUrl" value="https://en.wikipedia.org/wiki/Separation_of_concerns"/>
+<c:url var="socUrl" value="https://ru.wikipedia.org/wiki/Разделение_ответственности"/>
 <c:url var="componentsUrl" value="components-and-props"/>
 <c:url var="talkUrl" value="https://www.youtube.com/watch?v=x7cQ3mrcKaY"/>
 <c:url var="reactWithoutJsxUrl" value="/core/react-without-jsx"/>
-<c:url var="xssUrl" value="https://en.wikipedia.org/wiki/Cross-site_scripting"/>
+<c:url var="xssUrl" value="https://ru.wikipedia.org/wiki/Межсайтовый_скриптинг"/>
 <c:url var="reactElementUrl" value="https://github.com/facebook/react/blob/master/packages/react/src/ReactElement.js"/>
 
 <a name="pageStart"></a>
