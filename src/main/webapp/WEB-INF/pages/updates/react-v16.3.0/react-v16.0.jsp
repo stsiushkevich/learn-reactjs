@@ -17,7 +17,7 @@
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page react-v16_3_0-page">
 
-	<h1>React v16.3.0: Новые методы жизненного цикла и API контекста</h1>
+	<h1>React v16.3.0: новые методы жизненного цикла и API контекста</h1>
 
 	<wg:p><b>29 Марта, 2018. Brian Vaughn (Брайан Вон)</b></wg:p>
 
