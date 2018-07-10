@@ -13,7 +13,7 @@
   function SuccessMessage(props) {
     return (
       &lt;div className={'message message_success'}&gt;
-        <cd:hl>&lt;MessageContent title={props.title}&gt;{props.children}&lt;/Message&gt;</cd:hl>
+        <cd:hl>&lt;MessageContent title={props.title}&gt;{props.children}&lt;/MessageContent&gt;</cd:hl>
       &lt;/div&gt;
     );
   }
