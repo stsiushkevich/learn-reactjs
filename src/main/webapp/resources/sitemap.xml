@@ -392,6 +392,12 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://learn-reactjs.ru/updates/react-v16.4.0-pointer-events</loc>
+        <lastmod>2018-10-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://learn-reactjs.ru/core/forwarding-refs</loc>
         <lastmod>2018-04-14</lastmod>
         <changefreq>weekly</changefreq>

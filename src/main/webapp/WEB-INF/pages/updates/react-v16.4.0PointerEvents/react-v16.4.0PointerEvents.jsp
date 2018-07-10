@@ -14,6 +14,24 @@
 <c:url var="installationUrl" value="/introduction/installation"/>
 <c:url var="pr12745Url" value="https://github.com/facebook/react/pull/12745"/>
 <c:url var="pr12507Url" value="https://github.com/facebook/react/pull/12507"/>
+<c:url var="pr12600Url" value="https://github.com/facebook/react/pull/12600"/>
+<c:url var="pr12802Url" value="https://github.com/facebook/react/pull/12802"/>
+<c:url var="pr12708Url" value="https://github.com/facebook/react/pull/12708"/>
+<c:url var="pr12690Url" value="https://github.com/facebook/react/pull/12690"/>
+<c:url var="pr12702Url" value="https://github.com/facebook/react/pull/12702"/>
+<c:url var="pr12586Url" value="https://github.com/facebook/react/pull/12586"/>
+<c:url var="pr12658Url" value="https://github.com/facebook/react/pull/12658"/>
+<c:url var="pr12644Url" value="https://github.com/facebook/react/pull/12644"/>
+<c:url var="pr12777Url" value="https://github.com/facebook/react/pull/12777"/>
+<c:url var="pr12629Url" value="https://github.com/facebook/react/pull/12629"/>
+<c:url var="pr12676Url" value="https://github.com/facebook/react/pull/12676"/>
+<c:url var="pr12813Url" value="https://github.com/facebook/react/pull/12813"/>
+<c:url var="pr12725Url" value="https://github.com/facebook/react/pull/12725"/>
+<c:url var="pr12756Url" value="https://github.com/facebook/react/pull/12756"/>
+<c:url var="pr12779Url" value="https://github.com/facebook/react/pull/12779"/>
+<c:url var="pr12820Url" value="https://github.com/facebook/react/pull/12820"/>
+<c:url var="pr12792Url" value="https://github.com/facebook/react/pull/12792"/>
+<c:url var="hostConfigUrl" value="https://github.com/facebook/react/blob/c601f7a64640290af85c9f0e33c78480656b46bc/packages/react-noop-renderer/src/createReactNoop.js#L82-L285"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -167,27 +185,87 @@
 	
 	<wg:p>
 		<ul>
-			<li>Добавлена поддержка спецификации событий указателя.(<wg:link href="${pr12507Url}">#12745</wg:link>)</li>
-			<li>Добавлена поддержка спецификации событий указателя.(<wg:link href="${pr12507Url}">#12745</wg:link>)</li>
+			<li>Добавлена поддержка спецификации событий указателя.(<wg:link href="${pr12745Url}">#12745</wg:link>)</li>
+			<li>Правильный вызов <code>getDerivedStateFromProps()</code> независимо от причины переотрисовки.
+				(<wg:link href="${pr12600Url}">#12600</wg:link> и <wg:link href="${pr12802Url}">#12802</wg:link>)</li>
+			<li>Исправлен баг, который в некоторых случаях предотвращал распространение(propagation) контекста.
+				(<wg:link href="${pr12708Url}">#12708</wg:link>)</li>
+			<li>Исправлена перерисовка компонентов, использующих <code>forwardRef()</code> на более глубоком <code>setState()</code>.
+				(<wg:link href="${pr12690Url}">#12690</wg:link>)</li>
+			<li>Исправлены некоторые атрибуты, которые неправильно удалялись из пользовательских элементов-узлов.
+				(<wg:link href="${pr12702Url}">#12702</wg:link>)</li>
+			<li>Исправлены поставщики контекста, чтобы не оставить без внимания потомков, если выше используется устаревший поставщик контекста.
+				(<wg:link href="${pr12586Url}">#12586</wg:link>)</li>
+			<li>Добавлена возможность указать <code>propTypes</code> в компоненте поставщика контекста.
+				(<wg:link href="${pr12658Url}">#12658</wg:link>)</li>
+			<li>Исправлено ложное положительное предупреждение при использовании
+				<code>react-lifecycles-compat</code> в <code>&lt;StrictMode&gt;</code>.(<wg:link href="${pr12644Url}">#12644</wg:link>)</li>
+			<li>Добавлено предупреждение, когда функция <code>renderRef()</code> имеет <code>propTypes</code> или <code>defaultProps</code>.
+				(<wg:link href="${pr12644Url}">#12644</wg:link>)</li>
+			<li>Улучшено отображение потребителей <code>forwardRef()</code> и контекста в стеке компонентов.
+				(<wg:link href="${pr12644Url}">#12777</wg:link>)</li>
+			<li>Изменение имен внутренних событий. Это может поломать сторонние пакеты, которые полагаются на
+				внутреннюю реализацию React неподдерживаемыми способами.(<wg:link href="${pr12644Url}">#12629</wg:link>)</li>
 		</ul>
 	</wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
-	<wg:p></wg:p>
+	
+	<br/>
+	<h4>Тестовый отрисовщик React (React Test Renderer)</h4>
+	
+	<wg:p>
+		<ul>
+			<li>Исправлена поддержка <code>getDerivedStateFromProps()</code>, для соответствия новому поведению React DOM.
+				(<wg:link href="${pr12676Url}">#12676</wg:link>)
+			</li>
+			<li>Исправлен крэш <code>testInstance.parent</code>, когда родителем является фрагментом или другим специальным узлом.
+				(<wg:link href="${pr12813Url}">#12813</wg:link>)
+			</li>
+			<li>Компоненты <code>forwardRef()</code> теперь можно обнаружить с помощью методов обхода из модуля тестовой отрисовки.
+				(<wg:link href="${pr12725Url}">#12725</wg:link>)
+			</li>
+			<li>
+				Неглубокий рендеринг теперь игнорирует функции обновления метода <code>setState()</code>,
+				которые возвращают значение <code>null</code> или <code>undefined</code>. (<wg:link href="${pr12725Url}">#12756</wg:link>)
+			</li>
+		</ul>
+	</wg:p>
+	
+	<br/>
+	<h4>React ART</h4>
+	
+	<wg:p>
+		<ul>
+			<li>Исправлен контекст чтения, предоставляемый деревом, управляемым React DOM.
+				(<wg:link href="${pr12779Url}">#12779</wg:link>)
+			</li>
+		</ul>
+	</wg:p>
+	
+	<br/>
+	<h4>React Call Return (Экспериментальный)</h4>
+	
+	<wg:p>
+		<ul>
+			<li>Этот эксперимент был удален, поскольку он влиял на размер пакета и API получился недостаточно хорош.
+				Вероятно, в будущем он вернется в какой-либо другой форме.
+				(<wg:link href="${pr12820Url}">#12820</wg:link>)
+			</li>
+		</ul>
+	</wg:p>
+	
+	<br/>
+	<h4>React Reconciler (Экспериментальный)</h4>
+	
+	<wg:p>
+		<ul>
+			<li>Новая <wg:link href="${pr12792Url}">форма конфигурации хоста</wg:link> является плоской и не использует вложенные объекты.
+				(<wg:link href="${pr12792Url}">#12792</wg:link>)
+			</li>
+		</ul>
+	</wg:p>
 
 </lt:layout>
 
-<c:url var="prevPageUrl" value="react-v16.2.0-fragments-improved-support"/>
+<c:url var="prevPageUrl" value="react-v16.3.0"/>
 <app:page-navigate pageStartAncor="pageStart"
                    prevPageUrl="${prevPageUrl}"/>
