@@ -20,17 +20,17 @@
       this.onSubmit = this.onSubmit.bind(this);
     }
 
-    onSubmit(){
+    onSubmit(event){
       alert(`\${this.state.login}, добро пожаловать!`);
       event.preventDefault();
     }
 
-    <cd:hl>onPasswordChange(e){</cd:hl>
-      <cd:hl>this.setState({password: e.target.value});</cd:hl>
+    <cd:hl>onPasswordChange(event){</cd:hl>
+      <cd:hl>this.setState({password: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
-    <cd:hl>onLoginChange(e) {</cd:hl>
-      <cd:hl>this.setState({login: e.target.value});</cd:hl>
+    <cd:hl>onLoginChange(event) {</cd:hl>
+      <cd:hl>this.setState({login: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
     render() {

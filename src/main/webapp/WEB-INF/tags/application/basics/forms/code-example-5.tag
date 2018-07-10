@@ -20,13 +20,13 @@
       this.onSubmit = this.onSubmit.bind(this);
     }
 
-    onSubmit(){
+    onSubmit(event){
       alert(`Сообщение успешно отправлено получателю "\${this.state.email}"`);
       event.preventDefault();
     }
 
-    <cd:hl>onMessageChange(e){</cd:hl>
-      <cd:hl>this.setState({message: e.target.value});</cd:hl>
+    <cd:hl>onMessageChange(event){</cd:hl>
+      <cd:hl>this.setState({message: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
     <cd:hl>onEmailChange(e) {</cd:hl>
