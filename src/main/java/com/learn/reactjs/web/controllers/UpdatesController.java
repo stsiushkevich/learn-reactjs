@@ -51,4 +51,10 @@ public class UpdatesController {
         return "react_v16_3_0View";
     }
 
+    @GetMapping("/react-v16.4.0-pointer-events")
+    public String react_v16_4_0PointerEvents(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_REACT_16_4_0_POINTER_EVENTS);
+        return "react_v16_4_0PointerEventsView";
+    }
+
 }
