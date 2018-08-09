@@ -61,10 +61,10 @@
 
     // Вы можете связать любой из вышеперечисленых валидаторов с 'isRequired', чтобы убедиться,
     // что предупреждение показывается, если значение свойства не предоставлено
-    myRequiredFunc: PropTypes.func.ismyRequired,
+    myRequiredFunc: PropTypes.func.isRequired,
 
     // Значение произвольного типа данных
-    myRequiredAny: PropTypes.any.ismyRequired,
+    myRequiredAny: PropTypes.any.isRequired,
 
     // Вы можете задать и собственный валидатор. Он должен возвращать Error объект,
     // если валидация проходит с ошибкой. Не используйте `console.warn` или throw,
