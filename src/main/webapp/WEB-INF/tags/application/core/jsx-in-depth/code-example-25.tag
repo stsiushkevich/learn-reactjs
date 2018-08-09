@@ -12,11 +12,11 @@
     <code class="language-javascript">
   // Вызывает коллбэк потомка, чтобы создать повторяемый компонент
   function UserList(props) {
-    let users = [];
-    <cd:hl>for (let i = 0; i &lt; props.users.length; i++) {</cd:hl>
-      users.push(props.children(i));
-    }
-    return &lt;ul&gt;{users}&lt;/ul&gt;;
+    return (
+      &lt;ul&gt;
+        {props.users.map((user) => <cd:hl>props.children(user)</cd:hl>)}
+      &lt;/ul&gt;
+    )
   }
 
   function UserPage() {
