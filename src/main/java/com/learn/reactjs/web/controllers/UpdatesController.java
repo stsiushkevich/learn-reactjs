@@ -57,4 +57,9 @@ public class UpdatesController {
         return "react_v16_4_0PointerEventsView";
     }
 
+    @GetMapping("/derived-state-necessity")
+    public String derivedStateNecessity(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_DERIVED_STATE_NECESSITY);
+        return "derivedStateNecessityView";
+    }
 }

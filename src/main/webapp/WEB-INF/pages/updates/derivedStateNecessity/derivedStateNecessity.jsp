@@ -3,7 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
-<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/updates/domAttributesInReact16" %>
+<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/updates/derivedStateNecessity" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="updatingStateBasedOnProps"
@@ -12,12 +12,17 @@
 <c:url var="fetchingExternalDataWhenPropsChange"
        value="https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#fetching-external-data-when-props-change"/>
 
+<c:url var="controlledComponentsUrl" value="/basics/forms#controlled-components"/>
+<c:url var="uncontrolledComponentsUrl" value="/core/uncontrolled-components"/>
+<c:url var="antiPattern1Url" value="https://codesandbox.io/s/m3w9zn1z8x"/>
+<c:url var="antiPattern12Url" value="https://codesandbox.io/s/jl0w6r9w59"/>
+
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
-<lt:layout cssClass="page react-v16.0-page">
+<lt:layout cssClass="page derived-state-necessity-page">
     <h1>Возможно, вам не требуется производное состояние</h1>
 
-    <wg:p><b>7 Июня, 2018. Brian Vaughn(Брайан Вон)</b></wg:p>
+    <wg:p><b>7 Июня, 2018. Brian Vaughn (Брайан Вон)</b></wg:p>
 
     <wg:p>React <b>16.4</b> включил исправление для <code>getDerivedStateFromProps</code>, из-за чего некоторые
         существующие баги в компонентах React воспроизводятся более последовательно. Если
@@ -37,7 +42,7 @@
         более предсказуемым, поэтому результаты его неправильного использования легче заметить.
     </wg:p>
 
-    <app:alert title="Внимание!" type="alert">
+    <app:alert title="Внимание!" type="warning">
         Все анти-паттерны, описанные в этом разделе, применимы как к более
         старому <code>componentWillReceiveProps</code>, так и к
         новому <code>getDerivedStateFromProps</code>.
@@ -61,6 +66,7 @@
         </ul>
     </wg:p>
 
+    <br/>
     <a name="1"></a>
     <h2>Когда следует использовать производное состояние</h2>
 
@@ -98,19 +104,83 @@
         </ul>
     </wg:p>
 
-    <wg:p></wg:p>
-    <wg:p></wg:p>
-    <wg:p></wg:p>
-    <wg:p></wg:p>
-    <wg:p></wg:p>
-    <wg:p></wg:p>
-    <wg:p></wg:p>
-    <wg:p></wg:p>
+    <br/>
+    <a name="2"></a>
+    <h2>Общие ошибки при использовании производного состояния</h2>
+
+    <wg:p>
+        Термины <b>«<a href="${controlledComponentsUrl}">контролируемый</a>»</b> и
+        <b>«<a href="${uncontrolledComponentsUrl}">неконтролируемый</a>»</b> обычно относятся к элементам
+        формы, но они также могут описывать, где живут данные какого-либо компонента.
+        Данные, переданные как свойства, можно рассматривать как <b>контролируемые</b> (поскольку
+        родительский компонент контролирует эти данные). Данные, которые существуют только
+        во внутреннем состоянии, могут считаться <b>неконтролируемыми</b> (поскольку родитель не может напрямую их изменить).
+    </wg:p>
+
+    <wg:p>
+        Наиболее распространенная ошибка с производным состоянием заключается в смешении этих
+        двух случаев: когда производное значение состояния обновляется к тому же и
+        вызовами <code>setState</code>, получается, что для данных нет ни одного источника истины.
+        Пример загрузки внешних данных, приведенный ранее, может показаться похожим, но
+        он отличается в нескольких важных моментах. В примере загрузки есть явный
+        источник истины как для свойства <code>source</code>, так и для значения <code>loading</code> в состоянии.
+        Когда свойство <code>source</code> изменяется, состояние <code>loading</code> <b>всегда</b> должно быть переопределено.
+        И наоборот, состояние переопределяется только тогда, когда свойство <b>изменяется</b>, в
+        противном случае оно управляется компонентом.
+    </wg:p>
+
+    <wg:p>
+        Проблемы возникают при изменении любого из этих ограничений.
+        Обычно это происходит в двух формах. Давайте рассмотрим обе.
+    </wg:p>
+
+    <br/>
+    <a href="21"></a>
+    <h3>Анти-паттерн: безусловное копирование свойств в состояние</h3>
+
+    <wg:p>
+        Распространенным заблуждением является то, что <code>getDerivedStateFromProps</code> и
+        <code>componentWillReceiveProps</code> вызывается только в том случае, если свойства «изменяются».
+        Данные методы жизненного цикла вызываются всякий раз, когда перерисовывается
+        родительский компонент, независимо от того, изменились ли свойства <code>props</code>. Поэтому
+        всегда остается небезопасным безусловно переопределять состояние, используя каждый
+        из этих методов жизненного цикла. <b>Это приведет к тому, что обновления состояния будут потеряны.</b>
+    </wg:p>
+
+    <wg:p>Рассмотрим пример, демонстрирующий проблему. Есть компонент <code>EmailInput</code>,
+        который отображает свойство <code>email</code> в состояние:</wg:p>
+
+    <ce:code-example-1/>
+
+    <wg:p>
+        На первый взгляд данный компонент выглядит нормально. Состояние инициализируется
+        значением, заданным c помощью свойств <code>props</code>, и обновляется при вводе значения
+        в <code>&lt;input&gt;</code>. Но если родитель нашего компонента перерисовывается, все, что
+        мы набрали в <code>&lt;input&gt;</code>, будет потеряно! (см. <a href="${antiPattern1Url}">пример</a>) Это справедливо, даже
+        если бы мы производили сравнение <code>nextProps.email! == this.state.email</code>
+        перед переустановкой значения.
+    </wg:p>
+
+    <wg:p>
+        В этом простом примере добавление <code>shouldComponentUpdate</code> для перерисовки
+        только когда свойство <code>email</code> изменилось, может исправить проблему. Однако на практике
+        компоненты обычно принимают множество свойств, поэтому изменение какого-либо другого
+        свойства будет по-прежнему вызывать перерисовку и неправильную переустановку. Свойства
+        типа <code>Function</code> и <code>Object</code> также часто создаются встроенными, что затрудняет реализацию
+        <code>shouldComponentUpdate</code>, который стабильно возвращает <code>true</code> только тогда, когда произошли
+        существенные изменения. <a href="${antiPattern12Url}">Вот демонстрация, которая показывает происходящее.</a> Как результат,
+        <code>shouldComponentUpdate</code> лучше всего использовать в качестве оптимизации производительности,
+        а не для обеспечения корректности производного состояния.
+    </wg:p>
+
+    <wg:p>
+        Надеемся, теперь понятно, почему <b>безусловное копирование свойств в
+        состояние является плохой идеей</b>. Прежде чем рассматривать возможные решения,
+        давайте посмотрим на связанный с этим проблемный паттерн: что если мы
+        обновляем состояние только при изменении свойства <code>email</code>?
+    </wg:p>
     <wg:p></wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="react_v16_0"/>
-<c:url var="nextPageUrl" value="error-handling-in-react-16"/>
-<app:page-navigate pageStartAncor="pageStart"
-                   prevPageUrl="${prevPageUrl}"
-                   nextPageUrl="${nextPageUrl}"/>
+<c:url var="prevPageUrl" value="react-v16.4.0-pointer-events"/>
+<app:page-navigate pageStartAncor="pageStart" prevPageUrl="${prevPageUrl}"/>
