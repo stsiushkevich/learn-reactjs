@@ -267,5 +267,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="react-v16.3.0"/>
+<c:url var="nextPageUrl" value="derived-state-necessity"/>
 <app:page-navigate pageStartAncor="pageStart"
-                   prevPageUrl="${prevPageUrl}"/>
+                   prevPageUrl="${prevPageUrl}"
+				   nextPageUrl="${nextPageUrl}"/>
