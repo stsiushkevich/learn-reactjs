@@ -25,6 +25,7 @@
         «контролируемые компоненты».</wg:p>
 
     <br/>
+    <a name="controlled-components"></a>
     <h2>2.10.1 Контролируемые компоненты</h2>
 
     <wg:p>В HTML-элементы форм, такие как <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>
