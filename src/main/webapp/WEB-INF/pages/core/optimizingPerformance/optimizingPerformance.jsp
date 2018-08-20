@@ -167,7 +167,7 @@
   <lt:layout cssClass="alert alert-warning">
     <b>Внимание!</b> Если вы используете приложение <b>Create React</b>, следуйте приведенным выше
      <wg:link href="https://facebook.github.io/react/docs/optimizing-performance.html#create-react-app">инструкциям</wg:link>.
-    Этот раздел имеет значение только, если вы конфигурируете <b>webpack</b> напрямую.
+    Этот раздел имеет значение, только если вы конфигурируете <b>webpack</b> напрямую.
   </lt:layout>
 
   <wg:p>Для создания наиболее эффективной <b>webpack production</b> сборки обязательно
