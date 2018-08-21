@@ -484,6 +484,10 @@ h6 .anchor {
     .tutorial__section-label {
         bottom: 10px;
     }
+    .content, .menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width:992px) {
@@ -539,7 +543,9 @@ h6 .anchor {
 }
 
 .disqus-thread {
-    margin-top: 5px
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .page-navigate {
