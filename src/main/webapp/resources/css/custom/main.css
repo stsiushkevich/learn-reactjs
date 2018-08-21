@@ -9,7 +9,9 @@ body {
 }
 
 .main {
-    height: 100%
+    height: 100%;
+    font-size: 16px;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .footer {
@@ -41,7 +43,8 @@ body {
     background-color: #00d8ff
 }
 
-.purchase-page, .home-page {
+.purchase-page,
+.home-page {
     background-color: #0ec2e2
 }
 
@@ -60,19 +63,16 @@ body {
 
 .menu .menu-sidebar {
     padding-bottom: 20px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-}
-
-.menu-sidebar__nav {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
 }
 
 .menu-sidebar__nav-link a {
-    color: #222;
+    color: #222
 }
 
 .page {
     padding: 5px 20px 20px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
 }
 
 .topic-list__topics {
@@ -81,7 +81,7 @@ body {
 }
 
 .menu-sidebar__nav-link.active {
-    box-shadow: 0px 1px 7px 2px #b5b5b5
+    box-shadow: 0 1px 7px 2px #b5b5b5
 }
 
 .topic-list__topic-nav-link {
@@ -96,20 +96,43 @@ body {
     margin: 0
 }
 
-.topic-list__topic-nav-link:focus, .topic-list__topic-nav-link:hover {
+.topic-list__topic-nav-link:focus,
+.topic-list__topic-nav-link:hover {
     background-color: #e9e9e9;
     text-decoration: none
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-left: -2px;
     color: #424242
 }
 
-.home-page .h1, .home-page .h2, .home-page .h3, .home-page .h4, .home-page .h5, .home-page .h6, .home-page h1, .home-page h2, .home-page h3, .home-page h4, .home-page h5, .home-page h6 {
+.home-page .h1,
+.home-page .h2,
+.home-page .h3,
+.home-page .h4,
+.home-page .h5,
+.home-page .h6,
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page h4,
+.home-page h5,
+.home-page h6 {
     color: #fff;
-    font-weight: bold;
-    text-align: center;
+    font-weight: 700;
+    text-align: center
 }
 
 code {
@@ -131,11 +154,13 @@ code {
     padding-top: 10px
 }
 
-.highlighted, .hl {
+.highlighted,
+.hl {
     background-color: #555
 }
 
-.footer-nav, .header-nav {
+.footer-nav,
+.header-nav {
     list-style-type: none;
     margin: 0
 }
@@ -153,10 +178,11 @@ code {
 }
 
 .header-nav__link a.buy-btn:active {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25)
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .25)
 }
 
-.header-nav__link a.buy-btn:hover, .header-nav__link a.buy-btn:focus {
+.header-nav__link a.buy-btn:hover,
+.header-nav__link a.buy-btn:focus {
     border: 1px solid #0090ab;
     color: #fff;
     background-color: #00a7c7
@@ -170,7 +196,8 @@ code {
     color: #eaeaea;
     border-radius: 0;
     padding: 10px;
-    height: 45px
+    height: 45px;
+    font-size: 16px
 }
 
 .header-nav__link {
@@ -190,7 +217,8 @@ code {
     color: #fff
 }
 
-.header-nav__link a:hover, .header-nav__link a:focus {
+.header-nav__link a:hover,
+.header-nav__link a:focus {
     color: #fff;
     background-color: #404040;
     border-bottom: 3px solid
@@ -210,7 +238,8 @@ code {
     position: relative
 }
 
-.tutorial__section-link:hover, .tutorial__section-link:focus {
+.tutorial__section-link:hover,
+.tutorial__section-link:focus {
     background-color: #5ce8ff;
     border-color: #f0d04e;
     box-shadow: 1px 1px 10px 0 #f0d04e
@@ -222,7 +251,6 @@ code {
 
 .tutorial__section-label {
     position: absolute;
-    bottom: 5px;
     left: 0;
     width: 100%;
     text-align: center;
@@ -234,7 +262,9 @@ code {
     font-size: 15px
 }
 
-.contacts-icon, .terms-of-use-icon, .project-icon {
+.contacts-icon,
+.terms-of-use-icon,
+.project-icon {
     text-align: center;
     padding-top: 20px
 }
@@ -244,7 +274,8 @@ code {
     padding-top: 25px
 }
 
-.terms-of-use-page h2, .terms-of-use-page h4 {
+.terms-of-use-page h2,
+.terms-of-use-page h4 {
     color: #222
 }
 
@@ -268,7 +299,8 @@ code {
     color: #9a9a9a
 }
 
-.email__value, .email__title {
+.email__value,
+.email__title {
     display: inline-block;
     color: #5f5f5f
 }
@@ -413,54 +445,62 @@ code {
     border-color: #59b259
 }
 
-.choose-course-form .btn-success:hover, .choose-course-form .btn-success:focus {
+.choose-course-form .btn-success:hover,
+.choose-course-form .btn-success:focus {
     background-color: #61b961;
     border-color: #52a452
 }
 
-h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor {
     text-decoration: none;
     color: inherit
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .tutorial__section-link {
-        padding: 30px
+        padding: 25px 30px 50px;
     }
-
     .footer-nav__link {
         display: inline-block
     }
+    .tutorial__section-label {
+        bottom: 15px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .tutorial__section-link {
-        padding: 10px 20px 30px;
+        padding: 15px 20px 35px;
         font-size: 13px
     }
-
     .tutorial__section-link img {
         width: 70px
     }
+    .tutorial__section-label {
+        bottom: 10px;
+    }
 }
 
-@media (max-width: 992px) {
+@media (max-width:992px) {
     body {
         margin-bottom: 170px
     }
-
     .logo-section {
         text-align: center
     }
-
     .menu-advertising {
         height: 100px;
         width: 100%;
-        overflow-y: auto;
+        overflow-y: auto
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width:992px) {
     body {
         margin-bottom: 100px
     }
@@ -480,34 +520,43 @@ h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
     border: 1px solid #ccc;
     overflow-y: auto;
     height: 120px;
-    width: 100%;
+    width: 100%
 }
 
-.page .h1, .page h1, .page .h2, .page h2, .page .h3, .page h3, .page .h4, .page h4, .page .h5, .page h5, .page .h6, .page h6 {
+.page .h1,
+.page h1,
+.page .h2,
+.page h2,
+.page .h3,
+.page h3,
+.page .h4,
+.page h4,
+.page .h5,
+.page h5,
+.page .h6,
+.page h6 {
     font-weight: 700
 }
 
-.disqus-thread{
-    margin-top: 5px;
+.disqus-thread {
+    margin-top: 5px
 }
 
-.page-navigate{
+.page-navigate {
     margin-top: 20px;
-    text-align: center;
+    text-align: center
 }
 
-.page-navigate__link{
-    text-decoration: none;
+.page-navigate__link {
+    text-decoration: none
 }
 
 .page-navigate__link:hover,
 .page-navigate__link:focus,
-.page-navigate__link:active{
-    text-decoration: none;
+.page-navigate__link:active {
+    text-decoration: none
 }
 
-.page-navigate__link-icon{}
-
-.date{
+.date {
     color: #a5a5a5
 }

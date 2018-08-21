@@ -40,7 +40,7 @@
                 <lt:layout cssClass="tutorial__section">
                     <wg:link href="${coreUrl}" cssClass="tutorial__section-link">
                         <wg:img src="${coreImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Для продвинутых</lt:layout>
+                        <lt:layout cssClass="tutorial__section-label">Продвинутым</lt:layout>
                     </wg:link>
                 </lt:layout>
             </lt:layout>
