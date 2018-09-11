@@ -7,6 +7,7 @@
 <c:url var="derivedStateNecessityUrl" value="derived-state-necessity"/>
 <c:url var="react_v16_4_0PointerEventsUrl" value="react-v16.4.0-pointer-events"/>
 <c:url var="react_v16_3_0Url" value="react-v16.3.0"/>
+<c:url var="updateOnAsyncRenderingUrl" value="update-on-async-rendering"/>
 <c:url var="react_v16_2_0_fragmentsImprovedSupportUrl" value="react-v16.2.0-fragments-improved-support"/>
 <c:url var="react_v16_0Url" value="react_v16_0"/>
 <c:url var="domAttributesInReact16Url" value="dom-attributes-in-react-16"/>
@@ -29,6 +30,11 @@
         <li class="topic-list__topic">
             <a href="${react_v16_3_0Url}" class="topic-list__topic-nav-link">
                 <h4><span class="date">29.03.2018: </span>React v16.3.0: Новые методы жизненного цикла и API контекста</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${updateOnAsyncRenderingUrl}" class="topic-list__topic-nav-link">
+                <h4><span class="date">27.03.2018: </span>Информация по асинхронной отрисовке компонентов</h4>
             </a>
         </li>
         <li class="topic-list__topic">
