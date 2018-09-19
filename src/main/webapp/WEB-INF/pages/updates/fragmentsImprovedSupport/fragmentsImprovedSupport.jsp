@@ -324,7 +324,8 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="react_v16_0"/>
-<c:url var="nextPageUrl" value="react-v16.3.0"/>
+<c:url var="nextPageUrl" value="update-on-async-rendering"/>
+
 <app:page-navigate pageStartAncor="pageStart"
                    prevPageUrl="${prevPageUrl}"
                    nextPageUrl="${nextPageUrl}"/>
