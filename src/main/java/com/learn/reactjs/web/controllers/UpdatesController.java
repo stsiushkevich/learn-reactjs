@@ -62,4 +62,10 @@ public class UpdatesController {
         model.put("currentPage", Pages.UPDATES_DERIVED_STATE_NECESSITY);
         return "derivedStateNecessityView";
     }
+
+    @GetMapping("/update-on-async-rendering")
+    public String updateOnAsyncRendering(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_UPDATE_ON_ASYNC_RENDERING);
+        return "updateOnAsyncRenderingView";
+    }
 }

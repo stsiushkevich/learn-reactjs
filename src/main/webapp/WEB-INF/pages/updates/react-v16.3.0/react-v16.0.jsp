@@ -237,8 +237,9 @@
 
 </lt:layout>
 
-<c:url var="prevPageUrl" value="react-v16.2.0-fragments-improved-support"/>
+<c:url var="prevPageUrl" value="update-on-async-rendering"/>
 <c:url var="nextPageUrl" value="react-v16.4.0-pointer-events"/>
+
 <app:page-navigate pageStartAncor="pageStart"
                    prevPageUrl="${prevPageUrl}"
                    nextPageUrl="${nextPageUrl}"/>

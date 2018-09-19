@@ -6,6 +6,7 @@
 <c:url var="derivedStateNecessityUrl" value="derived-state-necessity"/>
 <c:url var="react_v16_4_0PointerEventsUrl" value="react-v16.4.0-pointer-events"/>
 <c:url var="react_v16_3_0Url" value="react-v16.3.0"/>
+<c:url var="updateOnAsyncRenderingUrl" value="update-on-async-rendering"/>
 <c:url var="react_v16_2_0_fragmentsImprovedSupportUrl" value="react-v16.2.0-fragments-improved-support"/>
 <c:url var="react_v16_0Url" value="react_v16_0"/>
 <c:url var="domAttributesInReact16Url" value="dom-attributes-in-react-16"/>
@@ -23,6 +24,9 @@
 			</li>
 			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_REACT_16_3_0' ? 'active' : null}">
 				<a href="${react_v16_3_0Url}">React v16.3.0: Новые методы жизненного цикла и API контекста</a>
+			</li>
+			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_UPDATE_ON_ASYNC_RENDERING' ? 'active' : null}">
+				<a href="${updateOnAsyncRenderingUrl}">Информация по асинхронной отрисовке компонентов</a>
 			</li>
 			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_REACT_16_2_0_FRAGMENTS_IMPROVED_SUPPORT' ? 'active' : null}">
 				<a href="${react_v16_2_0_fragmentsImprovedSupportUrl}">React v16.2.0: улучшенная поддержка фрагментов</a>
