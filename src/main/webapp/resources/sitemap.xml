@@ -344,6 +344,12 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://learn-reactjs.ru/updates/update-on-async-rendering</loc>
+        <lastmod>2018-09-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://learn-reactjs.ru/faq/topics</loc>
         <lastmod>2018-03-29</lastmod>
         <changefreq>weekly</changefreq>
