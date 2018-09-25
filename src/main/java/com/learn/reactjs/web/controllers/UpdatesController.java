@@ -68,4 +68,10 @@ public class UpdatesController {
         model.put("currentPage", Pages.UPDATES_UPDATE_ON_ASYNC_RENDERING);
         return "updateOnAsyncRenderingView";
     }
+
+    @GetMapping("/react-profiler")
+    public String reactProfiler(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_REACT_PROFILER);
+        return "reactProfilerView";
+    }
 }

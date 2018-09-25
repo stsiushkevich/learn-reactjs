@@ -4,6 +4,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="reactProfilerUrl" value="react-profiler"/>
 <c:url var="derivedStateNecessityUrl" value="derived-state-necessity"/>
 <c:url var="react_v16_4_0PointerEventsUrl" value="react-v16.4.0-pointer-events"/>
 <c:url var="react_v16_3_0Url" value="react-v16.3.0"/>
@@ -17,6 +18,11 @@
 <lt:layout cssClass="page topic-list">
     <h1 style="color: #00acc1">Обновления</h1>
     <ol class="topic-list__topics">
+        <li class="topic-list__topic">
+            <a href="${reactProfilerUrl}" class="topic-list__topic-nav-link">
+                <h4><span class="date">10.09.2018: </span>Представляем профайлер React</h4>
+            </a>
+        </li>
         <li class="topic-list__topic">
             <a href="${derivedStateNecessityUrl}" class="topic-list__topic-nav-link">
                 <h4><span class="date">07.06.2018: </span>Возможно, вам не требуется производное состояние</h4>
