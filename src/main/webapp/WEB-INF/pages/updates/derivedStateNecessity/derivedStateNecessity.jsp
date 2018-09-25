@@ -444,4 +444,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="react-v16.4.0-pointer-events"/>
-<app:page-navigate pageStartAncor="pageStart" prevPageUrl="${prevPageUrl}"/>
+<c:url var="nextPageUrl" value="react-profiler"/>
+<app:page-navigate pageStartAncor="pageStart"
+                   prevPageUrl="${prevPageUrl}"
+                   nextPageUrl="${nextPageUrl}"/>

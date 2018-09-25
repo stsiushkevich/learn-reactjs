@@ -3,6 +3,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="reactProfilerUrl" value="react-profiler"/>
 <c:url var="derivedStateNecessityUrl" value="derived-state-necessity"/>
 <c:url var="react_v16_4_0PointerEventsUrl" value="react-v16.4.0-pointer-events"/>
 <c:url var="react_v16_3_0Url" value="react-v16.3.0"/>
@@ -16,6 +17,9 @@
 	<div class="black-line"></div>
 	<nav class="menu-sidebar__nav">
 		<ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
+			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_REACT_PROFILER' ? 'active' : null}">
+				<a href="${reactProfilerUrl}">Представляем профайлер React</a>
+			</li>
 			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_DERIVED_STATE_NECESSITY' ? 'active' : null}">
 				<a href="${derivedStateNecessityUrl}">Возможно, вам не требуется производное состояние</a>
 			</li>
