@@ -33,7 +33,7 @@
         Такие компоненты называются «<b>функциональными</b>», потому что они буквально
         являются JavaScript-функциями.</wg:p>
 
-    <wg:p>Другой способ объявить компонент заключается в использовании ES6 классов:</wg:p>
+    <wg:p>Другой способ объявить компонент заключается в использовании ES6-классов:</wg:p>
 
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
@@ -73,7 +73,7 @@
         <code-example:code-example-5/>
     </wg:p>
 
-    <wg:p><wg:link href="http://codepen.io/gaearon/pen/YGYmEG?editors=0010">Попробовать его в CodePen.</wg:link></wg:p>
+    <wg:p><wg:link href="http://codepen.io/gaearon/pen/YGYmEG?editors=0010">Попробовать это в CodePen.</wg:link></wg:p>
 
     <wg:p>Давайте прорезюмируем, что произошло в этом примере:</wg:p>
 
@@ -108,7 +108,7 @@
         <lt:layout cssClass="code-block-header">Код</lt:layout>
         <code-example:code-example-6/>
     </wg:p>
-    <wg:p><wg:link href="http://codepen.io/gaearon/pen/KgQKPr?editors=0010">Попробовать его в CodePen.</wg:link></wg:p>
+    <wg:p><wg:link href="http://codepen.io/gaearon/pen/KgQKPr?editors=0010">Попробовать это в CodePen.</wg:link></wg:p>
 
     <wg:p>
         Как правило, новые React-приложения имеют единственный компонент <code>App</code> на самом верху иерархии.
@@ -128,13 +128,13 @@
         <lt:layout cssClass="code-block-header">Код</lt:layout>
         <code-example:code-example-7/>
     </wg:p>
-    <wg:p><wg:link href="http://codepen.io/gaearon/pen/VKQwEo?editors=0010">Попробовать его в CodePen.</wg:link></wg:p>
+    <wg:p><wg:link href="http://codepen.io/gaearon/pen/VKQwEo?editors=0010">Попробовать это в CodePen.</wg:link></wg:p>
 
     <wg:p>Он принимает <code>author</code> (объект), <code>text</code> (строка) и <code>date</code> (дата) как
         свойства, и описывает комментарий на социальном медиа веб-сайте.</wg:p>
 
-    <wg:p>Данный компонент может оказаться сложно изменить из-за вложенности. Также тяжело
-        переиспользовать и его составные части, но возможно извлечь из него несколько более малых
+    <wg:p>Данный компонент может быть сложно изменим из-за вложенности. Также тяжело
+        переиспользовать и его составные части. Давайте извлечем из него несколько небольших
         компонентов, упростив исходный компонент.</wg:p>
 
     <wg:p>Для начала давайте извлечем из него компонент <code>Avatar</code>:</wg:p>
@@ -174,7 +174,7 @@
         <lt:layout cssClass="code-block-header">Код</lt:layout>
         <code-example:code-example-11/>
     </wg:p>
-    <wg:link href="http://codepen.io/gaearon/pen/rrJNJY?editors=0010">Попробовать его в CodePen.</wg:link>
+    <wg:link href="http://codepen.io/gaearon/pen/rrJNJY?editors=0010">Попробовать это в CodePen.</wg:link>
 
     <wg:p>Извлечение компонентов по началу может показаться рутинной работой, но наличие набора
         переиспользуемых компонентов окупается в больших приложениях.</wg:p>

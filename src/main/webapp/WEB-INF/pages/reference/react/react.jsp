@@ -146,7 +146,7 @@
       аргумент может быть либо строкой имени тега (например, <code>'div'</code> или <code>'span'</code>), либо
       типом компонента React (класс или функция).</wg:p>
 
-    <wg:p>Удобные оболочки  вокруг <code>React.createElement()</code> для компонентов DOM
+    <wg:p>Удобные оболочки вокруг <code>React.createElement()</code> для компонентов DOM
       предоставляются <code>React.DOM</code>. Например, <code>React.DOM.a(...)</code> является удобной
       оболочкой для <code>React.createElement('a', ...)</code>. Они считаются устаревшими,
       и мы рекомендуем вам либо использовать JSX, либо

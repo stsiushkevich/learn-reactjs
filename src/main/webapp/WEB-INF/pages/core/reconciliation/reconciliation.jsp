@@ -67,7 +67,7 @@
 
   <wg:p>При уничтожении дерева старые DOM-узлы удаляются. React вызывает
     <code>componentWillUnmount()</code> для экземпляров компонентов. При создании нового
-    дерева новые DOM-узлы вставляются в DOM. React вызывает  <code>componentWillMount()</code>,
+    дерева новые DOM-узлы вставляются в DOM. React вызывает <code>componentWillMount()</code>,
     а затем <code>componentDidMount()</code> для экземпляров компонентов. Любое состояние,
     связанное со старым деревом, теряется.</wg:p>
 

@@ -414,7 +414,7 @@
   <ce:code-example-16/>
 
   <wg:p>Чтобы написать это без изменения исходного объекта,
-    мы можем использовать метод  <code>Object.assign</code>:</wg:p>
+    мы можем использовать метод <code>Object.assign</code>:</wg:p>
 
   <ce:code-example-17/>
 

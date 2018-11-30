@@ -84,7 +84,7 @@
         компоненту обновлять свое внутреннее состояние в результате изменения
         свойств.</b> В нашем предыдущем посте были приведены некоторые примеры,
         такие как <wg:link href="${updatingStateBasedOnProps}">запись текущего направления прокрутки на основе изменения
-        свойства</wg:link>  <code>offset</code> или <wg:link href="${fetchingExternalDataWhenPropsChange}">загрузки
+        свойства</wg:link> <code>offset</code> или <wg:link href="${fetchingExternalDataWhenPropsChange}">загрузки
         внешних данных, обозначенных свойством</wg:link> <code>source</code>.
     </wg:p>
 

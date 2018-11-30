@@ -17,7 +17,7 @@
 
   <lt:layout cssClass="alert alert-warning">
     <b>Внимание! React.PropTypes</b> является устаревшим начиная с <b>React v15.5.</b>
-    Пожалуйста,  вместо этого используйте <wg:link href="${propTypesUrl}">prop-types</wg:link> библиотеку.
+    Пожалуйста, вместо этого используйте <wg:link href="${propTypesUrl}">prop-types</wg:link> библиотеку.
     <br/>
     <br/>
     Разработчики предоставляют скрипт <wg:link href="${codeModeUrl}">codemode</wg:link> для автоматизации преобразования.
