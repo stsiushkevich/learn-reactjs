@@ -353,6 +353,10 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="derived-state-necessity"/>
+<c:url var="nextPageUrl" value="create-react-app-2.0"/>
 
-<app:page-navigate pageStartAncor="pageStart"
-                   prevPageUrl="${prevPageUrl}"/>
+<app:page-navigate
+        pageStartAncor="pageStart"
+        prevPageUrl="${prevPageUrl}"
+        nextPageUrl="${nextPageUrl}"
+/>

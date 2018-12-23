@@ -74,4 +74,10 @@ public class UpdatesController {
         model.put("currentPage", Pages.UPDATES_REACT_PROFILER);
         return "reactProfilerView";
     }
+
+    @GetMapping("/create-react-app-2.0")
+    public String createReactApp_2_0(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_CREATE_REACT_APP_2_0);
+        return "createReactApp_2_0View";
+    }
 }
