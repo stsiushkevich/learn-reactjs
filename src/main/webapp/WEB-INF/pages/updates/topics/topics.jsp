@@ -4,6 +4,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="createReactApp_2_0Url" value="create-react-app-2.0"/>
 <c:url var="reactProfilerUrl" value="react-profiler"/>
 <c:url var="derivedStateNecessityUrl" value="derived-state-necessity"/>
 <c:url var="react_v16_4_0PointerEventsUrl" value="react-v16.4.0-pointer-events"/>
@@ -18,6 +19,11 @@
 <lt:layout cssClass="page topic-list">
     <h1 style="color: #00acc1">Обновления</h1>
     <ol class="topic-list__topics">
+        <li class="topic-list__topic">
+            <a href="${createReactApp_2_0Url}" class="topic-list__topic-nav-link">
+                <h4><span class="date">01.10.2018: </span>Create React App 2.0: Babel 7, Sass и другое</h4>
+            </a>
+        </li>
         <li class="topic-list__topic">
             <a href="${reactProfilerUrl}" class="topic-list__topic-nav-link">
                 <h4><span class="date">10.09.2018: </span>Представляем профайлер React</h4>
