@@ -202,6 +202,10 @@
 </div>
 
 <c:url var="prevPageUrl" value="react-profiler"/>
+<c:url var="nextPageUrl" value="react-v16.6.0"/>
 
-<app:page-navigate pageStartAncor="pageStart"
-                   prevPageUrl="${prevPageUrl}"/>
+<app:page-navigate
+        pageStartAncor="pageStart"
+        prevPageUrl="${prevPageUrl}"
+        nextPageUrl="${nextPageUrl}"
+/>

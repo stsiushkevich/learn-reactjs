@@ -80,4 +80,10 @@ public class UpdatesController {
         model.put("currentPage", Pages.UPDATES_CREATE_REACT_APP_2_0);
         return "createReactApp_2_0View";
     }
+
+    @GetMapping("/react-v16.6.0")
+    public String react_v16_6_0(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_REACT_V16_6_0);
+        return "react_v16_6_0View";
+    }
 }
