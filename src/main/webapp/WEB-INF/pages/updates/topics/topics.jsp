@@ -4,6 +4,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="react_v16_x_RoadMapUrl" value="react-v16.x-road-map"/>
 <c:url var="react_v16_6_0Url" value="react-v16.6.0"/>
 <c:url var="createReactApp_2_0Url" value="create-react-app-2.0"/>
 <c:url var="reactProfilerUrl" value="react-profiler"/>
@@ -20,6 +21,11 @@
 <lt:layout cssClass="page topic-list">
     <h1 style="color: #00acc1">Обновления</h1>
     <ol class="topic-list__topics">
+        <li class="topic-list__topic">
+            <a href="${react_v16_x_RoadMapUrl}" class="topic-list__topic-nav-link">
+                <h4><span class="date">27.11.2018: </span>React v16.x: план дествий</h4>
+            </a>
+        </li>
         <li class="topic-list__topic">
             <a href="${react_v16_6_0Url}" class="topic-list__topic-nav-link">
                 <h4><span class="date">23.10.2018: </span>React v16.6.0: lazy, memo и contextType</h4>

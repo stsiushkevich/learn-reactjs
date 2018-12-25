@@ -49,7 +49,7 @@
 
     <p>
         Сегодня мы выпускаем React 16.6 с несколькими новыми удобными функциями. Форма <code>PureComponent</code>/<code>shouldComponentUpdate</code>
-        для компонентов-функций, способ разбиения кода с использованием ожидания и более простой способ
+        для компонентов-функций, способ разбиения кода с использованием приостановки и более простой способ
         потребления контекста из компонентов-классов.
     </p>
 
@@ -75,7 +75,7 @@
     <br/>
     <div class="gray-line"></div>
 
-    <h2>React.lazy: Разбиение сода с помощью ожидания (suspense)</h2>
+    <h2>React.lazy: Разбиение сода с помощью приостановки (suspense)</h2>
 
     <br/>
 
@@ -86,10 +86,10 @@
     <ce:code-example-2/>
 
     <p>Также в будущем компонент <code>Suspense</code> позволит авторам библиотек
-        реализовывать извлечение данных с поддержкой ожидания.</p>
+        реализовывать извлечение данных с поддержкой приостановки.</p>
 
     <app:alert type="warning" title="Внимание!">
-        Данная функция пока не доступна для отрисовки на стороне сервера. Поддержка ожидания будет
+        Данная функция пока не доступна для отрисовки на стороне сервера. Поддержка приостановки будет
             добавлена в более будущем релизе.
     </app:alert>
 
@@ -303,6 +303,10 @@
 </div>
 
 <c:url var="prevPageUrl" value="create-react-app-2.0"/>
+<c:url var="nextPageUrl" value="react-v16.x-road-map"/>
 
-<app:page-navigate pageStartAncor="pageStart"
-                   prevPageUrl="${prevPageUrl}"/>
+<app:page-navigate
+        pageStartAncor="pageStart"
+        prevPageUrl="${prevPageUrl}"
+        nextPageUrl="${nextPageUrl}"
+/>

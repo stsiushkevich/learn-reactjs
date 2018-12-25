@@ -570,3 +570,9 @@ h6 .anchor {
 .gray-line {
     border-top: 1px solid #eaeaea;
 }
+
+.introduction {
+    font-size: 23px;
+    font-weight: 300;
+    color: #6d6d6d;
+}
