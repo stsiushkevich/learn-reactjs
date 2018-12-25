@@ -201,6 +201,7 @@
 	</wg:p>
 
 	<br/>
+	<a name="strict-mode"></a>
 	<h3>Компонент StrictMode</h3>
 
 	<wg:p>

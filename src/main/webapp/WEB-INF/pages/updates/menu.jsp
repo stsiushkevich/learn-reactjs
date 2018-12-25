@@ -3,6 +3,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="react_v16_6_0Url" value="react-v16.6.0"/>
 <c:url var="createReactApp_2_0Url" value="create-react-app-2.0"/>
 <c:url var="reactProfilerUrl" value="react-profiler"/>
 <c:url var="derivedStateNecessityUrl" value="derived-state-necessity"/>
@@ -18,6 +19,9 @@
 	<div class="black-line"></div>
 	<nav class="menu-sidebar__nav">
 		<ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
+			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_REACT_V16_6_0' ? 'active' : null}">
+				<a href="${react_v16_6_0Url}">React v16.6.0: lazy, memo и contextType</a>
+			</li>
 			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_CREATE_REACT_APP_2_0' ? 'active' : null}">
 				<a href="${createReactApp_2_0Url}">Create React App 2.0: Babel 7, Sass и другое</a>
 			</li>

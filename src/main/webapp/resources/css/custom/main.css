@@ -566,3 +566,7 @@ h6 .anchor {
 .date {
     color: #a5a5a5
 }
+
+.gray-line {
+    border-top: 1px solid #eaeaea;
+}
