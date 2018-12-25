@@ -61,16 +61,16 @@
 
     <ul>
         <li>
-            <p>React 16.6 с функцией <b>Suspense</b> (приостановка) для разбиения кода (<i>уже поставлен</i>)</p>
+            <p>React 16.6 с функцией <b><a href="#suspense">Suspense</a></b> (приостановка) для разбиения кода (<i>уже поставлен</i>)</p>
         </li>
         <li>
-            <p>Минорный релиз 16.x с функцией <b>Hooks</b> (~первый квартал 2019)</p>
+            <p>Минорный релиз 16.x с функцией <b><a href="#hooks">Hooks</a></b> (хуки) (~первый квартал 2019)</p>
         </li>
         <li>
-            <p>Минорный релиз 16.x с функцией <b>Concurrent Mode</b> (~второй квартал 2019)</p>
+            <p>Минорный релиз 16.x с функцией <b><a href="#concurrent-mode">Concurrent Mode</a></b> (~второй квартал 2019)</p>
         </li>
         <li>
-            <p>Минорный релиз 16.x с функцией <b>Suspense</b> для извлечения данных (Data Fetching) (~середина 2019)</p>
+            <p>Минорный релиз 16.x с функцией <b><a href="#suspense-for-data-fetching">Suspense для извлечения данных</a></b> (Data Fetching) (~середина 2019)</p>
         </li>
     </ul>
 
@@ -88,12 +88,12 @@
     <ul>
         <li>
             <p>
-                <b><a href="#modReactDOM">Модернизация React DOM</a></b>
+                <b><a href="#mod-react-dom">Модернизация React DOM</a></b>
             </p>
         </li>
         <li>
             <p>
-                <b><a href="#suspenseForServerRendering">Suspense для серверной отрисовки</a></b>
+                <b><a href="#suspense-for-server-rendering">Suspense для серверной отрисовки</a></b>
             </p>
         </li>
     </ul>
@@ -130,6 +130,7 @@
 
     <br/>
 
+    <a name="suspense"></a>
     <h3>React 16.6 (поставлен): обладает функцией приостановки для разбиения кода</h3>
 
     <br/>
@@ -178,6 +179,7 @@
 
     <br/>
 
+    <a name="hooks"></a>
     <h3>React 16.x (~первый квартал 2019): добавление функции Hooks</h3>
 
     <br/>
@@ -235,6 +237,7 @@
 
     <br/>
 
+    <a name="concurrent-mode"></a>
     <h3>React 16.x (~второй квартал 2019): добавление функции Concurrent Mode</h3>
 
     <br/>
@@ -307,6 +310,7 @@
 
     <br/>
 
+    <a name="suspense-for-data-fetching"></a>
     <h3>React 16.x (~второй квартал 2019): добавление приостановки для извлечения данных</h3>
 
     <br/>
@@ -372,6 +376,7 @@
 
     <br/>
 
+    <a name="mod-react-dom"></a>
     <h3>Модернизация React DOM</h3>
 
     <br/>
@@ -382,6 +387,7 @@
 
     <br/>
 
+    <a name="suspense-for-server-rendering"></a>
     <h3>Приостановка для серверной отрисовки</h3>
 
     <br/>
