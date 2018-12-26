@@ -92,4 +92,10 @@ public class UpdatesController {
         model.put("currentPage", Pages.UPDATES_REACT_V16_X_ROAD_MAP);
         return "react_v16_x_RoadMapView";
     }
+
+    @GetMapping("/react-v16.7")
+    public String react_v16_7(Map<String, Object> model) {
+        model.put("currentPage", Pages.UPDATES_REACT_V16_7);
+        return "react_v16_7View";
+    }
 }

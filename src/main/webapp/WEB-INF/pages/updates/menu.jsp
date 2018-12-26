@@ -3,6 +3,7 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
+<c:url var="react_v16_7_Url" value="react-v16.7"/>
 <c:url var="react_v16_x_RoadMapUrl" value="react-v16.x-road-map"/>
 <c:url var="react_v16_6_0Url" value="react-v16.6.0"/>
 <c:url var="createReactApp_2_0Url" value="create-react-app-2.0"/>
@@ -20,6 +21,9 @@
 	<div class="black-line"></div>
 	<nav class="menu-sidebar__nav">
 		<ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
+			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_REACT_V16_7' ? 'active' : null}">
+				<a href="${react_v16_7_Url}">React v16.7: Нет, это не тот, что с хуками</a>
+			</li>
 			<li class="menu-sidebar__nav-link ${currentPage eq 'UPDATES_REACT_V16_X_ROAD_MAP' ? 'active' : null}">
 				<a href="${react_v16_x_RoadMapUrl}">React v16.x: план дествий</a>
 			</li>
