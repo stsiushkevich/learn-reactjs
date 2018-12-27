@@ -128,4 +128,10 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_STRICT_MODE);
         return "strictModeView";
     }
+
+    @GetMapping("/code-splitting")
+    public String codeSplitting(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_CODE_SPLITTING);
+        return "codeSplittingView";
+    }
 }

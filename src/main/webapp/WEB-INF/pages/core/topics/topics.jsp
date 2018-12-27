@@ -17,6 +17,7 @@
 <c:url var="portalsUrl" value="portals"/>
 <c:url var="renderPropUrl" value="render-prop"/>
 <c:url var="errorBoundariesUrl" value="error-boundaries"/>
+<c:url var="codeSplittingUrl" value="code-splitting"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
 <c:url var="forwardingRefsUrl" value="forwarding-refs"/>
@@ -67,19 +68,22 @@
 			<a class="topic-list__topic-nav-link" href=${errorBoundariesUrl}><h4>3.13 Границы ошибок</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${webComponentsUrl}><h4>3.14 Веб-компоненты</h4></a>
+			<a class="topic-list__topic-nav-link" href=${codeSplittingUrl}><h4>3.14 Разбиение кода</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${higherOrderComponentsUrl}><h4>3.15 Старшие компоненты</h4></a>
+			<a class="topic-list__topic-nav-link" href=${webComponentsUrl}><h4>3.15 Веб-компоненты</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${forwardingRefsUrl}><h4>3.16 Передача ссылок</h4></a>
+			<a class="topic-list__topic-nav-link" href=${higherOrderComponentsUrl}><h4>3.16 Старшие компоненты</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${integratingWithOtherLibrariesUrl}><h4>3.17 Интеграция со сторонними библиотеками</h4></a>
+			<a class="topic-list__topic-nav-link" href=${forwardingRefsUrl}><h4>3.17 Передача ссылок</h4></a>
 		</li>
 		<li class="topic-list__topic">
-			<a class="topic-list__topic-nav-link" href=${strictModeUrl}><h4>3.18 Строгий режим</h4></a>
+			<a class="topic-list__topic-nav-link" href=${integratingWithOtherLibrariesUrl}><h4>3.18 Интеграция со сторонними библиотеками</h4></a>
+		</li>
+		<li class="topic-list__topic">
+			<a class="topic-list__topic-nav-link" href=${strictModeUrl}><h4>3.19 Строгий режим</h4></a>
 		</li>
 	</ol>
 </lt:layout>

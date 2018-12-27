@@ -16,6 +16,7 @@
 <c:url var="portalsUrl" value="portals"/>
 <c:url var="renderPropUrl" value="render-prop"/>
 <c:url var="errorBoundariesUrl" value="error-boundaries"/>
+<c:url var="codeSplittingUrl" value="code-splitting"/>
 <c:url var="webComponentsUrl" value="web-components"/>
 <c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
 <c:url var="forwardingRefsUrl" value="forwarding-refs"/>
@@ -65,20 +66,23 @@
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_ERROR_BOUNDARIES' ? 'active' : null}">
                 <a href=${errorBoundariesUrl}>3.13 Границы ошибок</a>
             </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_CODE_SPLITTING' ? 'active' : null}">
+                <a href=${codeSplittingUrl}>3.14 Разбиение кода</a>
+            </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_WEB_COMPONENTS' ? 'active' : null}">
-                <a href=${webComponentsUrl}>3.14 Веб-компоненты</a>
+                <a href=${webComponentsUrl}>3.15 Веб-компоненты</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HIGHER_ORDER_COMPONENTS' ? 'active' : null}">
-                <a href=${higherOrderComponentsUrl}>3.15 Старшие компоненты</a>
+                <a href=${higherOrderComponentsUrl}>3.16 Старшие компоненты</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_FORWARDING_REFS' ? 'active' : null}">
-                <a href=${forwardingRefsUrl}>3.16 Передача ссылок</a>
+                <a href=${forwardingRefsUrl}>3.17 Передача ссылок</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_INTEGRATING_WITH_OTHER_LIBRARIES' ? 'active' : null}">
-                <a href=${integratingWithOtherLibrariesUrl}>3.17 Интеграция со сторонними библиотеками</a>
+                <a href=${integratingWithOtherLibrariesUrl}>3.18 Интеграция со сторонними библиотеками</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
-                <a href=${strictModeUrl}>3.18 Строгий режим</a>
+                <a href=${strictModeUrl}>3.19 Строгий режим</a>
             </li>
         </ul>
     </nav>

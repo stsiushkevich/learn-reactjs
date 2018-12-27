@@ -401,6 +401,14 @@
         <put-attribute name="content" value="/WEB-INF/pages/core/strictMode/strictMode.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="codeSplittingView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/codeSplitting/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/codeSplitting/codeSplitting.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
 
     <!--reference-->
     <definition name="referenceTopicsView" extends="menuTemplate">
