@@ -201,7 +201,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="render-prop"/>
-<c:url var="nextPageUrl" value="web-components"/>
+<c:url var="nextPageUrl" value="code-splitting"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

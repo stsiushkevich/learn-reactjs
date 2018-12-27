@@ -57,7 +57,7 @@
   </app:alert>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="error-boundaries"/>
+<c:url var="prevPageUrl" value="code-splitting"/>
 <c:url var="nextPageUrl" value="higher-order-components"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"

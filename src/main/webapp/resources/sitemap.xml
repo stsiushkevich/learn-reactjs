@@ -445,4 +445,10 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/code-splitting</loc>
+        <lastmod>2018-12-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
