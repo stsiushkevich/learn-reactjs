@@ -16,10 +16,28 @@
 <c:url var="reactjsUrl" value="https://reactjs.org/"/>
 <c:url var="taniarasciaUrl" value="https://www.taniarascia.com/getting-started-with-react/"/>
 <c:url var="reactfordesignersUrl" value="https://reactfordesigners.com/"/>
+<c:url var="javaScriptUrl" value="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript"/>
+<c:url var="mdnUrl" value="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
+<c:url var="javascriptInfoUrl" value="javascript.info"/>
+<c:url var="supportUrl" value="https://reactjs.org/community/support.html"/>
+<c:url var="thinkingInReactUrl" value="/basics/thinking-in-react"/>
+<c:url var="coursesUrl" value="https://reactjs.org/community/courses.html"/>
+<c:url var="coreUrl" value="/core/topics"/>
+<c:url var="contextUrl" value="/core/context"/>
+<c:url var="refsUrl" value="/core/refs-and-the-dom"/>
+<c:url var="referenceUrl" value="/reference/topics"/>
+<c:url var="glossaryUrl" value="https://reactjs.org/docs/glossary.html"/>
+<c:url var="ajaxUrl" value="/faq/ajax-and-apis"/>
+<c:url var="stateUrl" value="/faq/component-state"/>
+<c:url var="fileStructureUrl" value="/faq/file-structure"/>
+<c:url var="updatesUrl" value="/updates/topics"/>
+<c:url var="reactjsAccountUrl" value="https://twitter.com/reactjs"/>
+<c:url var="changelogUrl" value="https://github.com/facebook/react/blob/master/CHANGELOG.md"/>
+<c:url var="releasesUrl" value="https://github.com/facebook/react"/>
 
 <a name="pageStart"></a>
 <div class="black-line"></div>
-<div class="page react-v16.7">
+<div class="page getting-started">
     <h1>1.1 Начало работы</h1>
 
     <p class="introduction">
@@ -42,7 +60,7 @@
     <br/>
 
     <p>React с самого начала был разработан для постепенного внедрения. <b>Вы можете использовать
-        React в таком объеме, насколько вам это удобно</b>. Если вы хотите просто попробовать React,
+        React в том объеме, в котором вам это необходимо</b>. Если вы хотите просто попробовать React,
         добавить интерактивность к простой HTML-странице или разработать сложное приложение,
         ссылки в этом разделе помогут вам начать работу.</p>
 
@@ -143,17 +161,115 @@
 
     <br/>
 
-    <p></p>
-    <p></p>
-
-    <%--  --%>
-    <%-- <code></code> --%>
-    <%--  <b><a href="${}"></a></b> --%>
-
+    <p>Документация React предполагает наличие некоторых навыков программирования на
+        языке JavaScript. Вам не обязательно быть экспертом, но гараздо сложнее выучить и React, и
+        JavaScript одновременно.</p>
+    
+    <p>
+        Мы рекомендуем посмотреть <b><a href="${javaScriptUrl}">этот обзор JavaScript</a></b>, чтобы проверить свой уровень знаний.
+        Это займет у вас от 30 минут до часа, но зато вы будете чувствовать себя более уверенно, изучая React.
+    </p>
+    
+    <app:alert title="Внимание!" type="warning">
+        Каждый раз, когда у вас возникают трудности в JavaScript, <b><a href="${mdnUrl}">MDN</a></b> и <b><a href="${javascriptInfoUrl}">javascript.info</a></b> - отличные
+        сайты для проверки. Есть также <b><a href="${supportUrl}">форумы поддержки сообщества</a></b>, где вы можете обратиться за помощью.
+    </app:alert>
+    
+    <br/>
+    <h3>1.1.2.3 Практическое руководство</h3>
+    
+    <br/>
+    
+    <p>Если вы предпочитаете учиться на практике, ознакомьтесь с нашим <b><a href="${tutorialUrl}">практическим руководством</a></b>.
+        В нем мы строим игру в крестики-нолики на React. Методы, которые вы изучите в этом руководстве,
+        имеют основополагающее значение для создания любых приложений React, а их освоение даст
+        вам более глубокое понимание.</p>
+    
+    <br/>
+    <h3>1.1.2.3 Пошаговое руководство</h3>
+    
+    <br/>
+    
+    <p>Если вы предпочитаете изучать концепции шаг за шагом, лучше всего начать с <b><a href="${basicsUrl}">руководства по
+            базовым понятиям</a></b>. Каждый последующий раздел основан на знаниях, представленных в предыдущих
+        разделах, поэтому вы ничего не упустите по мере изучения.</p>
+    
+    <br/>
+    <h3>1.1.2.4 Мышление в React</h3>
+    
+    <br/>
+    
+    <p>
+        Многие пользователи React считают, что чтение раздела <b><a href="${thinkingInReactUrl}">"мышление в React"</a></b> окончательно
+        «щелкнуло» по ним. Вероятно, это старейший раздел React, но оно все еще актуален.
+    </p>
+    
+    <br/>
+    <h3>1.1.2.5 Рекомендуемые курсы</h3>
+    
+    <br/>
+    
+    <p>
+        Иногда люди находят сторонние книги и видеокурсы более полезными, чем официальная документация.
+        Мы поддерживаем список <b><a href="${coursesUrl}">часто рекомендуемых ресурсов</a></b>, некоторые из которых бесплатны.
+    </p>
+    
+    <br/>
+    <h3>1.1.2.6 Продвинутое руководство</h3>
+    
+    <br/>
+    
+    <p>
+        Когда вы изучите <b><a href="${basicsUrl}">основные понятия</a></b> и немного поиграетесь с React, вас могут заинтересовать более
+        сложные темы. <b><a href="${coreUrl}">Этот раздел</a></b> познакомит вас с мощными, но менее часто используемыми функциями React,
+        такими как <b><a href="${contextUrl}">context</a></b> и <b><a href="${refsUrl}">refs</a></b>.
+    </p>
+    
+    <br/>
+    <h3>1.1.2.7 Справочное руководство</h3>
+    
+    <br/>
+    
+    <p>
+        <b><a href="${referenceUrl}">Данный раздел документации</a></b> полезен в случаях, когда вы хотите узнать больше информации о конкретном React API.
+        Например, справка по API <code>React.Component</code> может предоставить вам подробную информацию о том, как работает <code>setState()</code>, и
+        для чего полезны различные методы жизненного цикла.
+    </p>
+    
+    <br/>
+    <h3>1.1.2.8 Глоссарий и FAQ</h3>
+    
+    <br/>
+    
+    <p><b><a href="${glossaryUrl}">Глоссарий</a></b> содержит обзор наиболее распространенных терминов, которые вы встретите в
+        документации React. Существует также раздел часто задаваемых вопросов FAQ, посвященный коротким
+        вопросам и ответам на общие темы, такие как <b><a href="${ajaxUrl}">выполнение запросов AJAX</a></b>, <b><a href="${stateUrl}">состояние
+            компонентов</a></b> и <b><a href="${fileStructureUrl}">структура файлов</a></b>.</p>
+    
+    <br/>
+    <br/>
+    <div class="gray-line"></div>
+    <h3>1.1.3 Быть в курсе последней информации</h3>
+    
+    <br/>
+    
+    <p>Раздел <b><a href="${updatesUrl}">"обновления"</a></b> является источником обновлений от команды React. Все важные сведения, в
+        том числе заметки о выпуске или уведомления об устаревании, будут публиковаться там в первую очередь.</p>
+    
+    <p>
+        Также Вы можете подписаться на аккаунт <b><a href="${reactjsAccountUrl}">@reactjs</a></b> в Твиттере, но вы всё равно не
+        пропустите ничего важного, если будет читать только раздел обновлений.
+    </p>
+    
+    <p>
+	    Не каждый релиз React заслуживает отдельного поста в блоге, но подробный список изменений для каждого
+	    релиза можно найти в <b><a href="${changelogUrl}">файле CHANGELOG.md в репозитории React</a></b>, а
+	    также на <b><a href="${releasesUrl}">странице релизов</a></b>.
+    </p>
 </div>
 
-<c:url var="prevPageUrl" value="error-boundaries"/>
-<c:url var="nextPageUrl" value="web-components"/>
+<c:url var="prevPageUrl" value=""/>
+<c:url var="nextPageUrl" value=""/>
 
 <app:page-navigate
         pageStartAncor="pageStart"
