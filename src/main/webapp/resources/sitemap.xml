@@ -451,4 +451,28 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://learn-reactjs.ru/introduction/getting-started</loc>
+        <lastmod>2018-12-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/introduction/add-react-to-a-web-site</loc>
+        <lastmod>2018-12-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/introduction/create-a-new-react-app</loc>
+        <lastmod>2018-12-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/introduction/cdn-links</loc>
+        <lastmod>2018-12-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
