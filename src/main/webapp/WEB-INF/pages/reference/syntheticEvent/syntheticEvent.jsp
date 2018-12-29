@@ -41,6 +41,7 @@
 	</app:alert>
 
 	<br/>
+	<a name="event-pool"></a>
 	<h3>4.5.4.2 Пул событий</h3>
 
 	<wg:p><code>SyntheticEvent</code> помещается в пул. Это означает, что объект <code>SyntheticEvent</code>
