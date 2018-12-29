@@ -118,6 +118,42 @@
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
 
+    <definition name="gettingStartedView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/introduction/gettingStarted/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/introduction/gettingStarted/gettingStarted.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <definition name="addReactToWebSiteView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/introduction/addReactToWebSite/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/introduction/addReactToWebSite/addReactToWebSite.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <definition name="createNewReactAppView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/introduction/createNewReactApp/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/introduction/createNewReactApp/createNewReactApp.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <definition name="cdnLinksView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/introduction/cdnLinks/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/introduction/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/introduction/cdnLinks/cdnLinks.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
     <!--basics-->
     <definition name="basicsTopicsView" extends="menuTemplate">
         <put-attribute name="head" value="/WEB-INF/pages/basics/topics/head.jsp" cascade="true"/>

@@ -3,22 +3,26 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
-<c:url var="installationUrl" value="installation"/>
-<c:url var="devToolsUrl" value="devtools"/>
+<c:url var="gettingStartedUrl" value="getting-started"/>
+<c:url var="addReactToWebSiteUrl" value="add-react-to-a-web-site"/>
+<c:url var="createNewReactAppUrl" value="create-a-new-react-app"/>
+<c:url var="cdnLinksUrl" value="cdn-links"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
-            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_INTRODUCTION_IN_REACT_JS' ? 'active' : null}">
-                <a href="${introductionInReactJSUrl}">1.1 Введение в ReactJS</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_GETTING_STARTED' ? 'active' : null}">
+                <a href="${gettingStartedUrl}">1.1 Начало работы</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_INSTALLATION' ? 'active' : null}">
-                <a href="${installationUrl}">1.2 Установка</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_ADD_REACT_TO_WEB_SITE' ? 'active' : null}">
+                <a href="${addReactToWebSiteUrl}">1.2 Добавить React на веб-сайт</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_DEVTOOLS' ? 'active' : null}">
-                <a href="${devToolsUrl}">1.3 Инструменты разработчика</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_CREATE_NEW_REACT_APP' ? 'active' : null}">
+                <a href="${createNewReactAppUrl}">1.3 Создать новое React приложение</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'INTRODUCTION_CDN_LINKS' ? 'active' : null}">
+                <a href="${cdnLinksUrl}">1.4 Ссылки CDN</a>
             </li>
         </ul>
     </nav>

@@ -9,7 +9,7 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin&gt;&lt;/script&gt;
-  &lt;script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin&gt;&lt;/script&gt;</code>
+  npx babel --watch src --out-dir . --presets react-app/prod
+    </code>
 </pre>
 </cd:code-example-decorator>

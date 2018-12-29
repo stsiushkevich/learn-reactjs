@@ -9,9 +9,7 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-  // ... стартовый код, который вы вставили ...
-  
-  const domContainer = document.querySelector('#like_button_container');
-  ReactDOM.render(e(LikeButton), domContainer);</code>
+  &lt;script crossorigin src="..."&gt;&lt;/script&gt;
+    </code>
 </pre>
 </cd:code-example-decorator>

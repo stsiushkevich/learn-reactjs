@@ -9,7 +9,7 @@
 <c:url var="helloWorldCodePenUrl" value="https://reactjs.org/redirect-to-codepen/hello-world"/>
 <c:url var="helloWorldCodeSandboxUrl" value="https://codesandbox.io/s/new"/>
 <c:url var="minHtmlTmplUrl" value="https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html"/>
-<c:url var="addReactToWebsiteUrl" value="add-react-to-a-website"/>
+<c:url var="addReactToWebsiteUrl" value="add-react-to-a-web-site#add-react-in-one-minute"/>
 <c:url var="createNewReactAppUrl" value="create-a-new-react-app"/>
 <c:url var="tutorialUrl" value="https://reactjs.org/tutorial/tutorial.html"/>
 <c:url var="basicsUrl" value="/basics/topics"/>
@@ -18,7 +18,7 @@
 <c:url var="reactfordesignersUrl" value="https://reactfordesigners.com/"/>
 <c:url var="javaScriptUrl" value="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript"/>
 <c:url var="mdnUrl" value="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
-<c:url var="javascriptInfoUrl" value="javascript.info"/>
+<c:url var="javascriptLearnUrl" value="https://learn.javascript.ru/"/>
 <c:url var="supportUrl" value="https://reactjs.org/community/support.html"/>
 <c:url var="thinkingInReactUrl" value="/basics/thinking-in-react"/>
 <c:url var="coursesUrl" value="https://reactjs.org/community/courses.html"/>
@@ -39,7 +39,9 @@
 <div class="black-line"></div>
 <div class="page getting-started">
     <h1>1.1 Начало работы</h1>
-
+    
+    <br/>
+    
     <p class="introduction">
         В данной странице представлен обзор документации React и связанных ресурсов.
     </p>
@@ -47,13 +49,14 @@
     <br/>
 
     <ul>
-        <li><p><b><a href="try-react">1.1.1 Попробовать React</a></b></p></li>
-        <li><p><b><a href="learn-react">1.1.2 Изучить React</a></b></p></li>
-        <li><p><b><a href="be-aware">1.1.3 Быть в курсе последней информации</a></b></p></li>
+        <li><p><b><a href="#try-react">1.1.1 Попробовать React</a></b></p></li>
+        <li><p><b><a href="#learn-react">1.1.2 Изучить React</a></b></p></li>
+        <li><p><b><a href="#be-aware">1.1.3 Быть в курсе последней информации</a></b></p></li>
     </ul>
 
     <br/>
     <br/>
+    <a name="try-react"></a>
     <div class="gray-line"></div>
     <h2>1.1.1 Попробовать React</h2>
 
@@ -65,29 +68,25 @@
         ссылки в этом разделе помогут вам начать работу.</p>
 
     <br/>
-    <br/>
-    <div class="gray-line"></div>
     <h3>1.1.1.1 Онлайн площадки</h3>
 
     <br/>
 
     <p>
         Если вы просто хотите побаловаться с React, то можете использовать онлайн площадку для кода.
-        Попробуйте пример <b>Hello World</b> на <wg:link href="${helloWorldCodePenUrl}">CodePen</wg:link> или
-        <wg:link href="${helloWorldCodeSandboxUrl}">CodeSandbox</wg:link>.
+        Попробуйте пример <b>Hello World</b> на <b><a href="${helloWorldCodePenUrl}">CodePen</a></b> или
+        <b><a href="${helloWorldCodeSandboxUrl}">CodeSandbox</a></b>.
     </p>
 
     <p>
         Если вы предпочитаете использовать собственный текстовый редактор, вы также
-        можете загрузить <wg:link href="${minHtmlTmplUrl}">этот HTML-файл</wg:link>,
+        можете загрузить <b><a href="${minHtmlTmplUrl}">этот HTML-файл</a></b>,
         отредактировать его и открыть его из локальной файловой системы в своем браузере.
         Он выполняет медленное runtime-преобразование кода, поэтому мы рекомендуем использовать
         его только для простых демонстраций.
     </p>
 
     <br/>
-    <br/>
-    <div class="gray-line"></div>
     <h3>1.1.1.2 Добавить React на веб-сайт</h3>
 
     <br/>
@@ -96,8 +95,6 @@
         постепенно расширить его присутствие, либо сохранить его в нескольких динамических виджетах.</p>
 
     <br/>
-    <br/>
-    <div class="gray-line"></div>
     <h3>1.1.1.3 Создать новое React приложение</h3>
 
     <br/>
@@ -114,6 +111,7 @@
 
     <br/>
     <br/>
+    <a name="learn-react"></a>
     <div class="gray-line"></div>
     <h2>1.1.2 Изучить React</h2>
 
@@ -150,14 +148,14 @@
         попробуйте снова вернуться к документации!</p>
 
     <br/>
-    <h3>1.1.2.2 React для дизайнеров</h3>
+    <h3>1.1.2.3 React для дизайнеров</h3>
 
     <br/>
 
     <p>Если вы работаете в сфере дизайна, <b><a href="${reactfordesignersUrl}">данные ресурсы</a></b> - отличное место для начала.</p>
 
     <br/>
-    <h3>1.1.2.2 JavaScript ресурсы</h3>
+    <h3>1.1.2.4 JavaScript ресурсы</h3>
 
     <br/>
 
@@ -170,13 +168,15 @@
         Это займет у вас от 30 минут до часа, но зато вы будете чувствовать себя более уверенно, изучая React.
     </p>
     
+    <br/>
+    
     <app:alert title="Внимание!" type="warning">
-        Каждый раз, когда у вас возникают трудности в JavaScript, <b><a href="${mdnUrl}">MDN</a></b> и <b><a href="${javascriptInfoUrl}">javascript.info</a></b> - отличные
+        Каждый раз, когда у вас возникают трудности в JavaScript, <b><a href="${mdnUrl}">MDN</a></b> и <b><a href="${javascriptLearnUrl}">learn.javascript.ru</a></b> - отличные
         сайты для проверки. Есть также <b><a href="${supportUrl}">форумы поддержки сообщества</a></b>, где вы можете обратиться за помощью.
     </app:alert>
     
     <br/>
-    <h3>1.1.2.3 Практическое руководство</h3>
+    <h3>1.1.2.5 Практическое руководство</h3>
     
     <br/>
     
@@ -186,7 +186,7 @@
         вам более глубокое понимание.</p>
     
     <br/>
-    <h3>1.1.2.3 Пошаговое руководство</h3>
+    <h3>1.1.2.6 Пошаговое руководство</h3>
     
     <br/>
     
@@ -195,7 +195,7 @@
         разделах, поэтому вы ничего не упустите по мере изучения.</p>
     
     <br/>
-    <h3>1.1.2.4 Мышление в React</h3>
+    <h3>1.1.2.7 Мышление в React</h3>
     
     <br/>
     
@@ -205,7 +205,7 @@
     </p>
     
     <br/>
-    <h3>1.1.2.5 Рекомендуемые курсы</h3>
+    <h3>1.1.2.8 Рекомендуемые курсы</h3>
     
     <br/>
     
@@ -215,18 +215,18 @@
     </p>
     
     <br/>
-    <h3>1.1.2.6 Продвинутое руководство</h3>
+    <h3>1.1.2.9 Продвинутое руководство</h3>
     
     <br/>
     
     <p>
         Когда вы изучите <b><a href="${basicsUrl}">основные понятия</a></b> и немного поиграетесь с React, вас могут заинтересовать более
         сложные темы. <b><a href="${coreUrl}">Этот раздел</a></b> познакомит вас с мощными, но менее часто используемыми функциями React,
-        такими как <b><a href="${contextUrl}">context</a></b> и <b><a href="${refsUrl}">refs</a></b>.
+        такими как <b><a href="${contextUrl}">контекст</a></b> и <b><a href="${refsUrl}">ссылки</a></b>.
     </p>
     
     <br/>
-    <h3>1.1.2.7 Справочное руководство</h3>
+    <h3>1.1.2.10 Справочное руководство</h3>
     
     <br/>
     
@@ -237,7 +237,7 @@
     </p>
     
     <br/>
-    <h3>1.1.2.8 Глоссарий и FAQ</h3>
+    <h3>1.1.2.11 Глоссарий и FAQ</h3>
     
     <br/>
     
@@ -248,8 +248,9 @@
     
     <br/>
     <br/>
+    <a name="be-aware"></a>
     <div class="gray-line"></div>
-    <h3>1.1.3 Быть в курсе последней информации</h3>
+    <h2>1.1.3 Быть в курсе последней информации</h2>
     
     <br/>
     
@@ -268,8 +269,8 @@
     </p>
 </div>
 
-<c:url var="prevPageUrl" value=""/>
-<c:url var="nextPageUrl" value=""/>
+<c:url var="prevPageUrl" value="/home"/>
+<c:url var="nextPageUrl" value="add-react-to-a-web-site"/>
 
 <app:page-navigate
         pageStartAncor="pageStart"

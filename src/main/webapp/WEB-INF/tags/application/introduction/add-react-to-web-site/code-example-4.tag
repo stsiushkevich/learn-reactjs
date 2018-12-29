@@ -9,13 +9,8 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-  const e = React.createElement;
-  
-  // Display a "Like" &lt;button&gt;
-  return e(
-    'button',
-    { onClick: () => this.setState({ liked: true }) },
-    'Like'
-  );</code>
+  &lt;script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin&gt;&lt;/script&gt;
+  &lt;script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin&gt;&lt;/script&gt;
+    </code>
 </pre>
 </cd:code-example-decorator>

@@ -4,22 +4,34 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="introductionInReactJSUrl" value="introduction-in-reactjs"/>
-<c:url var="installationUrl" value="installation"/>
-<c:url var="devToolsUrl" value="devtools"/>
+<c:url var="gettingStartedUrl" value="getting-started"/>
+<c:url var="addReactToWebSiteUrl" value="add-react-to-a-web-site"/>
+<c:url var="createNewReactAppUrl" value="create-a-new-react-app"/>
+<c:url var="cdnLinksUrl" value="cdn-links"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
     <h1 style="color: #00acc1">1. Введение</h1>
     <ol class="topic-list__topics">
         <li class="topic-list__topic">
-            <a href="${introductionInReactJSUrl}" class="topic-list__topic-nav-link"><h4>1.1 Введение в ReactJS</h4></a>
+            <a href="${gettingStartedUrl}" class="topic-list__topic-nav-link">
+                <h4>1.1 Начало работы</h4>
+            </a>
         </li>
         <li class="topic-list__topic">
-            <a href="${installationUrl}" class="topic-list__topic-nav-link"><h4>1.2 Установка</h4></a>
+            <a href="${addReactToWebSiteUrl}" class="topic-list__topic-nav-link">
+                <h4>1.2 Добавить React на веб-сайт</h4>
+            </a>
         </li>
         <li class="topic-list__topic">
-            <a href="${devToolsUrl}" class="topic-list__topic-nav-link"><h4>1.3 Инструменты разработчика</h4></a>
+            <a href="${createNewReactAppUrl}" class="topic-list__topic-nav-link">
+                <h4>1.3 Создать новое React приложение</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${cdnLinksUrl}" class="topic-list__topic-nav-link">
+                <h4>1.4 Ссылки CDN</h4>
+            </a>
         </li>
     </ol>
 </lt:layout>

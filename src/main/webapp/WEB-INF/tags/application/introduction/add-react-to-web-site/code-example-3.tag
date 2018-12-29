@@ -9,6 +9,10 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-  npx babel --watch src --out-dir . --presets react-app/prod </code>
+  // ... стартовый код, который вы вставили ...
+  
+  const domContainer = document.querySelector('#like_button_container');
+  ReactDOM.render(e(LikeButton), domContainer);
+    </code>
 </pre>
 </cd:code-example-decorator>

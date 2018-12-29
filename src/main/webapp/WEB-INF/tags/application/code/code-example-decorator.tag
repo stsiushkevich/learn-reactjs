@@ -4,8 +4,12 @@
 
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
+<br/>
+
 <div class="code-block-header">Код</div>
 <jsp:doBody/>
 <c:if test="${fn:length(codePenUrl) > 0}">
     <p><wg:link href="${codePenUrl}">Посмотреть в CodePen</wg:link></p>
 </c:if>
+
+<br/>

@@ -9,6 +9,14 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;script src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script&gt;</code>
+  const e = React.createElement;
+  
+  // Отображение кнопки "Like"
+  return e(
+    'button',
+    { onClick: () => this.setState({ liked: true }) },
+    'Like'
+  );
+    </code>
 </pre>
 </cd:code-example-decorator>

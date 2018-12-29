@@ -37,4 +37,28 @@ public class IntroductionController {
         model.put("currentPage", Pages.INTRODUCTION_DEVTOOLS);
         return "devtoolsView";
     }
+
+    @GetMapping ("/getting-started")
+    public String gettingStarted(Map<String, Object> model) {
+        model.put("currentPage", Pages.INTRODUCTION_GETTING_STARTED);
+        return "gettingStartedView";
+    }
+
+    @GetMapping ("/add-react-to-a-web-site")
+    public String addReactToWebSite(Map<String, Object> model) {
+        model.put("currentPage", Pages.INTRODUCTION_ADD_REACT_TO_WEB_SITE);
+        return "addReactToWebSiteView";
+    }
+
+    @GetMapping ("/create-a-new-react-app")
+    public String createNewReactApp(Map<String, Object> model) {
+        model.put("currentPage", Pages.INTRODUCTION_CREATE_NEW_REACT_APP);
+        return "createNewReactAppView";
+    }
+
+    @GetMapping ("/cdn-links")
+    public String cdnLinks(Map<String, Object> model) {
+        model.put("currentPage", Pages.INTRODUCTION_CDN_LINKS);
+        return "cdnLinksView";
+    }
 }

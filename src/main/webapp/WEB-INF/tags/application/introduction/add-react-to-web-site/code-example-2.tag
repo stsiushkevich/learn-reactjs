@@ -9,7 +9,7 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;!-- ... другой HTML ... --&gt;
+  &lt;!-- ... какой-то HTML ... --&gt;
   &lt;!-- Загрузка React. --&gt;
   &lt;!-- Внимание: во время развертывания, замените "development.js" на "production.min.js". --&gt;
   &lt;script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
@@ -18,6 +18,7 @@
   &lt;!-- Загрузка нашего компонента React. --&gt;
   &lt;script src="like_button.js"&gt;&lt;/script&gt;
   
-&lt;/body&gt;</code>
+&lt;/body&gt;
+    </code>
 </pre>
 </cd:code-example-decorator>

@@ -3,7 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
-<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/introduction/addReactToWebSite" %>
+<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/introduction/add-react-to-web-site" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="addReactInOneMinuteUrl" value="#add-react-in-one-minute"/>
@@ -35,9 +35,13 @@
 <div class="page add-react-to-web-site">
 	<h1>1.2 Добавить React на веб-сайт</h1>
 	
+	<br/>
+	
 	<p class="introduction">
 		Используйте React в том объеме, в котором вам это необходимо.
 	</p>
+	
+	<br/>
 	
 	<p>React с самого начала был разработан для постепенного внедрения. <b>Вы можете использовать
 		React в том объеме, в котором вам это необходимо</b>. Возможно, вы просто хотите добавить немного
@@ -50,8 +54,6 @@
 		динамических виджетах.
 	</p>
 	
-	<br/>
-	<div class="gray-line"></div>
 	<br/>
 	
 	<ul>
@@ -80,7 +82,6 @@
 	</p>
 	
 	<br/>
-	<br/>
 	<h3>1.2.1.1 Шаг 1. Добавьте DOM-контейнер в HTML</h3>
 	
 	<br/>
@@ -91,21 +92,20 @@
 	
 	<ce:code-example-1/>
 	
-	<br/>
-	
 	<p>
 		Мы дали данному тегу <code>&lt;div&gt;</code> уникальный HTML-атрибут <code>id</code>. Позже это позволит нам найти
 		его из кода JavaScript и отобразить внутри него компонент React.
 	</p>
 	
+	<br/>
+	
 	<app:alert title="Подсказка!" type="success">
-		Вы можете поместить <b>«контейнер»</b> <code>&lt;div&gt;</code> в любом месте внутри тега
+		Вы можете поместить <b>контейнер</b> <code>&lt;div&gt;</code> в любом месте внутри тега
 		<code>&lt;body&gt;</code>. На одной странице
 		может быть любое колличество независимых контейнеров DOM. Обычно они пусты - React заменяет
 		любой существующий контент внутри DOM-контейнеров.
 	</app:alert>
 	
-	<br/>
 	<br/>
 	<h3>1.2.1.2 Шаг 2. Добавьте теги script</h3>
 	
@@ -119,7 +119,6 @@
 	<p>Первые два тега загружают React. Третий загрузит код вашего компонента.</p>
 	
 	<br/>
-	<br/>
 	<h3>1.2.1.3 Шаг 3. Создайте компонент React</h3>
 	
 	<br/>
@@ -128,7 +127,9 @@
 	
 	<p>Откройте <b><a href="${likeButtonUrl}">этот стартовый код</a></b> и вставьте его в созданный вами файл.</p>
 	
-	<app:alert title="Подсказка" type="success">
+	<br/>
+	
+	<app:alert title="Подсказка!" type="success">
 		Данный код определяет компонент React с именем <code>LikeButton</code>. Не беспокойтесь, если он
 		вам непонятен - мы расскажем о строительных блоках React позже в нашем
 		<b><a href="${tutorialUrl}">практическом руководстве</a></b> и <b><a href="${basicsUrl}">основных концепциях</a></b>. А пока давайте просто
@@ -137,14 +138,11 @@
 	
 	<ce:code-example-3/>
 	
-	<br/>
-	
 	<p>
 		Эти две строки кода находят <code>&lt;div&gt;</code>, который мы добавили в
 		наш HTML на первом шаге, а затем отображают React компонент-кнопку «Like», внутри него.
 	</p>
 	
-	<br/>
 	<br/>
 	<h3>1.2.1.4 Вот и всё!</h3>
 	
@@ -163,7 +161,6 @@
 	<p><b><a href="${zip2Url}">Скачать полный пример (2KБ сжатый)</a></b></p>
 	
 	<br/>
-	<br/>
 	<h3>1.2.1.5 Подсказка: используйте компонент повторно</h3>
 	
 	<br/>
@@ -178,13 +175,14 @@
 	
 	<p><b><a href="${zip3Url}">Скачать полный пример (2KБ сжатый)</a></b></p>
 	
+	<br/>
+	
 	<app:alert title="Внимание!" type="warning">
 		Такая стратегия в основном полезна в тех случаях, когда части страницы, использующие на React,
 		изолированы друг от друга. Однако внутри кода React проще использовать
 		<b><a href="${compositionUrl}">композицию компонентов</a></b>.
 	</app:alert>
 	
-	<br/>
 	<br/>
 	<h3>1.2.1.6 Подсказка: минимизируйте JavaScript для продакшена</h3>
 	
@@ -219,17 +217,11 @@
 		для сообщения библиотеке React, что именно необходимо отображать:
 	</p>
 	
-	<br/>
-	
 	<ce:code-example-5/>
-	
-	<br/>
 	
 	<p>Однако React также предлагает вариант использования <b><a href="${jsxUrl}">JSX</a></b>:</p>
 	
 	<ce:code-example-6/>
-	
-	<br/>
 	
 	<p>
 		Эти два фрагмента кода эквивалентны. Хотя <b><a href="${withoutJsxUrl}">JSX не является обязательным</a></b>, многие
@@ -242,7 +234,6 @@
 	</p>
 	
 	<br/>
-	<br/>
 	<h3>1.2.2.1 Быстро попробовать JSX</h3>
 	
 	<br/>
@@ -252,11 +243,7 @@
 		тег <code>&lt;script&gt;</code>:
 	</p>
 	
-	<br/>
-	
 	<ce:code-example-7/>
-	
-	<br/>
 	
 	<p>
 		Теперь вы можете использовать JSX в любом теге <code>&lt;script&gt;</code>, добавив к нему
@@ -272,7 +259,6 @@
 		препроцессор JSX для автоматического преобразования всех ваших тегов <code>&lt;script&gt;</code>.
 	</p>
 	
-	<br/>
 	<br/>
 	<a name="add-jsx-to-project"></a>
 	<h3>1.2.2.2 Добавить JSX в проект</h3>
@@ -294,6 +280,8 @@
 		<li><p>Шаг 2: выполните <code>npm install babel-cli@6 babel-preset-react-app@3</code></p></li>
 	</ul>
 	
+	<br/>
+	
 	<app:alert title="Подсказка" type="success">
 		Здесь мы используем <code>npm</code> только для установки препроцессора JSX, ни
 		для чего больше. И React, и код приложения могут оставаться в виде
@@ -305,7 +293,6 @@
 	</p>
 	
 	<br/>
-	<br/>
 	<h3>1.2.2.3 Запустить JSX препроцессор</h3>
 	
 	<br/>
@@ -313,6 +300,8 @@
 	<p>Создайте папку с названием <code>src</code> и выполните следующую команду терминала:</p>
 	
 	<ce:code-example-8/>
+	
+	<br/>
 	
 	<app:alert title="Внимание!" type="warning">
 		<code>npx</code> - это не опечатка - это <b><a href="${npxUrl}">инструмент для запуска пакетов,
@@ -357,8 +346,8 @@
 	
 </div>
 
-<c:url var="prevPageUrl" value=""/>
-<c:url var="nextPageUrl" value=""/>
+<c:url var="prevPageUrl" value="getting-started"/>
+<c:url var="nextPageUrl" value="create-a-new-react-app"/>
 
 <app:page-navigate
 		pageStartAncor="pageStart"

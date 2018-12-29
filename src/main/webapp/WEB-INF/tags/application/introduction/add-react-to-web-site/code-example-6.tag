@@ -9,10 +9,12 @@
 <cd:code-example-decorator>
 <pre class="prettyprint">
     <code class="language-javascript">
- &lt;!-- ... existing HTML ... --&gt;
-
- &lt;div id="like_button_container"&gt;&lt;/div&gt;
- 
- &lt;!-- ... existing HTML ... --&gt;</code>
+  // Отображение кнопки "Like"
+  return (
+    &lt;button onClick={() =&gt; this.setState({ liked: true })}&gt;
+      Like
+    &lt;/button&gt;
+  );
+    </code>
 </pre>
 </cd:code-example-decorator>
