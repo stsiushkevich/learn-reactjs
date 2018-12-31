@@ -15,15 +15,17 @@
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
-  <h1>4.1	React</h1>
+  <h1>4.1 React</h1>
+
+  <br/>
+
+  <p class="introduction">React - это точка входа в библиотеку React. Если вы загружаете
+    React из тега <code>&lt;script&gt;</code>, эти API верхнего уровня доступны в глобальном
+    объекте React. Если вы используете ES6 с npm, вы можете написать <code>import React from 'react'</code>.
+    Если вы используете ES5 с <b>npm</b>, вы можете написать <code>var React = require('react')</code></p>
 
   <br/>
   <h2>4.1.1	React Top-Level API</h2>
-
-  <wg:p>React - это точка входа в библиотеку React. Если вы загружаете
-    React из тега <code>&lt;script&gt;</code>, эти API верхнего уровня доступны в глобальном
-    объекте React. Если вы используете ES6 с npm, вы можете написать <code>import React from 'react'</code>.
-    Если вы используете ES5 с <b>npm</b>, вы можете написать <code>var React = require('react')</code></wg:p>
 
   <br/>
   <h3>4.1.1.1	Обзор</h3>
@@ -37,8 +39,8 @@
 
   <wg:p>
     <ul>
-      <li><code>React.Component</code></li>
-      <li><code>React.PureComponent</code></li>
+      <li><p><a href="#react.component"><b>React.Component</b></a></p></li>
+      <li><p><a href="#react.pure-component"><b>React.PureComponent</b></a></p></li>
     </ul>
   </wg:p>
 
@@ -46,6 +48,14 @@
   <wg:p>Если вы не используете классы ES6, вы можете вместо этого использовать
     модуль <code>create-react-class</code>. Дополнительную информацию см. в разделе
     <wg:link href="${reactWithoutES6Url}">Использование React без ES6</wg:link>.</wg:p>
+
+  <p>
+    Компоненты React также могут быть определены как функции, которые могут быть упакованы в:
+  </p>
+
+  <ul>
+    <li><code>React.memo</code></li>
+  </ul>
 
   <br/>
   <h4>4.1.1.1.2	Создание React-элементов</h4>
@@ -102,6 +112,7 @@
   <br/>
   <h3>4.1.1.2	Справка</h3>
 
+  <a name="react.component"></a>
   <rf:definition title="React.Component">
     <wg:p>
       React.Component является базовым классом для компонентов React, когда они определены
@@ -116,6 +127,7 @@
     </wg:p>
   </rf:definition>
 
+  <a name="react.pure-component"></a>
   <rf:definition title="React.PureComponent">
     <wg:p><code>React.PureComponent</code> такой же, как и <code>React.Component</code>, но реализует
       <code>shouldComponentUpdate()</code> с поддержкой неглубокого сравнения свойств и состояния.</wg:p>

@@ -7,6 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
+<c:url var="demoUrl" value="https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -30,7 +31,7 @@
 
   <wg:p>Если вы хотите увидеть больше примеров того, как JSX преобразуется
     в JavaScript, вы можете попробовать
-    <wg:link href="https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-0&targets=&browsers=&builtIns=false&debug=false&experimental=false&loose=false&spec=false&playground=true&code=function%20hello()%20%7B%0A%20%20return%20%3Cdiv%3EHello%20world!%3C%2">онлайн-компилятор Babel</wg:link>.</wg:p>
+    <a href="${demoUrl}">онлайн-компилятор Babel</a>.</wg:p>
 
   <wg:p>Компонент может быть предоставлен в виде строки, в качестве подкласса
     <code>React.Component</code> или простой функции для компонентов без состояния.</wg:p>

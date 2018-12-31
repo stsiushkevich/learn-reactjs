@@ -10,8 +10,8 @@
 <c:url var="devModeUrl" value="/resources/imges/pages/core/optimizing-performance/development-mode.png"/>
 <c:url var="profilingUrl" value="/resources/imges/pages/core/optimizing-performance/profiling.png"/>
 <c:url var="treeUrl" value="/resources/imges/pages/core/optimizing-performance/tree.png"/>
-<c:url var="reactVirtualizedUrl" value="https://bvaughn.github.io/react-virtualized/#/components/List"/>
-<c:url var="chromeExtentionUrl" value="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"/>
+<c:url var="reactWindowUrl" value="https://react-window.now.sh/"/>
+<c:url var="reactVirtualizedUrl" value="https://bvaughn.github.io/react-virtualized/"/>
 <c:url var="chromeExtentionUrl" value="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"/>
 <c:url var="firefoxExtentionUrl" value="https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/"/>
 <c:url var="standalodeExtentionUrl" value="https://www.npmjs.com/package/react-devtools"/>
@@ -19,21 +19,32 @@
 <c:url var="blogPostUrl" value="https://blog.logrocket.com/make-react-fast-again-part-3-highlighting-component-updates-6119e45e6833"/>
 <c:url var="edelsteinUrl" value="https://blog.logrocket.com/@edelstein"/>
 <c:url var="highlightUpdatesUrl" value="https://reactjs.org/highlight-updates-example-7a42123e91b1b460b1a65605d6ff0d2b.gif"/>
+<c:url var="reactProfilerUrl" value="/updates/react-profiler"/>
+<c:url var="youtubeReactProfilerUrl" value="https://www.youtube.com/watch?v=nySib7ipZdk"/>
+<c:url var="fbMeReactProfilingUrl" value="https://fb.me/react-profiling"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
   <h1>3.5 Оптимизация производительности</h1>
 
-  <wg:p>Внутри React использует несколько умных подходов, чтобы минимизировать
+  <br/>
+
+  <p class="introduction">Внутри React использует несколько умных подходов, чтобы минимизировать
     количество дорогостоящих операций DOM, необходимых для обновления пользовательского интерфейса.
     Для многих приложений использование React приведет к созданию быстрого пользовательского интерфейса,
     не выполняя много работы, чтобы специально оптимизировать производительность. Тем не менее, есть
-    несколько способов ускорить ваше приложение React.</wg:p>
+    несколько способов ускорить ваше приложение React.</p>
+
+  <br/>
 
   <br/>
   <a name="production"></a>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.1 Использование сборки Production</h2>
+
+  <br/>
 
   <wg:p>Если вы проводите бенчмаркинг или испытываете проблемы с производительностью в
     своих приложениях React, убедитесь, что вы работаете с минифицированной <b>production</b>-сборкой.</wg:p>
@@ -62,30 +73,39 @@
   <wg:p>Ниже вы можете найти инструкции по созданию своего приложения для <b>production</b>.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.2 Создание приложения React</h2>
+  <br/>
 
   <wg:p>Если ваш проект построен с помощью приложения
     <wg:link href="https://github.com/facebookincubator/create-react-app">Create React</wg:link>, запустите:</wg:p>
 
   <ce:code-example-1/>
 
-  <wg:p>Это создаст <b>production</b>-сборку вашего приложения в сборке / папке вашего проекта.</wg:p>
+  <wg:p>Это создаст <b>production</b>-сборку вашего приложения в папке <code>build/</code> вашего проекта.</wg:p>
 
   <wg:p>Помните, что это необходимо только перед развертыванием в <b>production</b>.
     Для нормальной разработки используйте <b>npm start</b>.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.3 Однофайловые сборки</h2>
+  <br/>
 
   <wg:p>Предлагаются готовые версии React и React DOM в виде отдельных файлов:</wg:p>
 
   <ce:code-example-2/>
 
-  <wg:p>Помните, что только файлы React, заканчивающиеся на <code>.min.js</code>,
+  <wg:p>Помните, что только файлы React, заканчивающиеся на <code>.production.min.js</code>,
     подходят для production.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.4 Бранч (Brunch)</h2>
+  <br/>
 
   <wg:p>Для самой эффективной <b>production</b>-сборки бранча установите
     плагин <b>uglify-js-brunch</b>:</wg:p>
@@ -102,7 +122,10 @@
     потому что он скроет полезные предупреждения React и сделает сборки намного медленнее.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.5 Browserify</h2>
+  <br/>
 
   <wg:p>Для наиболее эффективной сборки сборки Browserify установите несколько плагинов:</wg:p>
 
@@ -135,7 +158,11 @@
     предупреждения React и делать сборки намного медленнее.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.6 Rollup</h2>
+
+  <br/>
 
   <wg:p>Для наиболее эффективной <b>production</b>-сборки Rollup установите несколько плагинов:</wg:p>
 
@@ -163,7 +190,10 @@
     полезные предупреждения React и делать сборки намного медленнее.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.7 webpack</h2>
+  <br/>
 
   <lt:layout cssClass="alert alert-warning">
     <b>Внимание!</b> Если вы используете приложение <b>Create React</b>, следуйте приведенным выше
@@ -184,8 +214,11 @@
     потому что они будут скрывать полезные предупреждения React и делать сборки намного медленнее.</wg:p>
 
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.5.8 Профилирование компонентов с помощью вкладки
     «Производительность Chrome»</h2>
+  <br/>
 
   <wg:p>В режиме <b>development</b> вы можете визуализировать, как компоненты монтируются,
     обновляются и демонтируются, используя инструменты производительности в поддерживаемых браузерах. Например:</wg:p>
@@ -223,7 +256,38 @@
     <wg:link href="https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API">User Timing API</wg:link>.</wg:p>
 
   <br/>
-  <h2>3.5.9 Виртуализация длинных списков</h2>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.9 Профилирование компонентов с помощью профайлера DevTools</h2>
+  <br/>
+
+  <p>
+    <code>react-dom</code> 16.5+ и <code>react-native</code> 0.57+ предоставляют расширенные возможности
+    профилирования в режиме DEV с помощью React DevTools профайлера. Обзор профайлера
+    можно найти <a href="${reactProfilerUrl}"><b>в главе обновлений</b></a>. Видео-пошаговое руководство
+    по профайлеру также <a href="${youtubeReactProfilerUrl}">доступно на YouTube<b></b></a>.
+  </p>
+
+  <p>
+    Если вы еще не установили React DevTools, вы можете найти его здесь:
+  </p>
+
+  <ul>
+    <li><p><a href="${chromeExtentionUrl}"><b>Расширение для браузера Chrome.</b></a></p></li>
+    <li><p><a href="${firefoxExtentionUrl}"><b>Расширение для браузера Firefox.</b></a></p></li>
+    <li><p><a href="${standalodeExtentionUrl}"><b>Автономный Node пакет.</b></a></p></li>
+  </ul>
+
+  <app:alert type="warning" title="Внимание!">
+    Профайлинг продакшен бандла для <code>react-dom</code> также доступен как <code>react-dom/profiling</code>. Подробнее о
+    том, как использовать этот пакет, читайте на сайте <a href="${fbMeReactProfilingUrl}"><b>fb.me/react-profiling</b></a>.
+  </app:alert>
+
+  <br/>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.10 Виртуализация длинных списков</h2>
+  <br/>
 
   <wg:p>
     Если ваше приложение отображает длинные списки данных (сотни или тысячи строк), мы рекомендуем
@@ -233,14 +297,17 @@
   </wg:p>
 
   <wg:p>
-    <wg:link href="${reactVirtualizedUrl}">React Virtualized</wg:link> - популярная библиотека для экранирования. Она предоставляет несколько
-    повторно используемых компонентов для отображения списков, гридов и табличных данных. Вы
+    <a href="${reactWindowUrl}"><b>react-window</b></a> и <a href="${reactVirtualizedUrl}"><b>react-virtualized</b></a> - популярные библиотека для экранирования.
+    Они предоставляют различные повторно используемые компоненты для отображения списков, гридов и табличных данных. Вы
     также можете создать свой собственный экранирующий компонент, как это сделано в Twitter,
     если желаете что-то более специфическое для вашего конкретного случая.
   </wg:p>
 
   <br/>
-  <h2>3.5.10 Избежание согласования</h2>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.11 Избежание согласования</h2>
+  <br/>
 
   <wg:p>React строит и поддерживает внутреннее представление отображаемого
     пользовательского интерфейса. Оно включает элементы React, которые вы
@@ -319,7 +386,10 @@
   </wg:p>
 
   <br/>
-  <h2>3.5.10 shouldComponentUpdate в действии</h2>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.12 shouldComponentUpdate в действии</h2>
+  <br/>
 
   <wg:p>Вот поддерево компонентов. Для каждого из них <code>SCU</code> указывает, что
     возвратил <code>shouldComponentUpdate</code>, а <code>vDOMEq</code> указывает, эквивалентны
@@ -351,7 +421,10 @@
     так как нас выручил <code>shouldComponentUpdate</code> и отрисовка не вызвалась.</wg:p>
 
   <br/>
-  <h2>3.5.11 Примеры</h2>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.13 Примеры</h2>
+  <br/>
 
   <wg:p>Если единственный способ изменения вашего компонента – когда переменная <code>props.style</code>
     или <code>state.value</code> изменяется, вы могли бы выполнить проверку
@@ -392,7 +465,10 @@
     пользователей, которые должны быть отображены.</code></wg:p>
 
   <br/>
-  <h2>3.5.12	Мощь неизменяющихся данных</h2>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.14	Мощь неизменяющихся данных</h2>
+  <br/>
 
   <wg:p>Самый простой способ избежать этой проблемы - избежать изменения
   значений, которые вы используете в качестве <code>props</code> или <code>state</code>. Например,
@@ -431,7 +507,10 @@
     как <code>Object.assign</code>, так и синтаксис <code>spread</code> для объектов.</wg:p>
 
   <br/>
-  <h2>3.5.13	Использование неизменяемых структур данных</h2>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.5.15	Использование неизменяемых структур данных</h2>
+  <br/>
 
   <wg:p><wg:link href="https://github.com/facebook/immutable-js">Immutable.js</wg:link> - еще один
     способ решить эту проблему. Он предоставляет неизменные, постоянные
@@ -460,8 +539,8 @@
 
   <ce:code-example-20/>
 
-  <wg:p>В этом случае, поскольку при изменении a возвращается новая ссылка,
-    мы можем с уверенностью сказать, что a изменился.</wg:p>
+  <wg:p>В этом случае, поскольку при изменении <code>a</code> возвращается новая ссылка,
+    мы можем с уверенностью сказать, что <code>a</code> изменился.</wg:p>
 
   <wg:p>Есть две другие библиотеки, которые могут помочь использовать
     неизменяемые данные:

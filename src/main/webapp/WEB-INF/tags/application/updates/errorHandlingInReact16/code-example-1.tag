@@ -16,9 +16,12 @@
       this.state = { hasError: false };
     }
 
+    static getDerivedStateFromError(error) {
+      // Обновление состояния, чтобы при последующей отрисовке показать аварийный UI.
+      return { hasError: true };
+    }
+
     componentDidCatch(error, info) {
-      // Отображение резервного UI
-      this.setState({ hasError: true });
       // Вы можете прологировать ошибку с помощью сервиса отчета об ошибках
       logErrorToMyService(error, info);
     }
