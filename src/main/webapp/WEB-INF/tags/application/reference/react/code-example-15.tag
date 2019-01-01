@@ -10,10 +10,7 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
-  }</code>
+  // Этот компонент подгружается динамически
+  const SomeComponent = React.lazy(() => import('./SomeComponent'));</code>
   </pre>
 </cd:code-example-decorator>

@@ -10,6 +10,6 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentDidUpdate(prevProps, prevState)</code>
+  componentDidUpdate(prevProps, prevState, snapshot)</code>
   </pre>
 </cd:code-example-decorator>

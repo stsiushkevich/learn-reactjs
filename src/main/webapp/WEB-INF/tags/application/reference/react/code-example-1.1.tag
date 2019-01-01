@@ -10,10 +10,8 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
-  }</code>
+  const MyComponent = React.memo(function MyComponent(props) {
+    /* Отрисовка с использованием props */
+  });</code>
   </pre>
 </cd:code-example-decorator>

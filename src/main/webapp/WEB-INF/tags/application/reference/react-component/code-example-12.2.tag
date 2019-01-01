@@ -10,10 +10,6 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
-  }</code>
+  static getDerivedStateFromProps(props, state)</code>
   </pre>
 </cd:code-example-decorator>

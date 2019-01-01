@@ -10,10 +10,11 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
+  componentDidUpdate(prevProps) {
+    // Типичный вариант использования (не забудьте сравнить props):
+    if (this.props.userID !== prevProps.userID) {
+      this.fetchData(this.props.userID);
+    }
   }</code>
   </pre>
 </cd:code-example-decorator>

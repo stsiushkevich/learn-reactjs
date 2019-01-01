@@ -11,9 +11,10 @@
   <pre class="prettyprint">
     <code class="language-javascript">
   constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
+    super(props);
+    // Нельзя вызывать this.setState() здесь!
+    this.state = { counter: 0 };
+    this.handleClick = this.handleClick.bind(this);
   }</code>
   </pre>
 </cd:code-example-decorator>

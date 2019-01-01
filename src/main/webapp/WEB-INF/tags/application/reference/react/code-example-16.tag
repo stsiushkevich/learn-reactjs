@@ -10,10 +10,18 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
+  // Этот компонент подгружается динамически
+  const OtherComponent = React.lazy(() => import('./OtherComponent'));
+  
+  function MyComponent() {
+    return (
+      // Отобраает &lt;Spinner&gt; пока подгружается OtherComponent
+      &lt;React.Suspense fallback={&lt;Spinner /&gt;}&gt;
+        &lt;div&gt;
+          &lt;OtherComponent /&gt;
+        &lt;/div&gt;
+        &lt;/React.Suspense&gt;
+        );
   }</code>
   </pre>
 </cd:code-example-decorator>

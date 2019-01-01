@@ -10,7 +10,9 @@
 <%@ attribute name="title" required="false" rtexprvalue="true" %>
 <%@ attribute name="type" required="false" rtexprvalue="true" %>
 
+<br/>
 <lt:layout cssClass="alert alert-${type}">
     <p><b>${title}</b></p>
     <jsp:doBody/>
 </lt:layout>
+<br/>

@@ -10,10 +10,16 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  constructor(props) {
-   super(props);
-   // Не делайте этого!
-   this.state = { color: props.color };
-  }</code>
+  function MyComponent(props) {
+    /* Отрисовка с использованием props */
+  }
+  function areEqual(prevProps, nextProps) {
+    /*
+      возвращает true, если передача nextProps для отрисовки
+      вернет тот же результат, что и передача prevProps. В
+      противном случае вернет false
+    */
+  }
+  export default React.memo(MyComponent, areEqual);</code>
   </pre>
 </cd:code-example-decorator>
