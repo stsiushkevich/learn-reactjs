@@ -24,10 +24,5 @@
 				<a class="btn" href="${gitHubUrl}">GitHub</a>
 			</li>
 		</ul>
-<%--		<ul class="header-nav col-md-2 text-right">
-			<li class="header-nav__link">
-				<a class="btn buy-btn" href="${purchaseUrl}">Купить EPUB/PDF</a>
-			</li>
-		</ul>--%>
 	</div>
 </div>

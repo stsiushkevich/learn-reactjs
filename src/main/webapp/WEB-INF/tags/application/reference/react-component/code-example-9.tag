@@ -10,6 +10,6 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  componentWillUpdate(nextProps, nextState)</code>
+  UNSAFE_componentWillUpdate(nextProps, nextState)</code>
   </pre>
 </cd:code-example-decorator>

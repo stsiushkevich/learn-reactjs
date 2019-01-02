@@ -130,6 +130,7 @@
     чтобы вы могли узнавать о необработанных исключениях, которые происходят в <code>production</code>
     версии, и исправлять их.</wg:p>
 
+  <a name="stack-trace"></a>
   <br/>
   <br/>
   <div class="gray-line"></div>

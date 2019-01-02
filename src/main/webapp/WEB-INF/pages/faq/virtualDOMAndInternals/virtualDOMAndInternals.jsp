@@ -10,7 +10,7 @@
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
-<lt:layout cssClass="page file-structure">
+<lt:layout cssClass="page virtual-dom-and-internals-page">
   <h1>Виртуальный DOM и внутренние механизмы</h1>
 
   <br/>
@@ -58,6 +58,7 @@
   </wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="file-structure"/>
+<c:url var="prevPageUrl" value="versioning-policy"/>
+
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"/>

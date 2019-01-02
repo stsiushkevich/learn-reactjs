@@ -56,43 +56,43 @@
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/react</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/react-component</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/react-dom</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/react-dom-server</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/dom-elements</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/synthetic-event</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://learn-reactjs.ru/reference/test-utilities</loc>
-        <lastmod>2017-07-27</lastmod>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -380,6 +380,12 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://learn-reactjs.ru/faq/passing-functions-to-components</loc>
+        <lastmod>2019-01-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://learn-reactjs.ru/faq/component-state</loc>
         <lastmod>2018-04-03</lastmod>
         <changefreq>weekly</changefreq>
@@ -394,6 +400,12 @@
     <url>
         <loc>https://learn-reactjs.ru/faq/file-structure</loc>
         <lastmod>2018-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/faq/versioning-policy</loc>
+        <lastmod>2019-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>

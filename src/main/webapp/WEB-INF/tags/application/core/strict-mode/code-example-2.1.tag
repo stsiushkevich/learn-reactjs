@@ -10,6 +10,14 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  UNSAFE_componentWillReceiveProps(nextProps)</code>
+  class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+      this.wrapper = React.createRef();
+    }
+    render() {
+      return &lt;div ref={this.wrapper}&gt;{this.props.children}&lt;/div&gt;;
+    }
+  }</code>
   </pre>
 </cd:code-example-decorator>

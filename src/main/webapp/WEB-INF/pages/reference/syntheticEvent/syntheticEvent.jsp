@@ -12,15 +12,20 @@
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
-<lt:layout cssClass="page hello-world-example-page">
+<lt:layout cssClass="page synthetic-event-page">
 	<h1>4.6 SyntheticEvent</h1>
+	
+	<br/>
 
-	<wg:p>Данное справочное руководство описывает оболочку <code>SyntheticEvent</code>, которая является
+	<p class="introduction">Данное справочное руководство описывает оболочку <code>SyntheticEvent</code>, которая является
 		частью системы событий React. Дополнительную информацию см. в руководстве
-		«<wg:link href="${handlingEventsUrl}">обработка событий</wg:link>».</wg:p>
+		«<a href="${handlingEventsUrl}">обработка событий</a>».</p>
 
 	<br/>
+	<br/>
+	<div class="gray-line"></div>
 	<h2>4.6.1 Обзор</h2>
+	<br/>
 
 	<wg:p>Вашим обработчикам событий будут переданы экземпляры <code>SyntheticEvent</code>,
 		который является кросс-браузерной оболочкой вокруг нативного события браузера.
@@ -60,7 +65,10 @@
 	</app:alert>
 
 	<br/>
+	<br/>
+	<div class="gray-line"></div>
 	<h2>4.5.5 Поддерживаемые события</h2>
+	<br/>
 
 	<wg:p>React нормализует события, чтобы они имели согласованные свойства в разных браузерах.</wg:p>
 
@@ -90,7 +98,10 @@
 	</wg:p>
 
 	<br/>
+	<br/>
+	<div class="gray-line"></div>
 	<h2>4.5.6 Справка</h2>
+	<br/>
 
 	<br/>
 	<h3>4.6.3.1 События буфера обмена</h3>

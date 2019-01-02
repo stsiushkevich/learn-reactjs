@@ -8,7 +8,7 @@
 
 <c:url var="propsVsState1Url" value="https://github.com/uberVU/react-guide/blob/master/props-vs-state.md"/>
 <c:url var="propsVsState2Url" value="http://lucybain.com/blog/2016/react-state-vs-pros/"/>
-<c:url var="setStateRefUrl" value="/reference/react-component#setState"/>
+<c:url var="setStateRefUrl" value="/reference/react-component#set-state"/>
 <c:url var="gitCommentUrl" value="https://github.com/facebook/react/issues/11527#issuecomment-360199710"/>
 <c:url var="whenShouldIUseReduxUrl" value="https://redux.js.org/faq/general#when-should-i-use-redux"/>
 
@@ -147,7 +147,7 @@
   </wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="babel-and-jsx"/>
+<c:url var="prevPageUrl" value="passing-functions-to-components"/>
 <c:url var="nextPageUrl" value="styling-and-css"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"

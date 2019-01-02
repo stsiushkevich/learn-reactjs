@@ -8,21 +8,23 @@
 
 <c:url var="strictModeUnsafeLifecyclesWarningUrl" value="https://reactjs.org/static/strict-mode-unsafe-lifecycles-warning-e4fdbff774b356881123e69ad88eda88-2535d.png"/>
 <c:url var="refsAndDomUrl" value="refs-and-the-dom"/>
+<c:url var="createRefUrl" value="refs-and-the-dom#createRefAPI"/>
+<c:url var="forwardingRefsUrl" value="/core/forwarding-refs"/>
+<c:url var="legacyContextApiUrl" value="https://reactjs.org/static/warn-legacy-context-in-strict-mode-fca5c5e1fb2ef2e2d59afb100b432c12-4b612.png"/>
+<c:url var="сontextApiUrl" value="/core/context"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page strict-mode-page">
   <h1>3.18 Строгий режим</h1>
+  
+  <br/>
 
-  <wg:p>
-    <b>Добавлен в релизе 16.3</b>
-  </wg:p>
-
-  <wg:p>
+  <p class="introduction">
     <code>StrictMode</code> - инструмент для выделения потенциальных проблем в приложении. Как и
     <code>Fragment</code>, <code>StrictMode</code> не отображает какой-либо видимый UI. Он активирует дополнительные
     проверки и предупреждения для своих потомков.
-  </wg:p>
+  </p>
 
   <app:alert type="warning" title="Внимание!">
     Проверки строгого режима работают только в режиме разработки; <b>они не влияют на production билд.</b>
@@ -42,16 +44,22 @@
 
   <wg:p>
     <ul>
-      <li>Обнаружением компонентов, имеющих небезопасные методы жизненного цикла.</li>
-      <li>Предупреждением об использовании устаревшего строкового API для <code>ref</code>.</li>
-      <li>Обнаружением неожиданных сторонних эффектов.</li>
+      <li><p><b><a href="#unsafe-life-cycles">3.18.1 Обнаружением компонентов, имеющих небезопасные методы жизненного цикла.</a></b></p></li>
+      <li><p><b><a href="#legacy-ref-api">3.18.2 Предупреждением об использовании устаревшего строкового API для <code>ref</code>.</a></b></p></li>
+      <li><p><b><a href="#legacy-find-dom-node">3.18.3 Предупреждением об использовании устаревшего метода findDOMNode.</a></b></p></li>
+      <li><p><b><a href="#side-effects">3.18.4 Обнаружением неожиданных сторонних эффектов.</a></b></p></li>
+      <li><p><b><a href="#legacy-context-api">3.18.5 Обнаружением устаревшего API контекста.</a></b></p></li>
     </ul>
   </wg:p>
 
   <wg:p>Дополнительные функциональные возможности будут добавлены в будущих релизах React.</wg:p>
 
+  <a name="unsafe-life-cycles"></a>
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.18.1 Обнаружение компонентов, имеющих небезопасные методы жизненного цикла</h2>
+  <br/>
 
   <wg:p>
     Некоторые устаревшие методы жизненного цикла небезопасны
@@ -74,9 +82,13 @@
     Теперь, решение проблем, выявленных в строгом режиме, облегчит использование вами
     всех преимуществ асинхронной отрисовки в будущих версиях React.
   </wg:p>
-
+  
+  <a name="legacy-ref-api"></a>
   <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.18.2 Предупреждение об использовании устаревшего строкового API для ref</h2>
+  <br/>
 
   <wg:p>
     Ранее React предоставлял два способа управления ссылками <code>ref</code>: устаревший строковый API
@@ -108,9 +120,58 @@
   <wg:p>
     Подробнее о новом API <code>createRef</code> <wg:link href="${refsAndDomUrl}">читайте здесь</wg:link>.
   </wg:p>
-
+  
+  <a name="legacy-find-dom-node"></a>
   <br/>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.18.3 Предупреждением об использовании устаревшего метода findDOMNode</h2>
+  <br/>
+  
+  <p>
+    Ранее React использовал метод <code>findDOMNode</code> для поиска узла DOM по
+    заданному экземпляру класса. Обычно вам это не нужно, так как вы
+    можете <b><a href="${createRefUrl}">прикрепить ссылку непосредственно к узлу DOM</a></b>.
+  </p>
+  
+  <p>
+    <code>findDOMNode</code> также может использоваться на компонентах-классах, но
+    это нарушает уровни абстракции, позволяя родителю требовать отрисовки
+    определенных потомков. Также это создает опасность во время рефакторинга,
+    когда вы не можете изменить детали реализации компонента, потому что
+    родитель может получать доступ к его DOM узлу. <code>findDOMNode</code>
+    возвращает только первого потомка, но с использованием фрагментов
+    компонент может отображать несколько узлов DOM.
+    <code>findDOMNode</code> - это API для однократного чтения. Он дает
+    вам ответ только тогда, когда вы его об этом попросите. Если дочерний
+    компонент отображает другой узел, нет способа обработать это изменение.
+    Поэтому <code>findDOMNode</code> работает только в том случае, если
+    компоненты всегда возвращают один узел DOM, который никогда не изменяется.
+  </p>
+  
+  <p>
+    Вместо этого можно
+    использовать <b><a href="${forwardingRefsUrl}">передачу ссылок</a></b>.
+  </p>
+  
+  <p>
+    Вы также можете добавить обёртку дла DOM-узла в свой компонент и
+    прикрепить ссылку непосредственно к ней.
+  </p>
+  
+  <app:alert title="Внимание!" type="warning">
+    В CSS может использоваться атрибут <code>display: contents</code>, если вы не
+    хотите, чтобы узел был частью лэйаута.
+  </app:alert>
+  
+  <ce:code-example-2.1/>
+  
+  <a name="side-effects"></a>
+  <br/>
+  <br/>
+  <div class="gray-line"></div>
   <h2>3.18.3 Обнаружение неожиданных сторонних эффектов</h2>
+  <br/>
 
   <wg:p>Концептуально, React работает в две фазы:</wg:p>
 
@@ -190,6 +251,32 @@
     Умышленно производя двойные вызовы методов, таких как конструктор компонента, строгий режим
     делает такие проблемные шаблоны более легкими для обнаружения.
   </wg:p>
+  
+  <a name="legacy-context-api"></a>
+  <br/>
+  <br/>
+  <div class="gray-line"></div>
+  <h2>3.18.5 Обнаружением устаревшего API контекста</h2>
+  <br/>
+  
+  <p>
+    Устаревший API контекста подвержен ошибкам и будет удален в будущей
+    major версии. Он все еще работает для всех релизов <b>16.x</b>, но в строгом
+    режиме будет показано это предупреждение:
+  </p>
+  
+  <br/>
+  
+  <p style="overflow-x: auto" class="text-center">
+    <img src="${legacyContextApiUrl}"/>
+  </p>
+  
+  <br/>
+  
+  <p>
+    Изучите новую документацию по API контекста в <b><a href="${сontextApiUrl}">данном разделе</a></b>.
+  </p>
+  
 </lt:layout>
 
 <c:url var="prevPageUrl" value="integrating-with-other-libraries"/>

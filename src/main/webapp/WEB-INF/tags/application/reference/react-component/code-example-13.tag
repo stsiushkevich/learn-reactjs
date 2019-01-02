@@ -10,6 +10,6 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  setState()</code>
+  setState(updater[, callback])</code>
   </pre>
 </cd:code-example-decorator>

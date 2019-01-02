@@ -5,9 +5,11 @@
 
 <c:url var="ajaxAndApisUrl" value="ajax-and-apis"/>
 <c:url var="babelAndJsxUrl" value="babel-and-jsx"/>
+<c:url var="passingFunctionsToComponentsUrl" value="passing-functions-to-components"/>
 <c:url var="componentStateUrl" value="component-state"/>
 <c:url var="stylingAndCssUrl" value="styling-and-css"/>
 <c:url var="fileStructureUrl" value="file-structure"/>
+<c:url var="versioningPolicyUrl" value="versioning-policy"/>
 <c:url var="virtualDOMAndInternalsUrl" value="virtual-dom-and-internals"/>
 
 <lt:layout cssClass="menu-sidebar">
@@ -20,6 +22,9 @@
             <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_BABEL_AND_JSX' ? 'active' : null}">
                 <a href="${babelAndJsxUrl}">Babel и JSX</a>
             </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_PASSING_FUNCTIONS_TO_COMPONENTS' ? 'active' : null}">
+                <a href="${passingFunctionsToComponentsUrl}">Передача функций в компоненты</a>
+            </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_COMPONENT_STATE' ? 'active' : null}">
                 <a href="${componentStateUrl}">Состояние компонента</a>
             </li>
@@ -28,6 +33,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_FILE_STRUCTURE' ? 'active' : null}">
                 <a href="${fileStructureUrl}">Структура файлов</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_VERSIONING_POLICY' ? 'active' : null}">
+                <a href="${versioningPolicyUrl}">Политика управления версиями</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'FAQ_VIRTUAL_DOM_AND_INTERNALS' ? 'active' : null}">
                 <a href="${virtualDOMAndInternalsUrl}">Виртуальный DOM и внутренние механизмы</a>

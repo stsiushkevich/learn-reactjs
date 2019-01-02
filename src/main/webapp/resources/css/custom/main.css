@@ -34,8 +34,8 @@ body {
 
 .header .logo-section img {
     height: 35px;
-    margin-top: 5px;
-    margin-bottom: 5px
+    margin-top: 11px;
+    margin-bottom: 10px
 }
 
 .blue-line {
@@ -195,8 +195,7 @@ code {
 .header-nav__link a {
     color: #eaeaea;
     border-radius: 0;
-    padding: 10px;
-    height: 45px;
+    padding: 15px;
     font-size: 16px
 }
 
