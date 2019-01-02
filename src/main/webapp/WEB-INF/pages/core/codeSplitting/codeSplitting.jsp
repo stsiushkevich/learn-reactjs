@@ -129,7 +129,8 @@
 	<p>При использовании <b><a href="${babelUrl}">Babel</a></b> вам необходимо убедиться, что Babel в состоянии анализировать
 		синтаксис динамического импорта и не преобразовывать его. Для этого вам
 		понадобится <b><a href="${babelPluginSyntaxDynamicImportUrl}">babel-plugin-syntax-dynamic-import</a></b>.</p>
-	
+
+	<a name="react.lazy"></a>
 	<br/>
 	<br/>
 	<div class="gray-line"></div>

@@ -10,13 +10,13 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  // This:
+  // Результирующий стиль: '10px'
   &lt;div style={{ height: 10 }}&gt;
     Hello World!
   &lt;/div&gt;;
 
-  // Becomes:
-  &lt;div style="height: 10px;"&gt;
+  // Результирующий стиль: '10%'
+  &lt;div style="height: 10%;"&gt;
     Hello World!
   &lt;/div&gt;</code>
   </pre>

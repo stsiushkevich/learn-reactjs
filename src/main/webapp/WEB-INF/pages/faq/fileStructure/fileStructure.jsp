@@ -92,7 +92,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="styling-and-css"/>
-<c:url var="nextPageUrl" value="virtual-dom-and-internals"/>
+<c:url var="nextPageUrl" value="versioning-policy"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>

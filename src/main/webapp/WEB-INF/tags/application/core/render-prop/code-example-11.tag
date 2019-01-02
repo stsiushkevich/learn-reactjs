@@ -11,15 +11,9 @@
   <pre class="prettyprint">
     <code class="language-javascript">
   class MouseTracker extends React.Component {
-    constructor(props) {
-      super(props);
-
-      // Данная привязка гарантирует, что `this.renderTheCat` всегда ссылается на
-      // ту же самую функцию, когда мы используем ее в render
-      this.renderTheCat = this.renderTheCat.bind(this);
-    }
-
     renderTheCat(mouse) {
+      // Определённый как член класса, `this.renderTheCat` всегда ссылается на
+      // ту же самую функцию, когда мы используем ее в render
       return &lt;Cat mouse={mouse} /&gt;;
     }
 

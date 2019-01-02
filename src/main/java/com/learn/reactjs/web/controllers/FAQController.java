@@ -33,6 +33,12 @@ public class FAQController {
         return "babelAndJsxView";
     }
 
+    @GetMapping("/passing-functions-to-components")
+    public String passingFunctionsToComponents(Map<String, Object> model) {
+        model.put("currentPage", Pages.FAQ_PASSING_FUNCTIONS_TO_COMPONENTS);
+        return "passingFunctionsToComponentsView";
+    }
+
     @GetMapping("/component-state")
     public String componentState(Map<String, Object> model) {
         model.put("currentPage", Pages.FAQ_COMPONENT_STATE);
@@ -49,6 +55,12 @@ public class FAQController {
     public String fileStructure(Map<String, Object> model) {
         model.put("currentPage", Pages.FAQ_FILE_STRUCTURE);
         return "fileStructureView";
+    }
+
+    @GetMapping("/versioning-policy")
+    public String versioningPolicy(Map<String, Object> model) {
+        model.put("currentPage", Pages.FAQ_VERSIONING_POLICY);
+        return "versioningPolicyView";
     }
 
     @GetMapping("/virtual-dom-and-internals")

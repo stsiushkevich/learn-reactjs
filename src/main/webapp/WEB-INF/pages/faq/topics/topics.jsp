@@ -6,9 +6,11 @@
 
 <c:url var="introductionInReactJSUrl" value="ajax-and-apis"/>
 <c:url var="babelAndJsxUrl" value="babel-and-jsx"/>
+<c:url var="passingFunctionsToComponentsUrl" value="passing-functions-to-components"/>
 <c:url var="componentStateUrl" value="component-state"/>
 <c:url var="stylingAndCssUrl" value="styling-and-css"/>
 <c:url var="fileStructureUrl" value="file-structure"/>
+<c:url var="versioningPolicyUrl" value="versioning-policy"/>
 <c:url var="virtualDOMAndInternalsUrl" value="virtual-dom-and-internals"/>
 
 <lt:layout cssClass="black-line"/>
@@ -26,6 +28,11 @@
             </a>
         </li>
         <li class="topic-list__topic">
+            <a href="${passingFunctionsToComponentsUrl}" class="topic-list__topic-nav-link">
+                <h4>Передача функций в компоненты</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
             <a href="${componentStateUrl}" class="topic-list__topic-nav-link">
                 <h4>Состояние компонента</h4>
             </a>
@@ -38,6 +45,11 @@
         <li class="topic-list__topic">
             <a href="${fileStructureUrl}" class="topic-list__topic-nav-link">
                 <h4>Структура файлов</h4>
+            </a>
+        </li>
+        <li class="topic-list__topic">
+            <a href="${versioningPolicyUrl}" class="topic-list__topic-nav-link">
+                <h4>Политика управления версиями</h4>
             </a>
         </li>
         <li class="topic-list__topic">

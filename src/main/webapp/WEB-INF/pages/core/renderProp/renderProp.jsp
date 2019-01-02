@@ -198,8 +198,8 @@
   <ce:code-example-11/>
 
   <wg:p>
-    В случаях, когда вы не можете заранее привязать метод экземпляра в конструкторе,
-    компонент <code>&lt;Mouse&gt;</code> должен наследоваться от <code>React.PureComponent</code>.
+    В случаях, когда вы не можете определить свойство статически,
+    компонент <code>&lt;Mouse&gt;</code> должен наследоваться от <code>React.Component</code>.
   </wg:p>
 </lt:layout>
 

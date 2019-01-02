@@ -11,10 +11,9 @@
   <pre class="prettyprint">
     <code class="language-javascript">
   constructor(props) {
-    super(props);
-    this.state = {
-      counter: props.start
-    };
+   super(props);
+   // Не делайте этого!
+   this.state = { color: props.color };
   }</code>
   </pre>
 </cd:code-example-decorator>

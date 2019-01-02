@@ -11,7 +11,7 @@
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
-<lt:layout cssClass="page babel-and-jsx">
+<lt:layout cssClass="page babel-and-jsx-page">
   <h1>Babel и JSX</h1>
 
   <br/>
@@ -36,7 +36,7 @@
 </lt:layout>
 
 <c:url var="prevPageUrl" value="ajax-and-apis"/>
-<c:url var="nextPageUrl" value="component-state"/>
+<c:url var="nextPageUrl" value="passing-functions-to-components"/>
 <app:page-navigate prevPageUrl="${prevPageUrl}"
                    pageStartAncor="pageStart"
                    nextPageUrl="${nextPageUrl}"/>
