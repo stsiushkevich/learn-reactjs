@@ -17,7 +17,7 @@
 <c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
 <c:url var="faqImgUrl" value="/resources/imges/pages/home/faq.png"/>
 
-<lt:layout cssClass="container tutorial">
+<lt:layout cssClass="tutorial">
     <h1>Полное руководство по ReactJS</h1>
     <h5>Перед вами учебник по ReactJS, в котором тщательно собрана самая полная и достоверная<br/> информация по этой очень популярной и эффективной технологии</h5>
     <h5>Начните изучение ReactJS прямо сейчас и станьте настоящим профессионалом!</h5>

@@ -15,20 +15,28 @@
 			MAIN CONTENT
 	=============================--%>
 
-	<div class="container">
-		<div class="row">
-			<div class="menu col-md-3 <tiles:insertAttribute name="menuClass"/>">
-				<tiles:insertAttribute name="menu"/>
-				<tiles:insertAttribute name="menuAdvertising"/>
-			</div>
-			<div class="content col-md-8 <tiles:insertAttribute name="contentClass"/>">
-				<tiles:insertAttribute name="topContentAdvertising"/>
-				<tiles:insertAttribute name="content"/>
-				<tiles:insertAttribute name="bottomContentAdvertising"/>
-				<tiles:insertAttribute name="discuss"/>
+		<div class="body">
+			<div class="body__body">
+				<div class="advertising">
+					<div class="advertising__body">
+						<div class="advertising__item">
+							<tiles:insertAttribute name="menuAdvertising"/>
+						</div>
+					</div>
+				</div>
+				<div class="content <tiles:insertAttribute name="contentClass"/>">
+					<tiles:insertAttribute name="topContentAdvertising"/>
+					<tiles:insertAttribute name="content"/>
+					<tiles:insertAttribute name="bottomContentAdvertising"/>
+					<tiles:insertAttribute name="discuss"/>
+				</div>
+				<div class="menu <tiles:insertAttribute name="menuClass"/>">
+					<div class="menu__body">
+						<tiles:insertAttribute name="menu"/>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
 
 	<%-- ============================
