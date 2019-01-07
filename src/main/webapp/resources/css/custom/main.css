@@ -9,9 +9,6 @@ body {
 }
 
 .main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     font-size: 16px;
     font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -566,10 +563,6 @@ h6 .anchor {
     color: #6d6d6d;
 }
 
-.body {
-    flex: 1;
-}
-
 .menu {
     margin-top: 0;
     background-color: #eeeeee;
@@ -578,6 +571,7 @@ h6 .anchor {
 }
 
 .menu__body {
+    overflow-y: auto;
     position: fixed;
     padding-left: 30px;
 }
@@ -635,16 +629,74 @@ h6 .anchor {
     height: 700px;
 }
 
-.menu__body {
-}
-
-.body__body {
+.full-height {
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
 }
 
-.content.container {
+.menu-sidebar__nav .sub-menu-item {
+    margin-left: 30px;
+}
+
+/*------ flex layout ------*/
+
+.flex {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex.flex-direction_row {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex.flex-direction_column {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex.justify-content_flex-end {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+}
+
+.flex-1 {
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
     flex: 1;
 }
+
+.flex-2 {
+    -webkit-box-flex: 2;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 2;         /* OLD - Firefox 19- */
+    -webkit-flex: 2;          /* Chrome */
+    -ms-flex: 2;              /* IE 10 */
+    flex: 2;
+}
+
+.flex-3 {
+    -webkit-box-flex: 3;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 3;         /* OLD - Firefox 19- */
+    -webkit-flex: 3;          /* Chrome */
+    -ms-flex: 3;              /* IE 10 */
+    flex: 3;
+}
+
+/*------ flex layout ------*/

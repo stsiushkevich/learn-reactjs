@@ -2,7 +2,7 @@
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%@taglib prefix="u" tagdir="/WEB-INF/tags/util" %>
 
-<div class="main">
+<div class="main full-height flex flex-direction_column">
 	<%-- ============================
 			HEADER
 	=============================--%>
@@ -15,7 +15,7 @@
 			MAIN CONTENT
 	=============================--%>
 
-	<div class="content container <tiles:insertAttribute name="contentClass"/>">
+	<div class="content container flex-1<tiles:insertAttribute name="contentClass"/>">
 		<tiles:insertAttribute name="content"/>
 	</div>
 

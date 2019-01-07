@@ -2,7 +2,7 @@
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%@taglib prefix="u" tagdir="/WEB-INF/tags/util" %>
 
-<div class="main">
+<div class="main full-height flex flex-direction_column">
 	<%-- ============================
 			HEADER
 	=============================--%>
@@ -15,8 +15,8 @@
 			MAIN CONTENT
 	=============================--%>
 
-		<div class="body">
-			<div class="body__body">
+		<div class="body flex-1">
+			<div class="full-height flex flex-direction_row justify-content_flex-end">
 				<div class="advertising">
 					<div class="advertising__body">
 						<div class="advertising__item">
