@@ -154,6 +154,19 @@
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
 
+    <!-- Tutorial -->
+
+    <definition name="tutorialView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/tutorial/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/tutorial/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tutorial/tutorial.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+
+    <!-- Tutorial -->
+
     <!--basics-->
     <definition name="basicsTopicsView" extends="menuTemplate">
         <put-attribute name="head" value="/WEB-INF/pages/basics/topics/head.jsp" cascade="true"/>

@@ -3,6 +3,7 @@
 
 <c:url var="logoImgUrl" value="/resources/imges/logo.png"/>
 <c:url var="mainUrl" value="/home"/>
+<c:url var="tutorialUrl" value="/tutorial"/>
 <c:url var="aboutProjectUrl" value="/about-project"/>
 <c:url var="purchaseUrl" value="/purchase"/>
 <c:url var="gitHubUrl" value="https://github.com/stsiushkevich/learn-reactjs"/>
@@ -16,6 +17,9 @@
 		<ul class="header-nav col-md-6">
 			<li class="header-nav__link ${currentPage eq 'HOME' ? 'active' : null}">
 				<a class="btn" href="${mainUrl}">Главная</a>
+			</li>
+			<li class="header-nav__link ${currentPage eq 'TUTORIAL' ? 'active' : null}">
+				<a class="btn" href="${tutorialUrl}">Учебник</a>
 			</li>
 			<li class="header-nav__link ${currentPage eq 'ABOUT_PROJECT' ? 'active' : null}">
 				<a class="btn" href="${aboutProjectUrl}">О проекте</a>

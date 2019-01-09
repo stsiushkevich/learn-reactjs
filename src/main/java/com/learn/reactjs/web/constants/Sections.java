@@ -5,6 +5,7 @@ package com.learn.reactjs.web.constants;
  */
 public enum Sections {
     INTRODUCTION,
+    TUTORIAL,
     BASICS,
     CORE,
     REFERENCE,

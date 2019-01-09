@@ -2,70 +2,93 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
+<%@taglib prefix="app" tagdir="/WEB-INF/tags/application/home" %>
 
 <c:url var="introductionUrl" value="/introduction/topics"/>
 <c:url var="basicsUrl" value="/basics/topics"/>
+<c:url var="tutorialUrl" value="/tutorial"/>
 <c:url var="coreUrl" value="/core/topics"/>
 <c:url var="referenceUrl" value="/reference/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 <c:url var="faqUrl" value="/faq/topics"/>
 
-<c:url var="introductionImgUrl" value="/resources/imges/pages/home/introduction.png"/>
-<c:url var="basicsImgUrl" value="/resources/imges/pages/home/rocket.png"/>
-<c:url var="coreImgUrl" value="/resources/imges/pages/home/atom.png"/>
-<c:url var="referenceImgUrl" value="/resources/imges/pages/home/reference.png"/>
-<c:url var="updateImgUrl" value="/resources/imges/pages/home/update.png"/>
-<c:url var="faqImgUrl" value="/resources/imges/pages/home/faq.png"/>
+<c:url var="hexagonUrl" value="/resources/imges/hexagon.svg"/>
+<c:url var="atomUrl" value="/resources/imges/atom.svg"/>
 
-<lt:layout cssClass="container tutorial">
-    <h1>Полное руководство по ReactJS</h1>
-    <h5>Перед вами учебник по ReactJS, в котором тщательно собрана самая полная и достоверная<br/> информация по этой очень популярной и эффективной технологии</h5>
-    <h5>Начните изучение ReactJS прямо сейчас и станьте настоящим профессионалом!</h5>
+<div class="full-size atom-bg-icon">
+    <div class="full-size code-fragment-bg-icon">
+        <div class="section-nav">
+            <div class="section-nav__item-group group-1">
+                <div class="section-nav__selected-section"></div>
+                <div data-section-title="Введение" class="section-nav__item position_left">
+                    <a class="section-nav__link" href="${introductionUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-compass cssClass="section-nav__tg-icon compass-icon"/>
+                    </a>
+                </div>
+                <div class="section-nav__item-offset"></div>
+                <div data-section-title="Учебник" class="section-nav__item position_top left-offset">
+                    <a class="section-nav__link" href="${tutorialUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-tutorial cssClass="section-nav__tg-icon tutorial-icon"/>
+                    </a>
+                </div>
+                <div data-section-title="Быстрый старт" class="section-nav__item position_bottom left-offset">
+                    <a class="section-nav__link" href="${basicsUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-rocket cssClass="section-nav__tg-icon rocket-icon"/>
+                    </a>
+                </div>
+                <div data-section-title="Продвинутый" class="section-nav__item position_right">
+                    <a class="section-nav__link" href="${coreUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-atom-with-electrons cssClass="section-nav__tg-icon atom-icon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="section-nav__item-group group-2">
+                <div class="section-nav__selected-section"></div>
+                <div class="section-nav__item-empty"></div>
+                <div data-section-title="Справка" class="section-nav__item position_top">
+                    <a class="section-nav__link" href="${referenceUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-reference cssClass="section-nav__tg-icon reference-icon"/>
+                    </a>
+                </div>
+                <div data-section-title="FAQ" class="section-nav__item position_bottom">
+                    <a class="section-nav__link" href="${faqUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-faq cssClass="section-nav__tg-icon faq-icon"/>
+                    </a>
+                </div>
+            </div>
+            <div class="section-nav__item-group group-3">
+                <div class="section-nav__selected-section"></div>
+                <div data-section-title="Обновления" class="section-nav__item position_left">
+                    <a class="section-nav__link" href="${updatesUrl}">
+                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
+                        <app:svg-update cssClass="section-nav__tg-icon update-icon"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="react-logo-badge">
+                        <app:svg-hexagon-rotated cssClass="react-logo-badge__bg-icon"/>
+                        <span class="react-logo-badge__text">React</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="main-title">
+                        <div class="main-title__text">Полное руководство</div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <lt:layout cssClass="tutorial__sections">
-        <lt:layout cssClass="row">
-            <lt:layout cssClass="col-xs-12 col-md-12 text-center">
-                <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${introductionUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${introductionImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Введение</lt:layout>
-                    </wg:link>
-                </lt:layout>
-                <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${basicsUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${basicsImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Быстрый старт</lt:layout>
-                    </wg:link>
-                </lt:layout>
-                <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${coreUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${coreImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Продвинутым</lt:layout>
-                    </wg:link>
-                </lt:layout>
-            </lt:layout>
-        </lt:layout>
-        <lt:layout cssClass="row">
-            <lt:layout cssClass="col-xs-12 col-md-12 text-center">
-                <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${referenceUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${referenceImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Справка</lt:layout>
-                    </wg:link>
-                </lt:layout>
-                <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${faqUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${faqImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">FAQ</lt:layout>
-                    </wg:link>
-                </lt:layout>
-                <lt:layout cssClass="tutorial__section">
-                    <wg:link href="${updatesUrl}" cssClass="tutorial__section-link">
-                        <wg:img src="${updateImgUrl}"/>
-                        <lt:layout cssClass="tutorial__section-label">Обновления</lt:layout>
-                    </wg:link>
-                </lt:layout>
-            </lt:layout>
-        </lt:layout>
-    </lt:layout>
-</lt:layout>
+<jsp:include page="./resources.jsp"/>

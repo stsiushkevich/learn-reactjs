@@ -6,13 +6,6 @@
     border-radius: 0
 }
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
-    background-color: #2E2E2E;
-    color: #fff
-}
-
 a {
     color: #a94442
 }
@@ -20,6 +13,17 @@ a {
 a:focus,
 a:hover {
     color: #cc7a6f
+}
+
+.menu-sidebar__nav-links .nav-pills li a {
+    color: #424242;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #757575;
+    color: #fff
 }
 
 .nav>li>a:focus::before,
@@ -30,12 +34,12 @@ a:hover {
     top: 0;
     width: 5px;
     height: 100%;
-    background-color: #2e2e2e
+    background-color: #757575
 }
 
 .nav>li>a:focus,
 .nav>li>a:hover {
-    background-color: #e9e9e9
+    background-color: #e0e0e0
 }
 
 h4 {

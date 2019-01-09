@@ -48,14 +48,4 @@
 			</li>
 		</ul>
 	</nav>
-	<wg:p cssClass="section-picture">
-		<c:choose>
-			<c:when test="${isIntroductionSection}"><wg:img src="${introductionImgUrl}"/></c:when>
-			<c:when test="${isBasicsSection}"><wg:img src="${basicsImgUrl}"/></c:when>
-			<c:when test="${isCoreSection}"><wg:img src="${coreImgUrl}"/></c:when>
-			<c:when test="${isReferenceSection}"><wg:img src="${referenceImgUrl}"/></c:when>
-			<c:when test="${isUpdatesSection}"><wg:img src="${updateImgUrl}"/></c:when>
-			<c:when test="${isFAQSection}"><wg:img src="${faqImgUrl}"/></c:when>
-		</c:choose>
-	</wg:p>
 </lt:layout>
