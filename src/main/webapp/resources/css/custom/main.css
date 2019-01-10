@@ -793,7 +793,7 @@ h6 .anchor {
 }
 
 .home-page .section-nav__bg-icon {
-    fill: #e0e0e0;
+    fill: rgba(224, 224, 224, 0.33);
 }
 
 .home-page .section-nav__tg-icon {
@@ -802,7 +802,7 @@ h6 .anchor {
     width: 100px;
     height: 100px;
     position: absolute;
-    fill: #9e9e9e;
+    fill: #b2ccd4;
 }
 
 .home-page .section-nav__item:hover .section-nav__tg-icon {
@@ -816,7 +816,7 @@ h6 .anchor {
     font-family: RussoOne-Regular, Roboto Slab, serif;
     width: 400px;
     text-align: center;
-    color: rgba(54, 191, 255, 0.8);
+    color: rgba(77, 198, 255, 0.92);
 }
 
 .home-page .section-nav__item-group.group-1 .section-nav__selected-section {
