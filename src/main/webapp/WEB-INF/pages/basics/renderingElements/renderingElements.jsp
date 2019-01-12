@@ -36,7 +36,7 @@
     <br/>
     <h2>2.4.1 Отрисовка элемента в DOM</h2>
 
-    <wg:p>Предположим, у нас есть тег <code>&lt;div&gt;</code> где-нибудь в нашем HTML файле:</wg:p>
+    <wg:p>Предположим, у нас есть тег <code>&lt;div&gt;</code> где-нибудь в нашем HTML-файле:</wg:p>
 
     <wg:p>
         <lt:layout cssClass="code-block-header">Код</lt:layout>
@@ -58,7 +58,7 @@
         <code-example:code-example-3/>
     </wg:p>
 
-    <wg:p><wg:link href="http://codepen.io/gaearon/pen/rrpgNB?editors=1010">Пример кода в CodePen здесь</wg:link></wg:p>
+    <wg:p><wg:link href="http://codepen.io/gaearon/pen/rrpgNB?editors=1010">Пример кода в CodePen</wg:link></wg:p>
 
     <wg:p>Он отображает "Hello World" на странице.</wg:p>
 
@@ -85,7 +85,7 @@
         из коллбэка <code>setInterval()</code>.</wg:p>
 
     <lt:layout cssClass="alert alert-warning">
-        <b>Внимание!</b> На практике, большинство React-приложений
+        <b>Внимание!</b> На практике большинство React-приложений
         вызывают <code>ReactDOM.render()</code> только
         один раз. В следующих разделах мы изучим как такой код
         инкапсулируется в <b>компоненты с состоянием</b>.
@@ -109,7 +109,7 @@
         <wg:img src="${granularDomUpdatesUrl}"/>
     </wg:p>
 
-    <wg:p>Даже  несмотря на то, что мы создаём элемент, описывающий целое UI дерево,
+    <wg:p>Даже  несмотря на то, что мы создаём элемент, описывающий целое UI-дерево,
         на каждый тик, только текстовый узел, чей контент изменился, будет обновлён React DOM-ом.</wg:p>
 
     <wg:p><b>По опыту создателей React, размышление о том, как должен выглядеть UI в конкретный

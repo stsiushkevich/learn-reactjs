@@ -216,7 +216,7 @@
             </li>
             <li>При замене <code>&lt;A/&gt;</code> на <code>&lt;B/&gt;</code>, <code>B.componentWillMount</code> теперь всегда вызывается
                 до <code>A.componentWillUnmount</code>. Раньше <code>A.componentWillUnmount</code> мог
-                сработать первым  в некоторых случаях.</li>
+                сработать первым в некоторых случаях.</li>
             <li>Раньше изменение ссылки на компонент всегда уничтожало ссылку до
                 вызова метода отрисовки компонента. Теперь мы изменяем ссылку <code>ref</code>
                 позже, когда применяются изменения к DOM.</li>
@@ -243,7 +243,7 @@
 
     <wg:p>
         <ul>
-            <li>Больше нет <code>react/lib/*</code>  и <code>react-dom/lib/*</code> Даже в средах CommonJS, React и ReactDOM
+            <li>Больше нет <code>react/lib/*</code> и <code>react-dom/lib/*</code> Даже в средах CommonJS, React и ReactDOM
                 предварительно скомпилированы в отдельные файлы («плоские связки»). Если
                 вы ранее полагались на недокументированные внутренние возможности React, и они больше
                 не работают, сообщите нам о вашем конкретном случае в новой проблеме, и мы
@@ -256,7 +256,7 @@
                 поверхностная отрисовка как <code>react-test-renderer/shallow</code>. Смотрите сообщения
                 в блогах 15.5.0 и 15.6.0 для инструкций по переносу кода и автоматизированных кодовых модулей.</li>
             <li>Имена и пути к однофайловым браузерным сборкам изменились, чтобы подчеркнуть
-                разницу между сборками <code>development</code>  и <code>production</code>. Например:
+                разницу между сборками <code>development</code> и <code>production</code>. Например:
                 <ul>
                     <li><code>react/dist/react.js</code> => <code>react/umd/react.development.js</code></li>
                     <li><code>react/dist/react.min.js</code> => <code>react/umd/react.production.min.js</code></li>

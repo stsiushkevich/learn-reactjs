@@ -17,7 +17,7 @@
 
   <lt:layout cssClass="alert alert-warning">
     <b>Внимание! React.PropTypes</b> является устаревшим начиная с <b>React v15.5.</b>
-    Пожалуйста,  вместо этого используйте <wg:link href="${propTypesUrl}">prop-types</wg:link> библиотеку.
+    Пожалуйста, вместо этого используйте <wg:link href="${propTypesUrl}">prop-types</wg:link> библиотеку.
     <br/>
     <br/>
     Разработчики предоставляют скрипт <wg:link href="${codeModeUrl}">codemode</wg:link> для автоматизации преобразования.
@@ -65,7 +65,7 @@
   <ce:code-example-4/>
 
   <wg:p>Если вы используете преобразование <b>Babel</b>, такое как <code>transform-class-properties</code>, вы также можете
-    объявлять <code>defaultProps</code> как статическое свойство в классе React компонента. Этот синтаксис еще не
+    объявлять <code>defaultProps</code> как статическое свойство в классе React-компонента. Этот синтаксис еще не
     окончателен, и для его работы в браузере потребуется выполнить этап компиляции. Для получения
     дополнительной информации см. <wg:link href="${classFieldsProposalUrl}">предложение для полей классов</wg:link>.</wg:p>
 
