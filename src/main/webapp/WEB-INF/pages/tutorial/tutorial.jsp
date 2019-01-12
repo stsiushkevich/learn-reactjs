@@ -240,7 +240,7 @@
 
         <li>
             <p>
-                Добавьте файл с именем <code>index.js</code> в папку <code>src/</code> с этим кодом JS.
+                Добавьте следующие три строки в начало файла <code>index.js</code> в папке <code>src/</code>:
 
                 <ce:code-example-3/>
             </p>
@@ -781,6 +781,8 @@
         Когда мы попытаемся кликнуть по квадрату, мы должны получить ошибку, потому
         что мы еще не определили <code>handleClick</code>. Теперь мы добавим <code>handleClick</code> в класс Board:
     </p>
+
+    <ce:code-example-18/>
 
     <c:url var="codepen8Url" value="https://codepen.io/gaearon/pen/ybbQJX?editors=0010"/>
 
