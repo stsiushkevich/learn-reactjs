@@ -16,7 +16,7 @@ MenuSidebar.prototype.init = function () {
 
 MenuSidebar.prototype.updateSize = function () {
     var h = $(window).height();
-    this.$element.find('.menu__body').height(h - 150);
+    this.$element.find('.menu__body').height(h - 155);
 }
 
 $(window).on('load', function () {
