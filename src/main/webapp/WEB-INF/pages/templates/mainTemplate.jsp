@@ -11,7 +11,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="<c:url value="/resources/imges/logo.ico"/>">
+	<meta property="og:image" content="<c:url value="/resources/imges/logo-meta.png"/>">
+	<meta property="og:image:secure_url" content="<c:url value="/resources/imges/logo-meta.png"/>">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<meta property="fb:app_id" content="623268441017527">
 
 	<tiles:insertAttribute name="head"/>
