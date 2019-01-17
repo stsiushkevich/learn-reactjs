@@ -11,7 +11,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="<c:url value="/resources/imges/logo.ico"/>">
+	<meta property="og:image" content="<c:url value="/resources/imges/logo-meta.png"/>">
+	<meta property="og:image:secure_url" content="<c:url value="/resources/imges/logo-meta.png"/>">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<meta property="fb:app_id" content="623268441017527">
 
 	<tiles:insertAttribute name="head"/>
@@ -22,7 +25,7 @@
 	<jsp:include page="../google/analytic.jsp"/>
 
 	<u:resource type="link" root="/resources/css/plugins" names="bootstrap.min.css"/>
-	<u:resource type="link" root="/resources/css/custom" names="main.min.11.01.19.css, overrides.min.07.01.19.css"/>
+	<u:resource type="link" root="/resources/css/custom" names="main.min.17.01.19.css, overrides.min.07.01.19.css"/>
 	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js"/>
 	<u:resource type="script" root="/resources/js/app/components" names="MenuSidebar.js"/>
 	<u:resource type="link" root="/resources/css/plugins" names="tomorrow-night-eighties.min.css"/>
