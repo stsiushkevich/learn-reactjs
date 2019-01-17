@@ -134,4 +134,10 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_CODE_SPLITTING);
         return "codeSplittingView";
     }
+
+    @GetMapping("/hooks/introduction")
+    public String hooksIntroduction(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_INTRODUCTION);
+        return "hooksIntroductionView";
+    }
 }
