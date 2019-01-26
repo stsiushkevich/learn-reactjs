@@ -519,9 +519,6 @@ h6 .anchor {
 }
 
 @media (max-width:992px) {
-    body {
-        margin-bottom: 170px
-    }
     .logo-section {
         text-align: center
     }
@@ -782,32 +779,11 @@ h6 .anchor {
     display: inline-block;
 }
 
-.home-page .section-nav__item {
-    position: relative;
-    display: inline-block;
-}
-
-.home-page .section-nav__link {
-    display: inline-block;
-    position: relative;
-}
-
 .home-page .section-nav__bg-icon {
     fill: rgba(224, 224, 224, 0.33);
 }
 
-.home-page .section-nav__tg-icon {
-    top: 28px;
-    left: 42px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    fill: #b2ccd4;
-}
 
-.home-page .section-nav__item:hover .section-nav__tg-icon {
-    fill: #4fc3f7;
-}
 
 .home-page .section-nav__selected-section {
     top: -180px;
@@ -946,72 +922,37 @@ h6 .anchor {
     }
 }
 
-@media (min-width:500px) {
-    .home-page .section-nav__bg-icon {
-        width: 180px;
-        height: 156px;
-    }
+/*==== adaptive design =====*/
 
-    .home-page .section-nav__tg-icon {
-        top: 28px;
-        left: 42px;
-        width: 100px;
-        height: 100px;
-    }
-
-    .home-page .section-nav__tg-icon.tutorial-icon {
-        top: 30px;
-        width: 95px;
-        height: 95px;
-        left: 55px;
-    }
-
-    .home-page .section-nav__tg-icon.rocket-icon {
-        top: 32px;
-        width: 90px;
-        height: 90px;
-        left: 48px;
-    }
-
-    .home-page .section-nav__tg-icon.atom-icon {
-        top: 30px;
-        width: 100px;
-        height: 100px;
-        left: 40px;
-    }
-
-    .home-page .section-nav__tg-icon.reference-icon {
-        top: 30px;
-        width: 100px;
-        height: 100px;
-        left: 47px;
-    }
-
-    .home-page .section-nav__tg-icon.faq-icon {
-        top: 35px;
-        width: 90px;
-        height: 90px;
-        left: 45px;
-    }
-
-    .home-page .section-nav__tg-icon.update-icon {
-        top: 25px;
-        width: 100px;
-        height: 100px;
-        left: 42px;
-    }
+.home-page .section-nav__item {
+    position: relative;
+    display: inline-block;
+    width: 12%;
+    min-width: 110px;
+    margin-right: 1.5em;
 }
 
-@media (max-width:500px) {
-    .home-page .section-nav__bg-icon {
-        width: 100px;
-        height: 87px;
-    }
+.home-page .section-nav__link {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: #bdbdbd6e;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    .home-page .section-nav__tg-icon {
-        top: 14px;
-        left: 22px;
-        width: 59px;
-        height: 59px;
-    }
+.home-page .section-nav__text {
+    font-size: 20px;
+    color: #b6efff;
+    font-family: Comfortaa-Bold, Roboto Slab, serif;
+}
+
+.home-page .section-nav__icon {
+    width: 70%;
+    min-width: 50px;
+    fill: #b6efff;
+}
+
+.home-page .section-nav__item:hover .section-nav__icon {
+    fill: #4fc3f7;
 }
