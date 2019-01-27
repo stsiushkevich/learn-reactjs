@@ -16,6 +16,15 @@
             url("../../fonts/Comfortaa-Bold.svg#filename") format("svg");
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Regular.eot");
+    src:
+            url("../../fonts/Roboto-Regular.woff") format("woff"),
+            url("../../fonts/Roboto-Regular.woff2") format("woff2"),
+            url("../../fonts/Roboto-Regular.svg#filename") format("svg");
+}
+
 html {
     position: relative;
     height: 100%
@@ -833,6 +842,10 @@ h6 .anchor {
 
 /*==== adaptive design =====*/
 
+.home-page .content {
+    margin: 0;
+}
+
 .home-page .section-nav {
     text-align: center;
     position: relative;
@@ -841,7 +854,7 @@ h6 .anchor {
 .home-page .section-nav__item {
     position: relative;
     display: inline-block;
-    margin-right: 1.5em;
+    margin-right: 2%;
     margin-top: 2%;
     border: 3px solid transparent;
     box-sizing: content-box;
@@ -876,7 +889,7 @@ h6 .anchor {
 
 @media (max-width: 320px) {
     .home-page .section-nav__item {
-        width: 23%;
+        width: 26%;
     }
 
     .home-page .section-nav__text {
@@ -886,7 +899,7 @@ h6 .anchor {
 
 @media (min-width: 320px) {
     .home-page .section-nav__item {
-        width: 23%;
+        width: 26%;
     }
 
     .home-page .section-nav__text {
@@ -900,7 +913,7 @@ h6 .anchor {
 
 @media (min-width: 375px) {
     .home-page .section-nav__item {
-        width: 23%;
+        width: 27%;
     }
 
     .home-page .section-nav__text {
@@ -972,9 +985,23 @@ h6 .anchor {
     .footer-nav__terms-of-use {
         display: none;
     }
+
+    .footer {
+        display: none;
+    }
+
+    .home-page .atom-bg-icon {
+        background: url(../../imges/atom.svg) 0% 0 no-repeat;
+        background-size: 500px;
+    }
 }
 
 @media (min-width: 768px) {
+    .home-page .atom-bg-icon {
+        background: url(../../imges/atom.svg) 100% 0 no-repeat;
+        background-size: 1000px;
+    }
+
     .home-page .section-nav__item {
         width: 28%;
     }
@@ -988,7 +1015,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav {
-        margin-top: 6%;
+        margin-top: 8%;
     }
 }
 
@@ -1032,9 +1059,4 @@ h6 .anchor {
 .home-page .main-title {
     padding-top: 4%;
     padding-bottom: 4%;
-}
-
-.home-page .atom-bg-icon {
-    background: url('../../imges/atom.svg') 100% 0 no-repeat;
-    background-size: 1000px;
 }
