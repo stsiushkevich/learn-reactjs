@@ -17,72 +17,65 @@
 
 <div class="full-size atom-bg-icon">
     <div class="full-size code-fragment-bg-icon">
-        <div class="section-nav">
+        <div class="container">
+            <div class="section-nav">
 
-            <div data-section-title="Введение" class="section-nav__item">
-                <a class="section-nav__link" href="${introductionUrl}">
-                    <app:svg-compass cssClass="section-nav__icon"/>
-                    <div class="section-nav__text">Введение</div>
-                </a>
-            </div>
-
-            <div data-section-title="Учебник" class="section-nav__item">
-                <a class="section-nav__link" href="${tutorialUrl}">
-                    <app:svg-tutorial cssClass="section-nav__icon"/>
-                    <div class="section-nav__text">Учебник</div>
-                </a>
-            </div>
-
-            <div class="section-nav__item-group group-1">
-                <div class="section-nav__selected-section"></div>
-
-                <%--<div class="section-nav__item-offset"></div>
-                <div data-section-title="Учебник" class="section-nav__item position_top left-offset">
-                    <a class="section-nav__link" href="${tutorialUrl}">
-                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
-                        <app:svg-tutorial cssClass="section-nav__icon tutorial-icon"/>
+                <div data-section-title="Введение" class="section-nav__item">
+                    <a class="section-nav__link" href="${introductionUrl}">
+                        <app:svg-compass cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">Введение</div>
                     </a>
                 </div>
-                <div data-section-title="Быстрый старт" class="section-nav__item position_bottom left-offset">
+
+                <div data-section-title="Быстрый старт" class="section-nav__item">
                     <a class="section-nav__link" href="${basicsUrl}">
-                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
-                        <app:svg-rocket cssClass="section-nav__icon rocket-icon"/>
+                        <app:svg-rocket cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">Быстрый старт</div>
                     </a>
                 </div>
-                <div data-section-title="Продвинутый" class="section-nav__item position_right">
+
+                <div data-section-title="Учебник" class="section-nav__item">
+                    <a class="section-nav__link" href="${tutorialUrl}">
+                        <app:svg-tutorial cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">Учебник</div>
+                    </a>
+                </div>
+
+                <div data-section-title="Продвинутый" class="section-nav__item">
                     <a class="section-nav__link" href="${coreUrl}">
-                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
-                        <app:svg-atom-with-electrons cssClass="section-nav__icon atom-icon"/>
+                        <app:svg-atom-with-electrons cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">Продвинутый</div>
                     </a>
-                </div>--%>
-            </div>
-            <%--<div class="section-nav__item-group group-2">
-                <div class="section-nav__selected-section"></div>
-                <div class="section-nav__item-empty"></div>
-                <div data-section-title="Справка" class="section-nav__item position_top">
+                </div>
+
+                <div data-section-title="Справка" class="section-nav__item">
                     <a class="section-nav__link" href="${referenceUrl}">
-                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
-                        <app:svg-reference cssClass="section-nav__icon reference-icon"/>
+                        <app:svg-reference cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">Справка</div>
                     </a>
                 </div>
-                <div data-section-title="FAQ" class="section-nav__item position_bottom">
+
+                <div data-section-title="FAQ" class="section-nav__item">
                     <a class="section-nav__link" href="${faqUrl}">
-                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
-                        <app:svg-faq cssClass="section-nav__icon faq-icon"/>
+                        <app:svg-faq cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">FAQ</div>
                     </a>
                 </div>
-            </div>--%>
-            <%--<div class="section-nav__item-group group-3">
-                <div class="section-nav__selected-section"></div>
-                <div data-section-title="Обновления" class="section-nav__item position_left">
+
+                <div data-section-title="Обновления" class="section-nav__item">
                     <a class="section-nav__link" href="${updatesUrl}">
-                        <app:svg-hexagon cssClass="section-nav__bg-icon"/>
-                        <app:svg-update cssClass="section-nav__icon update-icon"/>
+                        <app:svg-update cssClass="section-nav__icon"/>
+                        <div class="section-nav__text">Обновления</div>
                     </a>
                 </div>
-            </div>--%>
+
+            </div>
+            <div class="main-title">
+                <div class="main-title__text">Полное руководство</div>
+            </div>
         </div>
-        <div class="container custom-container">
+
+        <%--<div class="container custom-container">
             <div class="row">
                 <div class="col-md-3">
                     <div class="react-logo-badge">
@@ -97,7 +90,7 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
-        </div>
+        </div>--%>
     </div>
 </div>
 
