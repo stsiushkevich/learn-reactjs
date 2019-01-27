@@ -25,7 +25,7 @@
 	<jsp:include page="../google/analytic.jsp"/>
 
 	<u:resource type="link" root="/resources/css/plugins" names="bootstrap.min.css, sidebar.css"/>
-	<u:resource type="link" root="/resources/css/custom" names="main.css, overrides.css"/>
+	<u:resource type="link" root="/resources/css/custom" names="main.min.28.01.19.css, overrides.min.28.01.19.css"/>
 	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js, sidebar.js"/>
 	<u:resource type="script" root="/resources/js/app/components" names="MenuSidebar.js"/>
 	<u:resource type="link" root="/resources/css/plugins" names="tomorrow-night-eighties.min.css"/>

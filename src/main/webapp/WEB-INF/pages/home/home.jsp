@@ -71,30 +71,18 @@
                     </div>
 
                 </div>
-                <div class="main-title flex-1">
+                <div class="main-title flex-1 position_relative">
                     <div class="flex full-size flex-direction_column justify-content_flex-center">
                         <div class="main-title__text">Полное руководство</div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <%--<div class="container custom-container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="react-logo-badge">
-                        <app:svg-hexagon-rotated cssClass="react-logo-badge__bg-icon"/>
-                        <span class="react-logo-badge__text">React</span>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="main-title">
-                        <div class="main-title__text">Полное руководство</div>
-                    </div>
-                </div>
-                <div class="col-md-3"></div>
+            <div class="react-logo-badge">
+                <app:svg-hexagon-rotated cssClass="react-logo-badge__bg-icon"/>
+                <span class="react-logo-badge__text">React</span>
             </div>
-        </div>--%>
+        </div>
     </div>
 </div>
 

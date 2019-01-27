@@ -756,6 +756,10 @@ h6 .anchor {
 
 /*------ flex layout ------*/
 
+.position_relative {
+    position: relative;
+}
+
 .home-page {
     background-color: #424242;
 }
@@ -767,9 +771,9 @@ h6 .anchor {
 }
 
 .home-page .react-logo-badge {
-    position: relative;
-    bottom: -27px;
-    left: 27px;
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
 }
 
 .home-page .react-logo-badge__bg-icon {
@@ -797,17 +801,7 @@ h6 .anchor {
     white-space: nowrap;
 }
 
-@media (max-width:1250px) {
-    .react-logo-badge {
-        display: none;
-    }
-}
-
 @media (min-width:1250px) {
-    .react-logo-badge {
-        display: inline-block;
-    }
-
     .container.custom-container {
         width: 100%;
     }
@@ -1019,6 +1013,12 @@ h6 .anchor {
 
     .home-page .section-nav__text {
         font-size: 22px;
+    }
+}
+
+@media (max-width: 1900px) {
+    .home-page .react-logo-badge {
+        display: none;
     }
 }
 
