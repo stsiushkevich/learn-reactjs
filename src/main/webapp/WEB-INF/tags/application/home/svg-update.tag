@@ -7,7 +7,7 @@
 <%@ attribute name="name" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 
-<svg id="${id}" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 442.357 442.357" class="${cssClass}" style="${style}">
+<svg id="${id}" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 442.357 442.357" class="${cssClass}" style="${style}">
     <g>
         <g>
             <path d="M415.679,226.857c0,107.248-87.252,194.5-194.5,194.5s-194.5-87.252-194.5-194.5c0-90.115,62.074-168.267,148.828-189.108    l1.816,16.365l43.856-32.254L171.318,0l1.857,16.739C75.698,38.897,5.679,126.127,5.679,226.857    c0,118.828,96.673,215.5,215.5,215.5s215.5-96.672,215.5-215.5H415.679z" />
