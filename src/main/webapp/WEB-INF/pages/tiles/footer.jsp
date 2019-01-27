@@ -10,10 +10,10 @@
 
 <lt:layout cssClass="container text-center">
 	<ul class="footer-nav">
-		<li class="footer-nav__link"><div>&#9400; 2017 Тюшкевич Сергей</div></li>
-		<li class="footer-nav__link"><a href="${contactsUrl}" class="btn">Контакты</a></li>
-		<li class="footer-nav__link"><a href="${termsOfUseUrl}" class="btn">Соглашение</a></li>
-		<li class="footer-nav__link">
+		<li class="footer-nav__link footer-nav__author"><div>&#9400; 2017 Тюшкевич Сергей</div></li>
+		<li class="footer-nav__link footer-nav__contacts"><a href="${contactsUrl}" class="btn">Контакты</a></li>
+		<li class="footer-nav__link footer-nav__terms-of-use"><a href="${termsOfUseUrl}" class="btn">Соглашение</a></li>
+		<li class="footer-nav__link footer-nav__last-update">
 			<a href="${lastUpdateUrl}" style="color: rgb(129, 212, 250); font-weight: bold" class="btn">
 				Последнее обновление: 16.01.2019
 			</a>

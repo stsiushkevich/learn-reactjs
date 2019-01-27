@@ -17,61 +17,65 @@
 
 <div class="full-size atom-bg-icon">
     <div class="full-size code-fragment-bg-icon">
-        <div class="container">
-            <div class="section-nav">
+        <div class="container full-height">
+            <div class="full-size flex flex-direction_column">
+                <div class="section-nav">
 
-                <div data-section-title="Введение" class="section-nav__item">
-                    <a class="section-nav__link" href="${introductionUrl}">
-                        <app:svg-compass cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">Введение</div>
-                    </a>
+                    <div data-section-title="Введение" class="section-nav__item">
+                        <a class="section-nav__link" href="${introductionUrl}">
+                            <app:svg-compass cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Введение</div>
+                        </a>
+                    </div>
+
+                    <div data-section-title="Быстрый старт" class="section-nav__item">
+                        <a class="section-nav__link" href="${basicsUrl}">
+                            <app:svg-rocket cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Быстрый старт</div>
+                        </a>
+                    </div>
+
+                    <div data-section-title="Учебник" class="section-nav__item">
+                        <a class="section-nav__link" href="${tutorialUrl}">
+                            <app:svg-tutorial cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Учебник</div>
+                        </a>
+                    </div>
+
+                    <div data-section-title="Продвинутый" class="section-nav__item">
+                        <a class="section-nav__link" href="${coreUrl}">
+                            <app:svg-atom-with-electrons cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Продвинутый</div>
+                        </a>
+                    </div>
+
+                    <div data-section-title="Справка" class="section-nav__item">
+                        <a class="section-nav__link" href="${referenceUrl}">
+                            <app:svg-reference cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Справка</div>
+                        </a>
+                    </div>
+
+                    <div data-section-title="FAQ" class="section-nav__item">
+                        <a class="section-nav__link" href="${faqUrl}">
+                            <app:svg-faq cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">FAQ</div>
+                        </a>
+                    </div>
+
+                    <div data-section-title="Обновления" class="section-nav__item">
+                        <a class="section-nav__link" href="${updatesUrl}">
+                            <app:svg-update cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Обновления</div>
+                        </a>
+                    </div>
+
                 </div>
-
-                <div data-section-title="Быстрый старт" class="section-nav__item">
-                    <a class="section-nav__link" href="${basicsUrl}">
-                        <app:svg-rocket cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">Быстрый старт</div>
-                    </a>
+                <div class="main-title flex-1">
+                    <div class="flex full-size flex-direction_column justify-content_flex-center">
+                        <div class="main-title__text">Полное руководство</div>
+                    </div>
                 </div>
-
-                <div data-section-title="Учебник" class="section-nav__item">
-                    <a class="section-nav__link" href="${tutorialUrl}">
-                        <app:svg-tutorial cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">Учебник</div>
-                    </a>
-                </div>
-
-                <div data-section-title="Продвинутый" class="section-nav__item">
-                    <a class="section-nav__link" href="${coreUrl}">
-                        <app:svg-atom-with-electrons cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">Продвинутый</div>
-                    </a>
-                </div>
-
-                <div data-section-title="Справка" class="section-nav__item">
-                    <a class="section-nav__link" href="${referenceUrl}">
-                        <app:svg-reference cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">Справка</div>
-                    </a>
-                </div>
-
-                <div data-section-title="FAQ" class="section-nav__item">
-                    <a class="section-nav__link" href="${faqUrl}">
-                        <app:svg-faq cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">FAQ</div>
-                    </a>
-                </div>
-
-                <div data-section-title="Обновления" class="section-nav__item">
-                    <a class="section-nav__link" href="${updatesUrl}">
-                        <app:svg-update cssClass="section-nav__icon"/>
-                        <div class="section-nav__text">Обновления</div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="main-title">
-                <div class="main-title__text">Полное руководство</div>
             </div>
         </div>
 
