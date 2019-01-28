@@ -739,6 +739,14 @@ h6 .anchor {
     -ms-flex-pack: center;
 }
 
+.flex.align-items_flex-center {
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+}
+
 .flex-1 {
     -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1;         /* OLD - Firefox 19- */
@@ -808,6 +816,7 @@ h6 .anchor {
     vertical-align: middle;
     text-align: center;
     white-space: nowrap;
+    height: 150px;
 }
 
 @media (min-width:1250px) {
@@ -881,7 +890,7 @@ h6 .anchor {
 .home-page .section-nav__text {
     color: #95F9FF;
     font-family: Roboto, serif;
-    padding: 11%;
+    padding: 11% 0;
     background-color: rgba(196, 196, 196, 0.15);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -903,11 +912,11 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 6px;
+        font-size: 9px;
     }
 
     .home-page .section-nav__item {
-        margin-top: 7%;
+        margin-top: 5%;
     }
 }
 
@@ -917,7 +926,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 8px;
+        font-size: 13px;
     }
 }
 
@@ -929,10 +938,6 @@ h6 .anchor {
     .header .logo-section img {
         margin-left: -20px;
     }
-
-    .home-page .section-nav__item {
-        margin-top: 7%;
-    }
 }
 
 @media (min-width: 486px) {
@@ -941,7 +946,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 9px;
+        font-size: 14px;
     }
 }
 
@@ -951,7 +956,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 10px;
+        font-size: 16px;
     }
 }
 
@@ -961,7 +966,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 11px;
+        font-size: 17px;
     }
 
     .home-page .section-nav__item {
@@ -975,24 +980,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-nav__author,
-    .footer-nav__contacts,
-    .footer-nav__terms-of-use {
-        display: none;
-    }
-
-    .footer {
-        display: none;
-    }
-
-    .home-page .atom-bg-icon {
-        background: url(../../imges/atom.svg) 0% 0 no-repeat;
-        background-size: 500px;
+        font-size: 19px;
     }
 }
 
@@ -1007,7 +995,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .home-page .code-fragment-bg-icon {
@@ -1015,7 +1003,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav {
-        margin-top: 8%;
+        padding-top: 6%;
     }
 }
 
@@ -1025,7 +1013,7 @@ h6 .anchor {
     }
 
     .home-page .section-nav__text {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .home-page .section-nav__item {
@@ -1056,7 +1044,6 @@ h6 .anchor {
     padding-bottom: 13%;
 }
 
-.home-page .main-title {
-    padding-top: 4%;
-    padding-bottom: 4%;
+.home-page .content {
+    overflow-x: visible;
 }
