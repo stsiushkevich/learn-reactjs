@@ -663,23 +663,19 @@ h6 .anchor {
 }
 
 .advertising {
-    width: 250px;
+    min-width: 250px;
     margin-top: 20px;
 }
 
 @media (max-width: 1130px) {
     .advertising {
-        display: none;
+        display: none !important;
     }
 }
 
 .advertising__body {
     position: fixed;
     width: 250px;
-}
-
-.advertising__item {
-    height: 930px;
 }
 
 .full-width {
@@ -1052,4 +1048,10 @@ h6 .anchor {
 
 .home-page .content {
     overflow-x: visible;
+}
+
+.ad-content-banner {}
+
+.ad-content-banner--height_180 {
+    height: 180px;
 }
