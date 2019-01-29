@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/introduction-to-jsx" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="socUrl" value="https://ru.wikipedia.org/wiki/Разделение_ответственности"/>
 <c:url var="componentsUrl" value="components-and-props"/>
@@ -78,6 +79,8 @@
     <h2>2.3.3 JSX сам является выражением</h2>
 
     <wg:p><b>После компиляции JSX-выражения становятся регулярными JavaScript-объектами.</b></wg:p>
+    
+    <ad:ad-content-banner-1/>
 
     <wg:p>Это означает, что вы можете использовать JSX внутри условного
         оператора <code>if</code> и оператора цикла <code>for</code>, присваивать его переменным, принимать

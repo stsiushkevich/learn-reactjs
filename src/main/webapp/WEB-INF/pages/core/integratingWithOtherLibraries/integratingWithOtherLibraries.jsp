@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/integrating-with-other-libraries" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
@@ -88,6 +89,8 @@
 
   <wg:p>Важно знать, что если вы измените DOM вне потока React, вы должны убедиться,
     что у React нет оснований касаться этих узлов DOM.</wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <wg:p>Далее мы реализуем метод жизненного цикла. Нам нужно инициализировать <code>Dialog</code>
     с помощью ссылки <code>ref</code> на узел <code>&lt;div&gt;</code> в <code>componentDidMount</code>:</wg:p>

@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/reconciliation" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 <c:url var="indexUsedAsKeyUrl" value="https://reactjs.org/redirect-to-codepen/reconciliation/index-used-as-key"/>
@@ -111,6 +112,8 @@
     Затем вызывается метод <code>render()</code>, и алгоритм сравнения выполняет рекурсию
     на предыдущем и новом результате.
   </wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <br/>
   <h3>
@@ -209,6 +212,8 @@
         производительности и потере состояния в дочерних компонентах.</li>
     </ul>
   </wg:p>
+  
+  <ad:ad-content-banner-2/>
 </lt:layout>
 
 <c:url var="prevPageUrl" value="react-without-jsx"/>
