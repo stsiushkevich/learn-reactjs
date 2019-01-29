@@ -541,8 +541,14 @@ h6 .anchor {
 .menu-advertising {
     margin-top: 5px;
     text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc
+}
+
+.menu-advertising__item {
+    padding-top: 5px;
+}
+
+.menu-advertising__item:first-child {
+    padding-top: 0;
 }
 
 .bottom-content-advertising {
@@ -657,7 +663,7 @@ h6 .anchor {
 }
 
 .advertising {
-    width: 150px;
+    width: 250px;
     margin-top: 20px;
 }
 
@@ -669,11 +675,11 @@ h6 .anchor {
 
 .advertising__body {
     position: fixed;
-    width: 150px;
+    width: 250px;
 }
 
 .advertising__item {
-    height: 700px;
+    height: 930px;
 }
 
 .full-width {
