@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/thinking-in-react" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="tableMockUrl" value="https://reactjs.org/static/thinking-in-react-mock-1071fbcc9eed01fddc115b41e193ec11-4dd91.png"/>
 <c:url var="separatingUIMockUrl" value="https://reactjs.org/static/thinking-in-react-components-eb8bda25806a89ebdc838813bdfa3601-82965.png"/>
@@ -59,6 +60,8 @@
         только что-то одно. Если компонент слишком разрастается, он должен быть разбит на
         меньшие подкомпоненты.
     </wg:p>
+    
+    <ad:ad-content-banner-1/>
 
     <wg:p>
         Поскольку вы часто показываете модель данных JSON для пользователя, вы обнаружите,
@@ -186,6 +189,8 @@
         списка. Вместо этого, когда вы хотите отобразить размер списка, просто возьмите длину
         массива его элементов.
     </wg:p>
+    
+    <ad:ad-content-banner-2/>
 
     <wg:p>
         Необходимо подумать обо всех частях данных в нашем примере приложения. У нас есть:

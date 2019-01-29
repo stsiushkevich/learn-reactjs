@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/strict-mode" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="strictModeUnsafeLifecyclesWarningUrl" value="https://reactjs.org/static/strict-mode-unsafe-lifecycles-warning-e4fdbff774b356881123e69ad88eda88-2535d.png"/>
 <c:url var="refsAndDomUrl" value="refs-and-the-dom"/>
@@ -133,6 +134,8 @@
     заданному экземпляру класса. Обычно вам это не нужно, так как вы
     можете <b><a href="${createRefUrl}">прикрепить ссылку непосредственно к узлу DOM</a></b>.
   </p>
+  
+  <ad:ad-content-banner-1/>
   
   <p>
     <code>findDOMNode</code> также может использоваться на компонентах-классах, но

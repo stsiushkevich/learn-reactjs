@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/refs-and-the-dom" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="refForwardingUrl" value="forwarding-refs"/>
 <c:url var="domRefForwardingAlternativesBefore_16_3Url" value="https://gist.github.com/gaearon/1a018a023347fe1c2476073330cc5509"/>
@@ -115,6 +116,8 @@
     и значение <code>null</code>, когда компонент будет демонтирован. Обновления <code>ref</code> происходят перед
     срабатыванием методов ЖЦ <code>componentDidMount</code> или <code>componentDidUpdate</code>.
   </wg:p>
+  
+  <ad:ad-content-banner-1/>
   
   <a name="addingRefToComponentClass"></a>
   <br/>

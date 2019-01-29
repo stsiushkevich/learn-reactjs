@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/lifting-state-up" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -84,6 +85,8 @@
 		компонентом <code>SpeedRadar</code>. Он обработает изменение с помощью модификации своего локального состояния,
 		что вызовет перерисовку обоих установщиков <code>SpeedSetter</code> с новыми значениями скорости.
 		Мы посмотрим на новую реализацию <code>SpeedRadar</code> очень скоро.</wg:p>
+	
+	<ad:ad-content-banner-1/>
 
 	<wg:p>Перед погружением в анализ изменений в компоненте <code>SpeedRadar</code>, давайте прорезюмируем наши изменения в
 		компоненте <code>SpeedSetter</code>. Мы удалили из него локальное состояние, и вместо чтения значения <code>this.state.speed</code>,

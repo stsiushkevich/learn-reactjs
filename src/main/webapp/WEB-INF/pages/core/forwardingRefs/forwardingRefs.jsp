@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/forwarding-refs" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 <c:url var="codemodeUrl" value="https://reactjs.org/blog/2017/04/07/react-v15.5.0.html#migrating-from-react.proptypes"/>
@@ -114,6 +115,8 @@
     и какие типы экспортируются). Это может нарушить работу существующих приложений и других
     библиотек, которые зависят от вашего старого поведения.
   </p>
+  
+  <ad:ad-content-banner-1/>
 
   <p>
     Условное применение <code>React.forwardRef</code>, если оно существует, также не рекомендуется по тем же

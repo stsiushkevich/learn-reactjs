@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/introduction/add-react-to-web-site" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="addReactInOneMinuteUrl" value="#add-react-in-one-minute"/>
 <c:url var="optionalTryReactWithJsxUrl" value="#optional-try-react-with-jsx"/>
@@ -190,6 +191,8 @@
 	
 	<p>Перед развертыванием вашего веб-сайта на продакшене, имейте в виду, что неминимизированный
 		JavaScript может значительно замедлить страницу.</p>
+	
+	<ad:ad-content-banner-1/>
 		
 	<p>
 		Если вы уже минимизировали код, ваш сайт будет готов к продакшену, если вы убедитесь,
