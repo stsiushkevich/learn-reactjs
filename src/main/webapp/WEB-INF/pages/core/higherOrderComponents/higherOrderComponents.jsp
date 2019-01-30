@@ -5,13 +5,14 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/higher-order-components" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
-  <h1>3.14	Компоненты более высокого порядка (старшие компоненты)</h1>
+  <h1>3.14 Компоненты более высокого порядка (старшие компоненты)</h1>
 
   <br/>
 
@@ -78,6 +79,8 @@
     на <code>NotificationDataStore</code> и вызов <code>setState</code> будет повторяться снова и снова. Следовательно
     нам нужна абстракция, которая позволит определить эту логику в одном месте и использовать
     ее всеми компонентами. Именно здесь выделяются компоненты более высокого порядка.</wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <wg:p>Мы можем написать функцию, которая создает компоненты, такие как <code>NotificationList</code>
     и <code>NotificationDetails</code>, которые подписываются на <code>NotificationDataStore</code>. Функция будет
@@ -230,6 +233,8 @@
   <wg:p>Компоненты-контейнеры, созданные старшими компонентами, отображаются в инструментах
     разработчика React, как и любой другой компонент. Чтобы облегчить отладку, выберите
     отображаемое имя, которое сообщает, что это результат старшего компонента.</wg:p>
+  
+  <ad:ad-content-banner-2/>
 
   <wg:p>Наиболее распространенным методом является оборачивание отображаемого
     имени упакованного компонента. Поэтому, если ваш компонент более высокого

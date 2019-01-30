@@ -7,7 +7,7 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <div class="menu-advertising">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <%--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- menu_advertising -->
   <ins class="adsbygoogle"
   style="display:block"
@@ -17,5 +17,38 @@
   data-full-width-responsive="true"></ins>
   <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  </script>--%>
+  <div class="menu-advertising__item">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- menu_banner_250x260_1 -->
+    <ins class="adsbygoogle"
+    style="display:inline-block;width:250px;height:260px"
+    data-ad-client="ca-pub-8338150978310358"
+    data-ad-slot="1480088507"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <div class="menu-advertising__item">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- menu_banner_250x260_2 -->
+    <ins class="adsbygoogle"
+    style="display:inline-block;width:250px;height:260px"
+    data-ad-client="ca-pub-8338150978310358"
+    data-ad-slot="3128922537"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <div class="menu-advertising__item">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- menu_banner_250x260_3 -->
+    <ins class="adsbygoogle"
+    style="display:inline-block;width:250px;height:260px"
+    data-ad-client="ca-pub-8338150978310358"
+    data-ad-slot="2434077522"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 </div>

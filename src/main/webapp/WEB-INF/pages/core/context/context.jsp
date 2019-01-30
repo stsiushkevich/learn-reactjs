@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/context" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 <c:url var="codemodeUrl" value="https://reactjs.org/blog/2017/04/07/react-v15.5.0.html#migrating-from-react.proptypes"/>
@@ -129,6 +130,8 @@
     контекста нет провайдера, аргумент <code>value</code> будет равен значению <code>defaultValue</code>,
     которое было передано в <code>createContext()</code>.
   </wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <wg:p>
     Все потребители перерисовываются всякий раз при изменении значения поставщика.
@@ -197,6 +200,8 @@
     рассмотреть возможность создания вашего собственного <code>render prop</code> компонента,
     который будет их предоставлять.
   </wg:p>
+  
+  <ad:ad-content-banner-2/>
 
   <a name="3934"></a>
   <br/>

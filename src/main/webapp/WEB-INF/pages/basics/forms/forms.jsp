@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/forms" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
@@ -49,6 +50,8 @@
         делая состояние React источником достоверной информации. Так  как <code>onLoginChange</code> выполняется
         на каждое нажатие клавиши, чтобы обновить состояние компонента, отображаемое значение будет обновляться
         с каждым нажатием, когда пользователь печатает.</wg:p>
+    
+    <ad:ad-content-banner-1/>
 
     <wg:p>В контролируемом компоненте, любая модификация состояния будет иметь ассоциированную функцию-обработчик.
         Это делает его простым для изменения или проверки данных, вводимых пользователем. К примеру, если мы

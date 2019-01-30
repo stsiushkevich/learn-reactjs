@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/state-and-lifecycle" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 
@@ -38,6 +39,8 @@
     <wg:p>Для того, чтобы это реализовать, нам необходимо добавить «<b>состояние</b>» к компоненту <code>Timer</code>.</wg:p>
 
     <wg:p>Состояние подобно свойствам <b>props</b>, но является приватным и полностью контролируется компонентом.</wg:p>
+    
+    <ad:ad-content-banner-1/>
 
     <wg:p>Ранее мы упоминали, что компоненты, определённые как классы, имеют некоторые дополнительные возможности.
         <b>Локальное состояние является возможностью, доступной только для классов.</b></wg:p>
@@ -141,6 +144,8 @@
     <ce:code-example-13 codePenUrl="https://codepen.io/stzidane/pen/vZYJLP?editors=0010"/>
 
     <wg:p>Теперь таймер обновляется каждый установленный промежуток времени.</wg:p>
+    
+    <ad:ad-content-banner-2/>
 
     <wg:p>Теперь давайте прорезюмируем, что произошло и порядок, в котором вызываются методы:</wg:p>
 

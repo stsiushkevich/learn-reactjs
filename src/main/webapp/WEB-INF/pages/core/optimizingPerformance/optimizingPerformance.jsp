@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/optimizing-performance" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="prodModeUrl" value="/resources/imges/pages/core/optimizing-performance/production-mode.png"/>
 <c:url var="devModeUrl" value="/resources/imges/pages/core/optimizing-performance/development-mode.png"/>
@@ -156,6 +157,8 @@
   <wg:p>Помните, что вам нужно сделать это только для production сборок. Вы не должны
     применять эти плагины в разработке, потому что они будут скрывать полезные
     предупреждения React и делать сборки намного медленнее.</wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <br/>
   <br/>
@@ -315,6 +318,8 @@
     создания узлов DOM и доступа к существующим узлам без необходимости, поскольку
     это может быть гораздо медленнее, чем те же операции над простыми объектами JavaScript.
     Иногда его называют «виртуальным DOM», и оно работает аналогично в React Native.</wg:p>
+  
+  <ad:ad-content-banner-2/>
 
   <wg:p>Когда свойства или состояние компонента изменяются, React решает, требуется
     ли фактическое обновление DOM, сравнивая вновь возвращенный элемент с ранее отображаемым.

@@ -74,9 +74,9 @@
                     </div>
 
                 </div>
-                <div class="main-title flex-1 position_relative">
-                    <div class="flex full-size flex-direction_column justify-content_flex-center">
-                        <div class="main-title__text">Полное руководство</div>
+                <div class="flex-1">
+                    <div class="main-title flex full-size justify-content_flex-center align-items_flex-center position_relative">
+                        <div class="main-title__text flex justify-content_flex-center align-items_flex-center">Полное руководство</div>
                     </div>
                 </div>
             </div>

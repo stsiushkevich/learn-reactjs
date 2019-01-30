@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/updates/errorHandlingInReact16" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="stackTrace1ImgUrl"
        value="/resources/imges/pages/updates/errorHandlingInReact16/component_stack_trace_1.png"/>
@@ -116,6 +117,8 @@
     как Messenger, если оставить сломанный пользовательский интерфейс видимым, это
     может привести к тому, что кто-то отправит сообщение не тому человеку.
     Аналогично, для приложения платежей лучше ничего не отображать, чем отображать неправильную сумму.</wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <wg:p>Это изменение означает, что как только вы мигрируете на React 16, то, вероятно,
     обнаружите сбои в своем приложении, которые были незаметны раньше. Добавление

@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/jsx-in-depth" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
 <c:url var="babelJsxUrl" value="https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA"/>
@@ -76,6 +77,8 @@
 	<wg:p>Названия типов, которые начинаются с большой буквы, такие как <code>&lt;MyComponent/&gt;</code> компонент,
 		компилируется в <code>React.createElement(MyComponent)</code> и соответствует компоненту, определенному
 		или импортированному в ваш JavaScript файл.</wg:p>
+	
+	<ad:ad-content-banner-1/>
 
 	<wg:p>Рекомендуется именовать компоненты с большой буквы. Если у вас есть компонент, названный с
 		маленькой буквы, присвойте его переменной, названной с большой буквы, перед тем как использовать его в JSX.</wg:p>
@@ -175,10 +178,12 @@
 	<ce:code-example-16.1/>
 
 	<wg:p>
-		В приведенном выше примере свойство type безопасно используется и не передается
+		В приведенном выше примере свойство <code>type</code> безопасно используется и не передается
 		элементу &lt;button&gt; в DOM. Все остальные свойства передаются через <code>...other</code> объект, делающий данный
 		компонент очень гибким. Вы можете видеть, что он передает свойства <code>onClick</code> и <code>children</code>.
 	</wg:p>
+	
+	<ad:ad-content-banner-2/>
 
 	<wg:p>
 		Spread-оператор может быть полезен, когда вы строите контейнеры общего назначения.
