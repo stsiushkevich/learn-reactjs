@@ -326,7 +326,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://learn-reactjs.ru/updates/react_v16_7</loc>
+        <loc>https://learn-reactjs.ru/updates/react-v16.7</loc>
         <lastmod>2017-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -338,7 +338,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://learn-reactjs.ru/updates/react_v16_0</loc>
+        <loc>https://learn-reactjs.ru/updates/react-v16.0</loc>
         <lastmod>2017-11-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

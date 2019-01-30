@@ -612,7 +612,7 @@
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
         <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
         <put-attribute name="menu" value="/WEB-INF/pages/updates/menu.jsp" cascade="true"/>
-        <put-attribute name="content" value="/WEB-INF/pages/updates/react-v16.3.0/react-v16.0.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/updates/react-v16.3.0/react-v16.3.0.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
 

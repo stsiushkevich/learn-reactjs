@@ -17,7 +17,7 @@
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
-<lt:layout cssClass="page react-v16.0-page">
+<lt:layout cssClass="page error-handling-in-react-16-page">
 	<h1>Обработка ошибок в React 16</h1>
 
 	<wg:p><b>26 Июля, 2017. Dan Abramov(Дэн Абрамов)</b></wg:p>

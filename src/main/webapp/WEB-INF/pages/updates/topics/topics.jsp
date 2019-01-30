@@ -14,7 +14,7 @@
 <c:url var="react_v16_3_0Url" value="react-v16.3.0"/>
 <c:url var="updateOnAsyncRenderingUrl" value="update-on-async-rendering"/>
 <c:url var="react_v16_2_0_fragmentsImprovedSupportUrl" value="react-v16.2.0-fragments-improved-support"/>
-<c:url var="react_v16_0Url" value="react_v16_0"/>
+<c:url var="react_v16_0Url" value="react-v16.0"/>
 <c:url var="domAttributesInReact16Url" value="dom-attributes-in-react-16"/>
 <c:url var="errorHandlingInReact16Url" value="error-handling-in-react-16"/>
 
