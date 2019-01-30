@@ -2,7 +2,7 @@
 <%@ include file="../../baseAttr.tag" %>
 <%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
-<ad:ad-banner-decorator>
+<ad:ad-banner-decorator cssClass="ad-content-banner--height_120">
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- content_banner_adaptive_3 -->
 	<ins class="adsbygoogle"
