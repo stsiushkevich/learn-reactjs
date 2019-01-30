@@ -19,14 +19,6 @@
     <div class="full-size code-fragment-bg-icon">
         <div class="container full-height">
             <div class="full-size flex flex-direction_column">
-                <h1 style="display: none">Изучение React</h1>
-                <h1 style="display: none">React изучение</h1>
-                <h1 style="display: none">Полное руководство по React</h1>
-                <h1 style="display: none">React документация</h1>
-                <h1 style="display: none">Документация React</h1>
-                <h1 style="display: none">React учебник</h1>
-                <h1 style="display: none">Учебник React</h1>
-
                 <div class="section-nav">
 
                     <div data-section-title="Введение" class="section-nav__item">
