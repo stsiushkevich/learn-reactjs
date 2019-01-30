@@ -1050,8 +1050,15 @@ h6 .anchor {
     overflow-x: visible;
 }
 
-.ad-content-banner {}
+.ad-content-banner {
+    overflow-y: auto;
+    width: 100%;
+}
 
 .ad-content-banner--height_180 {
     height: 180px;
+}
+
+.ad-content-banner--height_120 {
+    height: 120px;
 }
