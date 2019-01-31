@@ -24,6 +24,8 @@
 	<jsp:include page="../google/adsense.jsp"/>
 	<jsp:include page="../google/analytic.jsp"/>
 
+	<jsp:include page="../yandex/metrika-counter.jsp"/>
+
 	<u:resource type="link" root="/resources/css/plugins" names="bootstrap.min.css, sidebar.min.css"/>
 	<u:resource type="link" root="/resources/css/custom" names="main.min.31.01.19.css, overrides.min.28.01.19.css"/>
 	<u:resource type="script" root="/resources/js/plugins" names="html5.js, jquery.min.js, run_prettify.js, tether.min.js, bootstrap.min.js, sidebar.min.js"/>
