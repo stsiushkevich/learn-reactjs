@@ -23,6 +23,7 @@
 <c:url var="forwardingRefsUrl" value="forwarding-refs"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
 <c:url var="strictModeUrl" value="strict-mode"/>
+<c:url var="hooksUrl" value="hooks/topics"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -84,6 +85,9 @@
 		</li>
 		<li class="topic-list__topic">
 			<a class="topic-list__topic-nav-link" href=${strictModeUrl}><h4>3.19 Строгий режим</h4></a>
+		</li>
+		<li class="topic-list__topic">
+			<a class="topic-list__topic-nav-link" href=${hooksUrl}><h4>3.20 Хуки</h4></a>
 		</li>
 	</ol>
 </lt:layout>
