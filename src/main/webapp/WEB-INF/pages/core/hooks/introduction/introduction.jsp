@@ -134,7 +134,8 @@
         Это дает возможность совместного использования хуков многими компонентами или сообществом.
     </p>
     
-    <c:url var="customHookUrl" value="/custom-hook"/>
+    <%--<c:url var="customHookUrl" value="/custom-hook"/>--%>
+    <c:url var="customHookUrl" value="https://reactjs.org/docs/hooks-custom.html"/>
     
     <p>
         Мы обсудим это подробнее в разделе «<b><a href="${customHookUrl}">Создание собственных хуков</a></b>».
@@ -171,7 +172,8 @@
         предсказуемой.
     </p>
     
-    <c:url var="effectHookUrl" value="/effect-hook"/>
+    <%--<c:url var="effectHookUrl" value="/effect-hook"/>--%>
+    <c:url var="effectHookUrl" value="https://reactjs.org/docs/hooks-effect.html"/>
     
     <p>
         Мы обсудим это подробнее в разделе «<b><a href="${effectHookUrl}">Создание хука эффекта</a></b>».
@@ -226,6 +228,7 @@
 			<b><a href="${glanceUrl}">Краткий обзор хуков</a></b> - это хорошее место для начала изучения.
 		</app:alert>
     
+    <a name="#gradual-adoption-strategy"></a>
     <br/>
     <br/>
     <div class="gray-line"></div>
@@ -313,11 +316,9 @@
 
 </div>
 
-<c:url var="prevPageUrl" value="create-a-new-react-app"/>
-<c:url var="nextPageUrl" value="/basics/topics"/>
+<c:url var="nextPageUrl" value="glance"/>
 
 <app:page-navigate
     pageStartAncor="pageStart"
-    prevPageUrl="${prevPageUrl}"
     nextPageUrl="${nextPageUrl}"
 />

@@ -8,6 +8,7 @@
 <c:url var="basicsUrl" value="/basics/topics"/>
 <c:url var="tutorialUrl" value="/tutorial"/>
 <c:url var="coreUrl" value="/core/topics"/>
+<c:url var="hooksUrl" value="/core/hooks/topics"/>
 <c:url var="referenceUrl" value="/reference/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 <c:url var="faqUrl" value="/faq/topics"/>
@@ -48,6 +49,13 @@
                             <div class="section-nav__text">Продвинутый</div>
                         </a>
                     </div>
+    
+                    <div data-section-title="Хуки" class="section-nav__item">
+                        <a class="section-nav__link" href="${hooksUrl}">
+                            <app:svg-hook cssClass="section-nav__icon hook-icon"/>
+                            <div class="section-nav__text">Хуки</div>
+                        </a>
+                    </div>
 
                     <div data-section-title="Справка" class="section-nav__item">
                         <a class="section-nav__link" href="${referenceUrl}">
@@ -85,5 +93,3 @@
         </div>
     </div>
 </div>
-
-<jsp:include page="./resources.jsp"/>

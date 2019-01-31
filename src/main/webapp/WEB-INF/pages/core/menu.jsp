@@ -22,6 +22,7 @@
 <c:url var="forwardingRefsUrl" value="forwarding-refs"/>
 <c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
 <c:url var="strictModeUrl" value="strict-mode"/>
+<c:url var="hooksUrl" value="hooks/topics"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -83,6 +84,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
                 <a href=${strictModeUrl}>3.19 Строгий режим</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
+                <a href=${hooksUrl}>3.20 Хуки</a>
             </li>
         </ul>
     </nav>
