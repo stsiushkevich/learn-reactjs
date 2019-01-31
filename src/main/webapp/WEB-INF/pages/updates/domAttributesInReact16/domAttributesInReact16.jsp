@@ -8,7 +8,7 @@
 
 <a name="pageStart"></a>
 <lt:layout cssClass="black-line"/>
-<lt:layout cssClass="page react-v16.0-page">
+<lt:layout cssClass="page dom-attributes-in-react-16-page">
     <h1>DOM-атрибуты в React 16</h1>
 
     <wg:p><b>8 Сентября, 2017. Dan Abramov(Дэн Абрамов)</b></wg:p>
@@ -198,8 +198,8 @@
         React 17. Не стесняйтесь присоединиться, если вы хотите помочь!</wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="react_v16_0"/>
-<c:url var="nextPageUrl" value="error-handling-in-react-16"/>
+<c:url var="prevPageUrl" value="error-handling-in-react-16"/>
+<c:url var="nextPageUrl" value="react-v16.0"/>
 <app:page-navigate pageStartAncor="pageStart"
                    prevPageUrl="${prevPageUrl}"
                    nextPageUrl="${nextPageUrl}"/>

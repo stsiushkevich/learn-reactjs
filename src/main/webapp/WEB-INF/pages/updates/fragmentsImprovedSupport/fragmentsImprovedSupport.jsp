@@ -323,7 +323,7 @@
         компонент <code>Fragment</code> в open source.</wg:p>
 </lt:layout>
 
-<c:url var="prevPageUrl" value="react_v16_0"/>
+<c:url var="prevPageUrl" value="react-v16.0"/>
 <c:url var="nextPageUrl" value="update-on-async-rendering"/>
 
 <app:page-navigate pageStartAncor="pageStart"

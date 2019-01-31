@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/code-splitting" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="webpackUrl" value="https://webpack.js.org/"/>
 <c:url var="browserifyUrl" value="http://browserify.org/"/>
@@ -121,6 +122,8 @@
 		Если вы используете приложение Create React App, оно уже сконфигурировано, и вы
 		можете <b><a href="${createReactAppCodeSplittingUrl}">сразу начать использовать</a></b> такой синтаксис.
 		Он также поддерживается из коробки в Next.js<b><a href="${nextJsUrl}"></a></b>.</p>
+	
+	<ad:ad-content-banner-1/>
 	
 	<p>Если вы настраиваете Webpack самостоятельно, вам, вероятно, следует изучить руководство
 		Webpack <b><a href="${webpackCodeSplittingUrl}">по разбиению кода</a></b>. Ваша конфигурация Webpack

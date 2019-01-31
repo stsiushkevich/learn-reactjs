@@ -21,7 +21,7 @@ public class UpdatesController {
         return "updatesTopicsView";
     }
 
-    @GetMapping("/react_v16_0")
+    @GetMapping("/react-v16.0")
     public String react_v16_0(Map<String, Object> model) {
         model.put("currentPage", Pages.UPDATES_REACT_V16_0);
         return "react_v16_0View";

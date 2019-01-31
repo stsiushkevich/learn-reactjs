@@ -107,3 +107,29 @@ pre code {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.navbar-toggle .icon-bar {
+    background-color: #00d8ff;
+}
+
+.header .navbar-toggle {
+    margin: 10px 0;
+    margin-left: -10px;
+}
+
+.header-nav {
+    background-color: #2E2E2E;
+}
+
+.header-nav.nav.sidebar {
+    padding: 0;
+}
+
+.header-nav.nav.sidebar>li>a {
+    border: none;
+    padding: 10px 30px;
+}
+
+.header-nav.nav.sidebar {
+    top: 61px;
+}

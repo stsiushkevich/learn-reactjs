@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/tutorial" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="basicsUrl" value="/basics/topics"/>
 <c:url var="codepen1Url" value="https://codepen.io/gaearon/pen/gWWZgR?editors=0010"/>
@@ -118,6 +119,8 @@
         такими понятиями программирования, как <b>функции</b>, <b>объекты</b>,
         <b>массивы</b> и, возможно в меньшей степени, <b>классы</b>.
     </p>
+    
+    <ad:ad-content-banner-1/>
 
     <c:url var="javascriptLearnUrl" value="https://learn.javascript.ru/"/>
     <c:url var="javascriptGuideUrl" value="https://developer.mozilla.org/ru/docs/Web/JavaScript/A_re-introduction_to_JavaScript"/>
@@ -571,6 +574,8 @@
     <p>
         React DevTools позволяет вам проверять свойства и состояние ваших компонентов React.
     </p>
+    
+    <ad:ad-content-banner-2/>
 
     <p>
         После установки React DevTools вы можете щелкнуть правой кнопкой мыши
@@ -1026,6 +1031,8 @@
         Если бы мы мутировали массив <code>squares</code>, реализация путешествия во
         времени была бы очень сложной.
     </p>
+    
+    <ad:ad-content-banner-3/>
 
     <p>
         Однако мы использовали <code>slice()</code> для создания новой копии массива <code>squares</code>

@@ -17,11 +17,9 @@
 
 		<div class="body flex-1">
 			<div class="full-height flex flex-direction_row justify-content_flex-end">
-				<div class="advertising">
+				<div class="advertising flex flex-1 justify-content_flex-center">
 					<div class="advertising__body">
-						<div class="advertising__item">
-							<tiles:insertAttribute name="menuAdvertising"/>
-						</div>
+						<tiles:insertAttribute name="menuAdvertising"/>
 					</div>
 				</div>
 				<div class="content <tiles:insertAttribute name="contentClass"/>">

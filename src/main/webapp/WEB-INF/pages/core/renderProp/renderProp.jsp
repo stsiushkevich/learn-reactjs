@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/render-prop" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="reactRouterLibUrl" value="https://reacttraining.com/react-router/web/api/Route"/>
 <c:url var="downshiftLibUrl" value="https://github.com/paypal/downshift"/>
@@ -81,6 +82,8 @@
     преследующего мышь по экрану. Мы могли бы использовать свойство <code>&lt;Cat mouse = {{x, y}} /&gt;</code>,
     сообщая компоненту координаты мыши, чтобы он знал, где разместить изображение на экране.
   </wg:p>
+  
+  <ad:ad-content-banner-1/>
 
   <wg:p>
     В качестве первого приближения вы можете попробовать выполнить отрисовку компонента <code>&lt;Cat&gt;</code>
