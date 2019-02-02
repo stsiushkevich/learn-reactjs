@@ -4,8 +4,9 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="introductionUrl" value="introduction"/>
-<c:url var="glanceUrl" value="glance"/>
+<c:url var="introductionUrl" value="/core/hooks/introduction"/>
+<c:url var="glanceUrl" value="/core/hooks/glance"/>
+<c:url var="stateHookUrl" value="/core/hooks/state-hook"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -16,6 +17,9 @@
         </li>
         <li class="topic-list__topic">
             <a class="topic-list__topic-nav-link" href="${glanceUrl}"><h4>3.20.2 Обзор хуков</h4></a>
+        </li>
+        <li class="topic-list__topic">
+            <a class="topic-list__topic-nav-link" href="${stateHookUrl}"><h4>3.20.3 Хук состояния</h4></a>
         </li>
     </ol>
 </lt:layout>
