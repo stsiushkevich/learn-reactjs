@@ -485,6 +485,14 @@
         <put-attribute name="content" value="/WEB-INF/pages/core/hooks/glance/glance.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="hooksStateHookView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/hooks/stateHook/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/hooks/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/hooks/stateHook/stateHook.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
 
     <!--reference-->
     <definition name="referenceTopicsView" extends="menuTemplate">

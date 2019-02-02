@@ -20,7 +20,7 @@
     
     <br/>
     
-    <c:url var="introduction1Url" value="introduction#no-breaking-changes"/>
+    <c:url var="introduction1Url" value="/core/hooks/introduction#no-breaking-changes"/>
     
     <p>
         Хуки являются <b><a href="${introduction1Url}">обратно совместимыми</a></b>. В данном разделе представлен быстрый обзор
@@ -28,7 +28,7 @@
         прямоугольник, как этот:
     </p>
     
-    <c:url var="introduction2Url" value="introduction"/>
+    <c:url var="introduction2Url" value="/core/hooks/introduction"/>
     
     <app:alert title="Детальное объяснение" type="warning">
         Прочитайте <b><a href="${introduction2Url}">раздел о мотивации</a></b>,
@@ -95,7 +95,7 @@
     <h3>3.12.2.1.2 Но что же такое хук?</h3>
     <br/>
     
-    <c:url var="gradualAdoptionStrategyUrl" value="introduction#gradual-adoption-strategy"/>
+    <c:url var="gradualAdoptionStrategyUrl" value="/core/hooks/introduction#gradual-adoption-strategy"/>
     <p>
         Хуки - это функции, которые позволяют вам «зацепить» состояние React
         и функции жизненного цикла из компонентов-функций. Хуки не работают внутри
@@ -354,7 +354,7 @@
 	    и <b><a href="${hooksFAQUrl}">FAQ по хукам</a></b>.
     </p>
 	
-		<c:url var="introductionUrl" value="introduction"/>
+		<c:url var="introductionUrl" value="/core/hooks/introduction"/>
 	
     <p>
 	    Наконец, не пропустите <b><a href="${introductionUrl}">начальный раздел</a></b>, который объясняет, почему
@@ -382,9 +382,11 @@
 
 </div>
 
-<c:url var="prevPageUrl" value="introduction"/>
+<c:url var="prevPageUrl" value="/core/hooks/introduction"/>
+<c:url var="nextPageUrl" value="/core/hooks/state-hook"/>
 
 <app:page-navigate
     pageStartAncor="pageStart"
     prevPageUrl="${prevPageUrl}"
+    nextPageUrl="${nextPageUrl}"
 />

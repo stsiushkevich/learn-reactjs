@@ -152,4 +152,10 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_HOOKS_GLANCE);
         return "hooksGlanceView";
     }
+
+    @GetMapping("/hooks/state-hook")
+    public String hooksStateHook(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_STATE_HOOK);
+        return "hooksStateHookView";
+    }
 }
