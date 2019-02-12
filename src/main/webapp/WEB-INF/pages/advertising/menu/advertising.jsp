@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/forms" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <div class="menu-advertising">
   <%--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -18,7 +19,8 @@
   <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
   </script>--%>
-  <div class="menu-advertising__item">
+  
+  <%--<div class="menu-advertising__item">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- menu_banner_250x260_1 -->
     <ins class="adsbygoogle"
@@ -50,5 +52,7 @@
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-  </div>
+  </div>--%>
+  
+  <ad:ad-menu-banner.yandex/>
 </div>
