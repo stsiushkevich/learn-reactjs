@@ -1062,3 +1062,5 @@ h6 .anchor {
 .ad-content-banner--height_120 {
     height: 120px;
 }
+
+.section-nav__icon.hook-icon{transform: rotate(45deg);}

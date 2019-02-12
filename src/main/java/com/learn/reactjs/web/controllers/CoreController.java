@@ -134,4 +134,28 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_CODE_SPLITTING);
         return "codeSplittingView";
     }
+
+    @GetMapping("/hooks/topics")
+    public String hooksTopics(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_TOPICS);
+        return "hooksTopicsView";
+    }
+
+    @GetMapping("/hooks/introduction")
+    public String hooksIntroduction(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_INTRODUCTION);
+        return "hooksIntroductionView";
+    }
+
+    @GetMapping("/hooks/glance")
+    public String hooksGlance(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_GLANCE);
+        return "hooksGlanceView";
+    }
+
+    @GetMapping("/hooks/state-hook")
+    public String hooksStateHook(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_STATE_HOOK);
+        return "hooksStateHookView";
+    }
 }

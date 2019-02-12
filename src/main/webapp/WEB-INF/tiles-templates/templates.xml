@@ -458,6 +458,41 @@
         <put-attribute name="content" value="/WEB-INF/pages/core/codeSplitting/codeSplitting.jsp" cascade="true"/>
         <put-attribute name="resources" value="" cascade="true"/>
     </definition>
+    <definition name="hooksTopicsView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/hooks/topics/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/hooks/topics/topics.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+        <put-attribute name="discuss" value="" cascade="true"/>
+        <put-attribute name="menuAdvertising" value="" cascade="true"/>
+        <put-attribute name="bottomContentAdvertising" value="" cascade="true"/>
+    </definition>
+    <definition name="hooksIntroductionView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/hooks/introduction/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/hooks/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/hooks/introduction/introduction.jsp" cascade="true"/>
+        <put-attribute name="resources" value="/WEB-INF/pages/core/hooks/introduction/resources.jsp" cascade="true"/>
+    </definition>
+    <definition name="hooksGlanceView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/hooks/glance/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/hooks/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/hooks/glance/glance.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
+    <definition name="hooksStateHookView" extends="menuTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/core/hooks/stateHook/head.jsp" cascade="true"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="menu" value="/WEB-INF/pages/core/hooks/menu.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/core/hooks/stateHook/stateHook.jsp" cascade="true"/>
+        <put-attribute name="resources" value="" cascade="true"/>
+    </definition>
 
     <!--reference-->
     <definition name="referenceTopicsView" extends="menuTemplate">

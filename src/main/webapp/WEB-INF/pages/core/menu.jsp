@@ -3,25 +3,26 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="reactUrl" value="jsx-in-depth"/>
-<c:url var="reactComponentUrl" value="typechecking-with-prop-types"/>
-<c:url var="reactDomUrl" value="refs-and-the-dom"/>
-<c:url var="uncontrolledСomponentsUrl" value="uncontrolled-components"/>
-<c:url var="optimazingPerformanceUrl" value="optimizing-performance"/>
-<c:url var="reactWithoutES6Url" value="react-without-es6"/>
-<c:url var="reactWithoutJsxUrl" value="react-without-jsx"/>
-<c:url var="reconciliationUrl" value="reconciliation"/>
-<c:url var="contextUrl" value="context"/>
-<c:url var="fragmentsUrl" value="fragments"/>
-<c:url var="portalsUrl" value="portals"/>
-<c:url var="renderPropUrl" value="render-prop"/>
-<c:url var="errorBoundariesUrl" value="error-boundaries"/>
-<c:url var="codeSplittingUrl" value="code-splitting"/>
-<c:url var="webComponentsUrl" value="web-components"/>
-<c:url var="higherOrderComponentsUrl" value="higher-order-components"/>
-<c:url var="forwardingRefsUrl" value="forwarding-refs"/>
-<c:url var="integratingWithOtherLibrariesUrl" value="integrating-with-other-libraries"/>
-<c:url var="strictModeUrl" value="strict-mode"/>
+<c:url var="reactUrl" value="/core/jsx-in-depth"/>
+<c:url var="reactComponentUrl" value="/core/typechecking-with-prop-types"/>
+<c:url var="reactDomUrl" value="/core/refs-and-the-dom"/>
+<c:url var="uncontrolledСomponentsUrl" value="/core/uncontrolled-components"/>
+<c:url var="optimazingPerformanceUrl" value="/core/optimizing-performance"/>
+<c:url var="reactWithoutES6Url" value="/core/react-without-es6"/>
+<c:url var="reactWithoutJsxUrl" value="/core/react-without-jsx"/>
+<c:url var="reconciliationUrl" value="/core/reconciliation"/>
+<c:url var="contextUrl" value="/core/context"/>
+<c:url var="fragmentsUrl" value="/core/fragments"/>
+<c:url var="portalsUrl" value="/core/portals"/>
+<c:url var="renderPropUrl" value="/core/render-prop"/>
+<c:url var="errorBoundariesUrl" value="/core/error-boundaries"/>
+<c:url var="codeSplittingUrl" value="/core/code-splitting"/>
+<c:url var="webComponentsUrl" value="/core/web-components"/>
+<c:url var="higherOrderComponentsUrl" value="/core/higher-order-components"/>
+<c:url var="forwardingRefsUrl" value="/core/forwarding-refs"/>
+<c:url var="integratingWithOtherLibrariesUrl" value="/core/integrating-with-other-libraries"/>
+<c:url var="strictModeUrl" value="/core/strict-mode"/>
+<c:url var="hooksUrl" value="/core/hooks/topics"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -83,6 +84,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
                 <a href=${strictModeUrl}>3.19 Строгий режим</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
+                <a href=${hooksUrl}>3.20 Хуки</a>
             </li>
         </ul>
     </nav>

@@ -493,4 +493,28 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/hooks/topics</loc>
+        <lastmod>2019-02-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/hooks/introduction</loc>
+        <lastmod>2019-02-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/hooks/glance</loc>
+        <lastmod>2019-02-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/hooks/state-hook</loc>
+        <lastmod>2019-02-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
