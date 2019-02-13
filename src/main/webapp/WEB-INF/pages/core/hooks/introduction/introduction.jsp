@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/hooks/introduction" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="glansSectionUrl" value="glans"/>
 
@@ -110,6 +111,8 @@
         компонентов. Если вы изучаете React, используете его ежедневно или даже предпочитаете
         другую библиотеку с похожей компонентной моделью, вы можете распознать некоторые из таких проблем.
     </p>
+    
+    <ad:ad-content-banner-1/>
     
     <br/>
     <h3>3.12.1.3.1 Тяжело повторно использовать логику состояний между компонентами</h3>

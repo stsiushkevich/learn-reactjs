@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/hooks/glance" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <a name="pageStart"></a>
 <div class="black-line"></div>
@@ -106,6 +107,8 @@
         в одночасье переписывать ваши существующие компоненты, вместо этого вы
         можете начать использовать хуки в новых.)
     </p>
+    
+    <ad:ad-content-banner-1/>
     
     <p>
         React предоставляет несколько встроенных хуков, таких как <code>useState</code>.
@@ -246,6 +249,8 @@
         и <b><a href="${renderPropUrl}">свойство render</a></b>. Пользовательские хуки позволяют вам достичь этого
         без добавления дополнительных компонентов в ваше дерево.
     </p>
+    
+    <ad:ad-content-banner-2/>
     
     <p>
         Ранее в этом разделе мы представили компонент <code>FriendStatus</code>,
