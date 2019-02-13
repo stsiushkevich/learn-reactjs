@@ -10,9 +10,11 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  function Example (props) {
-    // Вы можете использовать хуки здесь!
-    return &lt;div />;
-  }</code>
+  function Example() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+      document.title = `Вы нажали \${count} раз`;
+    });</code>
   </pre>
 </cd:code-example-decorator>
