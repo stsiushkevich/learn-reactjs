@@ -5,6 +5,7 @@
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/core/hooks/state-hook" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
+<%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <c:url var="corsUrl" value="https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes"/>
 <c:url var="httpHeaderUrl" value="/resources/imges/pages/introduction/installation/http_header.png"/>
@@ -79,6 +80,8 @@
         эти компоненты получают возможность использовать состояние, поэтому для них мы
         предпочитаем название «компоненты-функции».
     </p>
+    
+    <ad:ad-content-banner-1/>
 
     <p>
         <b>Хуки не работают внутри классов</b>, однако теперь вы
@@ -175,6 +178,8 @@
         последнее значение для нашей функции. Если мы хотим обновить текущее значение счетчика,
         мы можем вызвать <code>setCount</code>.
     </p>
+    
+    <ad:ad-content-banner-2/>
 
     <app:alert title="Внимание!" type="warning">
         Вы можете задаться вопросом: почему <code>useState</code> не называется <code>createState</code>?
