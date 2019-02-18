@@ -158,4 +158,10 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_HOOKS_STATE_HOOK);
         return "hooksStateHookView";
     }
+
+    @GetMapping("/hooks/effect-hook")
+    public String hooksEffectHook(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_EFFECT_HOOK);
+        return "hooksEffectHookView";
+    }
 }

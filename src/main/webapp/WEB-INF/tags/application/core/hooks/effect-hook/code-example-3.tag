@@ -1,5 +1,5 @@
 <%@ tag pageEncoding="UTF-8" %>
-<%@ include file="../../../baseAttr.tag" %>
+<%@ include file="../../../../baseAttr.tag" %>
 <%@taglib prefix="cd" tagdir="/WEB-INF/tags/application/code" %>
 
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
@@ -10,18 +10,23 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
+  <cd:hl>import React, { useState, useEffect } from 'react';</cd:hl>
+
   function Example() {
-    // Объявление новой переменной состояния, которую мы назовем "count"
     const [count, setCount] = useState(0);
   
+    <cd:hl>useEffect(() => {</cd:hl>
+      <cd:hl>document.title = `Вы нажали \${count} раз`;</cd:hl>
+    <cd:hl>});</cd:hl>
+  
     return (
-     &lt;div&gt;
-       &lt;p&gt;Вы нажали {count} раз&lt;/p&gt;
-       &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-         Click me
-       &lt;/button&gt;
-     &lt;/div&gt;
-   );
+      &lt;div>
+        &lt;p>Вы нажали {count} раз&lt;/p>
+        &lt;button onClick={() => setCount(count + 1)}>
+          Click me
+        &lt;/button>
+      &lt;/div>
+    );
   }</code>
   </pre>
 </cd:code-example-decorator>

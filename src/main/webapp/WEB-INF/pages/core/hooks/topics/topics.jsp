@@ -7,6 +7,7 @@
 <c:url var="introductionUrl" value="/core/hooks/introduction"/>
 <c:url var="glanceUrl" value="/core/hooks/glance"/>
 <c:url var="stateHookUrl" value="/core/hooks/state-hook"/>
+<c:url var="effectHookUrl" value="/core/hooks/effect-hook"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -20,6 +21,9 @@
         </li>
         <li class="topic-list__topic">
             <a class="topic-list__topic-nav-link" href="${stateHookUrl}"><h4>3.20.3 Хук состояния</h4></a>
+        </li>
+        <li class="topic-list__topic">
+            <a class="topic-list__topic-nav-link" href="${effectHookUrl}"><h4>3.20.4 Хук эффекта</h4></a>
         </li>
     </ol>
 </lt:layout>

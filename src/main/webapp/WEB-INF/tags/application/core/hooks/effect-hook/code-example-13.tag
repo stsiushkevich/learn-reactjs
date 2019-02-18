@@ -1,5 +1,5 @@
 <%@ tag pageEncoding="UTF-8" %>
-<%@ include file="../../../baseAttr.tag" %>
+<%@ include file="../../../../baseAttr.tag" %>
 <%@taglib prefix="cd" tagdir="/WEB-INF/tags/application/code" %>
 
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
@@ -10,18 +10,13 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  function Example() {
-    // Объявление новой переменной состояния, которую мы назовем "count"
-    const [count, setCount] = useState(0);
-  
-    return (
-     &lt;div&gt;
-       &lt;p&gt;Вы нажали {count} раз&lt;/p&gt;
-       &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-         Click me
-       &lt;/button&gt;
-     &lt;/div&gt;
-   );
-  }</code>
+  function FriendStatus(props) {
+    // ...
+    useEffect(() => {
+      ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+      return () => {
+        ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+      };
+    });</code>
   </pre>
 </cd:code-example-decorator>
