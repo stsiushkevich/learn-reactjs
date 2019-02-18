@@ -10,6 +10,37 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;p>Вы кликнули {count} раз&lt;/p></code>
+  class FriendStatusWithCounter extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { count: 0, isOnline: null };
+      this.handleStatusChange = this.handleStatusChange.bind(this);
+    }
+
+    componentDidMount() {
+      document.title = `Вы нажали \${this.state.count} раз`;
+      ChatAPI.subscribeToFriendStatus(
+        this.props.friend.id,
+        this.handleStatusChange
+      );
+    }
+
+    componentDidUpdate() {
+      document.title = `Вы нажали \${this.state.count} раз`;
+    }
+
+    componentWillUnmount() {
+      ChatAPI.unsubscribeFromFriendStatus(
+        this.props.friend.id,
+        this.handleStatusChange
+      );
+    }
+
+    handleStatusChange(status) {
+      this.setState({
+        isOnline: status.isOnline
+      });
+    }
+    // ...</code>
   </pre>
 </cd:code-example-decorator>

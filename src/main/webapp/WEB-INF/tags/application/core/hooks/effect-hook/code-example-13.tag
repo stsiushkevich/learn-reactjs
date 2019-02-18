@@ -10,6 +10,13 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  const [count, setCount] = useState(0);</code>
+  function FriendStatus(props) {
+    // ...
+    useEffect(() => {
+      ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+      return () => {
+        ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+      };
+    });</code>
   </pre>
 </cd:code-example-decorator>

@@ -16,12 +16,12 @@
     const [count, setCount] = useState(0);
   
     <cd:hl>useEffect(() => {</cd:hl>
-      <cd:hl>document.title = `You clicked \${count} times`;</cd:hl>
+      <cd:hl>document.title = `Вы нажали \${count} раз`;</cd:hl>
     <cd:hl>});</cd:hl>
   
     return (
       &lt;div>
-        &lt;p>You clicked {count} times&lt;/p>
+        &lt;p>Вы нажали {count} раз&lt;/p>
         &lt;button onClick={() => setCount(count + 1)}>
           Click me
         &lt;/button>

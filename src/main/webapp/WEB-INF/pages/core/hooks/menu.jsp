@@ -6,6 +6,7 @@
 <c:url var="introductionUrl" value="/core/hooks/introduction"/>
 <c:url var="glanceUrl" value="/core/hooks/glance"/>
 <c:url var="stateHookUrl" value="/core/hooks/state-hook"/>
+<c:url var="effectHookUrl" value="/core/hooks/effect-hook"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -19,6 +20,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HOOKS_STATE_HOOK' ? 'active' : null}">
                 <a href="${stateHookUrl}">3.20.3 Хук состояния</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HOOKS_EFFECT_HOOK' ? 'active' : null}">
+                <a href="${effectHookUrl}">3.20.4 Хук эффекта</a>
             </li>
         </ul>
     </nav>

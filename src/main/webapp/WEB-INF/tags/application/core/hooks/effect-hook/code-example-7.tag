@@ -10,10 +10,11 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  import { useState } from 'react';
-
-  function Example() {
-    // Объявляем новую переменную состояния, кокторую назовём "count"
-    <cd:hl>const [count, setCount] = useState(0);</cd:hl></code>
+  useEffect(() => {
+      ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+      return () => {
+        ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+      };
+  });</code>
   </pre>
 </cd:code-example-decorator>

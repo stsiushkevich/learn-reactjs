@@ -16,7 +16,7 @@
   
     return (
      &lt;div&gt;
-       &lt;p&gt;You clicked {count} times&lt;/p&gt;
+       &lt;p&gt;Вы нажали {count} раз&lt;/p&gt;
        &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
          Click me
        &lt;/button&gt;

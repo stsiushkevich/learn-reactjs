@@ -19,17 +19,17 @@
     }
     
     <cd:hl>componentDidMount() {</cd:hl>
-      <cd:hl>document.title = `You clicked \${this.state.count} times`;</cd:hl>
+      <cd:hl>document.title = `Вы нажали \${this.state.count} раз`;</cd:hl>
     <cd:hl>}</cd:hl>
   
     <cd:hl>componentDidUpdate() {</cd:hl>
-      <cd:hl>document.title = `You clicked \${this.state.count} times`;</cd:hl>
+      <cd:hl>document.title = `Вы нажали \${this.state.count} раз`;</cd:hl>
     <cd:hl>}</cd:hl>
   
     render() {
       return (
         &lt;div>
-          &lt;p>Вы кликнули {this.state.count} раз&lt;/p>
+          &lt;p>Вы нажали {this.state.count} раз&lt;/p>
           &lt;button onClick={() => this.setState({ count: this.state.count + 1 })}>
             Кликни меня
           &lt;/button>

@@ -391,8 +391,10 @@
 </div>
 
 <c:url var="prevPageUrl" value="/core/hooks/glance"/>
+<c:url var="nextPageUrl" value="/core/hooks/effect-hook"/>
 
 <app:page-navigate
         pageStartAncor="pageStart"
         prevPageUrl="${prevPageUrl}"
+        nextPageUrl="${nextPageUrl}"
 />

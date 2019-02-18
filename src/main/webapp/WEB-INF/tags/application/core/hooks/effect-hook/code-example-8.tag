@@ -10,6 +10,8 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;p>Вы кликнули {this.state.count} раз&lt;/p></code>
+  useEffect(() => {
+    document.title = `Вы нажали \${count} раз`;
+  });</code>
   </pre>
 </cd:code-example-decorator>

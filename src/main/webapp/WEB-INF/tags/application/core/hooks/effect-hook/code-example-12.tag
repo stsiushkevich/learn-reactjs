@@ -10,19 +10,31 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  <cd:hl>1:  import { useState } from 'react';</cd:hl>
-  2:
-  3:  function Example() {
-  <cd:hl>4:    const [count, setCount] = useState(0);</cd:hl>
-  5:
-  6:    return (
-  7:      &lt;div>
-  8:        &lt;p>Вы кликнули {count} раз&lt;/p>
-  <cd:hl>9:        &lt;button onClick={() => setCount(count + 1)}></cd:hl>
-  10:         Кликни меня
-  11:        &lt;/button>
-  12:      &lt;/div>
-  13:    );
-  14:  }</code>
+  componentDidMount() {
+    ChatAPI.subscribeToFriendStatus(
+      this.props.friend.id,
+      this.handleStatusChange
+    );
+  }
+
+  <cd:hl>componentDidUpdate(prevProps) {</cd:hl>
+    <cd:hl>// Отписываемся от предыдущего friend.id</cd:hl>
+    <cd:hl>ChatAPI.unsubscribeFromFriendStatus(</cd:hl>
+      <cd:hl>prevProps.friend.id,</cd:hl>
+      <cd:hl>this.handleStatusChange</cd:hl>
+    <cd:hl>);</cd:hl>
+    <cd:hl>// Подписываемся на следующий friend.id</cd:hl>
+    <cd:hl>ChatAPI.subscribeToFriendStatus(</cd:hl>
+      <cd:hl>this.props.friend.id,</cd:hl>
+      <cd:hl>this.handleStatusChange</cd:hl>
+    <cd:hl>);</cd:hl>
+  <cd:hl>}</cd:hl>
+
+  componentWillUnmount() {
+    ChatAPI.unsubscribeFromFriendStatus(
+      this.props.friend.id,
+      this.handleStatusChange
+    );
+  }</code>
   </pre>
 </cd:code-example-decorator>

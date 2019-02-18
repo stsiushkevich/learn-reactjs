@@ -18,7 +18,7 @@
     <cd:hl>// Похож на componentDidMount и componentDidUpdate:</cd:hl>
     <cd:hl>useEffect(() => {</cd:hl>
       <cd:hl>// Обновляем название докуммента, используя API браузера</cd:hl>
-      <cd:hl>document.title = `You clicked \${count} times`;</cd:hl>
+      <cd:hl>document.title = `Вы нажали \${count} раз`;</cd:hl>
     <cd:hl>});</cd:hl>
   
     return (

@@ -10,12 +10,29 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  class Example extends React.Component {
-    constructor(props) {
-      super(props);
-      <cd:hl>this.state = {</cd:hl>
-        <cd:hl>count: 0</cd:hl>
+  import React, { useState, useEffect } from 'react';
+
+  function FriendStatus(props) {
+    const [isOnline, setIsOnline] = useState(null);
+
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
+    }
+
+    <cd:hl>useEffect(() => {</cd:hl>
+      <cd:hl>// Код подписки</cd:hl>
+      <cd:hl>ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);</cd:hl>
+      <cd:hl>// Указываем как производить очистку после этого эффекта:</cd:hl>
+      <cd:hl>return function cleanup() {</cd:hl>
+        <cd:hl>// Код отписки</cd:hl>
+        <cd:hl>ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);</cd:hl>
       <cd:hl>};</cd:hl>
-    }</code>
+    <cd:hl>});</cd:hl>
+
+    if (isOnline === null) {
+      return 'Загрузка...';
+    }
+    return isOnline ? 'Онлайн' : 'Офлайн';
+  }</code>
   </pre>
 </cd:code-example-decorator>

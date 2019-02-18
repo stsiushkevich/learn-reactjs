@@ -10,9 +10,11 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  function handleOrangeClick() {
-    // Похоже на this.setState({ fruit: 'апельсин' })
-    setFruit('апельсин');
-  }</code>
+  useEffect(() => {
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    return () => {
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+    };
+  <cd:hl>}, [props.friend.id]); // Повторно выполнит подписку, если props.friend.id изменился</cd:hl></code>
   </pre>
 </cd:code-example-decorator>

@@ -10,10 +10,8 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  function ExampleWithManyStates() {
-    // Объявляем несколько переменных состояния!
-    const [age, setAge] = useState(42);
-    const [fruit, setFruit] = useState('банан');
-    const [todos, setTodos] = useState([{ text: 'Изучаем хуки' }]);</code>
+  useEffect(() => {
+    document.title = `Вы нажали \${this.state.count} раз`;
+  <cd:hl>}, [count]); // Перевыполнит эффект, только если count изменился</cd:hl></code>
   </pre>
 </cd:code-example-decorator>

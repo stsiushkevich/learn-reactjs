@@ -10,8 +10,24 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  &lt;button onClick={() => this.setState({ count: this.state.count + 1 })}>
-    Кликни меня
-  &lt;/button></code>
+  function FriendStatusWithCounter(props) {
+    const [count, setCount] = useState(0);
+    <cd:hl>useEffect(() => {</cd:hl>
+      document.title = `Вы нажали \${this.state.count} раз`;
+    });
+
+    const [isOnline, setIsOnline] = useState(null);
+    <cd:hl>useEffect(() => {</cd:hl>
+      ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+      return () => {
+        ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+      };
+    });
+
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
+    }
+    // ...
+  }</code>
   </pre>
 </cd:code-example-decorator>

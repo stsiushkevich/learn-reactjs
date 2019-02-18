@@ -10,8 +10,10 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  var fruitStateVariable = useState('банан'); // возвращает пару
-  var fruit = fruitStateVariable[0]; // первый элемент в паре
-  var setFruit = fruitStateVariable[1]; // второй элемент в паре</code>
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.count !== this.state.count) {
+      document.title = `Вы нажали \${this.state.count} раз`;
+    }
+  }</code>
   </pre>
 </cd:code-example-decorator>
