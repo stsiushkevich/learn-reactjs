@@ -164,4 +164,16 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_HOOKS_EFFECT_HOOK);
         return "hooksEffectHookView";
     }
+
+    @GetMapping("/hooks/rules")
+    public String hooksRules(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_RULES);
+        return "hooksRulesView";
+    }
+
+    @GetMapping("/hooks/custom-hook")
+    public String hooksCustomHook(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_CUSTOM_HOOK);
+        return "hooksCustomHookView";
+    }
 }
