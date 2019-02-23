@@ -523,4 +523,16 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/hooks/rules</loc>
+        <lastmod>2019-02-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://learn-reactjs.ru/core/hooks/custom-hook</loc>
+        <lastmod>2019-02-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>

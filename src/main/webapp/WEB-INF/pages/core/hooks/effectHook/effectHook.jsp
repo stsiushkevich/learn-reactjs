@@ -497,8 +497,10 @@
 </div>
 
 <c:url var="prevPageUrl" value="/core/hooks/state-hook"/>
+<c:url var="nextPageUrl" value="/core/hooks/rules"/>
 
 <app:page-navigate
     pageStartAncor="pageStart"
     prevPageUrl="${prevPageUrl}"
+    nextPageUrl="${nextPageUrl}"
 />

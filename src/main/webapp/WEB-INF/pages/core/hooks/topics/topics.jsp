@@ -8,6 +8,8 @@
 <c:url var="glanceUrl" value="/core/hooks/glance"/>
 <c:url var="stateHookUrl" value="/core/hooks/state-hook"/>
 <c:url var="effectHookUrl" value="/core/hooks/effect-hook"/>
+<c:url var="rulesUrl" value="/core/hooks/rules"/>
+<c:url var="customHookUrl" value="/core/hooks/custom-hook"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
@@ -24,6 +26,12 @@
         </li>
         <li class="topic-list__topic">
             <a class="topic-list__topic-nav-link" href="${effectHookUrl}"><h4>3.20.4 Хук эффекта</h4></a>
+        </li>
+        <li class="topic-list__topic">
+            <a class="topic-list__topic-nav-link" href="${rulesUrl}"><h4>3.20.5 Правила использования хуков</h4></a>
+        </li>
+        <li class="topic-list__topic">
+            <a class="topic-list__topic-nav-link" href="${customHookUrl}"><h4>3.20.6 Пользовательский хук</h4></a>
         </li>
     </ol>
 </lt:layout>
