@@ -3,7 +3,7 @@
 <%@taglib prefix="ad" tagdir="/WEB-INF/tags/application/advertising" %>
 
 <ad:ad-banner-decorator cssClass="ad-content-banner--height_120">
-	<%--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- content_banner_adaptive_3 -->
 	<ins class="adsbygoogle"
 	     style="display:block"
@@ -13,9 +13,9 @@
 	     data-full-width-responsive="true"></ins>
 	<script>
       (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>--%>
+	</script>
 	<!-- Yandex.RTB R-A-346605-4 -->
-	<div id="yandex_rtb_R-A-346605-4"></div>
+	<%--<div id="yandex_rtb_R-A-346605-4"></div>
 	<script type="text/javascript">
       (function(w, d, n, s, t) {
           w[n] = w[n] || [];
@@ -33,6 +33,6 @@
           s.async = true;
           t.parentNode.insertBefore(s, t);
       })(this, this.document, "yandexContextAsyncCallbacks");
-	</script>
+	</script>--%>
 </ad:ad-banner-decorator>
 
