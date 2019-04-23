@@ -9,7 +9,7 @@
 <div class="code-block-header">Код</div>
 <jsp:doBody/>
 <c:if test="${fn:length(codePenUrl) > 0}">
-    <p><wg:link href="${codePenUrl}">Посмотреть в CodePen</wg:link></p>
+    <p><b><a href="${codePenUrl}">Посмотреть в CodePen</a></b></p>
 </c:if>
 
 <br/>
