@@ -176,4 +176,10 @@ public class CoreController {
         model.put("currentPage", Pages.CORE_HOOKS_CUSTOM_HOOK);
         return "hooksCustomHookView";
     }
+
+    @GetMapping("/hooks/api")
+    public String hooksApi(Map<String, Object> model) {
+        model.put("currentPage", Pages.CORE_HOOKS_API);
+        return "hooksApiView";
+    }
 }

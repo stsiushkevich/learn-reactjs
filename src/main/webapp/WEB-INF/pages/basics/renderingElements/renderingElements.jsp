@@ -3,7 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
-<%@taglib prefix="code-example" tagdir="/WEB-INF/tags/application/basics/rendering-elements" %>
+<%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/basics/rendering-elements" %>
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application" %>
 
 <c:url var="granularDomUpdatesUrl" value="/resources/imges/pages/basics/render-elements/granular-dom-updates.gif"/>
@@ -12,108 +12,100 @@
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.4 Отрисовка Элементов</h1>
+    <br/>
 
-    <wg:p><b>Элементы – это самые маленькие строительные блоки приложения React.</b></wg:p>
+    <p><b>Элементы – это самые маленькие строительные блоки приложения React.</b></p>
 
-    <wg:p>Элемент описывает то, что вы хотите увидеть на экране:</wg:p>
+    <p>Элемент описывает то, что вы хотите увидеть на экране:</p>
 
-    <wg:p>
-        <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-1/>
-    </wg:p>
+    <ce:code-example-1/>
 
-    <wg:p>В отличие от DOM-элементов браузера, элементы React – простые объекты, поэтому они
-        являются очень дешевыми для создания. React DOM заботится об обновлении DOM, чтобы
-        соответствовать элементам React.</wg:p>
+    <p>В отличие от DOM-элементов браузера, элементы React – простые JS-объекты, поэтому в плане создания они
+        являются очень дешевыми. React DOM сам заботится об обновлении DOM, чтобы
+        соответствовать элементам React.</p>
 
-    <lt:layout cssClass="alert alert-warning">
-        <b>Внимание!</b> Можно спутать элементы с более широкой концепцией «компонентов».
+    <app:alert title="Внимание!" type="warning">
+        Можно спутать элементы с более широкой концепцией «компонентов».
         Мы познакомимся с компонентами в следующем разделе. Элементы – это то, из чего «сделаны»
-        компоненты. Поэтому рекомендуется изучить этот раздел, прежде чем перепрыгнуть на следующий.
-    </lt:layout>
-
+        компоненты. Поэтому сначала вам лучше изучить этот раздел, а только затем перейти к следующему.
+    </app:alert>
 
     <br/>
+    <br/>
+    <div class="gray-line"></div>
     <h2>2.4.1 Отрисовка элемента в DOM</h2>
+    <br/>
 
-    <wg:p>Предположим, у нас есть тег <code>&lt;div&gt;</code> где-нибудь в нашем HTML-файле:</wg:p>
+    <p>Предположим, где-нибудь в нашем HTML-файле есть тег <code>&lt;div&gt;</code>:</p>
 
-    <wg:p>
-        <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-2/>
-    </wg:p>
+    <ce:code-example-2/>
 
-    <wg:p>Он называется корневым <b>(root) DOM-узлом</b>, потому что всё внутри будет
-        управляться с помощью React DOM.</wg:p>
+    <p>Он называется <b>корневым (root) DOM-узлом</b>. Всё, что находится внутри него, будет
+        управляться с помощью React DOM.</p>
 
-    <wg:p>Приложения, построенные только с помощью React, обычно имеют один корневой DOM-узел.
+    <p>Приложения, построенные только с помощью React, обычно имеют один корневой DOM-узел.
         Если же вы интегрируете React в существующее приложение, вы можете иметь несколько
-        изолированных корневых DOM-узлов по вашему усмотрению.</wg:p>
+        изолированных корневых DOM-узлов по вашему усмотрению.</p>
 
-    <wg:p>Для отрисовки React-элемента в корневой DOM-узел, передайте
-        их вместе в <code>ReactDOM.render()</code>:</wg:p>
+    <p>Чтобы отрисовать React-элемент в корневой DOM-узел, нужно передать
+        их вместе в <code>ReactDOM.render()</code>:</p>
 
-    <wg:p>
-        <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-3/>
-    </wg:p>
+    <ce:code-example-3 codePenUrl="http://codepen.io/gaearon/pen/rrpgNB?editors=1010"/>
 
-    <wg:p><wg:link href="http://codepen.io/gaearon/pen/rrpgNB?editors=1010">Пример кода в CodePen</wg:link></wg:p>
-
-    <wg:p>Он отображает "Hello World" на странице.</wg:p>
+    <p>Он отображает "Hello World" на странице.</p>
 
     <br/>
+    <br/>
+    <div class="gray-line"></div>
     <h2>2.4.2 Обновление отрисованного элемента</h2>
+    <br/>
 
-    <wg:p>React-элементы являются неизменяемыми. Как только элемент был создан,
-        нельзя изменить его атрибуты или потомков. Элемент похож на одиночный
-        кадр в фильме: он представляет собой UI в определенный момент времени.</wg:p>
+    <p>React-элементы являются неизменяемыми. Как только элемент был создан,
+        изменить его атрибуты или потомки невозможно. Элемент похож на одиночный
+        кадр в фильме: он представляет собой UI в определенный момент времени.</p>
 
-    <wg:p>В настоящий момент мы знаем только один способ обновления UI: создание
-        нового элемента и передача его в <code>ReactDOM.render()</code>.</wg:p>
+    <p>В настоящий момент мы знаем только один способ обновления UI: создание
+        нового элемента и передача его в <code>ReactDOM.render()</code>.</p>
 
-    <wg:p>Рассмотрим следующий пример тикающих часов:</wg:p>
+    <p>Рассмотрим следующий пример тикающих часов:</p>
 
-    <wg:p>
-        <lt:layout cssClass="code-block-header">Код</lt:layout>
-        <code-example:code-example-4/>
-    </wg:p>
+    <ce:code-example-4 codePenUrl="http://codepen.io/gaearon/pen/gwoJZk?editors=0010"/>
 
-    <wg:p><wg:link href="http://codepen.io/gaearon/pen/gwoJZk?editors=0010">Попробовать в CodePen</wg:link></wg:p>
+    <p>Данный код вызывает <code>ReactDOM.render()</code> каждую секунду
+        из коллбэка <code>setInterval()</code>.</p>
 
-    <wg:p>Данный код вызывает <code>ReactDOM.render()</code> каждую секунду
-        из коллбэка <code>setInterval()</code>.</wg:p>
-
-    <lt:layout cssClass="alert alert-warning">
-        <b>Внимание!</b> На практике большинство React-приложений
-        вызывают <code>ReactDOM.render()</code> только
-        один раз. В следующих разделах мы изучим как такой код
-        инкапсулируется в <b>компоненты с состоянием</b>.
+    <app:alert title="Внимание!" type="warning">
+        На практике большинство React-приложений вызывают <code>ReactDOM.render()</code> только
+        один раз. В следующих разделах мы изучим, как такой код можно инкапсулировать в <b>компоненты с состоянием</b>.
         <br/>
         <br/>
-        Рекомендуется не пропускать разделы, потому что они строятся друг на друге.
-    </lt:layout>
+        Мы рекомендуем не пропускать разделы, так как каждый последующий основан на предыдущем.
+    </app:alert>
 
     <br/>
+    <br/>
+    <div class="gray-line"></div>
     <h2>2.4.3 React обновляет только то, что необходимо</h2>
+    <br/>
 
-    <wg:p>React DOM сравнивает элемент и его потомков из последнего вызова <code>render()</code> с
-        элементом из предыдущего вызова <code>render()</code>, и применяет обновление DOM только
-        если это необходимо, чтобы привести DOM в желаемое состояние.</wg:p>
+    <p>React DOM сравнивает элемент и его потомки из последнего вызова <code>render()</code> с
+        элементом из предыдущего вызова <code>render()</code>. Далее он обновляет DOM, только
+        если это необходимо, чтобы привести DOM в желаемое состояние.</p>
 
-    <wg:p>Можно проверить это, посмотрев
-        <wg:link href="http://codepen.io/gaearon/pen/gwoJZk?editors=0010">этот пример</wg:link>, используя
-        инструменты разработчика в браузере:</wg:p>
+    <p>Чтобы проверить это поведение, посмотрите
+        <b><a href="http://codepen.io/gaearon/pen/gwoJZk?editors=0010">данный пример</a></b>, используя
+        инструменты разработчика в браузере:</p>
 
-    <wg:p cssClass="text-center" style="overflow-x: auto">
+    <p class="text-center" style="overflow-x: auto">
         <wg:img src="${granularDomUpdatesUrl}"/>
-    </wg:p>
+    </p>
 
-    <wg:p>Даже  несмотря на то, что мы создаём элемент, описывающий целое UI-дерево,
-        на каждый тик, только текстовый узел, чей контент изменился, будет обновлён React DOM-ом.</wg:p>
+    <p>Вы могли заметить, что на каждый тик мы создаём элемент, описывающий целое UI-дерево.
+        Однако обновится только текстовый узел, так как его содержимое изменилось</p>
 
-    <wg:p><b>По опыту создателей React, размышление о том, как должен выглядеть UI в конкретный
-        момент времени, вместо того, как изменить его со временем, устранит целый класс багов.</b></wg:p>
+    <p>Из своего опыта создатели React советуют <b>размышлять о том, как должен выглядеть UI в конкретный
+        момент времени</b>, а не о том, как изменить его со временем. Это устранит целый класс багов</p>
+
 </lt:layout>
 
 <c:url var="prevPageUrl" value="introduction-to-jsx"/>

@@ -9,6 +9,7 @@
 <c:url var="effectHookUrl" value="/core/hooks/effect-hook"/>
 <c:url var="rulesUrl" value="/core/hooks/rules"/>
 <c:url var="customHookUrl" value="/core/hooks/custom-hook"/>
+<c:url var="apiUrl" value="/core/hooks/api"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
@@ -31,6 +32,9 @@
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HOOKS_CUSTOM_HOOK' ? 'active' : null}">
                 <a href="${customHookUrl}">3.20.6 Пользовательский хук</a>
+            </li>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HOOKS_API' ? 'active' : null}">
+                <a href="${apiUrl}">3.20.7 API</a>
             </li>
         </ul>
     </nav>

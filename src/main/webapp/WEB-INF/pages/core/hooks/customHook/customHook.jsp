@@ -15,8 +15,8 @@
     <br/>
 
     <p class="introduction">
-        Хуки доступны в версии <b>React 16.8</b>. С помощью них можно использовать состояние и другие
-        функции React, чтобы не писать класс.
+        Хуки доступны в версии <b>React 16.8</b>. Они позволяют использовать состояние и другие
+        функции React, освобождая от необходимости писать класс.
     </p>
 
     <br/>
@@ -260,8 +260,10 @@
 </div>
 
 <c:url var="prevPageUrl" value="/core/hooks/rules"/>
+<c:url var="nextPageUrl" value="/core/hooks/api"/>
 
 <app:page-navigate
         pageStartAncor="pageStart"
         prevPageUrl="${prevPageUrl}"
+        nextPageUrl="${nextPageUrl}"
 />
