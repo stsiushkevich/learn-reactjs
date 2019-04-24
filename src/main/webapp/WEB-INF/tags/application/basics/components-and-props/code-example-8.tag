@@ -1,18 +1,22 @@
 <%@ tag pageEncoding="UTF-8" %>
 <%@ include file="../../../baseAttr.tag" %>
+<%@taglib prefix="cd" tagdir="/WEB-INF/tags/application/code" %>
 
+<%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="name" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
 <pre class="prettyprint">
     <code class="language-javascript">
     function Avatar(props) {
       return (
-        <span class="highlighted">&lt;img className="Avatar"</span>
-             <span class="highlighted">src={props.user.avatarUrl}</span>
-             <span class="highlighted">alt={props.user.name}/&gt;</span>
+        <cd:hl>&lt;img className="Avatar"</cd:hl>
+             <cd:hl>src={props.user.avatarUrl}</cd:hl>
+             <cd:hl>alt={props.user.name}/&gt;</cd:hl>
       );
     }
     </code>
 </pre>
+</cd:code-example-decorator>
