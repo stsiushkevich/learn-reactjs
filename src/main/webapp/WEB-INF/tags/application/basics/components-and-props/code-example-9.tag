@@ -1,17 +1,20 @@
 <%@ tag pageEncoding="UTF-8" %>
 <%@ include file="../../../baseAttr.tag" %>
+<%@taglib prefix="cd" tagdir="/WEB-INF/tags/application/code" %>
 
+<%@ attribute name="codePenUrl" required="false" rtexprvalue="true" %>
 <%@ attribute name="cssClass" required="false" rtexprvalue="true" %>
 <%@ attribute name="name" required="false" rtexprvalue="true" %>
 <%@ attribute name="id" required="false" rtexprvalue="true" %>
 
+<cd:code-example-decorator codePenUrl="${codePenUrl}">
 <pre class="prettyprint">
     <code class="language-javascript">
     function Comment(props) {
       return (
         &lt;div className="Comment"&gt;
           &lt;div className="UserInfo"&gt;
-            <span class="highlighted">&lt;Avatar user={props.author} /&gt;</span>
+            <cd:hl>&lt;Avatar user={props.author} /&gt;</cd:hl>
             &lt;div className="UserInfo-name"&gt;
               {props.author.name}
             &lt;/div&gt;
@@ -27,3 +30,4 @@
     }
     </code>
 </pre>
+</cd:code-example-decorator>
