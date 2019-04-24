@@ -260,8 +260,10 @@
 </div>
 
 <c:url var="prevPageUrl" value="/core/hooks/rules"/>
+<c:url var="nextPageUrl" value="/core/hooks/api"/>
 
 <app:page-navigate
         pageStartAncor="pageStart"
         prevPageUrl="${prevPageUrl}"
+        nextPageUrl="${nextPageUrl}"
 />
