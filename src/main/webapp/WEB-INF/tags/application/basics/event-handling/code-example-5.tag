@@ -33,11 +33,13 @@
     }
 
     render() {
-      return (&lt;p&gt;
+      return (
+        &lt;p&gt;
           &lt;h2&gt;Текущая температура: {this.state.temperature}&lt;/h2&gt;
           &lt;button onClick={this.onDecrease}&gt;-&lt;/button&gt;
           &lt;button onClick={this.onIncrease}&gt;+&lt;/button&gt;
-        &lt;/p&gt;);
+        &lt;/p&gt;
+      );
     }
   }</code>
     </pre>

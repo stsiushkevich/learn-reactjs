@@ -15,7 +15,7 @@
 		<li class="footer-nav__link footer-nav__terms-of-use"><a href="${termsOfUseUrl}" class="btn">Соглашение</a></li>
 		<li class="footer-nav__link footer-nav__last-update">
 			<a href="${lastUpdateUrl}" style="color: rgb(129, 212, 250); font-weight: bold" class="btn">
-				Последнее обновление: 24.04.2019
+				Последнее обновление: 02.05.2019
 			</a>
 		</li>
 	</ul>
