@@ -13,10 +13,17 @@
   render() {
     const isNew = this.state.isNew;
     return (
-      &lt;p&gt;
-        <cd:hl>{isNew ? (&lt;EditButton onClick={this.onEdit} /&gt;</cd:hl> <cd:hl>&lt;DeleteButton onClick={this.onDelete} /&gt;)</cd:hl>
-                  <cd:hl>: (&lt;AddButton onClick={this.onAdd} /&gt;)}</cd:hl>
-      &lt;/p&gt;
+      &lt;div&gt;
+        <cd:hl>{isNew ? (</cd:hl>
+                <cd:hl>&lt;div></cd:hl>
+                   <cd:hl>&lt;EditButton onClick={this.onEdit} /&gt;</cd:hl>
+                   <cd:hl>&lt;DeleteButton onClick={this.onDelete} /&gt;</cd:hl>
+                <cd:hl>&lt;/div></cd:hl>
+            <cd:hl>) : (</cd:hl>
+                <cd:hl>&lt;AddButton onClick={this.onAdd} /&gt;</cd:hl>
+            <cd:hl>)</cd:hl>
+        <cd:hl>}</cd:hl>
+      &lt;/div&gt;
     );
   }</code>
     </pre>
