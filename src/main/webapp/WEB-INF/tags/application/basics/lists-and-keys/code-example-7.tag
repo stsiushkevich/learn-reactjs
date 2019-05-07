@@ -10,6 +10,7 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
+  // Данные с сервера могут иметь примерно следующий вид: [{id: 1, name: 'Вася'}, ...]
   const userList = users.map((user) =&gt;
     &lt;li key={<cd:hl>user.id</cd:hl>}&gt;
       {user.name}

@@ -12,6 +12,7 @@
         <code class="language-javascript">
   function Chat(props) {
     const users = props.users;
+
     <cd:hl>const userList = (</cd:hl>
       &lt;p&gt; Пользователи чата:
         {users.map((user) =&gt;
@@ -19,14 +20,21 @@
         )}
       &lt;/p&gt;
     );
+
     <cd:hl>const messageList = props.messages.map((message) =&gt; {</cd:hl>
       let author = null;
+
+      // Находим автора сообщения в списке users
       users.forEach((user) =&gt; {if(user.id === message.authorId) author = user});
-      return (&lt;p <cd:hl>key={message.id}</cd:hl>&gt;
+
+      return (
+        &lt;p <cd:hl>key={message.id}</cd:hl>&gt;
           &lt;b&gt;{author.name}: &lt;/b&gt;
           &lt;span&gt;{message.message}&lt;/span&gt;
-        &lt;/p&gt;)
+        &lt;/p&gt;
+      )
     });
+
     return (
       &lt;p&gt;
         <cd:hl>{userList}</cd:hl>
@@ -40,6 +48,7 @@
     {id: 2, name: 'Петя'},
     {id: 3, name: 'Ваня'}
   ];
+
   const messages = [
     {id: 1, message: 'Всем привет!', authorId: 1},
     {id: 2, message: 'И тебе привет!', authorId: 2},
