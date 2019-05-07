@@ -15,8 +15,8 @@
       super(props);
       <cd:hl>this.state = {login: '', password: ''};</cd:hl>
 
-      this.onLoginChange = this.onLoginChange.bind(this);
-      this.onPasswordChange = this.onPasswordChange.bind(this);
+      this.onChangeLogin = this.onChangeLogin.bind(this);
+      this.onChangePassword = this.onChangePassword.bind(this);
       this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -25,11 +25,11 @@
       event.preventDefault();
     }
 
-    <cd:hl>onPasswordChange(event){</cd:hl>
+    <cd:hl>onChangePassword(event){</cd:hl>
       <cd:hl>this.setState({password: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
-    <cd:hl>onLoginChange(event) {</cd:hl>
+    <cd:hl>onChangeLogin(event) {</cd:hl>
       <cd:hl>this.setState({login: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
@@ -37,9 +37,9 @@
       return (
         &lt;form onSubmit={this.onSubmit}&gt;
           &lt;p&gt;&lt;label&gt; Логин: &lt;input type="text" name="login" <cd:hl>value={this.state.login}</cd:hl>
-                           <cd:hl>onChange={this.onLoginChange}</cd:hl>/&gt;&lt;/label&gt;&lt;/p&gt;
+                           <cd:hl>onChange={this.onChangeLogin}</cd:hl>/&gt;&lt;/label&gt;&lt;/p&gt;
           &lt;p&gt;&lt;label&gt; Пароль: &lt;input type="password" name="password" <cd:hl>value={this.state.password}</cd:hl>
-                            <cd:hl>onChange={this.onPasswordChange}</cd:hl>/&gt;&lt;/label&gt;&lt;/p&gt;
+                            <cd:hl>onChange={this.onChangePassword}</cd:hl>/&gt;&lt;/label&gt;&lt;/p&gt;
           &lt;p&gt;&lt;input type="submit" value="Submit" /&gt;&lt;/p&gt;
         &lt;/form&gt;
       );
