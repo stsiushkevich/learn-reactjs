@@ -15,11 +15,11 @@
       super(props);
       this.state = {language: 'JavaScript'};
 
-      this.onSelectChange = this.onSelectChange.bind(this);
+      this.onChangeSelect = this.onChangeSelect.bind(this);
       this.onSubmit = this.onSubmit.bind(this);
     }
 
-    <cd:hl>onSelectChange(event) {</cd:hl>
+    <cd:hl>onChangeSelect(event) {</cd:hl>
       <cd:hl>this.setState({language: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
@@ -33,7 +33,7 @@
         &lt;form onSubmit={this.onSubmit}&gt;
           &lt;label&gt;
             Выберите язык программирования:
-            <cd:hl>&lt;select value={this.state.language} onChange={this.onSelectChange}&gt;</cd:hl>
+            <cd:hl>&lt;select value={this.state.language} onChange={this.onChangeSelect}&gt;</cd:hl>
               &lt;option value="C++"&gt;C++&lt;/option&gt;
               &lt;option value="Java"&gt;Java&lt;/option&gt;
               &lt;option value="C#"&gt;C#&lt;/option&gt;

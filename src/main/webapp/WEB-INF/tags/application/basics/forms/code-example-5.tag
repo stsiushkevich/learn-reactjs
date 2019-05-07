@@ -15,8 +15,8 @@
       super(props);
       <cd:hl>this.state = {email: '', message: 'Текст сообщения'};</cd:hl>
 
-      this.onEmailChange = this.onEmailChange.bind(this);
-      this.onMessageChange = this.onMessageChange.bind(this);
+      this.onChangeEmail = this.onChangeEmail.bind(this);
+      this.onChangeMessage = this.onChangeMessage.bind(this);
       this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -25,11 +25,11 @@
       event.preventDefault();
     }
 
-    <cd:hl>onMessageChange(event){</cd:hl>
+    <cd:hl>onChangeMessage(event){</cd:hl>
       <cd:hl>this.setState({message: event.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
-    <cd:hl>onEmailChange(e) {</cd:hl>
+    <cd:hl>onChangeEmail(e) {</cd:hl>
       <cd:hl>this.setState({email: e.target.value});</cd:hl>
     <cd:hl>}</cd:hl>
 
@@ -37,9 +37,9 @@
       return (
         &lt;form onSubmit={this.onSubmit}&gt;
           &lt;p&gt;&lt;label&gt; email получателя: &lt;input type="text" name="email" value={this.state.email}
-                           onChange={this.onEmailChange}/&gt;&lt;/label&gt;&lt;/p&gt;
+                           onChange={this.onChangeEmail}/&gt;&lt;/label&gt;&lt;/p&gt;
           &lt;p&gt;&lt;label&gt;Текст сообщения: <cd:hl>&lt;textarea type="text" name="message" value={this.state.message}
-            onChange={this.onMessageChange}/&gt;</cd:hl>&lt;/label&gt;&lt;/p&gt;
+            onChange={this.onChangeMessage}/&gt;</cd:hl>&lt;/label&gt;&lt;/p&gt;
           &lt;p&gt;&lt;input type="submit" value="Submit" /&gt;&lt;/p&gt;
         &lt;/form&gt;
       );
