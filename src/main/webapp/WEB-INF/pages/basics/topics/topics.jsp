@@ -53,7 +53,7 @@
             <a href=${formsUrl} class="topic-list__topic-nav-link"><h4>2.10 Формы</h4></a>
         </li>
         <li class="topic-list__topic">
-            <a href=${liftingStateUpUrl} class="topic-list__topic-nav-link"><h4>2.11 Передача состояния компонента вверх по иерархии</h4></a>
+            <a href=${liftingStateUpUrl} class="topic-list__topic-nav-link"><h4>2.11 Подъём состояния выше по иерархии</h4></a>
         </li>
         <li class="topic-list__topic">
             <a href=${compositionVsInheritanceUrl} class="topic-list__topic-nav-link"><h4>2.12 Композиция вместо наследования</h4></a>
