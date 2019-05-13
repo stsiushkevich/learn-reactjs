@@ -13,7 +13,7 @@
   render() {
     onChange(e) {
       // Ранее: this.setState({speed: e.target.value});
-      this.props.onSpeedChange(e.target.value)
+      this.props.onChangeSpeed(e.target.value)
     }
   }</code>
     </pre>

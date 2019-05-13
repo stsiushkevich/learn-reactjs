@@ -10,18 +10,33 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
+  const UNIT = {
+    KPH: 'Км/ч',
+    MPH: 'Миль/ч'
+  };
+          
   class SpeedSetter extends React.Component {
     constructor(props) {
-      super(props)
-      this.onChangeSpeed = this.onChangeSpeed.bind(this)
-      <cd:hl>this.state = {speed: ''}</cd:hl>
+      super(props);
+      this.onChange = this.onChange.bind(this)
+      this.state = {speed: ''}
     }
 
-    onChangeSpeed(e) {
-      <cd:hl>this.setState({speed: e.target.value})</cd:hl>
+    onChange(e) {
+      this.setState({speed: e.target.value})
     }
 
     render() {
-      <cd:hl>let speed = this.state.speed</cd:hl></code>
+      let speed = this.state.speed
+      <cd:hl>let unit = this.props.unit</cd:hl>
+
+      return (
+        &lt;p>
+          <cd:hl>&lt;span>Введите скорость в "{UNIT[unit]}": &lt;/span></cd:hl>
+          &lt;input value={speed} onChange={this.onChange}/>
+        &lt;/p>
+      );
+    }
+  }</code>
     </pre>
 </cd:code-example-decorator>

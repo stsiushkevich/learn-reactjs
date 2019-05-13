@@ -15,11 +15,11 @@
 
     constructor(props) {
       super(props);
-      this.onSpeedChange = this.onSpeedChange.bind(this);
+      this.onChangeSpeed = this.onChangeSpeed.bind(this);
       this.state = {speed: null};
     }
 
-    onSpeedChange(e) {
+    onChangeSpeed(e) {
       this.setState({speed: e.target.value});
     }
 
@@ -28,7 +28,7 @@
       return (
       &lt;div&gt;
         &lt;div&gt;Введите скорость в км/ч:&lt;/div&gt;
-        &lt;input value={speed} onChange={this.onSpeedChange.bind(this)}/&gt;
+        &lt;input value={speed} onChange={this.onChangeSpeed.bind(this)}/&gt;
         &lt;SpeedDetector speed={parseFloat(speed)} maxSpeed={this.MAX_SPEED_COUNTRY}/&gt;
       &lt;/div&gt;
       );

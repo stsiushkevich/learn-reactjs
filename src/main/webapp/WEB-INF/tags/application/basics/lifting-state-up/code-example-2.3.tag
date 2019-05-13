@@ -10,18 +10,12 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
-  class SpeedSetter extends React.Component {
-    constructor(props) {
-      super(props)
-      this.onChangeSpeed = this.onChangeSpeed.bind(this)
-      <cd:hl>this.state = {speed: ''}</cd:hl>
-    }
+  function convertToKph(mph) {
+    return mph * 1.61;
+  }
 
-    onChangeSpeed(e) {
-      <cd:hl>this.setState({speed: e.target.value})</cd:hl>
-    }
-
-    render() {
-      <cd:hl>let speed = this.state.speed</cd:hl></code>
+  function convertToMph(kph) {
+    return kph / 1.61;
+  }</code>
     </pre>
 </cd:code-example-decorator>

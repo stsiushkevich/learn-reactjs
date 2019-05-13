@@ -36,8 +36,8 @@
 
       return (
         &lt;div&gt;
-          &lt;SpeedSetter unit="KPH" <cd:hl>speed={kph}</cd:hl> <cd:hl>onSpeedChange={this.onSpeedInKphChange}</cd:hl>/&gt;
-          &lt;SpeedSetter unit="MPH" <cd:hl>speed={mph}</cd:hl> <cd:hl>onSpeedChange={this.onSpeedInMphChange}</cd:hl>/&gt;
+          &lt;SpeedSetter unit="KPH" <cd:hl>speed={kph}</cd:hl> <cd:hl>onChangeSpeed={this.onSpeedInKphChange}</cd:hl>/&gt;
+          &lt;SpeedSetter unit="MPH" <cd:hl>speed={mph}</cd:hl> <cd:hl>onChangeSpeed={this.onSpeedInMphChange}</cd:hl>/&gt;
           &lt;SpeedDetector <cd:hl>speed={kph}</cd:hl> unit="KPH" maxSpeed={this.MAX_SPEED_IN_CITY_IN_KPH}/&gt;
         &lt;/div&gt;
       );
