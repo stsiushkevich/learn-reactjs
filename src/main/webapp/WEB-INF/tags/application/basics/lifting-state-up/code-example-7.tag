@@ -12,7 +12,7 @@
         <code class="language-javascript">
   {
     speed: '40',
-    unit: 'KM'
+    unit: 'KPH'
   }</code>
     </pre>
 </cd:code-example-decorator>

@@ -52,7 +52,7 @@
                 <a href=${formsUrl}>2.10 Формы</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_LIFTING_STATE_UP' ? 'active' : null}">
-                <a href=${liftingStateUpUrl}>2.11 Передача состояния компонента вверх по иерархии</a>
+                <a href=${liftingStateUpUrl}>2.11 Подъём состояния выше по иерархии</a>
             </li>
             <li class="menu-sidebar__nav-link ${currentPage eq 'BASICS_COMPOSITION_VS_INHERITANCE' ? 'active' : null}">
                 <a href=${compositionVsInheritanceUrl}>2.12 Композиция вместо наследования</a>

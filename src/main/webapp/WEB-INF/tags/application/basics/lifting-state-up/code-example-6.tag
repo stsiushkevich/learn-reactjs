@@ -17,7 +17,7 @@
     }
 
     onChange(e) {
-      <cd:hl>this.props.onSpeedChange(e.target.value);</cd:hl>
+      <cd:hl>this.props.onChangeSpeed(e.target.value);</cd:hl>
     }
 
     render() {
