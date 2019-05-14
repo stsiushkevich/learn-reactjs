@@ -23,5 +23,6 @@
 
     render() {
       <cd:hl>let speed = this.state.speed</cd:hl></code>
+      // ...остальной код
     </pre>
 </cd:code-example-decorator>

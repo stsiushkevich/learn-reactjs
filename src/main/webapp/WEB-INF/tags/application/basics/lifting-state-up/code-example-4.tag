@@ -13,6 +13,7 @@
   render() {
     // Ранее: const speed = this.state.speed;
     const speed = this.props.speed;
-  }</code>
+    // ...остальной код
+  </code>
     </pre>
 </cd:code-example-decorator>
