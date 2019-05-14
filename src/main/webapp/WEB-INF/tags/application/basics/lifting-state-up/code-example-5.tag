@@ -12,7 +12,7 @@
         <code class="language-javascript">
   render() {
     onChange(e) {
-      // Ранее: this.setState({speed: e.target.value});
+      // Раньше было: this.setState({speed: e.target.value});
       this.props.onChangeSpeed(e.target.value)
     }
   }</code>
