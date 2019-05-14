@@ -14,6 +14,8 @@
 <lt:layout cssClass="page hello-world-example-page">
     <h1>2.6 Состояние и жизненный цикл</h1>
 
+    <br/>
+
     <c:url var="referenceUrl" value="/reference/react-component"/>
     
     <p class="introduction">
