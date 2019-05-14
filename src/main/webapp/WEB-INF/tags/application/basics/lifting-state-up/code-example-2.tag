@@ -10,9 +10,10 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
     <pre class="prettyprint">
         <code class="language-javascript">
+  // максимальная разрешённая скорость в населённом пункте
+  const MAX_SPEED_IN_CITY = 60
+  
   class SpeedRadar extends React.Component {
-    MAX_SPEED_COUNTRY = 60;
-
     constructor(props) {
       super(props);
       this.onChangeSpeed = this.onChangeSpeed.bind(this);
@@ -29,7 +30,7 @@
       &lt;div&gt;
         &lt;div&gt;Введите скорость в км/ч:&lt;/div&gt;
         &lt;input value={speed} onChange={this.onChangeSpeed.bind(this)}/&gt;
-        &lt;SpeedDetector speed={parseFloat(speed)} maxSpeed={this.MAX_SPEED_COUNTRY}/&gt;
+        &lt;SpeedDetector speed={parseFloat(speed)} maxSpeed={MAX_SPEED_IN_CITY}/&gt;
       &lt;/div&gt;
       );
     }

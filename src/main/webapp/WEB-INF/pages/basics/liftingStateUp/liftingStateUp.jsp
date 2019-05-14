@@ -33,6 +33,10 @@
 	<p>Далее мы создадим компонент <code>SpeedRadar</code>, представляющий сам радар.
 		Он будет отрисовывать элемент <code>&lt;input&gt;</code>, который позволяет нам вводить скорость и хранить её
 		значение в <code>this.state.speed</code>.</p>
+	
+	<p>Пороговое значение скорости, при котором срабатывает радар будем хранить в
+		константе <code>MAX_SPEED_IN_CITY</code> - максимально
+		допустимая скорость движения в населённом пункте.</p>
 
 	<ce:code-example-2 codePenUrl="https://codepen.io/stzidane/pen/GmPmmq?editors=0010"/>
 
@@ -212,6 +216,11 @@
 	<p>Теперь наши установщики скорости синхронизированы, так как их значения вычислены из одного и того же состояния:</p>
 
 	<ce:code-example-9 codePenUrl="https://codepen.io/stzidane/pen/dWEZro?editors=0010"/>
+	
+	<p>
+		Мы поменяли название константы <code>MAX_SPEED_IN_CITY</code> на <code>MAX_SPEED_IN_CITY_IN_KPH</code>,
+		так как теперь важно знать единицу измерения скорости.
+	</p>
 
 	<p>Сейчас не имеет значения в какое поле вы вводите значение: <code>this.state.speed</code> и <code>this.state.unit</code> в
 		компоненте <code>SpeedRadar</code> будут обновлены. Один из элементов <code>input</code> получает введённое пользователем
