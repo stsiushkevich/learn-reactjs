@@ -17,7 +17,7 @@ public class TutorialController {
 
     @GetMapping
     public String tutorial(Map<String, Object> model) {
-        model.put("currentPage", Pages.TUTORIAL);
+        model.put("currentSection", Sections.TUTORIAL);
         return "tutorialView";
     }
 

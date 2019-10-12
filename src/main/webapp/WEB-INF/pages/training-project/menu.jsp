@@ -3,90 +3,50 @@
 <%@taglib prefix="lt" tagdir="/WEB-INF/tags/layout" %>
 <%@taglib prefix="wg" tagdir="/WEB-INF/tags/widget" %>
 
-<c:url var="reactUrl" value="/core/jsx-in-depth"/>
-<c:url var="reactComponentUrl" value="/core/typechecking-with-prop-types"/>
-<c:url var="reactDomUrl" value="/core/refs-and-the-dom"/>
-<c:url var="uncontrolledСomponentsUrl" value="/core/uncontrolled-components"/>
-<c:url var="optimazingPerformanceUrl" value="/core/optimizing-performance"/>
-<c:url var="reactWithoutES6Url" value="/core/react-without-es6"/>
-<c:url var="reactWithoutJsxUrl" value="/core/react-without-jsx"/>
-<c:url var="reconciliationUrl" value="/core/reconciliation"/>
-<c:url var="contextUrl" value="/core/context"/>
-<c:url var="fragmentsUrl" value="/core/fragments"/>
-<c:url var="portalsUrl" value="/core/portals"/>
-<c:url var="renderPropUrl" value="/core/render-prop"/>
-<c:url var="errorBoundariesUrl" value="/core/error-boundaries"/>
-<c:url var="codeSplittingUrl" value="/core/code-splitting"/>
-<c:url var="webComponentsUrl" value="/core/web-components"/>
-<c:url var="higherOrderComponentsUrl" value="/core/higher-order-components"/>
-<c:url var="forwardingRefsUrl" value="/core/forwarding-refs"/>
-<c:url var="integratingWithOtherLibrariesUrl" value="/core/integrating-with-other-libraries"/>
-<c:url var="strictModeUrl" value="/core/strict-mode"/>
-<c:url var="hooksUrl" value="/core/hooks/topics"/>
+<c:url var="introductionUrl" value="/training-project/introduction"/>
+<c:url var="appFrameUrl" value="/training-project/app-frame"/>
+<c:url var="pageMockupsUrl" value="/training-project/page-mockups"/>
+<c:url var="homePageUrl" value="/training-project/home-page"/>
+<c:url var="appointmentsUrl" value="/training-project/appointments"/>
+<c:url var="routingUrl" value="/training-project/routing"/>
+<c:url var="asyncDataLoadingUrl" value="/training-project/async-data-loading"/>
+<c:url var="appStateUrl" value="/training-project/app-state"/>
+<c:url var="summaryUrl" value="/training-project/summary"/>
+<c:url var="practiceUrl" value="/training-project/practice"/>
 
 <lt:layout cssClass="menu-sidebar">
     <div class="black-line"></div>
     <nav class="menu-sidebar__nav">
         <ul class="menu-sidebar__nav-links nav nav-pills nav-stacked">
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_JSX_IN_DEPTH' ? 'active' : null}">
-                <a href="${reactUrl}">3.1 JSX изнутри</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_INTRODUCTION' ? 'active' : null}">
+                <a href="${introductionUrl}">5.1 Введение</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_TYPECHECKING_WITH_PROP_TYPES' ? 'active' : null}">
-                <a href="${reactComponentUrl}">3.2 Проверка типов с PropTypes</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_APP_FRAME' ? 'active' : null}">
+                <a href="${appFrameUrl}">5.2 Каркасс приложения</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_REFS_AND_THE_DOM' ? 'active' : null}">
-                <a href=${reactDomUrl}>3.3 Ссылки ref и DOM</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_PAGE_MOCKUPS' ? 'active' : null}">
+                <a href="${pageMockupsUrl}">5.3 Макеты страниц</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_UNCONTROLLED_COMPONENTS' ? 'active' : null}">
-                <a href=${uncontrolledСomponentsUrl}>3.4 Неконтролируемые компоненты</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_HOME_PAGE' ? 'active' : null}">
+                <a href="${homePageUrl}">5.4 Домашняя страница</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_OPTIMIZING_PERFORMANCE' ? 'active' : null}">
-                <a href=${optimazingPerformanceUrl}>3.5 Оптимизация производительности</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_APPOINTMENTS' ? 'active' : null}">
+                <a href="${appointmentsUrl}">5.5 Список приёмов</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_REACT_WITHOUT_ES6' ? 'active' : null}">
-                <a href=${reactWithoutES6Url}>3.6 React без ES6</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_ROUTING' ? 'active' : null}">
+                <a href="${routingUrl}">5.6 Маршрутизация</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_REACT_WITHOUT_JSX' ? 'active' : null}">
-                <a href=${reactWithoutJsxUrl}>3.7 React без JSX</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_ASYNC_DATA_LOADING' ? 'active' : null}">
+                <a href="${asyncDataLoadingUrl}">5.7 Асинхронная загрузка данных</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_RECONCILIATION' ? 'active' : null}">
-                <a href=${reconciliationUrl}>3.8 Согласование</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_APP_STATE' ? 'active' : null}">
+                <a href="${appStateUrl}">5.8 Состояние приложения</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_CONTEXT' ? 'active' : null}">
-                <a href=${contextUrl}>3.9 Контекст</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_SUMMARY' ? 'active' : null}">
+                <a href="${summaryUrl}">5.9 Резюме-шпаргалка</a>
             </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_FRAGMENTS' ? 'active' : null}">
-                <a href=${fragmentsUrl}>3.10 Фрагменты</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_PORTALS' ? 'active' : null}">
-                <a href=${portalsUrl}>3.11 Порталы</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_RENDER_PROP' ? 'active' : null}">
-                <a href=${renderPropUrl}>3.12 Паттерн: свойство render</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_ERROR_BOUNDARIES' ? 'active' : null}">
-                <a href=${errorBoundariesUrl}>3.13 Границы ошибок</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_CODE_SPLITTING' ? 'active' : null}">
-                <a href=${codeSplittingUrl}>3.14 Разбиение кода</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_WEB_COMPONENTS' ? 'active' : null}">
-                <a href=${webComponentsUrl}>3.15 Веб-компоненты</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_HIGHER_ORDER_COMPONENTS' ? 'active' : null}">
-                <a href=${higherOrderComponentsUrl}>3.16 Старшие компоненты</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_FORWARDING_REFS' ? 'active' : null}">
-                <a href=${forwardingRefsUrl}>3.17 Передача ссылок</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_INTEGRATING_WITH_OTHER_LIBRARIES' ? 'active' : null}">
-                <a href=${integratingWithOtherLibrariesUrl}>3.18 Интеграция со сторонними библиотеками</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
-                <a href=${strictModeUrl}>3.19 Строгий режим</a>
-            </li>
-            <li class="menu-sidebar__nav-link ${currentPage eq 'CORE_STRICT_MODE' ? 'active' : null}">
-                <a href=${hooksUrl}>3.20 Хуки</a>
+            <li class="menu-sidebar__nav-link ${currentPage eq 'TRN_PRJ_PRACTICE' ? 'active' : null}">
+                <a href="${practiceUrl}">5.10 Практические задания</a>
             </li>
         </ul>
     </nav>
