@@ -76,7 +76,7 @@
 
     <br/>
     <p class="text-center" style="overflow-x: auto">
-        <img src="/resources/imges/training-project/color-sheme-tool.png" class="text-center">
+        <img src="<c:url value="/resources/imges/training-project/color-sheme-tool.png"/>" class="text-center">
     </p>
     <br/>
 
@@ -102,7 +102,7 @@
 
     <br/>
     <p class="text-center" style="overflow-x: auto">
-        <img src="/resources/imges/training-project/home.png" class="text-center">
+        <img src="<c:url value="/resources/imges/training-project/home.png"/>" class="text-center">
     </p>
     <br/>
 
@@ -154,7 +154,7 @@
 
     <br/>
     <p class="text-center" style="overflow-x: auto">
-        <img src="/resources/imges/training-project/appointments.png" class="text-center">
+        <img src="<c:url value="/resources/imges/training-project/appointments.png"/>" class="text-center">
     </p>
     <br/>
 
@@ -179,7 +179,7 @@
 
     <br/>
     <p class="text-center" style="overflow-x: auto">
-        <img src="/resources/imges/training-project/auth.png" class="text-center">
+        <img src="<c:url value="/resources/imges/training-project/auth.png"/>" class="text-center">
     </p>
     <br/>
 
@@ -203,7 +203,7 @@
 
     <br/>
     <p class="text-center" style="overflow-x: auto">
-        <img src="/resources/imges/training-project/app-pages-sheme.png" class="text-center">
+        <img src="<c:url value="/resources/imges/training-project/app-pages-sheme.png"/>" class="text-center">
     </p>
     <br/>
 
