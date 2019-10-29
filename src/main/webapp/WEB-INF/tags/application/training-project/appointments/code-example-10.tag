@@ -10,7 +10,11 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-
-    </code>
+  let filtered = filter(data, o => {
+      return (startDate ? o.date >= startDate : true) &&
+      (endDate ? o.date <= endDate : true) &&
+      (clientName ? (clientName.length > 2 ? o.clientName.includes(clientName) : true) : true) &&
+      (onlyMe ? o.holderName === USER : true)
+  })</code>
   </pre>
 </cd:code-example-decorator>

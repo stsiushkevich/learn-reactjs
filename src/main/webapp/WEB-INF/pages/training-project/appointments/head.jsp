@@ -1,9 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<title itemprop="name">Обзор хуков React</title>
-<meta property="og:title" content="Обзор хуков React">
-<meta property="og:description" content="Хуки - это новая функция, которая позволяет вам использовать состояние и другие
-        функции React без написания класса. В настоящее время они доступны в React v16.8.0-alpha.0.">
-<meta name="description" content="Хуки - это новая функция, которая позволяет вам использовать состояние и другие
-        функции React без написания класса. В настоящее время они доступны в React v16.8.0-alpha.0.">
-<meta property="og:url" content="https://learn-reactjs.ru/core/hooks/glance">
-<meta name="keywords" CONTENT="React, Хуки, Обзор хуков, знакомство с хуками, Хуки в React, Хуки React">
+<title itemprop="name">5.5 Список приёмов</title>
+<meta property="og:title" content="5.5 Список приёмов">
+<meta property="og:description" content="Этот раздел может оказаться для вас очень интересным и крайне полезным.
+        Здесь мы познакомимся с популярными мощными библиотеками и создадим базовые
+        переиспользуемые компоненты. На основе последних, мы построим - список и форму
+        фильтрации данных, а также организуем их правильное взаимодействие.">
+<meta name="description" content="Этот раздел может оказаться для вас крайне полезным.
+        Здесь мы познакомимся с популярными мощными библиотеками и создадим базовые
+        переиспользуемые компоненты. На основе последних, мы построим - список и форму
+        фильтрации данных, а также организуем их правильное взаимодействие.">
+<meta property="og:url" content="https://learn-reactjs.ru/training-project/appointments">
+<meta name="keywords" CONTENT="React, Учебный проект, Список приёмов">

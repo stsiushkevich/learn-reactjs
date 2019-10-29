@@ -10,6 +10,7 @@
 <cd:code-example-decorator codePenUrl="${codePenUrl}">
   <pre class="prettyprint">
     <code class="language-javascript">
-  BlockName-ElemName_modName_modVal</code>
+  "moment": "2.24.0",
+  "react-moment": "0.9.2"</code>
   </pre>
 </cd:code-example-decorator>
