@@ -384,9 +384,18 @@
     <%-- <b><a href="${}"></a></b> --%>
     <%-- <b><a href="#"></a></b> --%>
     <%-- <a href="#"></a> --%>
-    <%-- <p class="text-center" style="overflow-x: auto">
-           <img src="<c:url value=""/>" class="text-center">
-         </p> --%>
+    <%--
+     <c:url var="Url" value=""/>
+
+    <br/>
+
+    <p class="text-center" style="overflow-x: auto">
+        <img src="<c:url value="/resources/imges"/>" class="text-center">
+    </p>
+
+    <br/>
+    <br/>
+     --%>
 </div>
 
 <c:url var="prevPageUrl" value="/core/hooks/introduction"/>
