@@ -75,7 +75,7 @@
     <br/>
     <div class="gray-line"></div>
 
-    <h2>React.lazy: Разбиение сода с помощью приостановки (suspense)</h2>
+    <h2>React.lazy: Разбиение кода с помощью приостановки (suspense)</h2>
 
     <br/>
 
