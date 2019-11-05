@@ -76,7 +76,7 @@ public class TrainingProjectController {
     }
 
     @GetMapping("/practice")
-    public String tasks(Map<String, Object> model) {
+    public String practice(Map<String, Object> model) {
         model.put("currentPage", Pages.TRN_PRJ_PRACTICE);
         return "practiceView";
     }

@@ -13,7 +13,7 @@
 <c:url var="asyncDataLoadingUrl" value="/training-project/async-data-loading"/>
 <c:url var="appStateUrl" value="/training-project/app-state"/>
 <c:url var="summaryUrl" value="/training-project/summary"/>
-<c:url var="practiceUrl" value="/training-project/tasks"/>
+<c:url var="practiceUrl" value="/training-project/practice"/>
 
 <lt:layout cssClass="black-line"/>
 <lt:layout cssClass="page topic-list">
