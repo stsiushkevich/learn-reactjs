@@ -10,11 +10,13 @@
 <c:url var="coreUrl" value="/core/topics"/>
 <c:url var="hooksUrl" value="/core/hooks/topics"/>
 <c:url var="referenceUrl" value="/reference/topics"/>
+<c:url var="trainingProjectUrl" value="/training-project/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 <c:url var="faqUrl" value="/faq/topics"/>
 
 <c:url var="hexagonUrl" value="/resources/imges/hexagon.svg"/>
 <c:url var="atomUrl" value="/resources/imges/atom.svg"/>
+<c:url var="rippleUrl" value="/resources/imges/ripple.gif"/>
 
 <div class="full-size atom-bg-icon">
     <div class="full-size code-fragment-bg-icon">
@@ -62,6 +64,14 @@
                             <app:svg-reference cssClass="section-nav__icon"/>
                             <div class="section-nav__text">Справка</div>
                         </a>
+                    </div>
+    
+                    <div data-section-title="Учебный проект" class="section-nav__item">
+                        <a class="section-nav__link" href="${trainingProjectUrl}">
+                            <app:svg-project cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Учебный проект</div>
+                        </a>
+                        <app:svg-ripple cssClass="section-nav__animated_ripple_icon"/>
                     </div>
 
                     <div data-section-title="FAQ" class="section-nav__item">

@@ -377,13 +377,26 @@
 		</ul>
 		--%>
     <%-- <app:alert title="Внимание!" type="warning"></app:alert> --%>
+    <%-- <app:alert title="Совет!" type="success"></app:alert> --%>
     <%-- <code></code> --%>
     <%-- <b></b> --%>
     <%-- <code>&lt; &gt;</code> --%>
     <%-- <b><a href="${}"></a></b> --%>
     <%-- <b><a href="#"></a></b> --%>
     <%-- <a href="#"></a> --%>
+    <%--
+     <c:url var="Url" value=""/>
 
+    <br/>
+
+    <p class="text-center" style="overflow-x: auto">
+        <img src="<c:url value="/resources/imges"/>" class="text-center">
+    </p>
+
+    <br/>
+    <br/>
+
+     --%>
 </div>
 
 <c:url var="prevPageUrl" value="/core/hooks/introduction"/>

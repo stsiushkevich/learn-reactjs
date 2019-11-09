@@ -8,7 +8,9 @@ public enum Sections {
     TUTORIAL,
     BASICS,
     CORE,
+    HOOKS,
     REFERENCE,
+    TRAINING_PROJECT,
     UPDATES,
     FAQ
 }
