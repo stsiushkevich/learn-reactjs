@@ -21,8 +21,6 @@
       <cd:hl>this.state = {speed: 0, unit: 'KPH'};</cd:hl>
     }
 
-    MAX_SPEED_IN_CITY_IN_KPH = 60
-
     onChangeSpeedInKph(speed) {
       <cd:hl>this.setState({unit: 'KPH', speed});</cd:hl>
     }
