@@ -137,7 +137,7 @@ public class CoreController {
 
     @GetMapping("/hooks/topics")
     public String hooksTopics(Map<String, Object> model) {
-        model.put("currentPage", Sections.HOOKS);
+        model.put("currentSection", Sections.HOOKS);
         return "hooksTopicsView";
     }
 
