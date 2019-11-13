@@ -13,6 +13,7 @@
 <c:url var="trainingProjectUrl" value="/training-project/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 <c:url var="faqUrl" value="/faq/topics"/>
+<c:url var="createReactAppUrl" value="/create-react-app/topics"/>
 
 <c:url var="hexagonUrl" value="/resources/imges/hexagon.svg"/>
 <c:url var="atomUrl" value="/resources/imges/atom.svg"/>
@@ -87,7 +88,13 @@
                             <div class="section-nav__text">Обновления</div>
                         </a>
                     </div>
-
+    
+                    <div data-section-title="Create React App" class="section-nav__item">
+                        <a class="section-nav__link" href="${createReactAppUrl}">
+                            <app:svg-react-app cssClass="section-nav__icon"/>
+                            <div class="section-nav__text">Create React App</div>
+                        </a>
+                    </div>
                 </div>
                 <div class="flex-1">
                     <div class="main-title flex full-size justify-content_flex-center align-items_flex-center position_relative">

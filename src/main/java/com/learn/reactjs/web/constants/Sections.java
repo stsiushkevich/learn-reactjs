@@ -12,5 +12,6 @@ public enum Sections {
     REFERENCE,
     TRAINING_PROJECT,
     UPDATES,
-    FAQ
+    FAQ,
+    CREATE_REACT_APP
 }
