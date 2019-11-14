@@ -1071,3 +1071,97 @@ h6 .anchor {
     width: 25px;
     height: 25px;
 }
+
+.cra-home-page .content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.cra-home-page__welcome-section {
+    background-color: #3c4248;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.cra-logo {
+
+}
+
+.cra-home-page__welcome-section .cra-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.cra-home-page__welcome-section-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.cra-home-page__welcome-section-subtitle {
+    font-size: 23px;
+    color: white;
+    margin-top: 15px;
+}
+
+.cra-home-page__welcome-section-btn {
+    color: #fff;
+    background-color: inherit;
+    border-color: #ffffff;
+    border-width: 2px;
+    margin-top: 40px;
+    padding: 5px 50px;
+    font-size: 20px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .30s ease-in-out;
+}
+
+.cra-home-page__welcome-section-btn:hover {
+    background-color: #1b8db5;
+    border-color: #ffffff;
+}
+
+.cra-home-page__welcome-section-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 255, 254, 0.5);
+}
+
+.cra-home-page__welcome-section-btn:focus,
+.cra-home-page__welcome-section-btn:active {
+    background-color: #1698c5;
+    border-color: #ffffff;
+}
+
+.cra-home-page__welcome-section-btn:focus:active {
+    background-color: #186f92;
+    border-color: #ffffff;
+}
+
+.cra-home-page__info-section {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cra-home-page__info-section-item {
+    text-align: left;
+    width: 350px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cra-home-page__info-section.even {
+    background-color: #f7f7f7;
+}
+
+.cra-home-page__info-section-item .info__title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cra-home-page__info-section-item .info__text {
+    margin-top: 15px;
+}

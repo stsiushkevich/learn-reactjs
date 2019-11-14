@@ -953,6 +953,14 @@
     </definition>
 
     <!-- create react app -->
+    <definition name="createReactAppHomeView" extends="commonTemplate">
+        <put-attribute name="head" value="/WEB-INF/pages/create-react-app/home/head.jsp" cascade="true"/>
+        <put-attribute name="bodyClass" value="cra-home-page" cascade="true" type="string"/>
+        <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" cascade="true"/>
+        <put-attribute name="content" value="/WEB-INF/pages/create-react-app/home/home.jsp" cascade="true"/>
+    </definition>
+
     <definition name="createReactAppTopicsView" extends="menuTemplate">
         <put-attribute name="head" value="/WEB-INF/pages/create-react-app/topics/head.jsp" cascade="true"/>
         <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" cascade="true"/>

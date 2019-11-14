@@ -13,7 +13,7 @@
 <c:url var="trainingProjectUrl" value="/training-project/topics"/>
 <c:url var="updatesUrl" value="/updates/topics"/>
 <c:url var="faqUrl" value="/faq/topics"/>
-<c:url var="createReactAppUrl" value="/create-react-app/topics"/>
+<c:url var="createReactAppUrl" value="/create-react-app/home"/>
 
 <c:url var="hexagonUrl" value="/resources/imges/hexagon.svg"/>
 <c:url var="atomUrl" value="/resources/imges/atom.svg"/>

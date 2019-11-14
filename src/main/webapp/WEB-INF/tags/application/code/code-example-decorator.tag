@@ -6,8 +6,9 @@
 <%@ attribute name="codePenUrl" required="false" rtexprvalue="true"%>
 
 <br/>
-
-<div class="code-block-header">${empty title ? 'Код' : title}</div>
+<c:if test="${title != 'no'}">
+    <div class="code-block-header">${empty title ? 'Код' : title}</div>
+</c:if>
 <jsp:doBody/>
 <c:if test="${fn:length(codePenUrl) > 0}">
     <p><b><a href="${codePenUrl}">Посмотреть в CodePen</a></b></p>

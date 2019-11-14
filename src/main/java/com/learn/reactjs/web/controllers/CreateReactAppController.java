@@ -14,6 +14,12 @@ import java.util.Map;
 @Controller
 @RequestMapping("/create-react-app")
 public class CreateReactAppController {
+    @GetMapping("/home")
+    public String home(Map<String, Object> model) {
+        model.put("currentSection", Sections.CREATE_REACT_APP);
+        return "createReactAppHomeView";
+    }
+
     @GetMapping("/topics")
     public String topics(Map<String, Object> model) {
         model.put("currentSection", Sections.CREATE_REACT_APP);
