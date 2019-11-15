@@ -28,7 +28,7 @@
                 </a>
                 
                 <c:if test="${currentPage eq 'CRAPP_GETTING_STARTED'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#getting-started">Начало работы</a>
                         </li>
@@ -57,7 +57,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_DEVELOPMENT'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#editor-setup">Установите редактор</a>
                         </li>
@@ -83,7 +83,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_STYLES_AND_ASSETS'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#adding-stylesheets">Добавление таблицы стилей</a>
                         </li>
@@ -124,7 +124,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_BUILDING'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#installing-dependency">Установка зависимости</a>
                         </li>
@@ -171,7 +171,7 @@
                 </a>
         
                 <c:if test="${currentPage eq 'CRAPP_TESTING'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#running-tests">Запуск тестов</a>
                         </li>
@@ -191,7 +191,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_BACKEND_INTEGRATION'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#proxying-in-development">Прокси в режиме разработки</a>
                         </li>
@@ -217,7 +217,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_DEPLOYMENT'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#deployment">Развёртывание</a>
                         </li>
@@ -234,7 +234,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_ADVANCED_USAGE'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#decorators">Можно ли использовать декораторы?</a>
                         </li>
@@ -260,7 +260,7 @@
                 </a>
     
                 <c:if test="${currentPage eq 'CRAPP_SUPPORT'}">
-                    <ul class="menu-sidebar__nav-link">
+                    <ul class="menu-sidebar__nav-links">
                         <li class="menu-sidebar__nav-link">
                             <a href="#troubleshooting">Устранение неполадок</a>
                         </li>

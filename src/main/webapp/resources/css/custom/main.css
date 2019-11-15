@@ -97,8 +97,23 @@ body {
     padding-bottom: 20px;
 }
 
+.menu-sidebar__nav-links {
+    list-style: none;
+}
+
+.menu-sidebar__nav-links>li+li {
+    margin-top: 2px;
+    margin-left: 0;
+}
+
+.menu-sidebar__nav-link {
+    display: block;
+}
+
 .menu-sidebar__nav-link a {
-    color: #212121
+    color: #212121;
+    padding: 5px 10px;
+    display: block;
 }
 
 .menu-sidebar__nav-link a:hover {
@@ -1164,4 +1179,15 @@ h6 .anchor {
 
 .cra-home-page__info-section-item .info__text {
     margin-top: 15px;
+}
+
+.menu-sidebar__nav-link .glyphicon {
+    font-size: 11px;
+    color: #5d5d5d;
+    margin-left: 2px;
+}
+
+.menu-sidebar__nav-link.active .glyphicon {
+    font-size: 11px;
+    color: #ffffff;
 }

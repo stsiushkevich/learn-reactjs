@@ -5,14 +5,14 @@
 <%@taglib prefix="app" tagdir="/WEB-INF/tags/application/home" %>
 <%@taglib prefix="ce" tagdir="/WEB-INF/tags/application/create-react-app/home" %>
 
-<c:url var="createReactAppTopicsUrl" value="/create-react-app/topics"/>
+<c:url var="getStartedUrl" value="/create-react-app/get-started"/>
 
 <div class="full-size">
     <div class="cra-home-page__welcome-section">
         <app:svg-react-app cssClass="cra-logo"/>
         <div class="cra-home-page__welcome-section-title">Create React App</div>
         <div class="cra-home-page__welcome-section-subtitle">Установи современное веб-приложение всего одной командой</div>
-        <a class="btn btn-success cra-home-page__welcome-section-btn" href="${createReactAppTopicsUrl}">
+        <a class="btn btn-success cra-home-page__welcome-section-btn" href="${getStartedUrl}">
             Начать
         </a>
     </div>
