@@ -147,7 +147,7 @@
     <c:url var="customHookUrl" value="https://reactjs.org/docs/hooks-custom.html"/>
     
     <p>
-        Мы обсудим это подробнее в разделе «<b><a href="${customHookUrl}">Создание собственных хуков</a></b>».
+        Мы обсудим это подробнее в разделе <b><a href="${customHookUrl}">Пользовательский хук</a></b>.
     </p>
     
     <br/>
