@@ -10,7 +10,7 @@
 
 <lt:layout cssClass="container text-center">
 	<ul class="footer-nav">
-		<li class="footer-nav__link footer-nav__author"><div>&#9400; 2017 Тюшкевич Сергей</div></li>
+		<li class="footer-nav__link footer-nav__author"><div>&#9400; 2017-2020 Тюшкевич Сергей</div></li>
 		<li class="footer-nav__link footer-nav__contacts"><a href="${contactsUrl}" class="btn">Контакты</a></li>
 		<li class="footer-nav__link footer-nav__terms-of-use"><a href="${termsOfUseUrl}" class="btn">Соглашение</a></li>
 		<li class="footer-nav__link footer-nav__last-update">
